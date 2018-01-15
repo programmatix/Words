@@ -6,8 +6,6 @@
                 {{ .Content }}
             </article>
 
-            I AM A TEMPLATE
-
             {{ if ne .Type "page" }}
             <ul class="pager blog-pager">
                 {{ if .PrevInSection }}
@@ -41,17 +39,11 @@
     </div>
 </div>
 
-{{ define "main" }}
-    <ul class="contents">
-        {{ range .Paginator.Pages }}
-        <li>{{.Title}}
-            <div>
-                {{ partial "summary.html" . }}
-            </div>
-        </li>
-        {{ end }}
-    </ul>
-    {{ partial "pagination.html" . }}
+{{ range .Paginator.Pages }}
+<div>
+    {{ $partialName := .Params.layout }}
+    {{ partial $partialName . }}
+</div>
 {{ end }}
 
 {{ end }}

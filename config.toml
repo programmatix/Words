@@ -1,4 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "https://gropple.github.io/Words/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "minimo"
+title = "Graham Pople's site"
+theme = "beautifulhugo"
+publishDir = "docs"
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+[Params]
+    UseChroma = true

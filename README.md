@@ -1,0 +1,1 @@
+Hi!  This is my personal website, with thoughts 'n' semi-broken projects and the like.

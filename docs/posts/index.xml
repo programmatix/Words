@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Graham Pople&#39;s site</title>
-    <link>https://grahampople.github.io/words/posts/</link>
+    <link>https://gropple.github.io/Words/posts/</link>
     <description>Recent content in Posts on Graham Pople&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jan 2018 09:50:29 +0700</lastBuildDate>
     
-	<atom:link href="https://grahampople.github.io/words/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gropple.github.io/Words/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My First Post</title>
-      <link>https://grahampople.github.io/words/posts/my-first-post/</link>
+      <link>https://gropple.github.io/Words/posts/my-first-post/</link>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
-      <guid>https://grahampople.github.io/words/posts/my-first-post/</guid>
+      <guid>https://gropple.github.io/Words/posts/my-first-post/</guid>
       <description>blah blah!</description>
     </item>
     

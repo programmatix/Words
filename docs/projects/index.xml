@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graham Pople&#39;s site</title>
-    <link>https://grahampople.github.io/words/projects/</link>
+    <link>https://gropple.github.io/Words/projects/</link>
     <description>Recent content on Graham Pople&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jan 2018 09:50:29 +0700</lastBuildDate>
     
-	<atom:link href="https://grahampople.github.io/words/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gropple.github.io/Words/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C-to-Scala Transpiler</title>
-      <link>https://grahampople.github.io/words/projects/c-transpiler/</link>
+      <link>https://gropple.github.io/Words/projects/c-transpiler/</link>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
-      <guid>https://grahampople.github.io/words/projects/c-transpiler/</guid>
+      <guid>https://gropple.github.io/Words/projects/c-transpiler/</guid>
       <description>Converts C code into Scala.
 CParser on github is my library that turns C into a clean abstract syntax tree (AST), and can be embedded in any JVM-language project.
 The code is written in Scala and transpiled to Javascript so it can be embedded directly here:</description>
@@ -24,19 +24,19 @@ The code is written in Scala and transpiled to Javascript so it can be embedded 
     
     <item>
       <title>This Personal Site</title>
-      <link>https://grahampople.github.io/words/projects/personal-site/</link>
+      <link>https://gropple.github.io/Words/projects/personal-site/</link>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
-      <guid>https://grahampople.github.io/words/projects/personal-site/</guid>
+      <guid>https://gropple.github.io/Words/projects/personal-site/</guid>
       <description>Coded with the Hugo static site generator.</description>
     </item>
     
     <item>
       <title>Undiscovered Guide</title>
-      <link>https://grahampople.github.io/words/projects/undiscovered-guide/</link>
+      <link>https://gropple.github.io/Words/projects/undiscovered-guide/</link>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
-      <guid>https://grahampople.github.io/words/projects/undiscovered-guide/</guid>
+      <guid>https://gropple.github.io/Words/projects/undiscovered-guide/</guid>
       <description>Undiscovered Guide is a travel website I created with my partner while we were travelling, to help others explore our favourite parts of the world. It&amp;rsquo;s pretty popular, getting over 30,000 monthly page views.
 There&amp;rsquo;s a lot going on under the hood:
  Parts of it are a dynamically-created single page app. It&amp;rsquo;s written in Scala, transpiled to Javascript with ScalaJS. The backend CMS is custom and written from scratch in Scala.</description>

@@ -1,0 +1,98 @@
+
+<div class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h3>{{.Title}}</h3>
+            {{ .Content }}
+
+            <div>
+
+
+                <!--<textarea id="input" rows="10" class="form-control" >-->
+                <!--// Replace all this with any valid C code-->
+                <div id="editor">int main(int argc) {
+    return 0;
+}</div>
+
+            </div>
+            <br>
+            <!--Convert to: <button id="parse" class="btn-primary" onclick="parse()">C</button>-->
+
+            <!-- Nav tabs -->
+            <div class="panel with-nav-tabs panel-info">
+                <div class="panel-heading">
+            <ul class="nav nav-tabs" id="transpilerTabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="c-tab" href="#c-tab-output" role="tab" aria-controls="home" aria-selected="true">C</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="ast-tab" href="#ast-tab-output" role="tab" aria-controls="profile" aria-selected="false">AST</a>
+                </li>
+            </ul>
+                </div>
+
+            <!-- Tab panes -->
+            <div class="tab-content" style="min-height: 100px; max-height: 500px">
+                <div class="tab-pane fade in active" id="c-tab-output" role="tabpanel" aria-labelledby="c-tab">
+                        <!--<div class="panel-body">C</div>-->
+                </div>
+                <div class="tab-pane fade" id="ast-tab-output" role="tabpanel" aria-labelledby="ast-tab">AST</div>
+            </div>
+            </div>
+
+
+            <!--<div>-->
+                <!--<textarea id="output" rows="10" class="form-control"></textarea>-->
+            <!--</div>-->
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(e) {
+        var parser = new ParseMain();
+
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/gruvbox");
+        editor.getSession().setMode("ace/mode/c_cpp");
+
+        function transpilerTabClicked(input, tab) {
+            switch (tab) {
+                case "c-tab":
+                    var output = parser.generate(input);
+                    $("#c-tab-output").text(output);
+                    break;
+                case "ast-tab":
+                    var output = parser.parse(input);
+                    $("#ast-tab-output").text(output);
+                    break;
+                default:
+                    console.error("Don't know " + this.id);
+            }
+        }
+
+        $('#transpilerTabs').find('a').on('click', function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+            var input = editor.getValue();
+            transpilerTabClicked(input, this.id)
+        });
+
+        $('#c-tab').tab('show');
+        transpilerTabClicked(editor.getValue(), 'c-tab');
+
+
+    });
+
+    // function parse() {
+    //     var output = parser.parse(input);
+    //     var gen = parser.generate(input);
+    //     document.getElementById("output").value = output + "\n\n" + gen;
+    // }
+
+</script>
