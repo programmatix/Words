@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Posts</title>
+  <meta property="og:title" content="Posts" />
+  <meta name="twitter:title" content="Posts" />
+  <meta name="author" content=""/>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://grahampople.github.io/words/posts/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Graham Pople&#39;s site" />
+
+  <meta name="generator" content="Hugo 0.32.2" />
+  <link rel="canonical" href="https://grahampople.github.io/words/posts/" />
+  <link rel="alternate" href="https://grahampople.github.io/words/posts/index.xml" type="application/rss+xml" title="Graham Pople&#39;s site">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://grahampople.github.io/words/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://grahampople.github.io/words/css/codeblock.css" /><link rel="stylesheet" href="https://grahampople.github.io/words/css/syntax.css" /><script type="text/javascript" src="/ctranspiler-fastopt.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js" type="text/javascript" charset="utf-8"></script>
+
+<style type="text/css" media="screen">
+    #editor {
+         
+         
+         
+         
+         
+        height: 200px;
+        width: 100%;
+    }
+
+
+
+    .panel.with-nav-tabs .panel-heading{
+        padding: 5px 5px 0 5px;
+    }
+    .panel.with-nav-tabs .nav-tabs{
+        border-bottom: none;
+    }
+    .panel.with-nav-tabs .nav-justified{
+        margin-bottom: -1px;
+    }
+     
+     
+    .with-nav-tabs.panel-default .nav-tabs > li > a,
+    .with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+        color: #777;
+    }
+    .with-nav-tabs.panel-default .nav-tabs > .open > a,
+    .with-nav-tabs.panel-default .nav-tabs > .open > a:hover,
+    .with-nav-tabs.panel-default .nav-tabs > .open > a:focus,
+    .with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+        color: #777;
+        background-color: #ddd;
+        border-color: transparent;
+    }
+    .with-nav-tabs.panel-default .nav-tabs > li.active > a,
+    .with-nav-tabs.panel-default .nav-tabs > li.active > a:hover,
+    .with-nav-tabs.panel-default .nav-tabs > li.active > a:focus {
+        color: #555;
+        background-color: #fff;
+        border-color: #ddd;
+        border-bottom-color: transparent;
+    }
+    .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu {
+        background-color: #f5f5f5;
+        border-color: #ddd;
+    }
+    .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a {
+        color: #777;
+    }
+    .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+    .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+        background-color: #ddd;
+    }
+    .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+    .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+    .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #555;
+    }
+     
+     
+    .with-nav-tabs.panel-primary .nav-tabs > li > a,
+    .with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+        color: #fff;
+    }
+    .with-nav-tabs.panel-primary .nav-tabs > .open > a,
+    .with-nav-tabs.panel-primary .nav-tabs > .open > a:hover,
+    .with-nav-tabs.panel-primary .nav-tabs > .open > a:focus,
+    .with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+        color: #fff;
+        background-color: #3071a9;
+        border-color: transparent;
+    }
+    .with-nav-tabs.panel-primary .nav-tabs > li.active > a,
+    .with-nav-tabs.panel-primary .nav-tabs > li.active > a:hover,
+    .with-nav-tabs.panel-primary .nav-tabs > li.active > a:focus {
+        color: #428bca;
+        background-color: #fff;
+        border-color: #428bca;
+        border-bottom-color: transparent;
+    }
+    .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu {
+        background-color: #428bca;
+        border-color: #3071a9;
+    }
+    .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a {
+        color: #fff;
+    }
+    .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+    .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+        background-color: #3071a9;
+    }
+    .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+    .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+    .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+        background-color: #4a9fe9;
+    }
+     
+     
+    .with-nav-tabs.panel-success .nav-tabs > li > a,
+    .with-nav-tabs.panel-success .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-success .nav-tabs > li > a:focus {
+        color: #3c763d;
+    }
+    .with-nav-tabs.panel-success .nav-tabs > .open > a,
+    .with-nav-tabs.panel-success .nav-tabs > .open > a:hover,
+    .with-nav-tabs.panel-success .nav-tabs > .open > a:focus,
+    .with-nav-tabs.panel-success .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-success .nav-tabs > li > a:focus {
+        color: #3c763d;
+        background-color: #d6e9c6;
+        border-color: transparent;
+    }
+    .with-nav-tabs.panel-success .nav-tabs > li.active > a,
+    .with-nav-tabs.panel-success .nav-tabs > li.active > a:hover,
+    .with-nav-tabs.panel-success .nav-tabs > li.active > a:focus {
+        color: #3c763d;
+        background-color: #fff;
+        border-color: #d6e9c6;
+        border-bottom-color: transparent;
+    }
+    .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+    }
+    .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > li > a {
+        color: #3c763d;
+    }
+    .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+    .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+        background-color: #d6e9c6;
+    }
+    .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+    .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+    .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #3c763d;
+    }
+     
+     
+    .with-nav-tabs.panel-info .nav-tabs > li > a,
+    .with-nav-tabs.panel-info .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-info .nav-tabs > li > a:focus {
+        color: #31708f;
+    }
+    .with-nav-tabs.panel-info .nav-tabs > .open > a,
+    .with-nav-tabs.panel-info .nav-tabs > .open > a:hover,
+    .with-nav-tabs.panel-info .nav-tabs > .open > a:focus,
+    .with-nav-tabs.panel-info .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-info .nav-tabs > li > a:focus {
+        color: #31708f;
+        background-color: #bce8f1;
+        border-color: transparent;
+    }
+    .with-nav-tabs.panel-info .nav-tabs > li.active > a,
+    .with-nav-tabs.panel-info .nav-tabs > li.active > a:hover,
+    .with-nav-tabs.panel-info .nav-tabs > li.active > a:focus {
+        color: #31708f;
+        background-color: #fff;
+        border-color: #bce8f1;
+        border-bottom-color: transparent;
+    }
+    .with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+    }
+    .with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > li > a {
+        color: #31708f;
+    }
+    .with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+    .with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+        background-color: #bce8f1;
+    }
+    .with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+    .with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+    .with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #31708f;
+    }
+     
+     
+    .with-nav-tabs.panel-warning .nav-tabs > li > a,
+    .with-nav-tabs.panel-warning .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-warning .nav-tabs > li > a:focus {
+        color: #8a6d3b;
+    }
+    .with-nav-tabs.panel-warning .nav-tabs > .open > a,
+    .with-nav-tabs.panel-warning .nav-tabs > .open > a:hover,
+    .with-nav-tabs.panel-warning .nav-tabs > .open > a:focus,
+    .with-nav-tabs.panel-warning .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-warning .nav-tabs > li > a:focus {
+        color: #8a6d3b;
+        background-color: #faebcc;
+        border-color: transparent;
+    }
+    .with-nav-tabs.panel-warning .nav-tabs > li.active > a,
+    .with-nav-tabs.panel-warning .nav-tabs > li.active > a:hover,
+    .with-nav-tabs.panel-warning .nav-tabs > li.active > a:focus {
+        color: #8a6d3b;
+        background-color: #fff;
+        border-color: #faebcc;
+        border-bottom-color: transparent;
+    }
+    .with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu {
+        background-color: #fcf8e3;
+        border-color: #faebcc;
+    }
+    .with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > li > a {
+        color: #8a6d3b;
+    }
+    .with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+    .with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+        background-color: #faebcc;
+    }
+    .with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+    .with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+    .with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #8a6d3b;
+    }
+     
+     
+    .with-nav-tabs.panel-danger .nav-tabs > li > a,
+    .with-nav-tabs.panel-danger .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-danger .nav-tabs > li > a:focus {
+        color: #a94442;
+    }
+    .with-nav-tabs.panel-danger .nav-tabs > .open > a,
+    .with-nav-tabs.panel-danger .nav-tabs > .open > a:hover,
+    .with-nav-tabs.panel-danger .nav-tabs > .open > a:focus,
+    .with-nav-tabs.panel-danger .nav-tabs > li > a:hover,
+    .with-nav-tabs.panel-danger .nav-tabs > li > a:focus {
+        color: #a94442;
+        background-color: #ebccd1;
+        border-color: transparent;
+    }
+    .with-nav-tabs.panel-danger .nav-tabs > li.active > a,
+    .with-nav-tabs.panel-danger .nav-tabs > li.active > a:hover,
+    .with-nav-tabs.panel-danger .nav-tabs > li.active > a:focus {
+        color: #a94442;
+        background-color: #fff;
+        border-color: #ebccd1;
+        border-bottom-color: transparent;
+    }
+    .with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu {
+        background-color: #f2dede;  
+        border-color: #ebccd1;  
+    }
+    .with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > li > a {
+        color: #a94442;  
+    }
+    .with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+    .with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+        background-color: #ebccd1;  
+    }
+    .with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+    .with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+    .with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+        color: #fff;  
+        background-color: #a94442;  
+    }
+</style>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://grahampople.github.io/words/">Graham Pople&#39;s site</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  <header class="header-section ">
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>Posts</h1>
+              <hr class="small">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://grahampople.github.io/words/posts/my-first-post/">
+                <h2 class="post-title">My First Post</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on January 15, 2018
+              </p>
+              <div class="post-entry">
+                
+                  <p>blah blah!</p>
+
+                
+              </div>
+
+              
+
+            </article>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://grahampople.github.io/words/">Graham Pople&#39;s site</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.32.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://grahampople.github.io/words/js/main.js"></script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="https://grahampople.github.io/words/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+
