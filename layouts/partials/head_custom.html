@@ -1,6 +1,15 @@
-<!--<script type="text/javascript" src="{{ "js/ctranspiler-fastopt.js" | absURL }}"></script>-->
-<script type="text/javascript" src="{{ "js/ctranspiler-opt.js" | absURL }}"></script>
+{{ if .Site.BuildDrafts }}
+<script type="text/javascript" src='{{ "js/ctranspiler-fastopt.js" | absURL }}'></script>
+{{else}}
+<script type="text/javascript" src='{{ "js/ctranspiler-opt.js" | absURL }}'></script>
+{{end}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" type="text/javascript" charset="utf-8"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/cpp.min.js" type="text/javascript" charset="utf-8"></script>
+<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel='stylesheet' type="text/css" />-->
+<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-eighties.min.css" rel='stylesheet' type="text/css" />-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel='stylesheet' type="text/css" />
 
 <style type="text/css" media="screen">
     #editor {

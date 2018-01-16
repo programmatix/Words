@@ -7,7 +7,6 @@
 
             <div>
 
-
                 <!--<textarea id="input" rows="10" class="form-control" >-->
                 <!--// Replace all this with any valid C code-->
                 <div id="editor">int main(int argc) {
@@ -34,7 +33,10 @@
             <!-- Tab panes -->
             <div class="tab-content" style="min-height: 100px; max-height: 500px">
                 <div class="tab-pane fade in active" id="c-tab-output" role="tabpanel" aria-labelledby="c-tab">
-                        <!--<div class="panel-body">C</div>-->
+                    <div>Converting the C straight back into C again.  This is mostly to check that the AST can represent all of C.</div>
+                    <br>
+                    <div class="card bg-faded" id="c-tab-real-output"></div>
+
                 </div>
                 <div class="tab-pane fade" id="ast-tab-output" role="tabpanel" aria-labelledby="ast-tab">AST</div>
             </div>
@@ -58,17 +60,42 @@
         var parser = new ParseMain();
 
         var editor = ace.edit("editor");
-        editor.setTheme("ace/theme/gruvbox");
+        // editor.setTheme("ace/theme/gruvbox");
+        // https://github.com/ajaxorg/ace/tree/master/lib/ace/theme
+        // editor.setTheme("ace/theme/tomorrow_night_eighties");
+        editor.setTheme("ace/theme/tomorrow_night_eighties");
         editor.getSession().setMode("ace/mode/c_cpp");
+        var transpilerEditorChangedTimeout;
+        editor.getSession().on('change', function() {
+            console.info("change");
+            if (transpilerEditorChangedTimeout === undefined) {
+                transpilerEditorChangedTimeout = setTimeout(function () {
+                    // $(currentTabId).tab('show');
+                    transpilerTabClicked(editor.getValue(), currentTabId);
+                    transpilerEditorChangedTimeout = undefined;
+                }, 1000);
+            }
+        });
 
-        function transpilerTabClicked(input, tab) {
-            switch (tab) {
-                case "c-tab":
+        var currentTabId = '#c-tab';
+
+        function transpilerTabClicked(input, tabId) {
+            console.info(input);
+            console.info(tabId);
+            currentTabId = tabId;
+            switch (tabId) {
+                case "#c-tab":
                     var output = parser.generate(input);
-                    $("#c-tab-output").text(output);
+                    console.info(output);
+                    $("#c-tab-real-output").text(output);
+                    $("#c-tab-real-output").each(function(i, block) {
+                        hljs.highlightBlock(block);
+                    });
+
                     break;
-                case "ast-tab":
+                case "#ast-tab":
                     var output = parser.parse(input);
+                    console.info(output);
                     $("#ast-tab-output").text(output);
                     break;
                 default:
@@ -80,11 +107,11 @@
             e.preventDefault();
             $(this).tab('show');
             var input = editor.getValue();
-            transpilerTabClicked(input, this.id)
+            transpilerTabClicked(input, '#' + this.id)
         });
 
-        $('#c-tab').tab('show');
-        transpilerTabClicked(editor.getValue(), 'c-tab');
+        $(currentTabId).tab('show');
+        transpilerTabClicked(editor.getValue(), currentTabId);
 
 
     });
