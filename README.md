@@ -5,4 +5,5 @@ Visit it here [https://gropple.github.io/Words/projects/](https://gropple.github
 Release Process
 ===============
 hugo
+git commit -a -m "Commit message"
 git push
