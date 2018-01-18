@@ -1276,6 +1276,18 @@ function $f_Lfastparse_parsers_Intrinsics$WhileParser__parseRec__Lfastparse_core
     return $f_Lfastparse_core_ParserResults__success__Lfastparse_core_Mutable$Success__O__I__sci_Set__Z__Lfastparse_core_Mutable$Success(this$9, s, (void 0), index$3, traceParsers$1, false)
   }
 }
+function $is_Lgenerating_Generated(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lgenerating_Generated)))
+}
+function $as_Lgenerating_Generated(obj) {
+  return (($is_Lgenerating_Generated(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "generating.Generated"))
+}
+function $isArrayOf_Lgenerating_Generated(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lgenerating_Generated)))
+}
+function $asArrayOf_Lgenerating_Generated(obj, depth) {
+  return (($isArrayOf_Lgenerating_Generated(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lgenerating.Generated;", depth))
+}
 function $is_Lparsing_BlockItem(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_BlockItem)))
 }
@@ -1324,17 +1336,29 @@ function $isArrayOf_Lparsing_Expression(obj, depth) {
 function $asArrayOf_Lparsing_Expression(obj, depth) {
   return (($isArrayOf_Lparsing_Expression(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Expression;", depth))
 }
-function $is_Lparsing_ExternalDeclaration(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_ExternalDeclaration)))
+function $is_Lparsing_GroupPart(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_GroupPart)))
 }
-function $as_Lparsing_ExternalDeclaration(obj) {
-  return (($is_Lparsing_ExternalDeclaration(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.ExternalDeclaration"))
+function $as_Lparsing_GroupPart(obj) {
+  return (($is_Lparsing_GroupPart(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.GroupPart"))
 }
-function $isArrayOf_Lparsing_ExternalDeclaration(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_ExternalDeclaration)))
+function $isArrayOf_Lparsing_GroupPart(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_GroupPart)))
 }
-function $asArrayOf_Lparsing_ExternalDeclaration(obj, depth) {
-  return (($isArrayOf_Lparsing_ExternalDeclaration(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.ExternalDeclaration;", depth))
+function $asArrayOf_Lparsing_GroupPart(obj, depth) {
+  return (($isArrayOf_Lparsing_GroupPart(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.GroupPart;", depth))
+}
+function $is_Lparsing_IfGroup(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_IfGroup)))
+}
+function $as_Lparsing_IfGroup(obj) {
+  return (($is_Lparsing_IfGroup(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.IfGroup"))
+}
+function $isArrayOf_Lparsing_IfGroup(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_IfGroup)))
+}
+function $asArrayOf_Lparsing_IfGroup(obj, depth) {
+  return (($isArrayOf_Lparsing_IfGroup(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.IfGroup;", depth))
 }
 function $is_Lparsing_InitDeclarator(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_InitDeclarator)))
@@ -1360,6 +1384,18 @@ function $isArrayOf_Lparsing_Initializer(obj, depth) {
 function $asArrayOf_Lparsing_Initializer(obj, depth) {
   return (($isArrayOf_Lparsing_Initializer(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Initializer;", depth))
 }
+function $is_Lparsing_PPToken(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_PPToken)))
+}
+function $as_Lparsing_PPToken(obj) {
+  return (($is_Lparsing_PPToken(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.PPToken"))
+}
+function $isArrayOf_Lparsing_PPToken(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_PPToken)))
+}
+function $asArrayOf_Lparsing_PPToken(obj, depth) {
+  return (($isArrayOf_Lparsing_PPToken(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.PPToken;", depth))
+}
 function $is_Lparsing_ParameterDeclaration(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_ParameterDeclaration)))
 }
@@ -1371,6 +1407,30 @@ function $isArrayOf_Lparsing_ParameterDeclaration(obj, depth) {
 }
 function $asArrayOf_Lparsing_ParameterDeclaration(obj, depth) {
   return (($isArrayOf_Lparsing_ParameterDeclaration(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.ParameterDeclaration;", depth))
+}
+function $is_Lparsing_StructDeclaractor(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_StructDeclaractor)))
+}
+function $as_Lparsing_StructDeclaractor(obj) {
+  return (($is_Lparsing_StructDeclaractor(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.StructDeclaractor"))
+}
+function $isArrayOf_Lparsing_StructDeclaractor(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_StructDeclaractor)))
+}
+function $asArrayOf_Lparsing_StructDeclaractor(obj, depth) {
+  return (($isArrayOf_Lparsing_StructDeclaractor(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.StructDeclaractor;", depth))
+}
+function $is_Lparsing_Top(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Top)))
+}
+function $as_Lparsing_Top(obj) {
+  return (($is_Lparsing_Top(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Top"))
+}
+function $isArrayOf_Lparsing_Top(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Top)))
+}
+function $asArrayOf_Lparsing_Top(obj, depth) {
+  return (($isArrayOf_Lparsing_Top(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Top;", depth))
 }
 function $is_Lparsing_UniversalCharacterName(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_UniversalCharacterName)))
@@ -2082,37 +2142,30 @@ $c_LParseMain.prototype.parse__T__T = (function($in) {
   if ($is_Lparsing_CParseSuccess(x1)) {
     var x2 = $as_Lparsing_CParseSuccess(x1);
     var x = $as_Lparsing_TranslationUnit(x2.t$1);
-    if ((x !== null)) {
-      var jsx$3 = $m_Lpprint_PPrinter$BlackWhite$();
-      var this$1 = $m_Lpprint_PPrinter$BlackWhite$();
-      var jsx$2 = this$1.defaultWidth$2;
-      var this$2 = $m_Lpprint_PPrinter$BlackWhite$();
-      var jsx$1 = this$2.defaultHeight$2;
-      var this$3 = $m_Lpprint_PPrinter$BlackWhite$();
-      var this$4 = jsx$3.apply__O__I__I__I__I__Lfansi_Str(x, jsx$2, jsx$1, this$3.defaultIndent$2, ($m_Lpprint_PPrinter$BlackWhite$(), 0));
-      return this$4.render__T()
-    }
-  };
-  if ($is_Lparsing_CParseFail(x1)) {
+    var jsx$1 = $m_Lpprint_PPrinter$BlackWhite$();
+    var this$1 = $m_Lpprint_PPrinter$BlackWhite$();
+    var this$2 = jsx$1.apply__O__I__I__I__I__Lfansi_Str(x, 3, 1000, this$1.defaultIndent$2, ($m_Lpprint_PPrinter$BlackWhite$(), 0));
+    var out = this$2.render__T()
+  } else {
+    if ((!$is_Lparsing_CParseFail(x1))) {
+      throw new $c_s_MatchError().init___O(x1)
+    };
     var parsedSnippet = this.parser__p1__Lparsing_CParser().parseSnippet__T__Lparsing_CParseResult($in);
     if ($is_Lparsing_CParseSuccess(parsedSnippet)) {
       var x2$2 = $as_Lparsing_CParseSuccess(parsedSnippet);
       var y = $as_sc_Seq(x2$2.t$1);
-      var jsx$6 = $m_Lpprint_PPrinter$BlackWhite$();
-      var this$5 = $m_Lpprint_PPrinter$BlackWhite$();
-      var jsx$5 = this$5.defaultWidth$2;
-      var this$6 = $m_Lpprint_PPrinter$BlackWhite$();
-      var jsx$4 = this$6.defaultHeight$2;
-      var this$7 = $m_Lpprint_PPrinter$BlackWhite$();
-      var this$8 = jsx$6.apply__O__I__I__I__I__Lfansi_Str(y, jsx$5, jsx$4, this$7.defaultIndent$2, ($m_Lpprint_PPrinter$BlackWhite$(), 0));
-      return this$8.render__T()
-    } else if ($is_Lparsing_CParseFail(parsedSnippet)) {
-      return parsedSnippet.toString__T()
+      var jsx$2 = $m_Lpprint_PPrinter$BlackWhite$();
+      var this$3 = $m_Lpprint_PPrinter$BlackWhite$();
+      var this$4 = jsx$2.apply__O__I__I__I__I__Lfansi_Str(y, 3, 1000, this$3.defaultIndent$2, ($m_Lpprint_PPrinter$BlackWhite$(), 0));
+      var out = this$4.render__T()
     } else {
-      throw new $c_s_MatchError().init___O(parsedSnippet)
+      if ((!$is_Lparsing_CParseFail(parsedSnippet))) {
+        throw new $c_s_MatchError().init___O(parsedSnippet)
+      };
+      var out = parsedSnippet.toString__T()
     }
   };
-  throw new $c_s_MatchError().init___O(x1)
+  return $m_LParseMainUtils$().formatStringForHtml__T__T(out)
 });
 $c_LParseMain.prototype.parser$lzycompute__p1__Lparsing_CParser = (function() {
   if (((1 & this.bitmap$0$1) === 0)) {
@@ -2133,7 +2186,7 @@ $c_LParseMain.prototype.generate__T__T = (function($in) {
   if ($is_Lparsing_CParseSuccess(parsedRaw)) {
     var x2 = $as_Lparsing_CParseSuccess(parsedRaw);
     var x = $as_Lparsing_TranslationUnit(x2.t$1);
-    var genText = this.generator__p1__Lgenerating_CGenerator().generate__Lparsing_TranslationUnit__sc_Seq(x)
+    var genText = $m_Lgenerating_CGeneratedPrinter$().print__sc_Seq__T(this.generator__p1__Lgenerating_CGenerator().generateTranslationUnit__Lparsing_TranslationUnit__sc_Seq(x))
   } else {
     if ((!$is_Lparsing_CParseFail(parsedRaw))) {
       throw new $c_s_MatchError().init___O(parsedRaw)
@@ -2142,15 +2195,15 @@ $c_LParseMain.prototype.generate__T__T = (function($in) {
     if ($is_Lparsing_CParseSuccess(parsedSnippet)) {
       var x2$2 = $as_Lparsing_CParseSuccess(parsedSnippet);
       var y = $as_sc_Seq(x2$2.t$1);
-      var genText = this.generator__p1__Lgenerating_CGenerator().generate__sc_Seq__sc_Seq(y)
+      var genText = $m_Lgenerating_CGeneratedPrinter$().print__sc_Seq__T(this.generator__p1__Lgenerating_CGenerator().generateSeqBlockItem__sc_Seq__sc_Seq(y))
     } else {
       if ((!$is_Lparsing_CParseFail(parsedSnippet))) {
         throw new $c_s_MatchError().init___O(parsedSnippet)
       };
-      var genText = $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([parsedSnippet.toString__T()])))
+      var genText = parsedSnippet.toString__T()
     }
   };
-  return genText.mkString__T__T(" ")
+  return $m_LParseMainUtils$().formatStringForHtml__T__T(genText)
 });
 $c_LParseMain.prototype.generator__p1__Lgenerating_CGenerator = (function() {
   return (((2 & this.bitmap$0$1) === 0) ? this.generator$lzycompute__p1__Lgenerating_CGenerator() : this.generator$1)
@@ -2170,6 +2223,38 @@ var $d_LParseMain = new $TypeData().initClass({
   O: 1
 });
 $c_LParseMain.prototype.$classData = $d_LParseMain;
+/** @constructor */
+function $c_LParseMainUtils$() {
+  $c_O.call(this)
+}
+$c_LParseMainUtils$.prototype = new $h_O();
+$c_LParseMainUtils$.prototype.constructor = $c_LParseMainUtils$;
+/** @constructor */
+function $h_LParseMainUtils$() {
+  /*<skip>*/
+}
+$h_LParseMainUtils$.prototype = $c_LParseMainUtils$.prototype;
+$c_LParseMainUtils$.prototype.init___ = (function() {
+  return this
+});
+$c_LParseMainUtils$.prototype.formatStringForHtml__T__T = (function($in) {
+  var thiz = $as_T($in.split(" ").join("&nbsp;"));
+  return $as_T(thiz.split("\n").join("<br>"))
+});
+var $d_LParseMainUtils$ = new $TypeData().initClass({
+  LParseMainUtils$: 0
+}, false, "ParseMainUtils$", {
+  LParseMainUtils$: 1,
+  O: 1
+});
+$c_LParseMainUtils$.prototype.$classData = $d_LParseMainUtils$;
+var $n_LParseMainUtils$ = (void 0);
+function $m_LParseMainUtils$() {
+  if ((!$n_LParseMainUtils$)) {
+    $n_LParseMainUtils$ = new $c_LParseMainUtils$().init___()
+  };
+  return $n_LParseMainUtils$
+}
 function $is_Lfansi_Attr(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lfansi_Attr)))
 }
@@ -3309,11 +3394,102 @@ function $m_Lfastparse_utils_Utils$BitSet$() {
   return $n_Lfastparse_utils_Utils$BitSet$
 }
 /** @constructor */
+function $c_Lgenerating_CGeneratedPrinter$() {
+  $c_O.call(this);
+  this.indentJump$1 = 0
+}
+$c_Lgenerating_CGeneratedPrinter$.prototype = new $h_O();
+$c_Lgenerating_CGeneratedPrinter$.prototype.constructor = $c_Lgenerating_CGeneratedPrinter$;
+/** @constructor */
+function $h_Lgenerating_CGeneratedPrinter$() {
+  /*<skip>*/
+}
+$h_Lgenerating_CGeneratedPrinter$.prototype = $c_Lgenerating_CGeneratedPrinter$.prototype;
+$c_Lgenerating_CGeneratedPrinter$.prototype.init___ = (function() {
+  this.indentJump$1 = 2;
+  return this
+});
+$c_Lgenerating_CGeneratedPrinter$.prototype.print__sc_Seq__T = (function($in) {
+  var sb = new $c_scm_StringBuilder().init___();
+  var indent = new $c_sr_IntRef().init___I(0);
+  $in.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, sb$1, indent$1) {
+    return (function(x0$1$2) {
+      var x0$1 = $as_Lgenerating_Generated(x0$1$2);
+      if ($is_Lgenerating_NewlineOnly(x0$1)) {
+        return sb$1.$$plus$eq__C__scm_StringBuilder(10)
+      } else if ($is_Lgenerating_NewlineAndIndent(x0$1)) {
+        sb$1.$$plus$eq__C__scm_StringBuilder(10);
+        var this$3 = new $c_sci_StringOps().init___T(" ");
+        var n = indent$1.elem$1;
+        var x = $f_sci_StringLike__$$times__I__T(this$3, n);
+        var this$5 = new $c_sci_StringOps().init___T(x);
+        var n$1 = $m_Lgenerating_CGeneratedPrinter$().indentJump$1;
+        return sb$1.$$plus$plus$eq__T__scm_StringBuilder($f_sci_StringLike__$$times__I__T(this$5, n$1))
+      } else if ($is_Lgenerating_NewlineAndIndentUp(x0$1)) {
+        sb$1.$$plus$eq__C__scm_StringBuilder(10);
+        indent$1.elem$1 = ((1 + indent$1.elem$1) | 0);
+        var this$7 = new $c_sci_StringOps().init___T(" ");
+        var n$2 = indent$1.elem$1;
+        var x$1 = $f_sci_StringLike__$$times__I__T(this$7, n$2);
+        var this$9 = new $c_sci_StringOps().init___T(x$1);
+        var n$3 = $m_Lgenerating_CGeneratedPrinter$().indentJump$1;
+        return sb$1.$$plus$plus$eq__T__scm_StringBuilder($f_sci_StringLike__$$times__I__T(this$9, n$3))
+      } else if ($is_Lgenerating_NewlineAndIndentDown(x0$1)) {
+        sb$1.$$plus$eq__C__scm_StringBuilder(10);
+        indent$1.elem$1 = (((-1) + indent$1.elem$1) | 0);
+        var this$11 = new $c_sci_StringOps().init___T(" ");
+        var n$4 = indent$1.elem$1;
+        var x$2 = $f_sci_StringLike__$$times__I__T(this$11, n$4);
+        var this$13 = new $c_sci_StringOps().init___T(x$2);
+        var n$5 = $m_Lgenerating_CGeneratedPrinter$().indentJump$1;
+        return sb$1.$$plus$plus$eq__T__scm_StringBuilder($f_sci_StringLike__$$times__I__T(this$13, n$5))
+      } else if ($is_Lgenerating_GenString(x0$1)) {
+        var x6 = $as_Lgenerating_GenString(x0$1);
+        var next = x6.v$1;
+        sb$1.$$plus$plus$eq__T__scm_StringBuilder(next);
+        return sb$1.$$plus$plus$eq__T__scm_StringBuilder(" ")
+      } else if ($is_Lgenerating_GenStrings(x0$1)) {
+        var x7 = $as_Lgenerating_GenStrings(x0$1);
+        var it = x7.v$1.iterator__sc_Iterator();
+        while (it.hasNext__Z()) {
+          var next$2 = $as_T(it.next__O());
+          sb$1.$$plus$plus$eq__T__scm_StringBuilder(next$2);
+          sb$1.$$plus$plus$eq__T__scm_StringBuilder(" ")
+        };
+        return (void 0)
+      } else if ($is_Lgenerating_IndentUp(x0$1)) {
+        indent$1.elem$1 = ((1 + indent$1.elem$1) | 0);
+        return (void 0)
+      } else if ($is_Lgenerating_IndentDown(x0$1)) {
+        indent$1.elem$1 = (((-1) + indent$1.elem$1) | 0);
+        $m_s_Predef$().assert__Z__V((indent$1.elem$1 >= 0));
+        return (void 0)
+      } else {
+        throw new $c_s_MatchError().init___O(x0$1)
+      }
+    })
+  })(this, sb, indent)));
+  return sb.underlying$5.java$lang$StringBuilder$$content$f
+});
+var $d_Lgenerating_CGeneratedPrinter$ = new $TypeData().initClass({
+  Lgenerating_CGeneratedPrinter$: 0
+}, false, "generating.CGeneratedPrinter$", {
+  Lgenerating_CGeneratedPrinter$: 1,
+  O: 1
+});
+$c_Lgenerating_CGeneratedPrinter$.prototype.$classData = $d_Lgenerating_CGeneratedPrinter$;
+var $n_Lgenerating_CGeneratedPrinter$ = (void 0);
+function $m_Lgenerating_CGeneratedPrinter$() {
+  if ((!$n_Lgenerating_CGeneratedPrinter$)) {
+    $n_Lgenerating_CGeneratedPrinter$ = new $c_Lgenerating_CGeneratedPrinter$().init___()
+  };
+  return $n_Lgenerating_CGeneratedPrinter$
+}
+/** @constructor */
 function $c_Lgenerating_CGenerator() {
   $c_O.call(this);
-  this.nll$1 = null;
-  this.nl$1 = null;
-  this.el$1 = null
+  this.newlineIndent$1 = null;
+  this.endlineIndent$1 = null
 }
 $c_Lgenerating_CGenerator.prototype = new $h_O();
 $c_Lgenerating_CGenerator.prototype.constructor = $c_Lgenerating_CGenerator;
@@ -3322,581 +3498,1420 @@ function $h_Lgenerating_CGenerator() {
   /*<skip>*/
 }
 $h_Lgenerating_CGenerator.prototype = $c_Lgenerating_CGenerator.prototype;
-$c_Lgenerating_CGenerator.prototype.init___ = (function() {
-  this.nll$1 = "\n";
-  this.nl$1 = $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([this.nll$1])));
-  this.el$1 = $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([";", this.nll$1])));
-  return this
-});
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_Statement__sc_Seq = (function($in) {
-  if ($is_Lparsing_Break($in)) {
-    return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["break;"])))
-  } else if ($is_Lparsing_Continue($in)) {
-    return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["continue;"])))
-  } else if ($is_Lparsing_Goto($in)) {
-    var x4 = $as_Lparsing_Goto($in);
-    var jsx$3 = this.generate__Lparsing_Identifier__sc_Seq(x4.v$1);
-    var this$1 = $m_sc_Seq$();
-    var jsx$2 = $as_sc_TraversableLike(jsx$3.$$plus$colon__O__scg_CanBuildFrom__O("goto ", this$1.ReusableCBFInstance$2));
-    var jsx$1 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([";", this.nll$1]));
-    var this$2 = $m_sc_Seq$();
-    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$2.ReusableCBFInstance$2))
-  } else if ($is_Lparsing_IterationWhile($in)) {
-    var x5 = $as_Lparsing_IterationWhile($in);
-    var jsx$11 = $as_sc_TraversableLike($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["while", "("])));
-    var jsx$10 = this.generate__Lparsing_Expression__sc_Seq(x5.v1$1);
-    var this$3 = $m_sc_Seq$();
-    var jsx$9 = $as_sc_TraversableLike(jsx$11.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$10, this$3.ReusableCBFInstance$2));
-    var jsx$8 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([")", "{", this.nll$1]));
-    var this$4 = $m_sc_Seq$();
-    var jsx$7 = $as_sc_TraversableLike(jsx$9.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$8, this$4.ReusableCBFInstance$2));
-    var jsx$6 = this.generate__Lparsing_Statement__sc_Seq(x5.v2$1);
-    var this$5 = $m_sc_Seq$();
-    var jsx$5 = $as_sc_TraversableLike(jsx$7.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$6, this$5.ReusableCBFInstance$2));
-    var jsx$4 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["}", this.nll$1]));
-    var this$6 = $m_sc_Seq$();
-    return $as_sc_Seq(jsx$5.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$4, this$6.ReusableCBFInstance$2))
-  } else if ($is_Lparsing_LabelledLabel($in)) {
-    var x6 = $as_Lparsing_LabelledLabel($in);
-    var jsx$14 = this.generate__Lparsing_Identifier__sc_Seq(x6.v1$1);
-    var this$7 = $m_sc_Seq$();
-    var jsx$13 = $as_sc_TraversableLike(jsx$14.$$colon$plus__O__scg_CanBuildFrom__O(": ", this$7.ReusableCBFInstance$2));
-    var jsx$12 = this.generate__Lparsing_Statement__sc_Seq(x6.v2$1);
-    var this$8 = $m_sc_Seq$();
-    return $as_sc_Seq(jsx$13.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$12, this$8.ReusableCBFInstance$2))
-  } else if ($is_Lparsing_LabelledCase($in)) {
-    var x7 = $as_Lparsing_LabelledCase($in);
-    var jsx$18 = this.generate__Lparsing_Expression__sc_Seq(x7.v1$1);
-    var this$9 = $m_sc_Seq$();
-    var jsx$17 = $as_sc_SeqLike(jsx$18.$$plus$colon__O__scg_CanBuildFrom__O("case ", this$9.ReusableCBFInstance$2));
-    var this$10 = $m_sc_Seq$();
-    var jsx$16 = $as_sc_TraversableLike(jsx$17.$$colon$plus__O__scg_CanBuildFrom__O(": ", this$10.ReusableCBFInstance$2));
-    var jsx$15 = this.generate__Lparsing_Statement__sc_Seq(x7.v2$1);
-    var this$11 = $m_sc_Seq$();
-    return $as_sc_Seq(jsx$16.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$15, this$11.ReusableCBFInstance$2))
-  } else if ($is_Lparsing_CompoundStatement($in)) {
-    var x8 = $as_Lparsing_CompoundStatement($in);
-    var jsx$20 = x8.v$1;
-    var jsx$19 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-      return (function(in$2$2) {
-        var in$2 = $as_Lparsing_BlockItem(in$2$2);
-        return $this.generate__Lparsing_BlockItem__sc_Seq(in$2)
-      })
-    })(this));
-    var this$12 = $m_sc_Seq$();
-    return $as_sc_Seq(jsx$20.flatMap__F1__scg_CanBuildFrom__O(jsx$19, this$12.ReusableCBFInstance$2))
-  } else if ($is_Lparsing_ExpressionStatement($in)) {
-    var x9 = $as_Lparsing_ExpressionStatement($in);
-    var jsx$22 = this.generate__Lparsing_Expression__sc_Seq(x9.expression$1);
-    var jsx$21 = this.el$1;
-    var this$13 = $m_sc_Seq$();
-    return $as_sc_Seq(jsx$22.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$21, this$13.ReusableCBFInstance$2))
-  } else if ($is_Lparsing_Return($in)) {
-    var x10 = $as_Lparsing_Return($in);
-    var x1$2 = x10.v$1;
-    if ($is_s_Some(x1$2)) {
-      var x2 = $as_s_Some(x1$2);
-      var exp = $as_Lparsing_Expression(x2.value$2);
-      var jsx$26 = $as_sc_TraversableLike($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["return "])));
-      var jsx$25 = this.generate__Lparsing_Expression__sc_Seq(exp);
-      var this$14 = $m_sc_Seq$();
-      var jsx$24 = $as_sc_TraversableLike(jsx$26.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$25, this$14.ReusableCBFInstance$2));
-      var jsx$23 = this.el$1;
-      var this$15 = $m_sc_Seq$();
-      return $as_sc_Seq(jsx$24.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$23, this$15.ReusableCBFInstance$2))
-    } else {
-      return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["return;"])))
-    }
-  } else if ($is_Lparsing_LabelledDefault($in)) {
-    var x11 = $as_Lparsing_LabelledDefault($in);
-    var jsx$30 = $as_sc_TraversableLike($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["default: ", this.nll$1])));
-    var jsx$29 = this.generate__Lparsing_Statement__sc_Seq(x11.v2$1);
-    var this$16 = $m_sc_Seq$();
-    var jsx$28 = $as_sc_TraversableLike(jsx$30.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$29, this$16.ReusableCBFInstance$2));
-    var jsx$27 = this.nl$1;
-    var this$17 = $m_sc_Seq$();
-    return $as_sc_Seq(jsx$28.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$27, this$17.ReusableCBFInstance$2))
-  } else {
-    throw new $c_s_MatchError().init___O($in)
-  }
-});
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_BlockItem__sc_Seq = (function($in) {
-  if ($is_Lparsing_Statement($in)) {
-    var x2 = $as_Lparsing_Statement($in);
-    return this.generate__Lparsing_Statement__sc_Seq(x2)
-  } else if ($is_Lparsing_Declaration($in)) {
-    var x3 = $as_Lparsing_Declaration($in);
-    var jsx$2 = this.generate__Lparsing_Declaration__sc_Seq(x3);
-    var jsx$1 = this.el$1;
-    var this$1 = $m_sc_Seq$();
-    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
-  } else {
-    throw new $c_s_MatchError().init___O($in)
-  }
-});
-$c_Lgenerating_CGenerator.prototype.generate__sc_Seq__sc_Seq = (function($in) {
-  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-    return (function(v$2) {
-      var v = $as_Lparsing_BlockItem(v$2);
-      return $this.generate__Lparsing_BlockItem__sc_Seq(v)
-    })
-  })(this));
-  var this$1 = $m_sc_Seq$();
-  return $as_sc_Seq($in.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
-});
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_ParameterDeclaration__sc_Seq = (function($in) {
-  if ($is_Lparsing_ParameterDeclarationDeclarator($in)) {
-    var x2 = $as_Lparsing_ParameterDeclarationDeclarator($in);
-    var jsx$2 = this.generate__Lparsing_DeclarationSpecifiers__sc_Seq(x2.v$1);
-    var jsx$1 = this.generate__Lparsing_Declarator__sc_Seq(x2.v2$1);
-    var this$1 = $m_sc_Seq$();
-    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
-  } else {
-    throw new $c_s_MatchError().init___O($in)
-  }
-});
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_InitDeclarator__sc_Seq = (function($in) {
-  if ($is_Lparsing_DeclaratorEmpty($in)) {
-    var x2 = $as_Lparsing_DeclaratorEmpty($in);
-    return this.generate__Lparsing_Declarator__sc_Seq(x2.declarator$1)
-  } else if ($is_Lparsing_DeclaratorWithInit($in)) {
-    var x3 = $as_Lparsing_DeclaratorWithInit($in);
-    var jsx$4 = this.generate__Lparsing_Declarator__sc_Seq(x3.declarator$1);
-    var jsx$3 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["="]));
-    var this$1 = $m_sc_Seq$();
-    var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$1.ReusableCBFInstance$2));
-    var jsx$1 = this.generate__Lparsing_Initializer__sc_Seq(x3.init$1);
-    var this$2 = $m_sc_Seq$();
-    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$2.ReusableCBFInstance$2))
-  } else {
-    throw new $c_s_MatchError().init___O($in)
-  }
-});
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_TranslationUnit__sc_Seq = (function($in) {
-  var jsx$2 = $in.v$1;
-  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-    return (function(v$2) {
-      var v = $as_Lparsing_ExternalDeclaration(v$2);
-      return $this.generate__Lparsing_ExternalDeclaration__sc_Seq(v)
-    })
-  })(this));
-  var this$1 = $m_sc_Seq$();
-  return $as_sc_Seq(jsx$2.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
-});
-$c_Lgenerating_CGenerator.prototype.generate__s_Option__sc_Seq = (function($in) {
+$c_Lgenerating_CGenerator.prototype.generateOptDeclarationList__s_Option__sc_Seq = (function($in) {
   $m_scm_ArrayBuffer$();
   var this$2 = new $c_scm_ArrayBuffer().init___();
   if ((!$in.isEmpty__Z())) {
     var arg1 = $in.get__O();
     var v = $as_Lparsing_DeclarationList(arg1);
-    new $c_s_Some().init___O(this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(this.generate__Lparsing_DeclarationList__sc_Seq(v)))
+    new $c_s_Some().init___O(this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(this.generateDeclarationList__Lparsing_DeclarationList__sc_Seq(v)))
   };
   return this$2
 });
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_Identifier__sc_Seq = (function($in) {
-  return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([$in.v$1])))
+$c_Lgenerating_CGenerator.prototype.generateElseGroup__Lparsing_ElseGroup__sc_Seq = (function($in) {
+  var jsx$2 = this.GS__p1__T__sc_Seq("#else");
+  var this$1 = $in.group$1;
+  if (this$1.isEmpty__Z()) {
+    var this$2 = $m_s_None$()
+  } else {
+    var arg1 = this$1.get__O();
+    var v = $as_Lparsing_Group(arg1);
+    var this$2 = new $c_s_Some().init___O(this.generateGroup__Lparsing_Group__sc_Seq(v))
+  };
+  var jsx$1 = $as_sc_GenTraversableOnce((this$2.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$2.get__O()));
+  var this$3 = $m_sc_Seq$();
+  return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$3.ReusableCBFInstance$2))
 });
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_DeclarationList__sc_Seq = (function($in) {
-  var jsx$2 = $in.v$1;
-  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-    return (function(v$2) {
-      var v = $as_Lparsing_Declaration(v$2);
-      return $this.generate__Lparsing_Declaration__sc_Seq(v)
-    })
-  })(this));
-  var this$1 = $m_sc_Seq$();
-  return $as_sc_Seq(jsx$2.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
-});
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_DeclarationSpecifiers__sc_Seq = (function($in) {
-  var jsx$2 = $in.v$1;
-  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-    return (function(v$2) {
-      var v = $as_Lparsing_DeclarationSpecifier(v$2);
-      return $this.generate__Lparsing_DeclarationSpecifier__sc_Seq(v)
-    })
-  })(this));
-  var this$1 = $m_sc_Seq$();
-  return $as_sc_Seq(jsx$2.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
-});
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_DeclarationSpecifier__sc_Seq = (function($in) {
-  if ($is_Lparsing_StorageClassSpecifier($in)) {
-    var x2 = $as_Lparsing_StorageClassSpecifier($in);
-    return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([x2.v$1])))
-  } else if ($is_Lparsing_TypeSpecifier($in)) {
-    var x3 = $as_Lparsing_TypeSpecifier($in);
-    return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([x3.v$1])))
-  } else if ($is_Lparsing_TypeQualifier($in)) {
-    var x4 = $as_Lparsing_TypeQualifier($in);
-    return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([x4.v$1])))
-  } else if ($is_Lparsing_FunctionSpecifier($in)) {
-    var x5 = $as_Lparsing_FunctionSpecifier($in);
-    return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([x5.v$1])))
-  } else if ($is_Lparsing_AlignmentSpecifier($in)) {
-    var x6 = $as_Lparsing_AlignmentSpecifier($in);
-    return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([x6.v$1])))
+$c_Lgenerating_CGenerator.prototype.generateInGroup__Lparsing_IfGroup__sc_Seq = (function($in) {
+  if ($is_Lparsing_If($in)) {
+    var x2 = $as_Lparsing_If($in);
+    var jsx$4 = this.GS__p1__T__sc_Seq("#if");
+    var jsx$3 = this.generateExpression__Lparsing_Expression__sc_Seq(x2.exp$1);
+    var this$1 = $m_sc_Seq$();
+    var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$1.ReusableCBFInstance$2));
+    var this$2 = x2.group$1;
+    if (this$2.isEmpty__Z()) {
+      var this$3 = $m_s_None$()
+    } else {
+      var arg1 = this$2.get__O();
+      var v = $as_Lparsing_Group(arg1);
+      var this$3 = new $c_s_Some().init___O(this.generateGroup__Lparsing_Group__sc_Seq(v))
+    };
+    var jsx$1 = $as_sc_GenTraversableOnce((this$3.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$3.get__O()));
+    var this$4 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$4.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_IfDef($in)) {
+    var x3 = $as_Lparsing_IfDef($in);
+    var jsx$8 = this.GS__p1__T__sc_Seq("#ifdef");
+    var $in$1 = x3.ident$1;
+    var jsx$7 = this.GS__p1__T__sc_Seq($in$1.v$1);
+    var this$5 = $m_sc_Seq$();
+    var jsx$6 = $as_sc_TraversableLike(jsx$8.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$7, this$5.ReusableCBFInstance$2));
+    var this$6 = x3.group$1;
+    if (this$6.isEmpty__Z()) {
+      var this$7 = $m_s_None$()
+    } else {
+      var arg1$1 = this$6.get__O();
+      var v$3 = $as_Lparsing_Group(arg1$1);
+      var this$7 = new $c_s_Some().init___O(this.generateGroup__Lparsing_Group__sc_Seq(v$3))
+    };
+    var jsx$5 = $as_sc_GenTraversableOnce((this$7.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$7.get__O()));
+    var this$8 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$6.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$5, this$8.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_IfNDef($in)) {
+    var x4 = $as_Lparsing_IfNDef($in);
+    var jsx$12 = this.GS__p1__T__sc_Seq("#ifndef");
+    var $in$2 = x4.ident$1;
+    var jsx$11 = this.GS__p1__T__sc_Seq($in$2.v$1);
+    var this$9 = $m_sc_Seq$();
+    var jsx$10 = $as_sc_TraversableLike(jsx$12.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$11, this$9.ReusableCBFInstance$2));
+    var this$10 = x4.group$1;
+    if (this$10.isEmpty__Z()) {
+      var this$11 = $m_s_None$()
+    } else {
+      var arg1$2 = this$10.get__O();
+      var v$4 = $as_Lparsing_Group(arg1$2);
+      var this$11 = new $c_s_Some().init___O(this.generateGroup__Lparsing_Group__sc_Seq(v$4))
+    };
+    var jsx$9 = $as_sc_GenTraversableOnce((this$11.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$11.get__O()));
+    var this$12 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$10.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$9, this$12.ReusableCBFInstance$2))
   } else {
     throw new $c_s_MatchError().init___O($in)
   }
 });
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_Declaration__sc_Seq = (function($in) {
-  $m_scm_ArrayBuffer$();
-  var this$2 = new $c_scm_ArrayBuffer().init___();
-  if ($is_Lparsing_SimpleDeclaration($in)) {
-    var x2 = $as_Lparsing_SimpleDeclaration($in);
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(this.generate__Lparsing_DeclarationSpecifiers__sc_Seq(x2.spec$1));
-    var this$3 = x2.init$1;
-    if ((!this$3.isEmpty__Z())) {
-      var arg1 = this$3.get__O();
-      var x = $as_sc_Seq(arg1);
-      var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-        return (function($$in) {
-          var $in$1 = $as_Lparsing_InitDeclarator($$in);
-          return $this.generate__Lparsing_InitDeclarator__sc_Seq($in$1)
-        })
-      })(this));
-      var this$4 = $m_sc_Seq$();
-      new $c_s_Some().init___O(this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(x.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$4.ReusableCBFInstance$2))))
-    }
-  } else if ($is_Lparsing_StaticAssertDeclaration($in)) {
-    var x3 = $as_Lparsing_StaticAssertDeclaration($in);
-    var jsx$11 = $as_sc_TraversableLike($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["_Static_assert", "("])));
-    var jsx$10 = this.generate__Lparsing_Expression__sc_Seq(x3.v1$1);
-    var this$5 = $m_sc_Seq$();
-    var jsx$9 = $as_sc_TraversableLike(jsx$11.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$10, this$5.ReusableCBFInstance$2));
-    var jsx$8 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([","]));
-    var this$6 = $m_sc_Seq$();
-    var jsx$7 = $as_sc_TraversableLike(jsx$9.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$8, this$6.ReusableCBFInstance$2));
-    var jsx$6 = this.generate__Lparsing_Expression__sc_Seq(x3.v2$1);
-    var this$7 = $m_sc_Seq$();
-    var jsx$5 = $as_sc_TraversableLike(jsx$7.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$6, this$7.ReusableCBFInstance$2));
-    var jsx$4 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([")"]));
-    var this$8 = $m_sc_Seq$();
-    var jsx$3 = $as_sc_TraversableLike(jsx$5.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$4, this$8.ReusableCBFInstance$2));
-    var jsx$2 = this.el$1;
-    var this$9 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$3.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$2, this$9.ReusableCBFInstance$2)))
+$c_Lgenerating_CGenerator.prototype.init___ = (function() {
+  this.newlineIndent$1 = $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()));
+  this.endlineIndent$1 = $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()));
+  return this
+});
+$c_Lgenerating_CGenerator.prototype.generateDeclarator__Lparsing_Declarator__sc_Seq = (function($in) {
+  var this$1 = $in.pointer$1;
+  if (this$1.isEmpty__Z()) {
+    var this$2 = $m_s_None$()
+  } else {
+    var arg1 = this$1.get__O();
+    var v = $as_T(arg1);
+    var this$2 = new $c_s_Some().init___O(this.GS__p1__T__sc_Seq(v))
+  };
+  var jsx$2 = $as_sc_TraversableLike((this$2.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$2.get__O()));
+  var jsx$1 = this.generateDirectDeclarator__Lparsing_DirectDeclarator__sc_Seq($in.v$1);
+  var this$3 = $m_sc_Seq$();
+  return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$3.ReusableCBFInstance$2))
+});
+$c_Lgenerating_CGenerator.prototype.generateReplacementList__Lparsing_ReplacementList__sc_Seq = (function($in) {
+  var this$1 = $in.v$1;
+  if (this$1.isEmpty__Z()) {
+    var this$3 = $m_s_None$()
+  } else {
+    var arg1 = this$1.get__O();
+    var x$3 = $as_sc_Seq(arg1);
+    var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function($$in) {
+        var $in$1 = $as_Lparsing_PPToken($$in);
+        return $this.generatePPToken__Lparsing_PPToken__sc_Seq($in$1)
+      })
+    })(this));
+    var this$2 = $m_sc_Seq$();
+    var this$3 = new $c_s_Some().init___O($as_sc_Seq(x$3.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$2.ReusableCBFInstance$2)))
+  };
+  return $as_sc_Seq((this$3.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$3.get__O()))
+});
+$c_Lgenerating_CGenerator.prototype.generateInitDeclarator__Lparsing_InitDeclarator__sc_Seq = (function($in) {
+  if ($is_Lparsing_DeclaratorEmpty($in)) {
+    var x2 = $as_Lparsing_DeclaratorEmpty($in);
+    return this.generateDeclarator__Lparsing_Declarator__sc_Seq(x2.declarator$1)
+  } else if ($is_Lparsing_DeclaratorWithInit($in)) {
+    var x3 = $as_Lparsing_DeclaratorWithInit($in);
+    var jsx$4 = this.generateDeclarator__Lparsing_Declarator__sc_Seq(x3.declarator$1);
+    var jsx$3 = this.GS__p1__T__sc_Seq("=");
+    var this$1 = $m_sc_Seq$();
+    var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$1.ReusableCBFInstance$2));
+    var jsx$1 = this.generateInitializer__Lparsing_Initializer__sc_Seq(x3.init$1);
+    var this$2 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$2.ReusableCBFInstance$2))
   } else {
     throw new $c_s_MatchError().init___O($in)
-  };
-  return this$2
+  }
 });
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_ParameterTypeList__sc_Seq = (function($in) {
-  $m_scm_ArrayBuffer$();
-  var this$2 = new $c_scm_ArrayBuffer().init___();
+$c_Lgenerating_CGenerator.prototype.generateSpecifierQualifierList__sc_Seq__sc_Seq = (function(v) {
+  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function($$in) {
+      var $in = $as_Lparsing_DeclarationSpecifier($$in);
+      return $this.generateDeclarationSpecifier__Lparsing_DeclarationSpecifier__sc_Seq($in)
+    })
+  })(this));
+  var this$1 = $m_sc_Seq$();
+  return $as_sc_Seq(v.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
+});
+$c_Lgenerating_CGenerator.prototype.generateGroup__Lparsing_Group__sc_Seq = (function(v) {
+  var jsx$4 = v.v$1;
+  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x$2) {
+      var x = $as_Lparsing_GroupPart(x$2);
+      var jsx$3 = $this.generateGroupPart__Lparsing_GroupPart__sc_Seq(x);
+      var jsx$2 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_NewlineAndIndent().init___()]));
+      var this$1 = $m_sc_Seq$();
+      return $as_sc_Seq(jsx$3.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$2, this$1.ReusableCBFInstance$2))
+    })
+  })(this));
+  var this$2 = $m_sc_Seq$();
+  return $as_sc_Seq(jsx$4.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$2.ReusableCBFInstance$2))
+});
+$c_Lgenerating_CGenerator.prototype.generateElifGroup__Lparsing_ElifGroup__sc_Seq = (function($in) {
+  var jsx$4 = this.GS__p1__T__sc_Seq("#elif");
+  var jsx$3 = this.generateExpression__Lparsing_Expression__sc_Seq($in.exp$1);
+  var this$1 = $m_sc_Seq$();
+  var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$1.ReusableCBFInstance$2));
+  var this$2 = $in.group$1;
+  if (this$2.isEmpty__Z()) {
+    var this$3 = $m_s_None$()
+  } else {
+    var arg1 = this$2.get__O();
+    var v = $as_Lparsing_Group(arg1);
+    var this$3 = new $c_s_Some().init___O(this.generateGroup__Lparsing_Group__sc_Seq(v))
+  };
+  var jsx$1 = $as_sc_GenTraversableOnce((this$3.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$3.get__O()));
+  var this$4 = $m_sc_Seq$();
+  return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$4.ReusableCBFInstance$2))
+});
+$c_Lgenerating_CGenerator.prototype.generateParameterDeclaration__Lparsing_ParameterDeclaration__sc_Seq = (function($in) {
+  if ($is_Lparsing_ParameterDeclarationDeclarator($in)) {
+    var x2 = $as_Lparsing_ParameterDeclarationDeclarator($in);
+    var jsx$2 = this.generateDeclarationSpecifiers__Lparsing_DeclarationSpecifiers__sc_Seq(x2.v$1);
+    var jsx$1 = this.generateDeclarator__Lparsing_Declarator__sc_Seq(x2.v2$1);
+    var this$1 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
+  } else {
+    throw new $c_s_MatchError().init___O($in)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateStructDeclaration__Lparsing_StructDeclaration__sc_Seq = (function($in) {
+  var jsx$4 = this.generateSpecifierQualifierList__sc_Seq__sc_Seq($in.v$1);
+  var this$1 = $in.v2$1;
+  if (this$1.isEmpty__Z()) {
+    var this$2 = $m_s_None$()
+  } else {
+    var arg1 = this$1.get__O();
+    var x = $as_Lparsing_StructDeclaratorList(arg1);
+    var this$2 = new $c_s_Some().init___O(this.generateStructDeclaratorList__Lparsing_StructDeclaratorList__sc_Seq(x))
+  };
+  var jsx$3 = $as_sc_GenTraversableOnce((this$2.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$2.get__O()));
+  var this$3 = $m_sc_Seq$();
+  var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$3.ReusableCBFInstance$2));
+  var jsx$1 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_GenString().init___T(";"), new $c_Lgenerating_NewlineAndIndent().init___()]));
+  var this$4 = $m_sc_Seq$();
+  return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$4.ReusableCBFInstance$2))
+});
+$c_Lgenerating_CGenerator.prototype.generateExternalDeclaration__Lparsing_ExternalDeclaration__sc_Seq = (function($in) {
+  if ($is_Lparsing_FunctionDefinition($in)) {
+    var x2 = $as_Lparsing_FunctionDefinition($in);
+    var jsx$8 = this.generateDeclarationSpecifiers__Lparsing_DeclarationSpecifiers__sc_Seq(x2.spec$1);
+    var jsx$7 = this.generateDeclarator__Lparsing_Declarator__sc_Seq(x2.dec$1);
+    var this$1 = $m_sc_Seq$();
+    var jsx$6 = $as_sc_TraversableLike(jsx$8.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$7, this$1.ReusableCBFInstance$2));
+    var jsx$5 = this.generateOptDeclarationList__s_Option__sc_Seq(x2.decs$1);
+    var this$2 = $m_sc_Seq$();
+    var jsx$4 = $as_sc_TraversableLike(jsx$6.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$5, this$2.ReusableCBFInstance$2));
+    var jsx$3 = this.generateStatement__Lparsing_Statement__sc_Seq(x2.v$1);
+    var this$3 = $m_sc_Seq$();
+    var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$3.ReusableCBFInstance$2));
+    var jsx$1 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_NewlineOnly().init___(), new $c_Lgenerating_NewlineAndIndent().init___()]));
+    var this$4 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$4.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Declaration($in)) {
+    var x3 = $as_Lparsing_Declaration($in);
+    var jsx$10 = this.generateDeclaration__Lparsing_Declaration__sc_Seq(x3);
+    var jsx$9 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_GenString().init___T(";"), new $c_Lgenerating_NewlineAndIndent().init___()]));
+    var this$5 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$10.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$9, this$5.ReusableCBFInstance$2))
+  } else {
+    throw new $c_s_MatchError().init___O($in)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateStructDeclarator__Lparsing_StructDeclaractor__sc_Seq = (function($in) {
+  if ($is_Lparsing_StructDeclaractor1($in)) {
+    var x2 = $as_Lparsing_StructDeclaractor1($in);
+    return this.generateDeclarator__Lparsing_Declarator__sc_Seq(x2.v$1)
+  } else if ($is_Lparsing_StructDeclaractor2($in)) {
+    var x3 = $as_Lparsing_StructDeclaractor2($in);
+    var this$1 = x3.v$1;
+    if (this$1.isEmpty__Z()) {
+      var this$2 = $m_s_None$()
+    } else {
+      var arg1 = this$1.get__O();
+      var in$2 = $as_Lparsing_Declarator(arg1);
+      var this$2 = new $c_s_Some().init___O(this.generateDeclarator__Lparsing_Declarator__sc_Seq(in$2))
+    };
+    var jsx$2 = $as_sc_TraversableLike((this$2.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$2.get__O()));
+    var jsx$1 = this.generateExpression__Lparsing_Expression__sc_Seq(x3.exp$1);
+    var this$3 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$3.ReusableCBFInstance$2))
+  } else {
+    throw new $c_s_MatchError().init___O($in)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateDeclarationList__Lparsing_DeclarationList__sc_Seq = (function($in) {
   var jsx$2 = $in.v$1;
   var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
     return (function(v$2) {
-      var v = $as_Lparsing_ParameterDeclaration(v$2);
-      return $this.generate__Lparsing_ParameterDeclaration__sc_Seq(v)
+      var v = $as_Lparsing_Declaration(v$2);
+      return $this.generateBlockItem__Lparsing_BlockItem__sc_Seq(v)
     })
   })(this));
-  var this$3 = $m_sc_Seq$();
-  this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$2.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$3.ReusableCBFInstance$2)));
-  if ($in.ellipses$1) {
-    this$2.$$plus$eq__O__scm_ArrayBuffer(", ...")
-  };
-  return this$2
+  var this$1 = $m_sc_Seq$();
+  return $as_sc_Seq(jsx$2.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
 });
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_DirectDeclarator__sc_Seq = (function($in) {
+$c_Lgenerating_CGenerator.prototype.generateDeclarationSpecifiers__Lparsing_DeclarationSpecifiers__sc_Seq = (function($in) {
+  var jsx$2 = $in.v$1;
+  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(v$2) {
+      var v = $as_Lparsing_DeclarationSpecifier(v$2);
+      return $this.generateDeclarationSpecifier__Lparsing_DeclarationSpecifier__sc_Seq(v)
+    })
+  })(this));
+  var this$1 = $m_sc_Seq$();
+  return $as_sc_Seq(jsx$2.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
+});
+$c_Lgenerating_CGenerator.prototype.generateInitDeclatorList__sc_Seq__sc_Seq = (function(v) {
+  var it = v.iterator__sc_Iterator();
+  var jsx$4 = this.generateInitDeclarator__Lparsing_InitDeclarator__sc_Seq($as_Lparsing_InitDeclarator(it.next__O()));
+  var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x$2) {
+      var x = $as_Lparsing_InitDeclarator(x$2);
+      var jsx$2 = $this.GS__p1__T__sc_Seq(",");
+      var jsx$1 = $this.generateInitDeclarator__Lparsing_InitDeclarator__sc_Seq(x);
+      var this$1 = $m_sc_Seq$();
+      return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
+    })
+  })(this));
+  var jsx$3 = new $c_sc_Iterator$$anon$11().init___sc_Iterator__F1(it, f);
+  var this$2 = $m_sc_Seq$();
+  return $as_sc_Seq(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$2.ReusableCBFInstance$2))
+});
+$c_Lgenerating_CGenerator.prototype.GS__p1__T__sc_Seq = (function(v) {
+  return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_GenString().init___T(v)])))
+});
+$c_Lgenerating_CGenerator.prototype.generateInitializer__Lparsing_Initializer__sc_Seq = (function($in) {
+  if ($is_Lparsing_InitializerSimple($in)) {
+    var x2 = $as_Lparsing_InitializerSimple($in);
+    return this.generateExpression__Lparsing_Expression__sc_Seq(x2.exp$1)
+  } else if ($is_Lparsing_InitializerList($in)) {
+    var x3 = $as_Lparsing_InitializerList($in);
+    return this.generateExpression__Lparsing_Expression__sc_Seq(x3.exp__Lparsing_Expression())
+  } else {
+    throw new $c_s_MatchError().init___O($in)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateIdentifierList__sc_Seq__sc_Seq = (function($in) {
+  var it = $in.iterator__sc_Iterator();
+  var $in$1 = $as_Lparsing_Identifier(it.next__O());
+  var jsx$4 = this.GS__p1__T__sc_Seq($in$1.v$1);
+  var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x$2) {
+      var x = $as_Lparsing_Identifier(x$2);
+      var jsx$2 = $this.GS__p1__T__sc_Seq(",");
+      var jsx$1 = $this.GS__p1__T__sc_Seq(x.v$1);
+      var this$1 = $m_sc_Seq$();
+      return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
+    })
+  })(this));
+  var jsx$3 = new $c_sc_Iterator$$anon$11().init___sc_Iterator__F1(it, f);
+  var this$2 = $m_sc_Seq$();
+  return $as_sc_Seq(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$2.ReusableCBFInstance$2))
+});
+$c_Lgenerating_CGenerator.prototype.generatePPToken__Lparsing_PPToken__sc_Seq = (function($in) {
+  if ($is_Lparsing_HeaderName($in)) {
+    var x2 = $as_Lparsing_HeaderName($in);
+    return this.generateHeaderName__Lparsing_HeaderName__sc_Seq(x2)
+  } else if ($is_Lparsing_Identifier($in)) {
+    var x3 = $as_Lparsing_Identifier($in);
+    return this.GS__p1__T__sc_Seq(x3.v$1)
+  } else if ($is_Lparsing_Constant($in)) {
+    var x4 = $as_Lparsing_Constant($in);
+    return this.generateExpression__Lparsing_Expression__sc_Seq(x4)
+  } else if ($is_Lparsing_StringLiteral($in)) {
+    var x5 = $as_Lparsing_StringLiteral($in);
+    return this.generateExpression__Lparsing_Expression__sc_Seq(x5)
+  } else if ($is_Lparsing_Punctuator($in)) {
+    var x6 = $as_Lparsing_Punctuator($in);
+    return this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["P:", x6.v__T()]))
+  } else {
+    throw new $c_s_MatchError().init___O($in)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateTranslationUnit__Lparsing_TranslationUnit__sc_Seq = (function($in) {
+  var jsx$2 = $in.v$1;
+  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(v$2) {
+      var v = $as_Lparsing_Top(v$2);
+      return $this.generateTop__Lparsing_Top__sc_Seq(v)
+    })
+  })(this));
+  var this$1 = $m_sc_Seq$();
+  return $as_sc_Seq(jsx$2.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
+});
+$c_Lgenerating_CGenerator.prototype.generateBlockItem__Lparsing_BlockItem__sc_Seq = (function($in) {
+  if ($is_Lparsing_Statement($in)) {
+    var x2 = $as_Lparsing_Statement($in);
+    return this.generateStatement__Lparsing_Statement__sc_Seq(x2)
+  } else if ($is_Lparsing_Declaration($in)) {
+    var x3 = $as_Lparsing_Declaration($in);
+    return this.generateDeclaration__Lparsing_Declaration__sc_Seq(x3)
+  } else {
+    throw new $c_s_MatchError().init___O($in)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateTop__Lparsing_Top__sc_Seq = (function(x) {
+  if ($is_Lparsing_ExternalDeclaration(x)) {
+    var x2 = $as_Lparsing_ExternalDeclaration(x);
+    return this.generateExternalDeclaration__Lparsing_ExternalDeclaration__sc_Seq(x2)
+  } else if ($is_Lparsing_PreprocessingFile(x)) {
+    var x3 = $as_Lparsing_PreprocessingFile(x);
+    return this.generateGroup__Lparsing_Group__sc_Seq(x3.v$1)
+  } else {
+    throw new $c_s_MatchError().init___O(x)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateDeclaration__Lparsing_Declaration__sc_Seq = (function($in) {
+  if ($is_Lparsing_SimpleDeclaration($in)) {
+    var x2 = $as_Lparsing_SimpleDeclaration($in);
+    var jsx$4 = this.generateDeclarationSpecifiers__Lparsing_DeclarationSpecifiers__sc_Seq(x2.spec$1);
+    var this$1 = x2.init$1;
+    if (this$1.isEmpty__Z()) {
+      var this$2 = $m_s_None$()
+    } else {
+      var arg1 = this$1.get__O();
+      var v = $as_sc_Seq(arg1);
+      var this$2 = new $c_s_Some().init___O(this.generateInitDeclatorList__sc_Seq__sc_Seq(v))
+    };
+    var jsx$3 = $as_sc_GenTraversableOnce((this$2.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$2.get__O()));
+    var this$3 = $m_sc_Seq$();
+    var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$3.ReusableCBFInstance$2));
+    var jsx$1 = this.endlineIndent$1;
+    var this$4 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$4.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_StaticAssertDeclaration($in)) {
+    var x3 = $as_Lparsing_StaticAssertDeclaration($in);
+    var jsx$14 = this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["_Static_assert", "("]));
+    var jsx$13 = this.generateExpression__Lparsing_Expression__sc_Seq(x3.v1$1);
+    var this$5 = $m_sc_Seq$();
+    var jsx$12 = $as_sc_TraversableLike(jsx$14.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$13, this$5.ReusableCBFInstance$2));
+    var jsx$11 = this.GS__p1__T__sc_Seq(",");
+    var this$6 = $m_sc_Seq$();
+    var jsx$10 = $as_sc_TraversableLike(jsx$12.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$11, this$6.ReusableCBFInstance$2));
+    var jsx$9 = this.generateExpression__Lparsing_Expression__sc_Seq(x3.v2$1);
+    var this$7 = $m_sc_Seq$();
+    var jsx$8 = $as_sc_TraversableLike(jsx$10.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$9, this$7.ReusableCBFInstance$2));
+    var jsx$7 = this.GS__p1__T__sc_Seq(")");
+    var this$8 = $m_sc_Seq$();
+    var jsx$6 = $as_sc_TraversableLike(jsx$8.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$7, this$8.ReusableCBFInstance$2));
+    var jsx$5 = this.endlineIndent$1;
+    var this$9 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$6.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$5, this$9.ReusableCBFInstance$2))
+  } else {
+    throw new $c_s_MatchError().init___O($in)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateStatement__Lparsing_Statement__sc_Seq = (function($in) {
+  if ($is_Lparsing_Break($in)) {
+    var jsx$2 = this.GS__p1__T__sc_Seq("break");
+    var jsx$1 = this.endlineIndent$1;
+    var this$1 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Continue($in)) {
+    var jsx$4 = this.GS__p1__T__sc_Seq("continue");
+    var jsx$3 = this.endlineIndent$1;
+    var this$2 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$2.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Goto($in)) {
+    var x4 = $as_Lparsing_Goto($in);
+    var jsx$8 = this.GS__p1__T__sc_Seq("goto");
+    var $in$1 = x4.v$1;
+    var jsx$7 = this.GS__p1__T__sc_Seq($in$1.v$1);
+    var this$3 = $m_sc_Seq$();
+    var jsx$6 = $as_sc_TraversableLike(jsx$8.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$7, this$3.ReusableCBFInstance$2));
+    var jsx$5 = this.endlineIndent$1;
+    var this$4 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$6.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$5, this$4.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_IterationWhile($in)) {
+    var x5 = $as_Lparsing_IterationWhile($in);
+    var jsx$16 = this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["while", "("]));
+    var jsx$15 = this.generateExpression__Lparsing_Expression__sc_Seq(x5.v1$1);
+    var this$5 = $m_sc_Seq$();
+    var jsx$14 = $as_sc_TraversableLike(jsx$16.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$15, this$5.ReusableCBFInstance$2));
+    var jsx$13 = this.GS__p1__T__sc_Seq(")");
+    var this$6 = $m_sc_Seq$();
+    var jsx$12 = $as_sc_TraversableLike(jsx$14.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$13, this$6.ReusableCBFInstance$2));
+    var jsx$11 = this.newlineIndent$1;
+    var this$7 = $m_sc_Seq$();
+    var jsx$10 = $as_sc_TraversableLike(jsx$12.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$11, this$7.ReusableCBFInstance$2));
+    var jsx$9 = this.generateStatement__Lparsing_Statement__sc_Seq(x5.v2$1);
+    var this$8 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$10.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$9, this$8.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_IterationDoWhile($in)) {
+    var x6 = $as_Lparsing_IterationDoWhile($in);
+    var jsx$28 = this.GS__p1__T__sc_Seq("do");
+    var jsx$27 = this.newlineIndent$1;
+    var this$9 = $m_sc_Seq$();
+    var jsx$26 = $as_sc_TraversableLike(jsx$28.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$27, this$9.ReusableCBFInstance$2));
+    var jsx$25 = this.generateStatement__Lparsing_Statement__sc_Seq(x6.v2$1);
+    var this$10 = $m_sc_Seq$();
+    var jsx$24 = $as_sc_TraversableLike(jsx$26.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$25, this$10.ReusableCBFInstance$2));
+    var jsx$23 = this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["while", "("]));
+    var this$11 = $m_sc_Seq$();
+    var jsx$22 = $as_sc_TraversableLike(jsx$24.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$23, this$11.ReusableCBFInstance$2));
+    var jsx$21 = this.generateExpression__Lparsing_Expression__sc_Seq(x6.v1$1);
+    var this$12 = $m_sc_Seq$();
+    var jsx$20 = $as_sc_TraversableLike(jsx$22.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$21, this$12.ReusableCBFInstance$2));
+    var jsx$19 = this.GS__p1__T__sc_Seq(")");
+    var this$13 = $m_sc_Seq$();
+    var jsx$18 = $as_sc_TraversableLike(jsx$20.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$19, this$13.ReusableCBFInstance$2));
+    var jsx$17 = this.endlineIndent$1;
+    var this$14 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$18.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$17, this$14.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_IterationFor1($in)) {
+    var x7 = $as_Lparsing_IterationFor1($in);
+    var jsx$48 = this.GS__p1__T__sc_Seq("for");
+    var jsx$47 = this.GS__p1__T__sc_Seq("(");
+    var this$15 = $m_sc_Seq$();
+    var jsx$46 = $as_sc_TraversableLike(jsx$48.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$47, this$15.ReusableCBFInstance$2));
+    var this$16 = x7.v1$1;
+    if (this$16.isEmpty__Z()) {
+      var this$17 = $m_s_None$()
+    } else {
+      var arg1 = this$16.get__O();
+      var x = $as_Lparsing_Expression(arg1);
+      var this$17 = new $c_s_Some().init___O(this.generateExpression__Lparsing_Expression__sc_Seq(x))
+    };
+    var jsx$45 = $as_sc_GenTraversableOnce((this$17.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$17.get__O()));
+    var this$18 = $m_sc_Seq$();
+    var jsx$44 = $as_sc_TraversableLike(jsx$46.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$45, this$18.ReusableCBFInstance$2));
+    var jsx$43 = this.GS__p1__T__sc_Seq(";");
+    var this$19 = $m_sc_Seq$();
+    var jsx$42 = $as_sc_TraversableLike(jsx$44.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$43, this$19.ReusableCBFInstance$2));
+    var this$20 = x7.v2$1;
+    if (this$20.isEmpty__Z()) {
+      var this$21 = $m_s_None$()
+    } else {
+      var arg1$1 = this$20.get__O();
+      var x$3 = $as_Lparsing_Expression(arg1$1);
+      var this$21 = new $c_s_Some().init___O(this.generateExpression__Lparsing_Expression__sc_Seq(x$3))
+    };
+    var jsx$41 = $as_sc_GenTraversableOnce((this$21.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$21.get__O()));
+    var this$22 = $m_sc_Seq$();
+    var jsx$40 = $as_sc_TraversableLike(jsx$42.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$41, this$22.ReusableCBFInstance$2));
+    var jsx$39 = this.GS__p1__T__sc_Seq(";");
+    var this$23 = $m_sc_Seq$();
+    var jsx$38 = $as_sc_TraversableLike(jsx$40.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$39, this$23.ReusableCBFInstance$2));
+    var this$24 = x7.v3$1;
+    if (this$24.isEmpty__Z()) {
+      var this$25 = $m_s_None$()
+    } else {
+      var arg1$2 = this$24.get__O();
+      var x$4 = $as_Lparsing_Expression(arg1$2);
+      var this$25 = new $c_s_Some().init___O(this.generateExpression__Lparsing_Expression__sc_Seq(x$4))
+    };
+    var jsx$37 = $as_sc_GenTraversableOnce((this$25.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$25.get__O()));
+    var this$26 = $m_sc_Seq$();
+    var jsx$36 = $as_sc_TraversableLike(jsx$38.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$37, this$26.ReusableCBFInstance$2));
+    var jsx$35 = this.GS__p1__T__sc_Seq(")");
+    var this$27 = $m_sc_Seq$();
+    var jsx$34 = $as_sc_TraversableLike(jsx$36.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$35, this$27.ReusableCBFInstance$2));
+    var jsx$33 = this.newlineIndent$1;
+    var this$28 = $m_sc_Seq$();
+    var jsx$32 = $as_sc_TraversableLike(jsx$34.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$33, this$28.ReusableCBFInstance$2));
+    var jsx$31 = this.generateStatement__Lparsing_Statement__sc_Seq(x7.v4$1);
+    var this$29 = $m_sc_Seq$();
+    var jsx$30 = $as_sc_TraversableLike(jsx$32.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$31, this$29.ReusableCBFInstance$2));
+    var jsx$29 = this.newlineIndent$1;
+    var this$30 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$30.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$29, this$30.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_IterationFor2($in)) {
+    var x8 = $as_Lparsing_IterationFor2($in);
+    var jsx$66 = this.GS__p1__T__sc_Seq("for");
+    var jsx$65 = this.GS__p1__T__sc_Seq("(");
+    var this$31 = $m_sc_Seq$();
+    var jsx$64 = $as_sc_TraversableLike(jsx$66.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$65, this$31.ReusableCBFInstance$2));
+    var jsx$63 = this.generateDeclaration__Lparsing_Declaration__sc_Seq(x8.v$1);
+    var this$32 = $m_sc_Seq$();
+    var jsx$62 = $as_sc_TraversableLike(jsx$64.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$63, this$32.ReusableCBFInstance$2));
+    var this$33 = x8.v1$1;
+    if (this$33.isEmpty__Z()) {
+      var this$34 = $m_s_None$()
+    } else {
+      var arg1$3 = this$33.get__O();
+      var x$5 = $as_Lparsing_Expression(arg1$3);
+      var this$34 = new $c_s_Some().init___O(this.generateExpression__Lparsing_Expression__sc_Seq(x$5))
+    };
+    var jsx$61 = $as_sc_GenTraversableOnce((this$34.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$34.get__O()));
+    var this$35 = $m_sc_Seq$();
+    var jsx$60 = $as_sc_TraversableLike(jsx$62.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$61, this$35.ReusableCBFInstance$2));
+    var jsx$59 = this.GS__p1__T__sc_Seq(";");
+    var this$36 = $m_sc_Seq$();
+    var jsx$58 = $as_sc_TraversableLike(jsx$60.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$59, this$36.ReusableCBFInstance$2));
+    var this$37 = x8.v2$1;
+    if (this$37.isEmpty__Z()) {
+      var this$38 = $m_s_None$()
+    } else {
+      var arg1$4 = this$37.get__O();
+      var x$6 = $as_Lparsing_Expression(arg1$4);
+      var this$38 = new $c_s_Some().init___O(this.generateExpression__Lparsing_Expression__sc_Seq(x$6))
+    };
+    var jsx$57 = $as_sc_GenTraversableOnce((this$38.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$38.get__O()));
+    var this$39 = $m_sc_Seq$();
+    var jsx$56 = $as_sc_TraversableLike(jsx$58.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$57, this$39.ReusableCBFInstance$2));
+    var jsx$55 = this.GS__p1__T__sc_Seq(")");
+    var this$40 = $m_sc_Seq$();
+    var jsx$54 = $as_sc_TraversableLike(jsx$56.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$55, this$40.ReusableCBFInstance$2));
+    var jsx$53 = this.newlineIndent$1;
+    var this$41 = $m_sc_Seq$();
+    var jsx$52 = $as_sc_TraversableLike(jsx$54.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$53, this$41.ReusableCBFInstance$2));
+    var jsx$51 = this.generateStatement__Lparsing_Statement__sc_Seq(x8.v3$1);
+    var this$42 = $m_sc_Seq$();
+    var jsx$50 = $as_sc_TraversableLike(jsx$52.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$51, this$42.ReusableCBFInstance$2));
+    var jsx$49 = this.newlineIndent$1;
+    var this$43 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$50.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$49, this$43.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_LabelledLabel($in)) {
+    var x9 = $as_Lparsing_LabelledLabel($in);
+    var $in$2 = x9.v1$1;
+    var jsx$70 = this.GS__p1__T__sc_Seq($in$2.v$1);
+    var jsx$69 = this.GS__p1__T__sc_Seq(":");
+    var this$44 = $m_sc_Seq$();
+    var jsx$68 = $as_sc_TraversableLike(jsx$70.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$69, this$44.ReusableCBFInstance$2));
+    var jsx$67 = this.generateStatement__Lparsing_Statement__sc_Seq(x9.v2$1);
+    var this$45 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$68.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$67, this$45.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_LabelledCase($in)) {
+    var x10 = $as_Lparsing_LabelledCase($in);
+    var jsx$80 = this.GS__p1__T__sc_Seq("case");
+    var jsx$79 = this.generateExpression__Lparsing_Expression__sc_Seq(x10.v1$1);
+    var this$46 = $m_sc_Seq$();
+    var jsx$78 = $as_sc_TraversableLike(jsx$80.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$79, this$46.ReusableCBFInstance$2));
+    var jsx$77 = this.GS__p1__T__sc_Seq(":");
+    var this$47 = $m_sc_Seq$();
+    var jsx$76 = $as_sc_TraversableLike(jsx$78.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$77, this$47.ReusableCBFInstance$2));
+    var jsx$75 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_NewlineAndIndentUp().init___()]));
+    var this$48 = $m_sc_Seq$();
+    var jsx$74 = $as_sc_TraversableLike(jsx$76.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$75, this$48.ReusableCBFInstance$2));
+    var jsx$73 = this.generateStatement__Lparsing_Statement__sc_Seq(x10.v2$1);
+    var this$49 = $m_sc_Seq$();
+    var jsx$72 = $as_sc_TraversableLike(jsx$74.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$73, this$49.ReusableCBFInstance$2));
+    var jsx$71 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_IndentDown().init___()]));
+    var this$50 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$72.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$71, this$50.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_CompoundStatement($in)) {
+    var x11 = $as_Lparsing_CompoundStatement($in);
+    var it = x11.v$1.iterator__sc_Iterator();
+    $m_scm_ArrayBuffer$();
+    var this$52 = new $c_scm_ArrayBuffer().init___();
+    while (it.hasNext__Z()) {
+      this$52.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(this.generateBlockItem__Lparsing_BlockItem__sc_Seq($as_Lparsing_BlockItem(it.next__O())));
+      if (it.hasNext__Z()) {
+        this$52.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_GenString().init___T(";"), new $c_Lgenerating_NewlineAndIndent().init___()]))))
+      } else {
+        this$52.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_GenString().init___T(";")]))))
+      }
+    };
+    var this$53 = $m_sci_List$();
+    var cbf = this$53.ReusableCBFInstance$2;
+    var blockItems = $as_sci_List($f_sc_TraversableLike__to__scg_CanBuildFrom__O(this$52, cbf));
+    var jsx$89 = this.GS__p1__T__sc_Seq("{");
+    var jsx$88 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_NewlineAndIndentUp().init___()]));
+    var this$54 = $m_sc_Seq$();
+    var jsx$87 = $as_sc_TraversableLike(jsx$89.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$88, this$54.ReusableCBFInstance$2));
+    var this$55 = $m_sc_Seq$();
+    var jsx$86 = $as_sc_TraversableLike(jsx$87.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(blockItems, this$55.ReusableCBFInstance$2));
+    var jsx$85 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_NewlineAndIndentDown().init___()]));
+    var this$56 = $m_sc_Seq$();
+    var jsx$84 = $as_sc_TraversableLike(jsx$86.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$85, this$56.ReusableCBFInstance$2));
+    var jsx$83 = this.GS__p1__T__sc_Seq("}");
+    var this$57 = $m_sc_Seq$();
+    var jsx$82 = $as_sc_TraversableLike(jsx$84.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$83, this$57.ReusableCBFInstance$2));
+    var jsx$81 = this.newlineIndent$1;
+    var this$58 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$82.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$81, this$58.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionStatement($in)) {
+    var x12 = $as_Lparsing_ExpressionStatement($in);
+    var jsx$91 = this.generateExpression__Lparsing_Expression__sc_Seq(x12.expression$1);
+    var jsx$90 = this.endlineIndent$1;
+    var this$59 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$91.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$90, this$59.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_SelectionIf($in)) {
+    var x13 = $as_Lparsing_SelectionIf($in);
+    var jsx$97 = this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["if", "("]));
+    var jsx$96 = this.generateExpression__Lparsing_Expression__sc_Seq(x13.v1$1);
+    var this$60 = $m_sc_Seq$();
+    var jsx$95 = $as_sc_TraversableLike(jsx$97.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$96, this$60.ReusableCBFInstance$2));
+    var jsx$94 = this.GS__p1__T__sc_Seq(")");
+    var this$61 = $m_sc_Seq$();
+    var jsx$93 = $as_sc_TraversableLike(jsx$95.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$94, this$61.ReusableCBFInstance$2));
+    var jsx$92 = this.generateStatement__Lparsing_Statement__sc_Seq(x13.v2$1);
+    var this$62 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$93.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$92, this$62.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_SelectionIfElse($in)) {
+    var x14 = $as_Lparsing_SelectionIfElse($in);
+    var jsx$107 = this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["if", "("]));
+    var jsx$106 = this.generateExpression__Lparsing_Expression__sc_Seq(x14.v1$1);
+    var this$63 = $m_sc_Seq$();
+    var jsx$105 = $as_sc_TraversableLike(jsx$107.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$106, this$63.ReusableCBFInstance$2));
+    var jsx$104 = this.GS__p1__T__sc_Seq(")");
+    var this$64 = $m_sc_Seq$();
+    var jsx$103 = $as_sc_TraversableLike(jsx$105.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$104, this$64.ReusableCBFInstance$2));
+    var jsx$102 = this.generateStatement__Lparsing_Statement__sc_Seq(x14.v2$1);
+    var this$65 = $m_sc_Seq$();
+    var jsx$101 = $as_sc_TraversableLike(jsx$103.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$102, this$65.ReusableCBFInstance$2));
+    var jsx$100 = this.GS__p1__T__sc_Seq("else");
+    var this$66 = $m_sc_Seq$();
+    var jsx$99 = $as_sc_TraversableLike(jsx$101.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$100, this$66.ReusableCBFInstance$2));
+    var jsx$98 = this.generateStatement__Lparsing_Statement__sc_Seq(x14.v3$1);
+    var this$67 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$99.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$98, this$67.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_SelectionSwitch($in)) {
+    var x15 = $as_Lparsing_SelectionSwitch($in);
+    var jsx$113 = this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["switch", "("]));
+    var jsx$112 = this.generateExpression__Lparsing_Expression__sc_Seq(x15.v1$1);
+    var this$68 = $m_sc_Seq$();
+    var jsx$111 = $as_sc_TraversableLike(jsx$113.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$112, this$68.ReusableCBFInstance$2));
+    var jsx$110 = this.GS__p1__T__sc_Seq(")");
+    var this$69 = $m_sc_Seq$();
+    var jsx$109 = $as_sc_TraversableLike(jsx$111.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$110, this$69.ReusableCBFInstance$2));
+    var jsx$108 = this.generateStatement__Lparsing_Statement__sc_Seq(x15.v2$1);
+    var this$70 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$109.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$108, this$70.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionEmptyStatement($in)) {
+    var jsx$115 = this.newlineIndent$1;
+    var jsx$114 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_GenString().init___T(";"), new $c_Lgenerating_NewlineAndIndent().init___()]));
+    var this$71 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$115.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$114, this$71.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Return($in)) {
+    var x17 = $as_Lparsing_Return($in);
+    var x1$2 = x17.v$1;
+    if ($is_s_Some(x1$2)) {
+      var x2 = $as_s_Some(x1$2);
+      var exp = $as_Lparsing_Expression(x2.value$2);
+      var jsx$117 = this.GS__p1__T__sc_Seq("return ");
+      var jsx$116 = this.generateExpression__Lparsing_Expression__sc_Seq(exp);
+      var this$72 = $m_sc_Seq$();
+      return $as_sc_Seq(jsx$117.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$116, this$72.ReusableCBFInstance$2))
+    } else {
+      return this.GS__p1__T__sc_Seq("return")
+    }
+  } else if ($is_Lparsing_LabelledDefault($in)) {
+    var x18 = $as_Lparsing_LabelledDefault($in);
+    var jsx$123 = this.GS__p1__T__sc_Seq("default:");
+    var jsx$122 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_NewlineAndIndentUp().init___()]));
+    var this$73 = $m_sc_Seq$();
+    var jsx$121 = $as_sc_TraversableLike(jsx$123.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$122, this$73.ReusableCBFInstance$2));
+    var jsx$120 = this.generateStatement__Lparsing_Statement__sc_Seq(x18.v2$1);
+    var this$74 = $m_sc_Seq$();
+    var jsx$119 = $as_sc_TraversableLike(jsx$121.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$120, this$74.ReusableCBFInstance$2));
+    var jsx$118 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_IndentDown().init___()]));
+    var this$75 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$119.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$118, this$75.ReusableCBFInstance$2))
+  } else {
+    throw new $c_s_MatchError().init___O($in)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateGroupPart__Lparsing_GroupPart__sc_Seq = (function($in) {
+  if ($is_Lparsing_IfSection($in)) {
+    var x2 = $as_Lparsing_IfSection($in);
+    var jsx$7 = this.generateInGroup__Lparsing_IfGroup__sc_Seq(x2.ifGroup$1);
+    var this$1 = x2.elif$1;
+    if (this$1.isEmpty__Z()) {
+      var this$3 = $m_s_None$()
+    } else {
+      var arg1 = this$1.get__O();
+      var y = $as_sc_Seq(arg1);
+      var jsx$6 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+        return (function(x$2) {
+          var x = $as_Lparsing_ElifGroup(x$2);
+          return $this.generateElifGroup__Lparsing_ElifGroup__sc_Seq(x)
+        })
+      })(this));
+      var this$2 = $m_sc_Seq$();
+      var this$3 = new $c_s_Some().init___O($as_sc_Seq(y.flatMap__F1__scg_CanBuildFrom__O(jsx$6, this$2.ReusableCBFInstance$2)))
+    };
+    var jsx$5 = $as_sc_GenTraversableOnce((this$3.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$3.get__O()));
+    var this$4 = $m_sc_Seq$();
+    var jsx$4 = $as_sc_TraversableLike(jsx$7.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$5, this$4.ReusableCBFInstance$2));
+    var this$5 = x2.elseGroup$1;
+    if (this$5.isEmpty__Z()) {
+      var this$6 = $m_s_None$()
+    } else {
+      var arg1$1 = this$5.get__O();
+      var in$2 = $as_Lparsing_ElseGroup(arg1$1);
+      var this$6 = new $c_s_Some().init___O(this.generateElseGroup__Lparsing_ElseGroup__sc_Seq(in$2))
+    };
+    var jsx$3 = $as_sc_GenTraversableOnce((this$6.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$6.get__O()));
+    var this$7 = $m_sc_Seq$();
+    var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$7.ReusableCBFInstance$2));
+    var jsx$1 = this.GS__p1__T__sc_Seq("#endif");
+    var this$8 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$8.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Include($in)) {
+    var x3 = $as_Lparsing_Include($in);
+    var jsx$9 = this.GS__p1__T__sc_Seq("#include");
+    var jsx$8 = this.generatePPTokens__sc_Seq__sc_Seq(x3.v$1);
+    var this$9 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$9.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$8, this$9.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Define($in)) {
+    var x4 = $as_Lparsing_Define($in);
+    var jsx$13 = this.GS__p1__T__sc_Seq("#define");
+    var $in$2 = x4.ident$1;
+    var jsx$12 = this.GS__p1__T__sc_Seq($in$2.v$1);
+    var this$10 = $m_sc_Seq$();
+    var jsx$11 = $as_sc_TraversableLike(jsx$13.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$12, this$10.ReusableCBFInstance$2));
+    var jsx$10 = this.generateReplacementList__Lparsing_ReplacementList__sc_Seq(x4.v$1);
+    var this$11 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$11.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$10, this$11.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Define2($in)) {
+    var x5 = $as_Lparsing_Define2($in);
+    var jsx$23 = this.GS__p1__T__sc_Seq("#define");
+    var $in$3 = x5.ident$1;
+    var jsx$22 = this.GS__p1__T__sc_Seq($in$3.v$1);
+    var this$12 = $m_sc_Seq$();
+    var jsx$21 = $as_sc_TraversableLike(jsx$23.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$22, this$12.ReusableCBFInstance$2));
+    var jsx$20 = this.GS__p1__T__sc_Seq("(");
+    var this$13 = $m_sc_Seq$();
+    var jsx$19 = $as_sc_TraversableLike(jsx$21.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$20, this$13.ReusableCBFInstance$2));
+    var this$14 = x5.v$1;
+    if (this$14.isEmpty__Z()) {
+      var this$15 = $m_s_None$()
+    } else {
+      var arg1$2 = this$14.get__O();
+      var x$1 = $as_sc_Seq(arg1$2);
+      var this$15 = new $c_s_Some().init___O(this.generateIdentifierList__sc_Seq__sc_Seq(x$1))
+    };
+    var jsx$18 = $as_sc_GenTraversableOnce((this$15.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$15.get__O()));
+    var this$16 = $m_sc_Seq$();
+    var jsx$17 = $as_sc_TraversableLike(jsx$19.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$18, this$16.ReusableCBFInstance$2));
+    var jsx$16 = this.GS__p1__T__sc_Seq(")");
+    var this$17 = $m_sc_Seq$();
+    var jsx$15 = $as_sc_TraversableLike(jsx$17.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$16, this$17.ReusableCBFInstance$2));
+    var jsx$14 = this.generateReplacementList__Lparsing_ReplacementList__sc_Seq(x5.v2$1);
+    var this$18 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$15.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$14, this$18.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Define3($in)) {
+    var x6 = $as_Lparsing_Define3($in);
+    var jsx$29 = this.GS__p1__T__sc_Seq("#define");
+    var $in$4 = x6.ident$1;
+    var jsx$28 = this.GS__p1__T__sc_Seq($in$4.v$1);
+    var this$19 = $m_sc_Seq$();
+    var jsx$27 = $as_sc_TraversableLike(jsx$29.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$28, this$19.ReusableCBFInstance$2));
+    var jsx$26 = this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["(", "...", ")"]));
+    var this$20 = $m_sc_Seq$();
+    var jsx$25 = $as_sc_TraversableLike(jsx$27.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$26, this$20.ReusableCBFInstance$2));
+    var jsx$24 = this.generateReplacementList__Lparsing_ReplacementList__sc_Seq(x6.v$1);
+    var this$21 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$25.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$24, this$21.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Define4($in)) {
+    var x7 = $as_Lparsing_Define4($in);
+    var jsx$39 = this.GS__p1__T__sc_Seq("#define");
+    var $in$5 = x7.ident$1;
+    var jsx$38 = this.GS__p1__T__sc_Seq($in$5.v$1);
+    var this$22 = $m_sc_Seq$();
+    var jsx$37 = $as_sc_TraversableLike(jsx$39.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$38, this$22.ReusableCBFInstance$2));
+    var jsx$36 = this.GS__p1__T__sc_Seq("(");
+    var this$23 = $m_sc_Seq$();
+    var jsx$35 = $as_sc_TraversableLike(jsx$37.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$36, this$23.ReusableCBFInstance$2));
+    var jsx$34 = this.generateIdentifierList__sc_Seq__sc_Seq(x7.v$1);
+    var this$24 = $m_sc_Seq$();
+    var jsx$33 = $as_sc_TraversableLike(jsx$35.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$34, this$24.ReusableCBFInstance$2));
+    var jsx$32 = this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array([",", "...", ")"]));
+    var this$25 = $m_sc_Seq$();
+    var jsx$31 = $as_sc_TraversableLike(jsx$33.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$32, this$25.ReusableCBFInstance$2));
+    var jsx$30 = this.generateReplacementList__Lparsing_ReplacementList__sc_Seq(x7.v2$1);
+    var this$26 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$31.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$30, this$26.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Undef($in)) {
+    var x8 = $as_Lparsing_Undef($in);
+    var jsx$41 = this.GS__p1__T__sc_Seq("#undef");
+    var $in$6 = x8.ident$1;
+    var jsx$40 = this.GS__p1__T__sc_Seq($in$6.v$1);
+    var this$27 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$41.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$40, this$27.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Line($in)) {
+    var x9 = $as_Lparsing_Line($in);
+    var jsx$43 = this.GS__p1__T__sc_Seq("#line");
+    var jsx$42 = this.generatePPTokens__sc_Seq__sc_Seq(x9.v$1);
+    var this$28 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$43.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$42, this$28.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Error($in)) {
+    var x10 = $as_Lparsing_Error($in);
+    var jsx$46 = this.GS__p1__T__sc_Seq("#error");
+    var this$29 = x10.v$1;
+    if (this$29.isEmpty__Z()) {
+      var this$31 = $m_s_None$()
+    } else {
+      var arg1$3 = this$29.get__O();
+      var x$1$1 = $as_sc_Seq(arg1$3);
+      var jsx$45 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1) {
+        return (function($$in) {
+          var $in$7 = $as_Lparsing_PPToken($$in);
+          return $this$1.generatePPToken__Lparsing_PPToken__sc_Seq($in$7)
+        })
+      })(this));
+      var this$30 = $m_sc_Seq$();
+      var this$31 = new $c_s_Some().init___O($as_sc_Seq(x$1$1.flatMap__F1__scg_CanBuildFrom__O(jsx$45, this$30.ReusableCBFInstance$2)))
+    };
+    var jsx$44 = $as_sc_GenTraversableOnce((this$31.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$31.get__O()));
+    var this$32 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$46.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$44, this$32.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_Pragma($in)) {
+    var x11 = $as_Lparsing_Pragma($in);
+    var jsx$49 = this.GS__p1__T__sc_Seq("#pragma");
+    var this$33 = x11.v$1;
+    if (this$33.isEmpty__Z()) {
+      var this$35 = $m_s_None$()
+    } else {
+      var arg1$4 = this$33.get__O();
+      var x$2$2 = $as_sc_Seq(arg1$4);
+      var jsx$48 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$2) {
+        return (function($$in$1) {
+          var $in$8 = $as_Lparsing_PPToken($$in$1);
+          return $this$2.generatePPToken__Lparsing_PPToken__sc_Seq($in$8)
+        })
+      })(this));
+      var this$34 = $m_sc_Seq$();
+      var this$35 = new $c_s_Some().init___O($as_sc_Seq(x$2$2.flatMap__F1__scg_CanBuildFrom__O(jsx$48, this$34.ReusableCBFInstance$2)))
+    };
+    var jsx$47 = $as_sc_GenTraversableOnce((this$35.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$35.get__O()));
+    var this$36 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$49.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$47, this$36.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ControlLineEmpty($in)) {
+    return this.GS__p1__T__sc_Seq("#")
+  } else if ($is_Lparsing_NonDirective($in)) {
+    var x13 = $as_Lparsing_NonDirective($in);
+    var jsx$51 = this.GS__p1__T__sc_Seq("#");
+    var jsx$50 = this.generatePPTokens__sc_Seq__sc_Seq(x13.pp$1);
+    var this$37 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$51.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$50, this$37.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_TextLine($in)) {
+    $m_s_Predef$().assert__Z__V(false);
+    return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()))
+  } else {
+    throw new $c_s_MatchError().init___O($in)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateDeclarationSpecifier__Lparsing_DeclarationSpecifier__sc_Seq = (function($in) {
+  if ($is_Lparsing_StorageClassSpecifier($in)) {
+    var x2 = $as_Lparsing_StorageClassSpecifier($in);
+    return this.GS__p1__T__sc_Seq(x2.v$1)
+  } else if ($is_Lparsing_StructImpl($in)) {
+    var x3 = $as_Lparsing_StructImpl($in);
+    var jsx$12 = this.GS__p1__T__sc_Seq((x3.isStruct$1 ? "struct" : "union"));
+    var this$1 = x3.id$1;
+    if (this$1.isEmpty__Z()) {
+      var this$2 = $m_s_None$()
+    } else {
+      var arg1 = this$1.get__O();
+      var in$2 = $as_Lparsing_Identifier(arg1);
+      var this$2 = new $c_s_Some().init___O(this.GS__p1__T__sc_Seq(in$2.v$1))
+    };
+    var jsx$11 = $as_sc_GenTraversableOnce((this$2.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$2.get__O()));
+    var this$3 = $m_sc_Seq$();
+    var jsx$10 = $as_sc_TraversableLike(jsx$12.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$11, this$3.ReusableCBFInstance$2));
+    var jsx$9 = this.GS__p1__T__sc_Seq("{");
+    var this$4 = $m_sc_Seq$();
+    var jsx$8 = $as_sc_TraversableLike(jsx$10.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$9, this$4.ReusableCBFInstance$2));
+    var jsx$7 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_NewlineAndIndentUp().init___()]));
+    var this$5 = $m_sc_Seq$();
+    var jsx$6 = $as_sc_TraversableLike(jsx$8.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$7, this$5.ReusableCBFInstance$2));
+    var jsx$5 = this.generateStructDeclarationList__sc_Seq__sc_Seq(x3.v2$1);
+    var this$6 = $m_sc_Seq$();
+    var jsx$4 = $as_sc_TraversableLike(jsx$6.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$5, this$6.ReusableCBFInstance$2));
+    var jsx$3 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_NewlineAndIndentDown().init___()]));
+    var this$7 = $m_sc_Seq$();
+    var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$7.ReusableCBFInstance$2));
+    var jsx$1 = this.GS__p1__T__sc_Seq("}");
+    var this$8 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$8.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_StructUse($in)) {
+    var x4 = $as_Lparsing_StructUse($in);
+    var jsx$14 = this.GS__p1__T__sc_Seq((x4.isStruct$1 ? "struct" : "union"));
+    var $in$1 = x4.id$1;
+    var jsx$13 = this.GS__p1__T__sc_Seq($in$1.v$1);
+    var this$9 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$14.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$13, this$9.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_TypeSpecifierSimple($in)) {
+    var x5 = $as_Lparsing_TypeSpecifierSimple($in);
+    return this.GS__p1__T__sc_Seq(x5.v$1)
+  } else if ($is_Lparsing_TypeQualifier($in)) {
+    var x6 = $as_Lparsing_TypeQualifier($in);
+    return this.GS__p1__T__sc_Seq(x6.v$1)
+  } else if ($is_Lparsing_FunctionSpecifier($in)) {
+    var x7 = $as_Lparsing_FunctionSpecifier($in);
+    return this.GS__p1__T__sc_Seq(x7.v$1)
+  } else if ($is_Lparsing_AlignmentSpecifier($in)) {
+    var x8 = $as_Lparsing_AlignmentSpecifier($in);
+    return this.GS__p1__T__sc_Seq(x8.v$1)
+  } else {
+    throw new $c_s_MatchError().init___O($in)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateHeaderName__Lparsing_HeaderName__sc_Seq = (function(v) {
+  return this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array([(v.angularBrackets$1 ? "<" : "\""), v.v$1, (v.angularBrackets$1 ? ">" : "\"")]))
+});
+$c_Lgenerating_CGenerator.prototype.generateParameterTypeList__Lparsing_ParameterTypeList__sc_Seq = (function($in) {
+  var it = $in.v$1.iterator__sc_Iterator();
+  if (it.hasNext__Z()) {
+    $m_scm_ArrayBuffer$();
+    var this$2 = new $c_scm_ArrayBuffer().init___();
+    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(this.generateParameterDeclaration__Lparsing_ParameterDeclaration__sc_Seq($as_Lparsing_ParameterDeclaration(it.next__O())));
+    while (it.hasNext__Z()) {
+      this$2.$$plus$eq__O__scm_ArrayBuffer(new $c_Lgenerating_GenStrings().init___sc_Seq($as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([","])))));
+      this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(this.generateParameterDeclaration__Lparsing_ParameterDeclaration__sc_Seq($as_Lparsing_ParameterDeclaration(it.next__O())))
+    };
+    if ($in.ellipses$1) {
+      this$2.$$plus$eq__O__scm_ArrayBuffer(new $c_Lgenerating_GenStrings().init___sc_Seq($as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([",", "..."])))))
+    };
+    return this$2
+  } else {
+    return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()))
+  }
+});
+$c_Lgenerating_CGenerator.prototype.generateStructDeclarationList__sc_Seq__sc_Seq = (function(v) {
+  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function($$in) {
+      var $in = $as_Lparsing_StructDeclaration($$in);
+      return $this.generateStructDeclaration__Lparsing_StructDeclaration__sc_Seq($in)
+    })
+  })(this));
+  var this$1 = $m_sc_Seq$();
+  return $as_sc_Seq(v.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
+});
+$c_Lgenerating_CGenerator.prototype.generateExpression__Lparsing_Expression__sc_Seq = (function(exp) {
+  if ($is_Lparsing_ExpressionMultiply(exp)) {
+    var x2 = $as_Lparsing_ExpressionMultiply(exp);
+    var jsx$4 = this.generateExpression__Lparsing_Expression__sc_Seq(x2.v1$1);
+    var jsx$3 = this.GS__p1__T__sc_Seq("*");
+    var this$1 = $m_sc_Seq$();
+    var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$1.ReusableCBFInstance$2));
+    var jsx$1 = this.generateExpression__Lparsing_Expression__sc_Seq(x2.v2$1);
+    var this$2 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$2.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionDivision(exp)) {
+    var x3 = $as_Lparsing_ExpressionDivision(exp);
+    var jsx$8 = this.generateExpression__Lparsing_Expression__sc_Seq(x3.v1$1);
+    var jsx$7 = this.GS__p1__T__sc_Seq("/");
+    var this$3 = $m_sc_Seq$();
+    var jsx$6 = $as_sc_TraversableLike(jsx$8.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$7, this$3.ReusableCBFInstance$2));
+    var jsx$5 = this.generateExpression__Lparsing_Expression__sc_Seq(x3.v2$1);
+    var this$4 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$6.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$5, this$4.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionMod(exp)) {
+    var x4 = $as_Lparsing_ExpressionMod(exp);
+    var jsx$12 = this.generateExpression__Lparsing_Expression__sc_Seq(x4.v1$1);
+    var jsx$11 = this.GS__p1__T__sc_Seq("%");
+    var this$5 = $m_sc_Seq$();
+    var jsx$10 = $as_sc_TraversableLike(jsx$12.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$11, this$5.ReusableCBFInstance$2));
+    var jsx$9 = this.generateExpression__Lparsing_Expression__sc_Seq(x4.v2$1);
+    var this$6 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$10.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$9, this$6.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionAdd(exp)) {
+    var x5 = $as_Lparsing_ExpressionAdd(exp);
+    var jsx$16 = this.generateExpression__Lparsing_Expression__sc_Seq(x5.v1$1);
+    var jsx$15 = this.GS__p1__T__sc_Seq("+");
+    var this$7 = $m_sc_Seq$();
+    var jsx$14 = $as_sc_TraversableLike(jsx$16.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$15, this$7.ReusableCBFInstance$2));
+    var jsx$13 = this.generateExpression__Lparsing_Expression__sc_Seq(x5.v2$1);
+    var this$8 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$14.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$13, this$8.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionMinus(exp)) {
+    var x6 = $as_Lparsing_ExpressionMinus(exp);
+    var jsx$20 = this.generateExpression__Lparsing_Expression__sc_Seq(x6.v1$1);
+    var jsx$19 = this.GS__p1__T__sc_Seq("-");
+    var this$9 = $m_sc_Seq$();
+    var jsx$18 = $as_sc_TraversableLike(jsx$20.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$19, this$9.ReusableCBFInstance$2));
+    var jsx$17 = this.generateExpression__Lparsing_Expression__sc_Seq(x6.v2$1);
+    var this$10 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$18.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$17, this$10.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionLeftShift(exp)) {
+    var x7 = $as_Lparsing_ExpressionLeftShift(exp);
+    var jsx$24 = this.generateExpression__Lparsing_Expression__sc_Seq(x7.v1$1);
+    var jsx$23 = this.GS__p1__T__sc_Seq("<<");
+    var this$11 = $m_sc_Seq$();
+    var jsx$22 = $as_sc_TraversableLike(jsx$24.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$23, this$11.ReusableCBFInstance$2));
+    var jsx$21 = this.generateExpression__Lparsing_Expression__sc_Seq(x7.v2$1);
+    var this$12 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$22.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$21, this$12.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionRightShift(exp)) {
+    var x8 = $as_Lparsing_ExpressionRightShift(exp);
+    var jsx$28 = this.generateExpression__Lparsing_Expression__sc_Seq(x8.v1$1);
+    var jsx$27 = this.GS__p1__T__sc_Seq(">>");
+    var this$13 = $m_sc_Seq$();
+    var jsx$26 = $as_sc_TraversableLike(jsx$28.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$27, this$13.ReusableCBFInstance$2));
+    var jsx$25 = this.generateExpression__Lparsing_Expression__sc_Seq(x8.v2$1);
+    var this$14 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$26.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$25, this$14.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionLessThan(exp)) {
+    var x9 = $as_Lparsing_ExpressionLessThan(exp);
+    var jsx$32 = this.generateExpression__Lparsing_Expression__sc_Seq(x9.v1$1);
+    var jsx$31 = this.GS__p1__T__sc_Seq("<");
+    var this$15 = $m_sc_Seq$();
+    var jsx$30 = $as_sc_TraversableLike(jsx$32.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$31, this$15.ReusableCBFInstance$2));
+    var jsx$29 = this.generateExpression__Lparsing_Expression__sc_Seq(x9.v2$1);
+    var this$16 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$30.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$29, this$16.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionGreaterThan(exp)) {
+    var x10 = $as_Lparsing_ExpressionGreaterThan(exp);
+    var jsx$36 = this.generateExpression__Lparsing_Expression__sc_Seq(x10.v1$1);
+    var jsx$35 = this.GS__p1__T__sc_Seq(">");
+    var this$17 = $m_sc_Seq$();
+    var jsx$34 = $as_sc_TraversableLike(jsx$36.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$35, this$17.ReusableCBFInstance$2));
+    var jsx$33 = this.generateExpression__Lparsing_Expression__sc_Seq(x10.v2$1);
+    var this$18 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$34.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$33, this$18.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionLessThanOrEqual(exp)) {
+    var x11 = $as_Lparsing_ExpressionLessThanOrEqual(exp);
+    var jsx$40 = this.generateExpression__Lparsing_Expression__sc_Seq(x11.v1$1);
+    var jsx$39 = this.GS__p1__T__sc_Seq("<=");
+    var this$19 = $m_sc_Seq$();
+    var jsx$38 = $as_sc_TraversableLike(jsx$40.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$39, this$19.ReusableCBFInstance$2));
+    var jsx$37 = this.generateExpression__Lparsing_Expression__sc_Seq(x11.v2$1);
+    var this$20 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$38.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$37, this$20.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionGreaterThanOrEqual(exp)) {
+    var x12 = $as_Lparsing_ExpressionGreaterThanOrEqual(exp);
+    var jsx$44 = this.generateExpression__Lparsing_Expression__sc_Seq(x12.v1$1);
+    var jsx$43 = this.GS__p1__T__sc_Seq(">=");
+    var this$21 = $m_sc_Seq$();
+    var jsx$42 = $as_sc_TraversableLike(jsx$44.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$43, this$21.ReusableCBFInstance$2));
+    var jsx$41 = this.generateExpression__Lparsing_Expression__sc_Seq(x12.v2$1);
+    var this$22 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$42.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$41, this$22.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionEquals(exp)) {
+    var x13 = $as_Lparsing_ExpressionEquals(exp);
+    var jsx$48 = this.generateExpression__Lparsing_Expression__sc_Seq(x13.v1$1);
+    var jsx$47 = this.GS__p1__T__sc_Seq("==");
+    var this$23 = $m_sc_Seq$();
+    var jsx$46 = $as_sc_TraversableLike(jsx$48.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$47, this$23.ReusableCBFInstance$2));
+    var jsx$45 = this.generateExpression__Lparsing_Expression__sc_Seq(x13.v2$1);
+    var this$24 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$46.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$45, this$24.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionNotEquals(exp)) {
+    var x14 = $as_Lparsing_ExpressionNotEquals(exp);
+    var jsx$52 = this.generateExpression__Lparsing_Expression__sc_Seq(x14.v1$1);
+    var jsx$51 = this.GS__p1__T__sc_Seq("!=");
+    var this$25 = $m_sc_Seq$();
+    var jsx$50 = $as_sc_TraversableLike(jsx$52.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$51, this$25.ReusableCBFInstance$2));
+    var jsx$49 = this.generateExpression__Lparsing_Expression__sc_Seq(x14.v2$1);
+    var this$26 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$50.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$49, this$26.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionAnd(exp)) {
+    var x15 = $as_Lparsing_ExpressionAnd(exp);
+    var jsx$56 = this.generateExpression__Lparsing_Expression__sc_Seq(x15.v1$1);
+    var jsx$55 = this.GS__p1__T__sc_Seq("&");
+    var this$27 = $m_sc_Seq$();
+    var jsx$54 = $as_sc_TraversableLike(jsx$56.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$55, this$27.ReusableCBFInstance$2));
+    var jsx$53 = this.generateExpression__Lparsing_Expression__sc_Seq(x15.v2$1);
+    var this$28 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$54.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$53, this$28.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionXOr(exp)) {
+    var x16 = $as_Lparsing_ExpressionXOr(exp);
+    var jsx$60 = this.generateExpression__Lparsing_Expression__sc_Seq(x16.v1$1);
+    var jsx$59 = this.GS__p1__T__sc_Seq("^");
+    var this$29 = $m_sc_Seq$();
+    var jsx$58 = $as_sc_TraversableLike(jsx$60.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$59, this$29.ReusableCBFInstance$2));
+    var jsx$57 = this.generateExpression__Lparsing_Expression__sc_Seq(x16.v2$1);
+    var this$30 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$58.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$57, this$30.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionInclusiveOr(exp)) {
+    var x17 = $as_Lparsing_ExpressionInclusiveOr(exp);
+    var jsx$64 = this.generateExpression__Lparsing_Expression__sc_Seq(x17.v1$1);
+    var jsx$63 = this.GS__p1__T__sc_Seq("|");
+    var this$31 = $m_sc_Seq$();
+    var jsx$62 = $as_sc_TraversableLike(jsx$64.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$63, this$31.ReusableCBFInstance$2));
+    var jsx$61 = this.generateExpression__Lparsing_Expression__sc_Seq(x17.v2$1);
+    var this$32 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$62.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$61, this$32.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionLogicalAnd(exp)) {
+    var x18 = $as_Lparsing_ExpressionLogicalAnd(exp);
+    var jsx$68 = this.generateExpression__Lparsing_Expression__sc_Seq(x18.v1$1);
+    var jsx$67 = this.GS__p1__T__sc_Seq("&&");
+    var this$33 = $m_sc_Seq$();
+    var jsx$66 = $as_sc_TraversableLike(jsx$68.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$67, this$33.ReusableCBFInstance$2));
+    var jsx$65 = this.generateExpression__Lparsing_Expression__sc_Seq(x18.v2$1);
+    var this$34 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$66.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$65, this$34.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionLogicalOr(exp)) {
+    var x19 = $as_Lparsing_ExpressionLogicalOr(exp);
+    var jsx$72 = this.generateExpression__Lparsing_Expression__sc_Seq(x19.v1$1);
+    var jsx$71 = this.GS__p1__T__sc_Seq("||");
+    var this$35 = $m_sc_Seq$();
+    var jsx$70 = $as_sc_TraversableLike(jsx$72.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$71, this$35.ReusableCBFInstance$2));
+    var jsx$69 = this.generateExpression__Lparsing_Expression__sc_Seq(x19.v2$1);
+    var this$36 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$70.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$69, this$36.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionConditional(exp)) {
+    var x20 = $as_Lparsing_ExpressionConditional(exp);
+    var jsx$80 = this.generateExpression__Lparsing_Expression__sc_Seq(x20.v1$1);
+    var jsx$79 = this.GS__p1__T__sc_Seq("?");
+    var this$37 = $m_sc_Seq$();
+    var jsx$78 = $as_sc_TraversableLike(jsx$80.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$79, this$37.ReusableCBFInstance$2));
+    var jsx$77 = this.generateExpression__Lparsing_Expression__sc_Seq(x20.v2$1);
+    var this$38 = $m_sc_Seq$();
+    var jsx$76 = $as_sc_TraversableLike(jsx$78.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$77, this$38.ReusableCBFInstance$2));
+    var jsx$75 = this.GS__p1__T__sc_Seq(":");
+    var this$39 = $m_sc_Seq$();
+    var jsx$74 = $as_sc_TraversableLike(jsx$76.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$75, this$39.ReusableCBFInstance$2));
+    var jsx$73 = this.generateExpression__Lparsing_Expression__sc_Seq(x20.v3$1);
+    var this$40 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$74.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$73, this$40.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionComma(exp)) {
+    var x21 = $as_Lparsing_ExpressionComma(exp);
+    var jsx$84 = this.generateExpression__Lparsing_Expression__sc_Seq(x21.v1$1);
+    var jsx$83 = this.GS__p1__T__sc_Seq(",");
+    var this$41 = $m_sc_Seq$();
+    var jsx$82 = $as_sc_TraversableLike(jsx$84.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$83, this$41.ReusableCBFInstance$2));
+    var jsx$81 = this.generateExpression__Lparsing_Expression__sc_Seq(x21.v2$1);
+    var this$42 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$82.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$81, this$42.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ExpressionAssignment(exp)) {
+    var x22 = $as_Lparsing_ExpressionAssignment(exp);
+    var jsx$88 = this.generateExpression__Lparsing_Expression__sc_Seq(x22.v1$1);
+    var jsx$87 = this.GS__p1__T__sc_Seq("=");
+    var this$43 = $m_sc_Seq$();
+    var jsx$86 = $as_sc_TraversableLike(jsx$88.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$87, this$43.ReusableCBFInstance$2));
+    var jsx$85 = this.generateExpression__Lparsing_Expression__sc_Seq(x22.v2$1);
+    var this$44 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$86.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$85, this$44.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_EnumerationConstant(exp)) {
+    var x23 = $as_Lparsing_EnumerationConstant(exp);
+    return this.GS__p1__T__sc_Seq(x23.v$1)
+  } else if ($is_Lparsing_CharacterConstant(exp)) {
+    var x24 = $as_Lparsing_CharacterConstant(exp);
+    return this.GS__p1__T__sc_Seq(x24.v$1)
+  } else if ($is_Lparsing_IntConstant(exp)) {
+    var x25 = $as_Lparsing_IntConstant(exp);
+    var this$45 = x25.v$1;
+    return this.GS__p1__T__sc_Seq(("" + this$45))
+  } else if ($is_Lparsing_FloatConstant(exp)) {
+    var x26 = $as_Lparsing_FloatConstant(exp);
+    var this$47 = x26.v$1;
+    return this.GS__p1__T__sc_Seq(("" + this$47))
+  } else if ($is_Lparsing_StringLiteral(exp)) {
+    var x27 = $as_Lparsing_StringLiteral(exp);
+    return this.GS__p1__T__sc_Seq((("\"" + x27.v$1) + "\""))
+  } else if ($is_Lparsing_Identifier(exp)) {
+    var x28 = $as_Lparsing_Identifier(exp);
+    return this.GS__p1__T__sc_Seq(x28.v$1)
+  } else if ($is_Lparsing_PostfixExpressionIndex(exp)) {
+    var x29 = $as_Lparsing_PostfixExpressionIndex(exp);
+    var jsx$94 = this.generateExpression__Lparsing_Expression__sc_Seq(x29.v1$1);
+    var jsx$93 = this.GS__p1__T__sc_Seq("[");
+    var this$49 = $m_sc_Seq$();
+    var jsx$92 = $as_sc_TraversableLike(jsx$94.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$93, this$49.ReusableCBFInstance$2));
+    var jsx$91 = this.generateExpression__Lparsing_Expression__sc_Seq(x29.v2$1);
+    var this$50 = $m_sc_Seq$();
+    var jsx$90 = $as_sc_TraversableLike(jsx$92.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$91, this$50.ReusableCBFInstance$2));
+    var jsx$89 = this.GS__p1__T__sc_Seq("]");
+    var this$51 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$90.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$89, this$51.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_PostfixExpressionMinusMinus(exp)) {
+    var x30 = $as_Lparsing_PostfixExpressionMinusMinus(exp);
+    var jsx$96 = this.generateExpression__Lparsing_Expression__sc_Seq(x30.v1$1);
+    var jsx$95 = this.GS__p1__T__sc_Seq("--");
+    var this$52 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$96.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$95, this$52.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_PostfixExpressionPlusPlus(exp)) {
+    var x31 = $as_Lparsing_PostfixExpressionPlusPlus(exp);
+    var jsx$98 = this.generateExpression__Lparsing_Expression__sc_Seq(x31.v1$1);
+    var jsx$97 = this.GS__p1__T__sc_Seq("++");
+    var this$53 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$98.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$97, this$53.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_PostfixExpressionDot(exp)) {
+    var x32 = $as_Lparsing_PostfixExpressionDot(exp);
+    var jsx$102 = this.generateExpression__Lparsing_Expression__sc_Seq(x32.v1$1);
+    var jsx$101 = this.GS__p1__T__sc_Seq("->");
+    var this$54 = $m_sc_Seq$();
+    var jsx$100 = $as_sc_TraversableLike(jsx$102.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$101, this$54.ReusableCBFInstance$2));
+    var jsx$99 = this.generateExpression__Lparsing_Expression__sc_Seq(x32.v2$1);
+    var this$55 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$100.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$99, this$55.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_PostfixExpressionArrow(exp)) {
+    var x33 = $as_Lparsing_PostfixExpressionArrow(exp);
+    var jsx$106 = this.generateExpression__Lparsing_Expression__sc_Seq(x33.v1$1);
+    var jsx$105 = this.GS__p1__T__sc_Seq("->");
+    var this$56 = $m_sc_Seq$();
+    var jsx$104 = $as_sc_TraversableLike(jsx$106.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$105, this$56.ReusableCBFInstance$2));
+    var jsx$103 = this.generateExpression__Lparsing_Expression__sc_Seq(x33.v2$1);
+    var this$57 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$104.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$103, this$57.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_PostfixExpressionArgs(exp)) {
+    var x34 = $as_Lparsing_PostfixExpressionArgs(exp);
+    var jsx$112 = this.generateExpression__Lparsing_Expression__sc_Seq(x34.v1$1);
+    var jsx$111 = this.GS__p1__T__sc_Seq("(");
+    var this$58 = $m_sc_Seq$();
+    var jsx$110 = $as_sc_TraversableLike(jsx$112.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$111, this$58.ReusableCBFInstance$2));
+    var this$59 = x34.v2$1;
+    if (this$59.isEmpty__Z()) {
+      var this$60 = $m_s_None$()
+    } else {
+      var arg1 = this$59.get__O();
+      var exp$2 = $as_Lparsing_Expression(arg1);
+      var this$60 = new $c_s_Some().init___O(this.generateExpression__Lparsing_Expression__sc_Seq(exp$2))
+    };
+    var jsx$109 = $as_sc_GenTraversableOnce((this$60.isEmpty__Z() ? $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())) : this$60.get__O()));
+    var this$61 = $m_sc_Seq$();
+    var jsx$108 = $as_sc_TraversableLike(jsx$110.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$109, this$61.ReusableCBFInstance$2));
+    var jsx$107 = this.GS__p1__T__sc_Seq(")");
+    var this$62 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$108.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$107, this$62.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_PostfixExpressionSimple(exp)) {
+    var x35 = $as_Lparsing_PostfixExpressionSimple(exp);
+    return this.generateExpression__Lparsing_Expression__sc_Seq(x35.v1$1)
+  } else if ($is_Lparsing_CastExpression(exp)) {
+    var x36 = $as_Lparsing_CastExpression(exp);
+    var jsx$118 = this.GS__p1__T__sc_Seq("(");
+    var name = x36.v$1;
+    var jsx$117 = this.GS__p1__T__sc_Seq(name.v$1);
+    var this$63 = $m_sc_Seq$();
+    var jsx$116 = $as_sc_TraversableLike(jsx$118.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$117, this$63.ReusableCBFInstance$2));
+    var jsx$115 = this.GS__p1__T__sc_Seq(")");
+    var this$64 = $m_sc_Seq$();
+    var jsx$114 = $as_sc_TraversableLike(jsx$116.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$115, this$64.ReusableCBFInstance$2));
+    var jsx$113 = this.generateExpression__Lparsing_Expression__sc_Seq(x36.v2$1);
+    var this$65 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$114.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$113, this$65.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_UnaryExpressionPlusPlus(exp)) {
+    var x37 = $as_Lparsing_UnaryExpressionPlusPlus(exp);
+    var jsx$120 = this.GS__p1__T__sc_Seq("++");
+    var jsx$119 = this.generateExpression__Lparsing_Expression__sc_Seq(x37.v$1);
+    var this$66 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$120.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$119, this$66.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_UnaryExpressionMinusMinus(exp)) {
+    var x38 = $as_Lparsing_UnaryExpressionMinusMinus(exp);
+    var jsx$122 = this.GS__p1__T__sc_Seq("--");
+    var jsx$121 = this.generateExpression__Lparsing_Expression__sc_Seq(x38.v$1);
+    var this$67 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$122.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$121, this$67.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_UnaryExpressionCast(exp)) {
+    var x39 = $as_Lparsing_UnaryExpressionCast(exp);
+    var c = x39.v$1;
+    var jsx$124 = this.GS__p1__T__sc_Seq($as_T($g.String.fromCharCode(c)));
+    var jsx$123 = this.generateExpression__Lparsing_Expression__sc_Seq(x39.v2$1);
+    var this$74 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$124.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$123, this$74.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_UnaryExpressionSizeOf(exp)) {
+    var x40 = $as_Lparsing_UnaryExpressionSizeOf(exp);
+    var jsx$126 = this.GS__p1__T__sc_Seq("sizeof");
+    var jsx$125 = this.generateExpression__Lparsing_Expression__sc_Seq(x40.v$1);
+    var this$75 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$126.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$125, this$75.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_UnaryExpressionSizeOfType(exp)) {
+    var x41 = $as_Lparsing_UnaryExpressionSizeOfType(exp);
+    var jsx$130 = this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["sizeof", "("]));
+    var name$1 = x41.v$1;
+    var jsx$129 = this.GS__p1__T__sc_Seq(name$1.v$1);
+    var this$76 = $m_sc_Seq$();
+    var jsx$128 = $as_sc_TraversableLike(jsx$130.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$129, this$76.ReusableCBFInstance$2));
+    var jsx$127 = this.GS__p1__T__sc_Seq(")");
+    var this$77 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$128.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$127, this$77.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_UnaryExpressionAlignOf(exp)) {
+    var x42 = $as_Lparsing_UnaryExpressionAlignOf(exp);
+    var jsx$134 = this.GS__p1__sc_Seq__sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["_Alignof", "("]));
+    var name$2 = x42.v$1;
+    var jsx$133 = this.GS__p1__T__sc_Seq(name$2.v$1);
+    var this$78 = $m_sc_Seq$();
+    var jsx$132 = $as_sc_TraversableLike(jsx$134.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$133, this$78.ReusableCBFInstance$2));
+    var jsx$131 = this.GS__p1__T__sc_Seq(")");
+    var this$79 = $m_sc_Seq$();
+    return $as_sc_Seq(jsx$132.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$131, this$79.ReusableCBFInstance$2))
+  } else if ($is_Lparsing_ArgumentExpressionList(exp)) {
+    var x43 = $as_Lparsing_ArgumentExpressionList(exp);
+    if (x43.v$1.nonEmpty__Z()) {
+      var it = x43.v$1.iterator__sc_Iterator();
+      it.next__O();
+      var jsx$138 = this.generateExpression__Lparsing_Expression__sc_Seq($as_Lparsing_Expression(x43.v$1.head__O()));
+      var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$1) {
+        return (function(x$2) {
+          var x = $as_Lparsing_Expression(x$2);
+          var jsx$136 = this$3$1.GS__p1__T__sc_Seq(",");
+          var jsx$135 = this$3$1.generateExpression__Lparsing_Expression__sc_Seq(x);
+          var this$80 = $m_sc_Seq$();
+          return $as_sc_Seq(jsx$136.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$135, this$80.ReusableCBFInstance$2))
+        })
+      })(this));
+      var jsx$137 = new $c_sc_Iterator$$anon$11().init___sc_Iterator__F1(it, f);
+      var this$81 = $m_sc_Seq$();
+      return $as_sc_Seq(jsx$138.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$137, this$81.ReusableCBFInstance$2))
+    } else {
+      return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()))
+    }
+  } else {
+    throw new $c_s_MatchError().init___O(exp)
+  }
+});
+$c_Lgenerating_CGenerator.prototype.GS__p1__sc_Seq__sc_Seq = (function(v) {
+  return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lgenerating_GenStrings().init___sc_Seq(v)])))
+});
+$c_Lgenerating_CGenerator.prototype.generatePPTokens__sc_Seq__sc_Seq = (function($in) {
+  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(in$2$2) {
+      var in$2 = $as_Lparsing_PPToken(in$2$2);
+      return $this.generatePPToken__Lparsing_PPToken__sc_Seq(in$2)
+    })
+  })(this));
+  var this$1 = $m_sc_Seq$();
+  return $as_sc_Seq($in.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
+});
+$c_Lgenerating_CGenerator.prototype.generateDirectDeclarator__Lparsing_DirectDeclarator__sc_Seq = (function($in) {
   if ($is_Lparsing_DDBracketed($in)) {
     var x2 = $as_Lparsing_DDBracketed($in);
-    return this.generate__Lparsing_Declarator__sc_Seq(x2.declarator$1)
+    return this.generateDeclarator__Lparsing_Declarator__sc_Seq(x2.declarator$1)
   } else if ($is_Lparsing_DirectDeclaratorOnly($in)) {
     var x3 = $as_Lparsing_DirectDeclaratorOnly($in);
-    return this.generate__Lparsing_Identifier__sc_Seq(x3.v$1)
+    var $in$1 = x3.v$1;
+    return this.GS__p1__T__sc_Seq($in$1.v$1)
   } else if ($is_Lparsing_FunctionDeclaration($in)) {
     var x4 = $as_Lparsing_FunctionDeclaration($in);
-    var jsx$6 = this.generate__Lparsing_Identifier__sc_Seq(x4.name$1);
+    var $in$2 = x4.name$1;
+    var jsx$8 = this.GS__p1__T__sc_Seq($in$2.v$1);
+    var jsx$7 = this.GS__p1__T__sc_Seq("(");
     var this$1 = $m_sc_Seq$();
-    var jsx$5 = $as_sc_TraversableLike(jsx$6.$$colon$plus__O__scg_CanBuildFrom__O("(", this$1.ReusableCBFInstance$2));
-    var jsx$4 = this.generate__Lparsing_ParameterTypeList__sc_Seq(x4.params$1);
+    var jsx$6 = $as_sc_TraversableLike(jsx$8.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$7, this$1.ReusableCBFInstance$2));
+    var jsx$5 = this.generateParameterTypeList__Lparsing_ParameterTypeList__sc_Seq(x4.params$1);
     var this$2 = $m_sc_Seq$();
-    var jsx$3 = $as_sc_SeqLike(jsx$5.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$4, this$2.ReusableCBFInstance$2));
+    var jsx$4 = $as_sc_TraversableLike(jsx$6.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$5, this$2.ReusableCBFInstance$2));
+    var jsx$3 = this.GS__p1__T__sc_Seq(")");
     var this$3 = $m_sc_Seq$();
-    var jsx$2 = $as_sc_TraversableLike(jsx$3.$$colon$plus__O__scg_CanBuildFrom__O(")", this$3.ReusableCBFInstance$2));
-    var jsx$1 = this.nl$1;
+    var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$3.ReusableCBFInstance$2));
+    var jsx$1 = this.newlineIndent$1;
     var this$4 = $m_sc_Seq$();
     return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$4.ReusableCBFInstance$2))
   } else {
     throw new $c_s_MatchError().init___O($in)
   }
 });
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_Initializer__sc_Seq = (function($in) {
-  if ($is_Lparsing_InitializerSimple($in)) {
-    var x2 = $as_Lparsing_InitializerSimple($in);
-    return this.generate__Lparsing_Expression__sc_Seq(x2.exp$1)
-  } else if ($is_Lparsing_InitializerList($in)) {
-    var x3 = $as_Lparsing_InitializerList($in);
-    return this.generate__Lparsing_Expression__sc_Seq(x3.exp__Lparsing_Expression())
-  } else {
-    throw new $c_s_MatchError().init___O($in)
-  }
+$c_Lgenerating_CGenerator.prototype.generateStructDeclaratorList__Lparsing_StructDeclaratorList__sc_Seq = (function(v) {
+  var it = v.v$1.iterator__sc_Iterator();
+  var jsx$4 = this.generateStructDeclarator__Lparsing_StructDeclaractor__sc_Seq($as_Lparsing_StructDeclaractor(it.next__O()));
+  var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x$2) {
+      var x = $as_Lparsing_StructDeclaractor(x$2);
+      var jsx$2 = $this.GS__p1__T__sc_Seq(",");
+      var jsx$1 = $this.generateStructDeclarator__Lparsing_StructDeclaractor__sc_Seq(x);
+      var this$1 = $m_sc_Seq$();
+      return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
+    })
+  })(this));
+  var jsx$3 = new $c_sc_Iterator$$anon$11().init___sc_Iterator__F1(it, f);
+  var this$2 = $m_sc_Seq$();
+  return $as_sc_Seq(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$2.ReusableCBFInstance$2))
 });
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_Expression__sc_Seq = (function(exp) {
-  $m_scm_ArrayBuffer$();
-  var this$2 = new $c_scm_ArrayBuffer().init___();
-  if ($is_Lparsing_ExpressionMultiply(exp)) {
-    var x2 = $as_Lparsing_ExpressionMultiply(exp);
-    var jsx$4 = this.generate__Lparsing_Expression__sc_Seq(x2.v1$1);
-    var jsx$3 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["*"]));
-    var this$3 = $m_sc_Seq$();
-    var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$3.ReusableCBFInstance$2));
-    var jsx$1 = this.generate__Lparsing_Expression__sc_Seq(x2.v2$1);
-    var this$4 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$4.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionDivision(exp)) {
-    var x3 = $as_Lparsing_ExpressionDivision(exp);
-    var jsx$8 = this.generate__Lparsing_Expression__sc_Seq(x3.v1$1);
-    var jsx$7 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["/"]));
-    var this$5 = $m_sc_Seq$();
-    var jsx$6 = $as_sc_TraversableLike(jsx$8.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$7, this$5.ReusableCBFInstance$2));
-    var jsx$5 = this.generate__Lparsing_Expression__sc_Seq(x3.v2$1);
-    var this$6 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$6.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$5, this$6.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionMod(exp)) {
-    var x4 = $as_Lparsing_ExpressionMod(exp);
-    var jsx$12 = this.generate__Lparsing_Expression__sc_Seq(x4.v1$1);
-    var jsx$11 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["%"]));
-    var this$7 = $m_sc_Seq$();
-    var jsx$10 = $as_sc_TraversableLike(jsx$12.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$11, this$7.ReusableCBFInstance$2));
-    var jsx$9 = this.generate__Lparsing_Expression__sc_Seq(x4.v2$1);
-    var this$8 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$10.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$9, this$8.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionAdd(exp)) {
-    var x5 = $as_Lparsing_ExpressionAdd(exp);
-    var jsx$16 = this.generate__Lparsing_Expression__sc_Seq(x5.v1$1);
-    var jsx$15 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["+"]));
-    var this$9 = $m_sc_Seq$();
-    var jsx$14 = $as_sc_TraversableLike(jsx$16.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$15, this$9.ReusableCBFInstance$2));
-    var jsx$13 = this.generate__Lparsing_Expression__sc_Seq(x5.v2$1);
-    var this$10 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$14.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$13, this$10.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionMinus(exp)) {
-    var x6 = $as_Lparsing_ExpressionMinus(exp);
-    var jsx$20 = this.generate__Lparsing_Expression__sc_Seq(x6.v1$1);
-    var jsx$19 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["-"]));
-    var this$11 = $m_sc_Seq$();
-    var jsx$18 = $as_sc_TraversableLike(jsx$20.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$19, this$11.ReusableCBFInstance$2));
-    var jsx$17 = this.generate__Lparsing_Expression__sc_Seq(x6.v2$1);
-    var this$12 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$18.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$17, this$12.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionLeftShift(exp)) {
-    var x7 = $as_Lparsing_ExpressionLeftShift(exp);
-    var jsx$24 = this.generate__Lparsing_Expression__sc_Seq(x7.v1$1);
-    var jsx$23 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<<"]));
-    var this$13 = $m_sc_Seq$();
-    var jsx$22 = $as_sc_TraversableLike(jsx$24.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$23, this$13.ReusableCBFInstance$2));
-    var jsx$21 = this.generate__Lparsing_Expression__sc_Seq(x7.v2$1);
-    var this$14 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$22.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$21, this$14.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionRightShift(exp)) {
-    var x8 = $as_Lparsing_ExpressionRightShift(exp);
-    var jsx$28 = this.generate__Lparsing_Expression__sc_Seq(x8.v1$1);
-    var jsx$27 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([">>"]));
-    var this$15 = $m_sc_Seq$();
-    var jsx$26 = $as_sc_TraversableLike(jsx$28.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$27, this$15.ReusableCBFInstance$2));
-    var jsx$25 = this.generate__Lparsing_Expression__sc_Seq(x8.v2$1);
-    var this$16 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$26.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$25, this$16.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionLessThan(exp)) {
-    var x9 = $as_Lparsing_ExpressionLessThan(exp);
-    var jsx$32 = this.generate__Lparsing_Expression__sc_Seq(x9.v1$1);
-    var jsx$31 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<"]));
-    var this$17 = $m_sc_Seq$();
-    var jsx$30 = $as_sc_TraversableLike(jsx$32.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$31, this$17.ReusableCBFInstance$2));
-    var jsx$29 = this.generate__Lparsing_Expression__sc_Seq(x9.v2$1);
-    var this$18 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$30.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$29, this$18.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionGreaterThan(exp)) {
-    var x10 = $as_Lparsing_ExpressionGreaterThan(exp);
-    var jsx$36 = this.generate__Lparsing_Expression__sc_Seq(x10.v1$1);
-    var jsx$35 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([">"]));
-    var this$19 = $m_sc_Seq$();
-    var jsx$34 = $as_sc_TraversableLike(jsx$36.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$35, this$19.ReusableCBFInstance$2));
-    var jsx$33 = this.generate__Lparsing_Expression__sc_Seq(x10.v2$1);
-    var this$20 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$34.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$33, this$20.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionLessThanOrEqual(exp)) {
-    var x11 = $as_Lparsing_ExpressionLessThanOrEqual(exp);
-    var jsx$40 = this.generate__Lparsing_Expression__sc_Seq(x11.v1$1);
-    var jsx$39 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<="]));
-    var this$21 = $m_sc_Seq$();
-    var jsx$38 = $as_sc_TraversableLike(jsx$40.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$39, this$21.ReusableCBFInstance$2));
-    var jsx$37 = this.generate__Lparsing_Expression__sc_Seq(x11.v2$1);
-    var this$22 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$38.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$37, this$22.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionGreaterThanOrEqual(exp)) {
-    var x12 = $as_Lparsing_ExpressionGreaterThanOrEqual(exp);
-    var jsx$44 = this.generate__Lparsing_Expression__sc_Seq(x12.v1$1);
-    var jsx$43 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([">="]));
-    var this$23 = $m_sc_Seq$();
-    var jsx$42 = $as_sc_TraversableLike(jsx$44.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$43, this$23.ReusableCBFInstance$2));
-    var jsx$41 = this.generate__Lparsing_Expression__sc_Seq(x12.v2$1);
-    var this$24 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$42.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$41, this$24.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionEquals(exp)) {
-    var x13 = $as_Lparsing_ExpressionEquals(exp);
-    var jsx$48 = this.generate__Lparsing_Expression__sc_Seq(x13.v1$1);
-    var jsx$47 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["=="]));
-    var this$25 = $m_sc_Seq$();
-    var jsx$46 = $as_sc_TraversableLike(jsx$48.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$47, this$25.ReusableCBFInstance$2));
-    var jsx$45 = this.generate__Lparsing_Expression__sc_Seq(x13.v2$1);
-    var this$26 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$46.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$45, this$26.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionNotEquals(exp)) {
-    var x14 = $as_Lparsing_ExpressionNotEquals(exp);
-    var jsx$52 = this.generate__Lparsing_Expression__sc_Seq(x14.v1$1);
-    var jsx$51 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["!="]));
-    var this$27 = $m_sc_Seq$();
-    var jsx$50 = $as_sc_TraversableLike(jsx$52.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$51, this$27.ReusableCBFInstance$2));
-    var jsx$49 = this.generate__Lparsing_Expression__sc_Seq(x14.v2$1);
-    var this$28 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$50.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$49, this$28.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionAnd(exp)) {
-    var x15 = $as_Lparsing_ExpressionAnd(exp);
-    var jsx$56 = this.generate__Lparsing_Expression__sc_Seq(x15.v1$1);
-    var jsx$55 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["&"]));
-    var this$29 = $m_sc_Seq$();
-    var jsx$54 = $as_sc_TraversableLike(jsx$56.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$55, this$29.ReusableCBFInstance$2));
-    var jsx$53 = this.generate__Lparsing_Expression__sc_Seq(x15.v2$1);
-    var this$30 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$54.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$53, this$30.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionXOr(exp)) {
-    var x16 = $as_Lparsing_ExpressionXOr(exp);
-    var jsx$60 = this.generate__Lparsing_Expression__sc_Seq(x16.v1$1);
-    var jsx$59 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["^"]));
-    var this$31 = $m_sc_Seq$();
-    var jsx$58 = $as_sc_TraversableLike(jsx$60.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$59, this$31.ReusableCBFInstance$2));
-    var jsx$57 = this.generate__Lparsing_Expression__sc_Seq(x16.v2$1);
-    var this$32 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$58.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$57, this$32.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionInclusiveOr(exp)) {
-    var x17 = $as_Lparsing_ExpressionInclusiveOr(exp);
-    var jsx$64 = this.generate__Lparsing_Expression__sc_Seq(x17.v1$1);
-    var jsx$63 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["|"]));
-    var this$33 = $m_sc_Seq$();
-    var jsx$62 = $as_sc_TraversableLike(jsx$64.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$63, this$33.ReusableCBFInstance$2));
-    var jsx$61 = this.generate__Lparsing_Expression__sc_Seq(x17.v2$1);
-    var this$34 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$62.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$61, this$34.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionLogicalAnd(exp)) {
-    var x18 = $as_Lparsing_ExpressionLogicalAnd(exp);
-    var jsx$68 = this.generate__Lparsing_Expression__sc_Seq(x18.v1$1);
-    var jsx$67 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["&&"]));
-    var this$35 = $m_sc_Seq$();
-    var jsx$66 = $as_sc_TraversableLike(jsx$68.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$67, this$35.ReusableCBFInstance$2));
-    var jsx$65 = this.generate__Lparsing_Expression__sc_Seq(x18.v2$1);
-    var this$36 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$66.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$65, this$36.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionLogicalOr(exp)) {
-    var x19 = $as_Lparsing_ExpressionLogicalOr(exp);
-    var jsx$72 = this.generate__Lparsing_Expression__sc_Seq(x19.v1$1);
-    var jsx$71 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["||"]));
-    var this$37 = $m_sc_Seq$();
-    var jsx$70 = $as_sc_TraversableLike(jsx$72.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$71, this$37.ReusableCBFInstance$2));
-    var jsx$69 = this.generate__Lparsing_Expression__sc_Seq(x19.v2$1);
-    var this$38 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$70.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$69, this$38.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionConditional(exp)) {
-    var x20 = $as_Lparsing_ExpressionConditional(exp);
-    var jsx$80 = this.generate__Lparsing_Expression__sc_Seq(x20.v1$1);
-    var jsx$79 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["?"]));
-    var this$39 = $m_sc_Seq$();
-    var jsx$78 = $as_sc_TraversableLike(jsx$80.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$79, this$39.ReusableCBFInstance$2));
-    var jsx$77 = this.generate__Lparsing_Expression__sc_Seq(x20.v2$1);
-    var this$40 = $m_sc_Seq$();
-    var jsx$76 = $as_sc_TraversableLike(jsx$78.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$77, this$40.ReusableCBFInstance$2));
-    var jsx$75 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([":"]));
-    var this$41 = $m_sc_Seq$();
-    var jsx$74 = $as_sc_TraversableLike(jsx$76.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$75, this$41.ReusableCBFInstance$2));
-    var jsx$73 = this.generate__Lparsing_Expression__sc_Seq(x20.v3$1);
-    var this$42 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$74.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$73, this$42.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionComma(exp)) {
-    var x21 = $as_Lparsing_ExpressionComma(exp);
-    var jsx$84 = this.generate__Lparsing_Expression__sc_Seq(x21.v1$1);
-    var jsx$83 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([","]));
-    var this$43 = $m_sc_Seq$();
-    var jsx$82 = $as_sc_TraversableLike(jsx$84.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$83, this$43.ReusableCBFInstance$2));
-    var jsx$81 = this.generate__Lparsing_Expression__sc_Seq(x21.v2$1);
-    var this$44 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$82.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$81, this$44.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_ExpressionAssignment(exp)) {
-    var x22 = $as_Lparsing_ExpressionAssignment(exp);
-    var jsx$88 = this.generate__Lparsing_Expression__sc_Seq(x22.v1$1);
-    var jsx$87 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["="]));
-    var this$45 = $m_sc_Seq$();
-    var jsx$86 = $as_sc_TraversableLike(jsx$88.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$87, this$45.ReusableCBFInstance$2));
-    var jsx$85 = this.generate__Lparsing_Expression__sc_Seq(x22.v2$1);
-    var this$46 = $m_sc_Seq$();
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce(jsx$86.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$85, this$46.ReusableCBFInstance$2)))
-  } else if ($is_Lparsing_IntConstant(exp)) {
-    var x23 = $as_Lparsing_IntConstant(exp);
-    var this$47 = x23.v$1;
-    this$2.$$plus$eq__O__scm_ArrayBuffer(("" + this$47))
-  } else if ($is_Lparsing_FloatConstant(exp)) {
-    var x24 = $as_Lparsing_FloatConstant(exp);
-    var this$49 = x24.v$1;
-    this$2.$$plus$eq__O__scm_ArrayBuffer(("" + this$49))
-  } else if ($is_Lparsing_StringLiteral(exp)) {
-    var x25 = $as_Lparsing_StringLiteral(exp);
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer($as_sc_TraversableOnce($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array([(("\"" + x25.v$1) + "\"")]))))
-  } else if ($is_Lparsing_Identifier(exp)) {
-    var x26 = $as_Lparsing_Identifier(exp);
-    this$2.$$plus$eq__O__scm_ArrayBuffer(x26.v$1)
-  } else if ($is_Lparsing_PostfixExpressionIndex(exp)) {
-    var x27 = $as_Lparsing_PostfixExpressionIndex(exp);
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(this.generate__Lparsing_Expression__sc_Seq(x27.v1$1));
-    this$2.$$plus$eq__O__scm_ArrayBuffer("[");
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(this.generate__Lparsing_Expression__sc_Seq(x27.v2$1));
-    this$2.$$plus$eq__O__scm_ArrayBuffer("]")
-  } else if ($is_Lparsing_PostfixExpressionMinusMinus(exp)) {
-    var x28 = $as_Lparsing_PostfixExpressionMinusMinus(exp);
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(this.generate__Lparsing_Expression__sc_Seq(x28.v1$1));
-    this$2.$$plus$eq__O__scm_ArrayBuffer("--")
-  } else if ($is_Lparsing_PostfixExpressionPlusPlus(exp)) {
-    var x29 = $as_Lparsing_PostfixExpressionPlusPlus(exp);
-    this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(this.generate__Lparsing_Expression__sc_Seq(x29.v1$1));
-    this$2.$$plus$eq__O__scm_ArrayBuffer("++")
-  } else {
-    throw new $c_s_MatchError().init___O(exp)
-  };
-  return this$2
-});
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_Declarator__sc_Seq = (function(dec) {
-  $m_scm_ArrayBuffer$();
-  var this$2 = new $c_scm_ArrayBuffer().init___();
-  var this$3 = dec.pointer$1;
-  if ((!this$3.isEmpty__Z())) {
-    var arg1 = this$3.get__O();
-    var x$3 = $as_T(arg1);
-    new $c_s_Some().init___O(this$2.$$plus$eq__O__scm_ArrayBuffer(x$3))
-  };
-  this$2.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(this.generate__Lparsing_DirectDeclarator__sc_Seq(dec.v$1));
-  return this$2
-});
-$c_Lgenerating_CGenerator.prototype.generate__Lparsing_ExternalDeclaration__sc_Seq = (function($in) {
-  if ($is_Lparsing_FunctionDefinition($in)) {
-    var x2 = $as_Lparsing_FunctionDefinition($in);
-    var jsx$10 = this.generate__Lparsing_DeclarationSpecifiers__sc_Seq(x2.spec$1);
-    var jsx$9 = this.generate__Lparsing_Declarator__sc_Seq(x2.dec$1);
-    var this$1 = $m_sc_Seq$();
-    var jsx$8 = $as_sc_TraversableLike(jsx$10.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$9, this$1.ReusableCBFInstance$2));
-    var jsx$7 = this.generate__s_Option__sc_Seq(x2.decs$1);
-    var this$2 = $m_sc_Seq$();
-    var jsx$6 = $as_sc_TraversableLike(jsx$8.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$7, this$2.ReusableCBFInstance$2));
-    var jsx$5 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["{", this.nll$1]));
-    var this$3 = $m_sc_Seq$();
-    var jsx$4 = $as_sc_TraversableLike(jsx$6.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$5, this$3.ReusableCBFInstance$2));
-    var jsx$3 = this.generate__Lparsing_Statement__sc_Seq(x2.v$1);
-    var this$4 = $m_sc_Seq$();
-    var jsx$2 = $as_sc_TraversableLike(jsx$4.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$3, this$4.ReusableCBFInstance$2));
-    var jsx$1 = $m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["}", this.nll$1]));
-    var this$5 = $m_sc_Seq$();
-    return $as_sc_Seq(jsx$2.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(jsx$1, this$5.ReusableCBFInstance$2))
-  } else {
-    throw new $c_s_MatchError().init___O($in)
-  }
+$c_Lgenerating_CGenerator.prototype.generateSeqBlockItem__sc_Seq__sc_Seq = (function($in) {
+  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(v$2) {
+      var v = $as_Lparsing_BlockItem(v$2);
+      return $this.generateBlockItem__Lparsing_BlockItem__sc_Seq(v)
+    })
+  })(this));
+  var this$1 = $m_sc_Seq$();
+  return $as_sc_Seq($in.flatMap__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2))
 });
 var $d_Lgenerating_CGenerator = new $TypeData().initClass({
   Lgenerating_CGenerator: 0
@@ -3976,6 +4991,8 @@ function $c_Lparsing_CParser() {
   this.BinaryOpBuildWrap2$module$1 = null;
   this.TernaryOpBuildWrap$module$1 = null;
   this.Empty$module$1 = null;
+  this.preprocessingFile$1 = null;
+  this.stringLiteral$1 = null;
   this.keyword$1 = null;
   this.constant$1 = null;
   this.integerConstant$1 = null;
@@ -3996,11 +5013,9 @@ function $c_Lparsing_CParser() {
   this.enumerationConstant$1 = null;
   this.cCharSequence$1 = null;
   this.characterConstant$1 = null;
-  this.stringLiteral$1 = null;
-  this.encodingPrefix$1 = null;
   this.punctuator$1 = null;
   this.token$1 = null;
-  this.headerName$1 = null;
+  this.ppNumber$1 = null;
   this.primaryExpression$1 = null;
   this.postfixExpression$1 = null;
   this.postfixExpressionR$1 = null;
@@ -4068,7 +5083,7 @@ function $c_Lparsing_CParser() {
   this.identifierList$1 = null;
   this.typeName$1 = null;
   this.abstractDeclarator$1 = null;
-  this.directAbstractDeclarator$1 = null;
+  this.directAbstractDeclaratorHelper$1 = null;
   this.typedefName$1 = null;
   this.initializer$1 = null;
   this.initializerList$1 = null;
@@ -4093,7 +5108,6 @@ function $c_Lparsing_CParser() {
   this.functionDefinition$1 = null;
   this.externalDeclaration$1 = null;
   this.translationUnit$1 = null;
-  this.top$1 = null;
   this.bitmap$0$1 = $m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong();
   this.bitmap$1$1 = $m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong()
 }
@@ -4104,6 +5118,285 @@ function $h_Lparsing_CParser() {
   /*<skip>*/
 }
 $h_Lparsing_CParser.prototype = $c_Lparsing_CParser.prototype;
+$c_Lparsing_CParser.prototype.directAbstractDeclaratorHelper$lzycompute__p1__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$1$1;
+  var lo = (268435456 & b.lo$2);
+  if ((lo === 0)) {
+    var this$66 = this.White$1;
+    var this$55 = this.White$1;
+    var this$47 = this.White$1;
+    var this$32 = this.White$1;
+    var this$16 = this.White$1;
+    var this$6 = this.White$1;
+    var this$5 = $m_Lfastparse_noApi$();
+    var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        var this$2 = $this.White$1;
+        var this$1 = $m_Lfastparse_noApi$();
+        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("[")
+          })
+        })($this));
+        var name = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+        var jsx$33 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$2.WL$1);
+        var this$3 = $this.White$1;
+        var p0$1 = $this.typeQualifierList__Lfastparse_core_Parser();
+        var jsx$32 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1);
+        var this$4 = $m_Lfastparse_core_Implicits$Optioner$();
+        return jsx$33.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$32.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$4)), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })
+    })(this));
+    var name$1 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+    var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$5.implicitReprOps$1);
+    var jsx$34 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$6.WL$1);
+    var this$14 = $m_Lfastparse_noApi$();
+    var p$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1) {
+      return (function() {
+        var this$12 = this$2$1.White$1;
+        var this$9 = this$2$1.White$1;
+        var this$7 = this$2$1.White$1;
+        var p0$3 = this$2$1.assignmentExpression__Lfastparse_core_Parser();
+        var jsx$28 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$7.WL$1);
+        var this$8 = $m_Lfastparse_core_Implicits$Optioner$();
+        var p0$4 = jsx$28.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$8));
+        var jsx$29 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$9.WL$1);
+        var this$10 = $m_Lfastparse_noApi$();
+        var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$2) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("]")
+          })
+        })(this$2$1));
+        var name$2 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var jsx$27 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$10.implicitReprOps$1);
+        var this$11 = $m_Lfastparse_core_Implicits$Sequencer$();
+        var p0$5 = jsx$29.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$27, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$11));
+        var jsx$30 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, this$12.WL$1);
+        var jsx$26 = this$2$1.abstractDeclarator__Lfastparse_core_Parser();
+        var this$13 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$30.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$26, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$13)))
+      })
+    })(this));
+    var name$3 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+    var jsx$31 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$3.value$2, p$3, this$14.implicitReprOps$1);
+    var this$15 = $m_Lfastparse_core_Implicits$Sequencer$();
+    var p0$6 = jsx$34.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$31, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$15)));
+    var jsx$35 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, this$16.WL$1);
+    var this$24 = this.White$1;
+    var this$23 = $m_Lfastparse_noApi$();
+    var p$6 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
+      return (function() {
+        var this$20 = this$3$1.White$1;
+        var this$18 = this$3$1.White$1;
+        var this$17 = $m_Lfastparse_noApi$();
+        var p$4 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$3) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("[")
+          })
+        })(this$3$1));
+        var name$4 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var p0$7 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$4.value$2, p$4, this$17.implicitReprOps$1);
+        var jsx$23 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$7, this$18.WL$1);
+        var this$19 = $m_Lfastparse_noApi$();
+        var p$5 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$2) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("static")
+          })
+        })(this$3$1));
+        var name$5 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var p0$8 = jsx$23.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$5.value$2, p$5, this$19.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$24 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$8, this$20.WL$1);
+        var this$21 = this$3$1.White$1;
+        var p0$9 = this$3$1.typeQualifierList__Lfastparse_core_Parser();
+        var jsx$22 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$9, this$21.WL$1);
+        var this$22 = $m_Lfastparse_core_Implicits$Optioner$();
+        return jsx$24.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$22.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$22)), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })
+    })(this));
+    var name$6 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+    var p0$10 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$6.value$2, p$6, this$23.implicitReprOps$1);
+    var jsx$25 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$10, this$24.WL$1);
+    var this$30 = $m_Lfastparse_noApi$();
+    var p$8 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1) {
+      return (function() {
+        var this$28 = this$4$1.White$1;
+        var this$25 = this$4$1.White$1;
+        var p0$11 = this$4$1.assignmentExpression__Lfastparse_core_Parser();
+        var jsx$19 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$11, this$25.WL$1);
+        var this$26 = $m_Lfastparse_noApi$();
+        var p$7 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$4) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("]")
+          })
+        })(this$4$1));
+        var name$7 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var jsx$18 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$7.value$2, p$7, this$26.implicitReprOps$1);
+        var this$27 = $m_Lfastparse_core_Implicits$Sequencer$();
+        var p0$12 = jsx$19.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$18, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$27));
+        var jsx$20 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$12, this$28.WL$1);
+        var jsx$17 = this$4$1.abstractDeclarator__Lfastparse_core_Parser();
+        var this$29 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$20.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$17, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$29)))
+      })
+    })(this));
+    var name$8 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+    var jsx$21 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$8.value$2, p$8, this$30.implicitReprOps$1);
+    var this$31 = $m_Lfastparse_core_Implicits$Sequencer$();
+    var p0$13 = jsx$35.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(jsx$25.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$21, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$31))));
+    var jsx$36 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$13, this$32.WL$1);
+    var this$39 = this.White$1;
+    var this$38 = $m_Lfastparse_noApi$();
+    var p$11 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$1) {
+      return (function() {
+        var this$35 = this$5$1.White$1;
+        var this$34 = this$5$1.White$1;
+        var this$33 = $m_Lfastparse_noApi$();
+        var p$9 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$5) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("[")
+          })
+        })(this$5$1));
+        var name$9 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var p0$14 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$9.value$2, p$9, this$33.implicitReprOps$1);
+        var p0$15 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$14, this$34.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$5$1.typeQualifierList__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$15 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$15, this$35.WL$1);
+        var this$36 = $m_Lfastparse_noApi$();
+        var p$10 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$3) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("static")
+          })
+        })(this$5$1));
+        var name$10 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var jsx$14 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$10.value$2, p$10, this$36.implicitReprOps$1);
+        var this$37 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$15.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$14, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$37))
+      })
+    })(this));
+    var name$11 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+    var p0$16 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$11.value$2, p$11, this$38.implicitReprOps$1);
+    var jsx$16 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$16, this$39.WL$1);
+    var this$45 = $m_Lfastparse_noApi$();
+    var p$13 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$6$1) {
+      return (function() {
+        var this$43 = this$6$1.White$1;
+        var this$40 = this$6$1.White$1;
+        var p0$17 = this$6$1.assignmentExpression__Lfastparse_core_Parser();
+        var jsx$11 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$17, this$40.WL$1);
+        var this$41 = $m_Lfastparse_noApi$();
+        var p$12 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$6) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("]")
+          })
+        })(this$6$1));
+        var name$12 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var jsx$10 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$12.value$2, p$12, this$41.implicitReprOps$1);
+        var this$42 = $m_Lfastparse_core_Implicits$Sequencer$();
+        var p0$18 = jsx$11.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$10, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$42));
+        var jsx$12 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$18, this$43.WL$1);
+        var jsx$9 = this$6$1.abstractDeclarator__Lfastparse_core_Parser();
+        var this$44 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$12.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$9, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$44)))
+      })
+    })(this));
+    var name$13 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+    var jsx$13 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$13.value$2, p$13, this$45.implicitReprOps$1);
+    var this$46 = $m_Lfastparse_core_Implicits$Sequencer$();
+    var p0$19 = jsx$36.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(jsx$16.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$13, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$46))));
+    var jsx$37 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$19, this$47.WL$1);
+    var this$54 = $m_Lfastparse_noApi$();
+    var p$17 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$7$1) {
+      return (function() {
+        var this$53 = this$7$1.White$1;
+        var this$51 = this$7$1.White$1;
+        var this$49 = this$7$1.White$1;
+        var this$48 = $m_Lfastparse_noApi$();
+        var p$14 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$7) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("[")
+          })
+        })(this$7$1));
+        var name$14 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var p0$20 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$14.value$2, p$14, this$48.implicitReprOps$1);
+        var jsx$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$20, this$49.WL$1);
+        var this$50 = $m_Lfastparse_noApi$();
+        var p$15 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$4) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("*")
+          })
+        })(this$7$1));
+        var name$15 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var p0$21 = jsx$7.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$15.value$2, p$15, this$50.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$8 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$21, this$51.WL$1);
+        var this$52 = $m_Lfastparse_noApi$();
+        var p$16 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$2) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("]")
+          })
+        })(this$7$1));
+        var name$16 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var p0$22 = jsx$8.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$16.value$2, p$16, this$52.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$22, this$53.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$7$1.abstractDeclarator__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })
+    })(this));
+    var name$17 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+    var p0$23 = jsx$37.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$17.value$2, p$17, this$54.implicitReprOps$1));
+    var jsx$38 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$23, this$55.WL$1);
+    var this$65 = $m_Lfastparse_noApi$();
+    var p$20 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$8$1) {
+      return (function() {
+        var this$63 = this$8$1.White$1;
+        var this$60 = this$8$1.White$1;
+        var this$57 = this$8$1.White$1;
+        var this$56 = $m_Lfastparse_noApi$();
+        var p$18 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$8) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
+          })
+        })(this$8$1));
+        var name$18 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var p0$24 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$18.value$2, p$18, this$56.implicitReprOps$1);
+        var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$24, this$57.WL$1);
+        var this$58 = this$8$1.White$1;
+        var p0$25 = this$8$1.parameterTypeList__Lfastparse_core_Parser();
+        var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$25, this$58.WL$1);
+        var this$59 = $m_Lfastparse_core_Implicits$Optioner$();
+        var p0$26 = jsx$4.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$3.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$59)), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$26, this$60.WL$1);
+        var this$61 = $m_Lfastparse_noApi$();
+        var p$19 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$5) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+          })
+        })(this$8$1));
+        var name$19 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+        var jsx$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$19.value$2, p$19, this$61.implicitReprOps$1);
+        var this$62 = $m_Lfastparse_core_Implicits$Sequencer$();
+        var p0$27 = jsx$5.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$2, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$62));
+        var jsx$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$27, this$63.WL$1);
+        var jsx$1 = this$8$1.abstractDeclarator__Lfastparse_core_Parser();
+        var this$64 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$6.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$64)))
+      })
+    })(this));
+    var name$20 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+    var p0$28 = jsx$38.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$20.value$2, p$20, this$65.implicitReprOps$1));
+    var jsx$39 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$28, this$66.WL$1);
+    var this$67 = $m_Lfastparse_noApi$();
+    var p$21 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$9$1) {
+      return (function() {
+        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("")
+      })
+    })(this));
+    var name$21 = new $c_Lsourcecode_Name().init___T("directAbstractDeclaratorHelper");
+    this.directAbstractDeclaratorHelper$1 = jsx$39.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$21.value$2, p$21, this$67.implicitReprOps$1));
+    var b$1 = this.bitmap$1$1;
+    var lo$1 = (268435456 | b$1.lo$2);
+    var hi = b$1.hi$2;
+    this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+  };
+  return this.directAbstractDeclaratorHelper$1
+});
 $c_Lparsing_CParser.prototype.declarator__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
   var lo = (131072 & b.lo$2);
@@ -4122,38 +5415,59 @@ $c_Lparsing_CParser.prototype.parameterList__Lfastparse_core_Parser = (function(
     return this.parameterList$1
   }
 });
+$c_Lparsing_CParser.prototype.ifSection$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  return (ifSection$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(ifSection$lzy$1.$$undvalue$1) : this.ifSection$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1))
+});
 $c_Lparsing_CParser.prototype.structDeclaratorList$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
   var lo = (256 & b.lo$2);
   if ((lo === 0)) {
-    var this$1 = this.White$1;
-    var p0 = this.structDeclarator__Lfastparse_core_Parser();
-    var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
-    var this$7 = $m_Lfastparse_noApi$();
-    var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+    var this$10 = this.White$1;
+    var this$9 = this.White$1;
+    var this$8 = $m_Lfastparse_noApi$();
+    var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
+        var this$1 = $this.White$1;
+        var p0 = $this.structDeclarator__Lfastparse_core_Parser();
+        var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
         var this$5 = $this.White$1;
-        var this$2 = $this.White$1;
-        var p0$1 = $this.structDeclaratorList__Lfastparse_core_Parser();
-        var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$2.WL$1);
-        var this$3 = $m_Lfastparse_noApi$();
-        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+        var this$4 = $m_Lfastparse_noApi$();
+        var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
           return (function() {
-            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(",")
+            var this$3 = $this$1.White$1;
+            var this$2 = $m_Lfastparse_noApi$();
+            var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(",")
+              })
+            })($this$1));
+            var name = new $c_Lsourcecode_Name().init___T("structDeclaratorList");
+            var p0$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$2.implicitReprOps$1);
+            return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($this$1.structDeclarator__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
           })
         })($this));
-        var name = new $c_Lsourcecode_Name().init___T("structDeclaratorList");
-        var jsx$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$3.implicitReprOps$1);
-        var this$4 = $m_Lfastparse_core_Implicits$Sequencer$();
-        var p0$2 = jsx$3.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$2, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$4));
-        var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$5.WL$1);
-        var jsx$1 = $this.structDeclarator__Lfastparse_core_Parser();
-        var this$6 = $m_Lfastparse_core_Implicits$Sequencer$();
-        return jsx$4.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$6)))
+        var name$1 = new $c_Lsourcecode_Name().init___T("structDeclaratorList");
+        var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$4.implicitReprOps$1);
+        var qual$15 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$5.WL$1);
+        var x$66 = $m_Lfastparse_all$().Pass$1;
+        var this$6 = $m_Lfastparse_core_Implicits$Repeater$();
+        var jsx$1 = qual$15.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$66, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$6));
+        var this$7 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$7)))
       })
     })(this));
-    var name$1 = new $c_Lsourcecode_Name().init___T("structDeclaratorList");
-    this.structDeclaratorList$1 = jsx$5.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$7.implicitReprOps$1));
+    var name$2 = new $c_Lsourcecode_Name().init___T("structDeclaratorList");
+    var p0$3 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$8.implicitReprOps$1);
+    var p0$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$9.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("structDeclaratorList");
+    this.structDeclaratorList$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$10.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+      return (function(v$2) {
+        var v = $as_T2(v$2);
+        var x$6 = $as_Lparsing_StructDeclaractor(v.$$und1__O());
+        var jsx$3 = $as_sc_SeqLike(v.$$und2__O());
+        var this$11 = $m_sc_Seq$();
+        return new $c_Lparsing_StructDeclaratorList().init___sc_Seq($as_sc_TraversableOnce(jsx$3.$$plus$colon__O__scg_CanBuildFrom__O(x$6, this$11.ReusableCBFInstance$2)).toList__sci_List())
+      })
+    })(this)));
     var b$1 = this.bitmap$1$1;
     var lo$1 = (256 | b$1.lo$2);
     var hi = b$1.hi$2;
@@ -4168,6 +5482,48 @@ $c_Lparsing_CParser.prototype.initializer__Lfastparse_core_Parser = (function() 
     return this.initializer$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.initializer$1
+  }
+});
+$c_Lparsing_CParser.prototype.ifSection$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  if ((ifSection$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (ifSection$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(ifSection$lzy$1.$$undvalue$1)
+  } else {
+    var this$6 = $m_Lfastparse_noApi$();
+    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1) {
+      return (function() {
+        var p0 = $this.ifGroup$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1);
+        var jsx$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1$1.WL$1);
+        var p0$1 = $this.elifGroups$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1);
+        var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1$1.WL$1);
+        var this$1 = $m_Lfastparse_core_Implicits$Optioner$();
+        var jsx$4 = jsx$5.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$1));
+        var this$2 = $m_Lfastparse_core_Implicits$Sequencer$();
+        var p0$2 = jsx$6.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$4, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$2)));
+        var jsx$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1$1.WL$1);
+        var p0$3 = $this.elseGroup$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1);
+        var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, WhitePP$1$1.WL$1);
+        var this$3 = $m_Lfastparse_core_Implicits$Optioner$();
+        var jsx$2 = jsx$3.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$3));
+        var this$4 = $m_Lfastparse_core_Implicits$Sequencer$();
+        var p0$4 = jsx$7.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$2, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer2__O(this$4)));
+        var jsx$8 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, WhitePP$1$1.WL$1);
+        var jsx$1 = $this.endifLine$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$1, endifLine$lzy$1$1, newline$lzy$1$1);
+        var this$5 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$8.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer3__O(this$5)))
+      })
+    })(this, WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1));
+    var name = new $c_Lsourcecode_Name().init___T("ifSection");
+    var p0$5 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$6.implicitReprOps$1);
+    var p0$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, WhitePP$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+      return (function(v$2) {
+        var v = $as_T4(v$2);
+        return new $c_Lparsing_IfSection().init___Lparsing_IfGroup__s_Option__s_Option__Lparsing_EndifLine($as_Lparsing_IfGroup(v.$$und1$1), $as_s_Option(v.$$und2$1), $as_s_Option(v.$$und3$1), $as_Lparsing_EndifLine(v.$$und4$1))
+      })
+    })(this)));
+    return $as_Lfastparse_core_Parser(ifSection$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("ifSection")))
   }
 });
 $c_Lparsing_CParser.prototype.directDeclaratorHelper__Lfastparse_core_Parser = (function() {
@@ -4186,6 +5542,106 @@ $c_Lparsing_CParser.prototype.relationalExpressionHelper__Lfastparse_core_Parser
     return this.relationalExpressionHelper$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.relationalExpressionHelper$1
+  }
+});
+$c_Lparsing_CParser.prototype.headerName$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, headerName$lzy$1) {
+  if ((headerName$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (headerName$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(headerName$lzy$1.$$undvalue$1)
+  } else {
+    var this$7 = $m_Lfastparse_noApi$();
+    var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, WhitePP$1$1) {
+      return (function() {
+        var this$1 = $m_Lfastparse_noApi$();
+        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("<")
+          })
+        })($this));
+        var name = new $c_Lsourcecode_Name().init___T("headerName");
+        var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+        var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1$1.WL$1);
+        var this$5 = $m_Lfastparse_noApi$().CharsWhile$2;
+        var pred = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2) {
+          return (function(v$2) {
+            if ((v$2 === null)) {
+              var v = 0
+            } else {
+              var this$4 = $as_jl_Character(v$2);
+              var v = this$4.value$1
+            };
+            return (((v !== 13) && (v !== 10)) && (v !== 62))
+          })
+        })($this));
+        $m_Lfastparse_noApi$();
+        var min = 1;
+        var p0$1 = jsx$3.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$5.create__F1__I__Z__Lfastparse_parsers_Intrinsics$ElemsWhile(pred, min, true), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1$1.WL$1);
+        var this$6 = $m_Lfastparse_noApi$();
+        var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(">")
+          })
+        })($this));
+        var name$1 = new $c_Lsourcecode_Name().init___T("headerName");
+        return jsx$4.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$6.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })
+    })(this, WhitePP$1));
+    var name$2 = new $c_Lsourcecode_Name().init___T("headerName");
+    var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$7.implicitReprOps$1);
+    var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1.WL$1);
+    var this$13 = $m_Lfastparse_noApi$();
+    var p$5 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, WhitePP$1$2) {
+      return (function() {
+        var this$8 = $m_Lfastparse_noApi$();
+        var p$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$2) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("\"")
+          })
+        })(this$2$1));
+        var name$3 = new $c_Lsourcecode_Name().init___T("headerName");
+        var p0$3 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$3.value$2, p$3, this$8.implicitReprOps$1);
+        var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, WhitePP$1$2.WL$1);
+        var this$11 = $m_Lfastparse_noApi$().CharsWhile$2;
+        var pred$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$2) {
+          return (function(v$2$1) {
+            if ((v$2$1 === null)) {
+              var v$1 = 0
+            } else {
+              var this$10 = $as_jl_Character(v$2$1);
+              var v$1 = this$10.value$1
+            };
+            return (((v$1 !== 13) && (v$1 !== 10)) && (v$1 !== 34))
+          })
+        })(this$2$1));
+        $m_Lfastparse_noApi$();
+        var min$1 = 1;
+        var p0$4 = jsx$1.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$11.create__F1__I__Z__Lfastparse_parsers_Intrinsics$ElemsWhile(pred$1, min$1, true), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, WhitePP$1$2.WL$1);
+        var this$12 = $m_Lfastparse_noApi$();
+        var p$4 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$2) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("\"")
+          })
+        })(this$2$1));
+        var name$4 = new $c_Lsourcecode_Name().init___T("headerName");
+        return jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$4.value$2, p$4, this$12.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })
+    })(this, WhitePP$1));
+    var name$5 = new $c_Lsourcecode_Name().init___T("headerName");
+    var p0$5 = jsx$5.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$5.value$2, p$5, this$13.implicitReprOps$1));
+    var p0$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, WhitePP$1.WL$1).$$bang__Lfastparse_core_Parser();
+    return $as_Lfastparse_core_Parser(headerName$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, WhitePP$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$3) {
+      return (function(v$2$2) {
+        var v$3 = $as_T(v$2$2);
+        var this$15 = new $c_sci_StringOps().init___T(v$3);
+        var $$this = this$15.repr$1;
+        var endIndex = (((-1) + $uI($$this.length)) | 0);
+        return new $c_Lparsing_HeaderName().init___T__Z($as_T(v$3.substring(1, endIndex)), ((65535 & $uI(v$3.charCodeAt(0))) === 60))
+      })
+    })(this)))))
   }
 });
 $c_Lparsing_CParser.prototype.expressionHelper__Lfastparse_core_Parser = (function() {
@@ -4211,7 +5667,7 @@ $c_Lparsing_CParser.prototype.constantExpression$lzycompute__p1__Lfastparse_core
 });
 $c_Lparsing_CParser.prototype.floatingConstant__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (128 & b.lo$2);
+  var lo = (512 & b.lo$2);
   if ((lo === 0)) {
     return this.floatingConstant$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -4220,16 +5676,25 @@ $c_Lparsing_CParser.prototype.floatingConstant__Lfastparse_core_Parser = (functi
 });
 $c_Lparsing_CParser.prototype.stringLiteral__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (1048576 & b.lo$2);
+  var lo = (2 & b.lo$2);
   if ((lo === 0)) {
     return this.stringLiteral$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.stringLiteral$1
   }
 });
+$c_Lparsing_CParser.prototype.unaryExpression__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var lo = (536870912 & b.lo$2);
+  if ((lo === 0)) {
+    return this.unaryExpression$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.unaryExpression$1
+  }
+});
 $c_Lparsing_CParser.prototype.fractionalConstant$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (1024 & b.lo$2);
+  var lo = (4096 & b.lo$2);
   if ((lo === 0)) {
     var this$7 = this.White$1;
     var this$6 = this.White$1;
@@ -4265,20 +5730,11 @@ $c_Lparsing_CParser.prototype.fractionalConstant$lzycompute__p1__Lfastparse_core
       })
     })(this)));
     var b$1 = this.bitmap$0$1;
-    var lo$1 = (1024 | b$1.lo$2);
+    var lo$1 = (4096 | b$1.lo$2);
     var hi = b$1.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
   return this.fractionalConstant$1
-});
-$c_Lparsing_CParser.prototype.unaryExpression__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$0$1;
-  var lo = (536870912 & b.lo$2);
-  if ((lo === 0)) {
-    return this.unaryExpression$lzycompute__p1__Lfastparse_core_Parser()
-  } else {
-    return this.unaryExpression$1
-  }
 });
 $c_Lparsing_CParser.prototype.parameterList$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
@@ -4307,20 +5763,20 @@ $c_Lparsing_CParser.prototype.parameterList$lzycompute__p1__Lfastparse_core_Pars
     })(this));
     var name$1 = new $c_Lsourcecode_Name().init___T("parameterList");
     var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$4.implicitReprOps$1);
-    var qual$11 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$5.WL$1);
-    var x$47 = $m_Lfastparse_all$().Pass$1;
+    var qual$17 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$5.WL$1);
+    var x$74 = $m_Lfastparse_all$().Pass$1;
     var this$6 = $m_Lfastparse_core_Implicits$Repeater$();
-    var jsx$1 = qual$11.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$47, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$6));
+    var jsx$1 = qual$17.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$74, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$6));
     var this$7 = $m_Lfastparse_core_Implicits$Sequencer$();
     var p0$3 = jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$7)));
     var p0$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$8.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("parameterList");
     this.parameterList$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$9.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
       return (function(v$2) {
         var v = $as_T2(v$2);
-        var x$4 = $as_Lparsing_ParameterDeclaration(v.$$und1__O());
+        var x$7 = $as_Lparsing_ParameterDeclaration(v.$$und1__O());
         var jsx$3 = $as_sc_SeqLike(v.$$und2__O());
         var this$10 = $m_sc_Seq$();
-        return $as_sc_TraversableOnce(jsx$3.$$plus$colon__O__scg_CanBuildFrom__O(x$4, this$10.ReusableCBFInstance$2)).toList__sci_List()
+        return $as_sc_TraversableOnce(jsx$3.$$plus$colon__O__scg_CanBuildFrom__O(x$7, this$10.ReusableCBFInstance$2)).toList__sci_List()
       })
     })(this)));
     var b$1 = this.bitmap$1$1;
@@ -4332,7 +5788,7 @@ $c_Lparsing_CParser.prototype.parameterList$lzycompute__p1__Lfastparse_core_Pars
 });
 $c_Lparsing_CParser.prototype.binaryExponentPart__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (16384 & b.lo$2);
+  var lo = (65536 & b.lo$2);
   if ((lo === 0)) {
     return this.binaryExponentPart$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -4355,6 +5811,26 @@ $c_Lparsing_CParser.prototype.postfixExpression__Lfastparse_core_Parser = (funct
     return this.postfixExpression$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.postfixExpression$1
+  }
+});
+$c_Lparsing_CParser.prototype.ppTokens$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, ppTokens$lzy$1) {
+  if ((ppTokens$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (ppTokens$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(ppTokens$lzy$1.$$undvalue$1)
+  } else {
+    var qual$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(preprocessingToken$1, WhitePP$1.WL$1);
+    var x$18 = $m_Lfastparse_all$().Pass$1;
+    var this$1 = $m_Lfastparse_core_Implicits$Repeater$();
+    var p0 = qual$3.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$18, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$1));
+    var p0$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("ppTokens");
+    return $as_Lfastparse_core_Parser(ppTokens$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function(x$1$2) {
+        var x$1 = $as_sc_Seq(x$1$2);
+        return x$1.toList__sci_List()
+      })
+    })(this)))))
   }
 });
 $c_Lparsing_CParser.prototype.init___ = (function() {
@@ -4566,12 +6042,12 @@ $c_Lparsing_CParser.prototype.init___ = (function() {
           var this$71 = $m_Lfastparse_all$();
           var p$28 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(nondigit$1$1, this$71.implicitReprOps$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(universalCharacterName$1$1);
           var p$29 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$28, this$72.implicitReprOps$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(digit$1$1);
-          var qual$1 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$29, this$73.implicitReprOps$1);
-          var x$7 = qual$1.rep$default$2__Lfastparse_core_Parser();
-          var x$8 = qual$1.rep$default$3__I();
-          var x$9 = qual$1.rep$default$4__I();
+          var qual$4 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$29, this$73.implicitReprOps$1);
+          var x$22 = qual$4.rep$default$2__Lfastparse_core_Parser();
+          var x$23 = qual$4.rep$default$3__I();
+          var x$24 = qual$4.rep$default$4__I();
           var this$74 = $m_Lfastparse_core_Implicits$Repeater$();
-          var jsx$12 = qual$1.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$7, x$8, x$9, new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$74));
+          var jsx$12 = qual$4.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$22, x$23, x$24, new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$74));
           var this$75 = $m_Lfastparse_core_Implicits$Sequencer$();
           return jsx$15.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$12, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$75)))
         })
@@ -4616,11 +6092,11 @@ $c_Lparsing_CParser.prototype.init___ = (function() {
       var end$7 = new $c_jl_Character().init___C(57);
       var strings$7 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([$f_sr_IntegralProxy__to__O__sci_NumericRange$Inclusive(this$94, end$7)]);
       var p$37 = this$95.ElemIn__sc_Seq__Lfastparse_parsers_Intrinsics$ElemIn(strings$7);
-      var qual$2 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$37, this$96.implicitReprOps$1);
-      var x$11 = qual$2.rep$default$2__Lfastparse_core_Parser();
-      var x$12 = qual$2.rep$default$3__I();
-      var x$13 = qual$2.rep$default$4__I();
-      return jsx$18.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(qual$2.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$11, x$12, x$13, $m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      var qual$5 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$37, this$96.implicitReprOps$1);
+      var x$26 = qual$5.rep$default$2__Lfastparse_core_Parser();
+      var x$27 = qual$5.rep$default$3__I();
+      var x$28 = qual$5.rep$default$4__I();
+      return jsx$18.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(qual$5.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$26, x$27, x$28, $m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
     })
   })(this));
   var name$9 = new $c_Lsourcecode_Name().init___T("decimalConstant");
@@ -4652,11 +6128,11 @@ $c_Lparsing_CParser.prototype.init___ = (function() {
       var end$8 = new $c_jl_Character().init___C(55);
       var strings$8 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([$f_sr_IntegralProxy__to__O__sci_NumericRange$Inclusive(this$105, end$8)]);
       var p$42 = this$106.ElemIn__sc_Seq__Lfastparse_parsers_Intrinsics$ElemIn(strings$8);
-      var qual$3 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$42, this$107.implicitReprOps$1);
-      var x$15 = qual$3.rep$default$2__Lfastparse_core_Parser();
-      var x$16 = qual$3.rep$default$3__I();
-      var x$17 = qual$3.rep$default$4__I();
-      return jsx$19.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(qual$3.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$15, x$16, x$17, $m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      var qual$6 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$42, this$107.implicitReprOps$1);
+      var x$30 = qual$6.rep$default$2__Lfastparse_core_Parser();
+      var x$31 = qual$6.rep$default$3__I();
+      var x$32 = qual$6.rep$default$4__I();
+      return jsx$19.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(qual$6.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$30, x$31, x$32, $m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
     })
   })(this));
   var name$10 = new $c_Lsourcecode_Name().init___T("octalConstant");
@@ -4670,916 +6146,1127 @@ $c_Lparsing_CParser.prototype.init___ = (function() {
       return new $c_Lparsing_IntConstant().init___I($m_jl_Integer$().parseInt__T__I__I(v$12, 8))
     })
   })(this)));
-  var this$117 = $m_Lfastparse_all$();
-  var this$116 = $m_Lfastparse_all$();
-  var p$50 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$21$1) {
+  var this$122 = $m_Lfastparse_all$();
+  var this$121 = $m_Lfastparse_all$();
+  var p$55 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$21$1) {
     return (function() {
-      var this$115 = $m_Lfastparse_all$();
-      var jsx$20 = $m_Lfastparse_all$().parserApi__O__F1__Lfastparse_core_ParserApi("/*", new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$6) {
-        return (function(s$2$3) {
-          var s$4 = $as_T(s$2$3);
-          return $m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser(s$4)
-        })
-      })(this$21$1)));
+      var this$119 = $m_Lfastparse_all$();
       var this$114 = $m_Lfastparse_all$();
       var this$113 = $m_Lfastparse_all$();
-      var p$47 = $m_Lfastparse_all$().parserApi__O__F1__Lfastparse_core_ParserApi("*/", new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$2) {
-        return (function(s$3$2) {
-          var s$3$1 = $as_T(s$3$2);
-          return $m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser(s$3$1)
+      var p$47 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$6) {
+        return (function() {
+          return $m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser("/*")
         })
-      })(this$21$1))).unary$und$bang__Lfastparse_core_Parser();
-      var p$48 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$47, this$113.implicitReprOps$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($m_Lfastparse_all$().AnyChar$2, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var p$49 = jsx$20.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$48, this$114.implicitReprOps$1).rep__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      return new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$49, this$115.implicitReprOps$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser("*/"), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })(this$21$1));
+      var name$11 = new $c_Lsourcecode_Name().init___T("multilineComment");
+      var p$48 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$11.value$2, p$47, this$113.implicitReprOps$1);
+      var jsx$20 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$48, this$114.implicitReprOps$1);
+      var this$118 = $m_Lfastparse_all$();
+      var this$117 = $m_Lfastparse_all$();
+      var this$116 = $m_Lfastparse_all$();
+      var this$115 = $m_Lfastparse_all$();
+      var p$49 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$2) {
+        return (function() {
+          return $m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser("*/")
+        })
+      })(this$21$1));
+      var name$12 = new $c_Lsourcecode_Name().init___T("multilineComment");
+      var p$50 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$12.value$2, p$49, this$115.implicitReprOps$1);
+      var p$51 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$50, this$116.implicitReprOps$1).unary$und$bang__Lfastparse_core_Parser();
+      var p$52 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$51, this$117.implicitReprOps$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($m_Lfastparse_all$().AnyChar$2, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var p$53 = jsx$20.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$52, this$118.implicitReprOps$1).rep__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var jsx$21 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$53, this$119.implicitReprOps$1);
+      var this$120 = $m_Lfastparse_all$();
+      var p$54 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$2) {
+        return (function() {
+          return $m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser("*/")
+        })
+      })(this$21$1));
+      var name$13 = new $c_Lsourcecode_Name().init___T("multilineComment");
+      return jsx$21.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$13.value$2, p$54, this$120.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
     })
   })(this));
-  var name$11 = new $c_Lsourcecode_Name().init___T("comment");
-  var p$51 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$11.value$2, p$50, this$116.implicitReprOps$1);
-  var this$118 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$51, this$117.implicitReprOps$1);
-  var comment = this$118.opaque__T__Lfastparse_parsers_Combinators$Opaque("comment");
-  var this$127 = $m_Lfastparse_all$();
-  var this$126 = $m_Lfastparse_all$();
-  var p$57 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$22$1, comment$1) {
+  var name$14 = new $c_Lsourcecode_Name().init___T("multilineComment");
+  var p$56 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$14.value$2, p$55, this$121.implicitReprOps$1);
+  var this$123 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$56, this$122.implicitReprOps$1);
+  var multilineComment = this$123.opaque__T__Lfastparse_parsers_Combinators$Opaque("comment");
+  var this$133 = $m_Lfastparse_all$();
+  var this$132 = $m_Lfastparse_all$();
+  var p$64 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$22$1) {
     return (function() {
+      var this$130 = $m_Lfastparse_all$();
+      var this$125 = $m_Lfastparse_all$();
       var this$124 = $m_Lfastparse_all$();
-      var this$121 = $m_Lfastparse_all$();
-      var this$120 = $m_Lfastparse_all$();
-      var this$119 = $m_Lfastparse_all$();
-      var strings$9 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([$m_s_Predef$().wrapString__T__sci_WrappedString(" \t\n\r")]);
-      var p$52 = this$119.ElemIn__sc_Seq__Lfastparse_parsers_Intrinsics$ElemIn(strings$9);
-      var p$53 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$52, this$120.implicitReprOps$1).rep__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Repeater$UnitRepeater$());
-      var jsx$21 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$53, this$121.implicitReprOps$1);
-      var this$123 = $m_Lfastparse_all$();
-      var this$122 = $m_Lfastparse_all$();
-      var p$54 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$7) {
+      var p$57 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$7) {
+        return (function() {
+          return $m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser("//")
+        })
+      })(this$22$1));
+      var name$15 = new $c_Lsourcecode_Name().init___T("singleComment");
+      var p$58 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$15.value$2, p$57, this$124.implicitReprOps$1);
+      var jsx$22 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$58, this$125.implicitReprOps$1);
+      var this$129 = $m_Lfastparse_all$();
+      var this$128 = $m_Lfastparse_all$();
+      var this$127 = $m_Lfastparse_all$();
+      var this$126 = $m_Lfastparse_all$();
+      var strings$9 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([$m_s_Predef$().wrapString__T__sci_WrappedString("\n")]);
+      var p$59 = this$126.ElemIn__sc_Seq__Lfastparse_parsers_Intrinsics$ElemIn(strings$9);
+      var p$60 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$59, this$127.implicitReprOps$1).unary$und$bang__Lfastparse_core_Parser();
+      var p$61 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$60, this$128.implicitReprOps$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($m_Lfastparse_all$().AnyChar$2, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var p$62 = jsx$22.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$61, this$129.implicitReprOps$1).rep__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var jsx$23 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$62, this$130.implicitReprOps$1);
+      var this$131 = $m_Lfastparse_all$();
+      var p$63 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$3) {
+        return (function() {
+          return $m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser("\n")
+        })
+      })(this$22$1));
+      var name$16 = new $c_Lsourcecode_Name().init___T("singleComment");
+      return jsx$23.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$16.value$2, p$63, this$131.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+    })
+  })(this));
+  var name$17 = new $c_Lsourcecode_Name().init___T("singleComment");
+  var p$65 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$17.value$2, p$64, this$132.implicitReprOps$1);
+  var this$134 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$65, this$133.implicitReprOps$1);
+  var singleComment = this$134.opaque__T__Lfastparse_parsers_Combinators$Opaque("comment");
+  var this$142 = $m_Lfastparse_all$();
+  var this$141 = $m_Lfastparse_all$();
+  var this$140 = $m_Lfastparse_all$();
+  var p$69 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$23$1, multilineComment$1, singleComment$1) {
+    return (function() {
+      var this$138 = $m_Lfastparse_all$();
+      var this$136 = $m_Lfastparse_all$();
+      var this$135 = $m_Lfastparse_all$();
+      var p$66 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(singleComment$1, this$135.implicitReprOps$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(multilineComment$1);
+      var jsx$24 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$66, this$136.implicitReprOps$1);
+      var this$137 = $m_Lfastparse_all$();
+      var strings$10 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([$m_s_Predef$().wrapString__T__sci_WrappedString(" \t\n\r")]);
+      var p$67 = jsx$24.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this$137.ElemIn__sc_Seq__Lfastparse_parsers_Intrinsics$ElemIn(strings$10));
+      var jsx$25 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$67, this$138.implicitReprOps$1);
+      var this$139 = $m_Lfastparse_all$();
+      var p$68 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$8) {
         return (function() {
           return $m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser("\r\n")
         })
-      })(this$22$1));
-      var name$12 = new $c_Lsourcecode_Name().init___T("whitespace");
-      var p$55 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$12.value$2, p$54, this$122.implicitReprOps$1);
-      var p$56 = jsx$21.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$55, this$123.implicitReprOps$1).rep__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()));
-      var jsx$22 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$56, this$124.implicitReprOps$1);
-      var this$125 = $m_Lfastparse_all$();
-      return jsx$22.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(comment$1, this$125.implicitReprOps$1).rep__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()))
+      })(this$23$1));
+      var name$18 = new $c_Lsourcecode_Name().init___T("whitespace");
+      return jsx$25.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$18.value$2, p$68, this$139.implicitReprOps$1))
     })
-  })(this, comment));
-  var name$13 = new $c_Lsourcecode_Name().init___T("whitespace");
-  var p$58 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$13.value$2, p$57, this$126.implicitReprOps$1);
-  var this$128 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$58, this$127.implicitReprOps$1);
-  var whitespace = this$128.opaque__T__Lfastparse_parsers_Combinators$Opaque("whitespace");
+  })(this, multilineComment, singleComment));
+  var name$19 = new $c_Lsourcecode_Name().init___T("whitespace");
+  var p$70 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$19.value$2, p$69, this$140.implicitReprOps$1);
+  var p$71 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$70, this$141.implicitReprOps$1).rep__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Repeater$UnitRepeater$());
+  var this$143 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$71, this$142.implicitReprOps$1);
+  var whitespace = this$143.opaque__T__Lfastparse_parsers_Combinators$Opaque("whitespace");
   $m_Lfastparse_all$();
   var repr = $m_Lfastparse_all$().implicitReprOps$1;
   var WL = new $c_Lfastparse_parsers_Combinators$NoTrace().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(whitespace, repr);
   this.White$1 = new $c_Lfastparse_WhitespaceApi$Wrapper().init___Lfastparse_core_Parser(WL);
-  var this$143 = this.White$1;
-  var this$142 = $m_Lfastparse_noApi$();
-  var p$65 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$23$1) {
+  var this$158 = this.White$1;
+  var this$157 = $m_Lfastparse_noApi$();
+  var p$78 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$24$1) {
     return (function() {
-      var this$140 = this$23$1.White$1;
-      var this$138 = this$23$1.White$1;
-      var this$136 = this$23$1.White$1;
-      var this$134 = this$23$1.White$1;
-      var this$132 = this$23$1.White$1;
-      var this$131 = $m_Lfastparse_noApi$();
-      var p$59 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$8) {
+      var this$155 = this$24$1.White$1;
+      var this$153 = this$24$1.White$1;
+      var this$151 = this$24$1.White$1;
+      var this$149 = this$24$1.White$1;
+      var this$147 = this$24$1.White$1;
+      var this$146 = $m_Lfastparse_noApi$();
+      var p$72 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$9) {
         return (function() {
-          return $this$8.labeledStatement$1
+          return $this$9.labeledStatement$1
         })
-      })(this$23$1));
-      var name$14 = new $c_Lsourcecode_Name().init___T("statement");
-      var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$14.value$2, p$59, this$131.implicitReprOps$1);
-      var jsx$23 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$132.WL$1);
-      var this$133 = $m_Lfastparse_noApi$();
-      var p$60 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$3) {
+      })(this$24$1));
+      var name$20 = new $c_Lsourcecode_Name().init___T("statement");
+      var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$20.value$2, p$72, this$146.implicitReprOps$1);
+      var jsx$26 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$147.WL$1);
+      var this$148 = $m_Lfastparse_noApi$();
+      var p$73 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$4) {
         return (function() {
-          return this$2$3.compoundStatement$1
+          return this$2$4.compoundStatement$1
         })
-      })(this$23$1));
-      var name$15 = new $c_Lsourcecode_Name().init___T("statement");
-      var p0$1 = jsx$23.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$15.value$2, p$60, this$133.implicitReprOps$1));
-      var jsx$24 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$134.WL$1);
-      var this$135 = $m_Lfastparse_noApi$();
-      var p$61 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$2) {
+      })(this$24$1));
+      var name$21 = new $c_Lsourcecode_Name().init___T("statement");
+      var p0$1 = jsx$26.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$21.value$2, p$73, this$148.implicitReprOps$1));
+      var jsx$27 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$149.WL$1);
+      var this$150 = $m_Lfastparse_noApi$();
+      var p$74 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$3) {
         return (function() {
-          return this$3$2.expressionStatement$1
+          return this$3$3.expressionStatement$1
         })
-      })(this$23$1));
-      var name$16 = new $c_Lsourcecode_Name().init___T("statement");
-      var p0$2 = jsx$24.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$16.value$2, p$61, this$135.implicitReprOps$1));
-      var jsx$25 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$136.WL$1);
-      var this$137 = $m_Lfastparse_noApi$();
-      var p$62 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$2) {
+      })(this$24$1));
+      var name$22 = new $c_Lsourcecode_Name().init___T("statement");
+      var p0$2 = jsx$27.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$22.value$2, p$74, this$150.implicitReprOps$1));
+      var jsx$28 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$151.WL$1);
+      var this$152 = $m_Lfastparse_noApi$();
+      var p$75 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$2) {
         return (function() {
           return this$4$2.selectionStatement$1
         })
-      })(this$23$1));
-      var name$17 = new $c_Lsourcecode_Name().init___T("statement");
-      var p0$3 = jsx$25.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$17.value$2, p$62, this$137.implicitReprOps$1));
-      var jsx$26 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$138.WL$1);
-      var this$139 = $m_Lfastparse_noApi$();
-      var p$63 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$2) {
+      })(this$24$1));
+      var name$23 = new $c_Lsourcecode_Name().init___T("statement");
+      var p0$3 = jsx$28.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$23.value$2, p$75, this$152.implicitReprOps$1));
+      var jsx$29 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$153.WL$1);
+      var this$154 = $m_Lfastparse_noApi$();
+      var p$76 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$2) {
         return (function() {
           return this$5$2.iterationStatement$1
         })
-      })(this$23$1));
-      var name$18 = new $c_Lsourcecode_Name().init___T("statement");
-      var p0$4 = jsx$26.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$18.value$2, p$63, this$139.implicitReprOps$1));
-      var jsx$27 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$140.WL$1);
-      var this$141 = $m_Lfastparse_noApi$();
-      var p$64 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$6$2) {
+      })(this$24$1));
+      var name$24 = new $c_Lsourcecode_Name().init___T("statement");
+      var p0$4 = jsx$29.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$24.value$2, p$76, this$154.implicitReprOps$1));
+      var jsx$30 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$155.WL$1);
+      var this$156 = $m_Lfastparse_noApi$();
+      var p$77 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$6$2) {
         return (function() {
           return this$6$2.jumpStatement$1
         })
-      })(this$23$1));
-      var name$19 = new $c_Lsourcecode_Name().init___T("statement");
-      return jsx$27.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$19.value$2, p$64, this$141.implicitReprOps$1))
+      })(this$24$1));
+      var name$25 = new $c_Lsourcecode_Name().init___T("statement");
+      return jsx$30.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$25.value$2, p$77, this$156.implicitReprOps$1))
     })
   })(this));
-  var name$20 = new $c_Lsourcecode_Name().init___T("statement");
-  var p0$5 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$20.value$2, p$65, this$142.implicitReprOps$1);
-  this.statement$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, this$143.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("statement");
-  var this$149 = this.White$1;
-  var this$147 = this.White$1;
-  var this$144 = this.White$1;
-  var p0$6 = this.identifier$1;
-  var jsx$30 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, this$144.WL$1);
-  var this$145 = $m_Lfastparse_noApi$();
-  var p$66 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$24$1) {
+  var name$26 = new $c_Lsourcecode_Name().init___T("statement");
+  var p0$5 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$26.value$2, p$78, this$157.implicitReprOps$1);
+  this.statement$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, this$158.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("statement");
+  var this$175 = this.White$1;
+  var this$168 = this.White$1;
+  var this$167 = this.White$1;
+  var this$166 = $m_Lfastparse_noApi$();
+  var p$81 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$25$1) {
+    return (function() {
+      var this$164 = this$25$1.White$1;
+      var this$161 = this$25$1.White$1;
+      var this$160 = this$25$1.White$1;
+      var this$159 = $m_Lfastparse_noApi$();
+      var p$79 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$10) {
+        return (function() {
+          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("case")
+        })
+      })(this$25$1));
+      var name$27 = new $c_Lsourcecode_Name().init___T("labeledStatement");
+      var p0$6 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$27.value$2, p$79, this$159.implicitReprOps$1);
+      var p0$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, this$160.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$25$1.constantExpression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var jsx$38 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$7, this$161.WL$1);
+      var this$162 = $m_Lfastparse_noApi$();
+      var p$80 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$5) {
+        return (function() {
+          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(":")
+        })
+      })(this$25$1));
+      var name$28 = new $c_Lsourcecode_Name().init___T("labeledStatement");
+      var jsx$37 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$28.value$2, p$80, this$162.implicitReprOps$1);
+      var this$163 = $m_Lfastparse_core_Implicits$Sequencer$();
+      var p0$8 = jsx$38.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$37, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$163));
+      var jsx$39 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$8, this$164.WL$1);
+      var jsx$36 = this$25$1.statement$1;
+      var this$165 = $m_Lfastparse_core_Implicits$Sequencer$();
+      return jsx$39.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$36, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$165)))
+    })
+  })(this));
+  var name$29 = new $c_Lsourcecode_Name().init___T("labeledStatement");
+  var p0$9 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$29.value$2, p$81, this$166.implicitReprOps$1);
+  var p0$10 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$9, this$167.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$26$1) {
+    return (function(v$13$2) {
+      var v$13 = $as_T2(v$13$2);
+      return new $c_Lparsing_LabelledCase().init___Lparsing_Expression__Lparsing_Statement($as_Lparsing_Expression(v$13.$$und1__O()), $as_Lparsing_Statement(v$13.$$und2__O()))
+    })
+  })(this)));
+  var jsx$40 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$10, this$168.WL$1);
+  var this$174 = this.White$1;
+  var this$173 = $m_Lfastparse_noApi$();
+  var p$84 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$27$1) {
+    return (function() {
+      var this$172 = this$27$1.White$1;
+      var this$170 = this$27$1.White$1;
+      var this$169 = $m_Lfastparse_noApi$();
+      var p$82 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$11) {
+        return (function() {
+          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("default")
+        })
+      })(this$27$1));
+      var name$30 = new $c_Lsourcecode_Name().init___T("labeledStatement");
+      var p0$11 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$30.value$2, p$82, this$169.implicitReprOps$1);
+      var jsx$35 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$11, this$170.WL$1);
+      var this$171 = $m_Lfastparse_noApi$();
+      var p$83 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$6) {
+        return (function() {
+          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(":")
+        })
+      })(this$27$1));
+      var name$31 = new $c_Lsourcecode_Name().init___T("labeledStatement");
+      var p0$12 = jsx$35.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$31.value$2, p$83, this$171.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$12, this$172.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$27$1.statement$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+    })
+  })(this));
+  var name$32 = new $c_Lsourcecode_Name().init___T("labeledStatement");
+  var p0$13 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$32.value$2, p$84, this$173.implicitReprOps$1);
+  var p0$14 = jsx$40.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$13, this$174.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$28$1) {
+    return (function(v$14$2) {
+      var v$14 = $as_Lparsing_Statement(v$14$2);
+      return new $c_Lparsing_LabelledDefault().init___Lparsing_Statement(v$14)
+    })
+  })(this))));
+  var jsx$41 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$14, this$175.WL$1);
+  var this$181 = this.White$1;
+  var this$179 = this.White$1;
+  var this$176 = this.White$1;
+  var p0$15 = this.identifier$1;
+  var jsx$33 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$15, this$176.WL$1);
+  var this$177 = $m_Lfastparse_noApi$();
+  var p$85 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$29$1) {
     return (function() {
       return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(":")
     })
   })(this));
-  var name$21 = new $c_Lsourcecode_Name().init___T("labeledStatement");
-  var jsx$29 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$21.value$2, p$66, this$145.implicitReprOps$1);
-  var this$146 = $m_Lfastparse_core_Implicits$Sequencer$();
-  var p0$7 = jsx$30.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$29, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$146));
-  var jsx$31 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$7, this$147.WL$1);
-  var jsx$28 = this.statement$1;
-  var this$148 = $m_Lfastparse_core_Implicits$Sequencer$();
-  var p0$8 = jsx$31.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$28, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$148)));
-  this.labeledStatement$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$8, this$149.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$25$1) {
-    return (function(v$13$2) {
-      var v$13 = $as_T2(v$13$2);
-      return new $c_Lparsing_LabelledLabel().init___Lparsing_Identifier__Lparsing_Statement($as_Lparsing_Identifier(v$13.$$und1__O()), $as_Lparsing_Statement(v$13.$$und2__O()))
-    })
-  })(this)));
-  var this$159 = this.White$1;
-  var this$158 = this.White$1;
-  var this$157 = $m_Lfastparse_noApi$();
-  var p$69 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$26$1) {
-    return (function() {
-      var this$155 = this$26$1.White$1;
-      var this$152 = this$26$1.White$1;
-      var this$151 = this$26$1.White$1;
-      var this$150 = $m_Lfastparse_noApi$();
-      var p$67 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$9) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("case")
-        })
-      })(this$26$1));
-      var name$22 = new $c_Lsourcecode_Name().init___T("CParser");
-      var p0$9 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$22.value$2, p$67, this$150.implicitReprOps$1);
-      var p0$10 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$9, this$151.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$26$1.constantExpression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var jsx$35 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$10, this$152.WL$1);
-      var this$153 = $m_Lfastparse_noApi$();
-      var p$68 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$4) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(":")
-        })
-      })(this$26$1));
-      var name$23 = new $c_Lsourcecode_Name().init___T("CParser");
-      var jsx$34 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$23.value$2, p$68, this$153.implicitReprOps$1);
-      var this$154 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$11 = jsx$35.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$34, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$154));
-      var jsx$36 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$11, this$155.WL$1);
-      var jsx$33 = this$26$1.statement$1;
-      var this$156 = $m_Lfastparse_core_Implicits$Sequencer$();
-      return jsx$36.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$33, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$156)))
-    })
-  })(this));
-  var name$24 = new $c_Lsourcecode_Name().init___T("CParser");
-  var p0$12 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$24.value$2, p$69, this$157.implicitReprOps$1);
-  var p0$13 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$12, this$158.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$27$1) {
-    return (function(v$14$2) {
-      var v$14 = $as_T2(v$14$2);
-      return new $c_Lparsing_LabelledCase().init___Lparsing_Expression__Lparsing_Statement($as_Lparsing_Expression(v$14.$$und1__O()), $as_Lparsing_Statement(v$14.$$und2__O()))
-    })
-  })(this)));
-  var jsx$37 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$13, this$159.WL$1);
-  var this$165 = this.White$1;
-  var this$164 = $m_Lfastparse_noApi$();
-  var p$72 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$28$1) {
-    return (function() {
-      var this$163 = this$28$1.White$1;
-      var this$161 = this$28$1.White$1;
-      var this$160 = $m_Lfastparse_noApi$();
-      var p$70 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$10) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("default")
-        })
-      })(this$28$1));
-      var name$25 = new $c_Lsourcecode_Name().init___T("CParser");
-      var p0$14 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$25.value$2, p$70, this$160.implicitReprOps$1);
-      var jsx$32 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$14, this$161.WL$1);
-      var this$162 = $m_Lfastparse_noApi$();
-      var p$71 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$5) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(":")
-        })
-      })(this$28$1));
-      var name$26 = new $c_Lsourcecode_Name().init___T("CParser");
-      var p0$15 = jsx$32.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$26.value$2, p$71, this$162.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$15, this$163.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$28$1.statement$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
-    })
-  })(this));
-  var name$27 = new $c_Lsourcecode_Name().init___T("CParser");
-  var p0$16 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$27.value$2, p$72, this$164.implicitReprOps$1);
-  jsx$37.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$16, this$165.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$29$1) {
+  var name$33 = new $c_Lsourcecode_Name().init___T("labeledStatement");
+  var jsx$32 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$33.value$2, p$85, this$177.implicitReprOps$1);
+  var this$178 = $m_Lfastparse_core_Implicits$Sequencer$();
+  var p0$16 = jsx$33.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$32, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$178));
+  var jsx$34 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$16, this$179.WL$1);
+  var jsx$31 = this.statement$1;
+  var this$180 = $m_Lfastparse_core_Implicits$Sequencer$();
+  var p0$17 = jsx$34.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$31, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$180)));
+  this.labeledStatement$1 = jsx$41.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$17, this$181.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$30$1) {
     return (function(v$15$2) {
-      var v$15 = $as_Lparsing_Statement(v$15$2);
-      return new $c_Lparsing_LabelledDefault().init___Lparsing_Statement(v$15)
+      var v$15 = $as_T2(v$15$2);
+      return new $c_Lparsing_LabelledLabel().init___Lparsing_Identifier__Lparsing_Statement($as_Lparsing_Identifier(v$15.$$und1__O()), $as_Lparsing_Statement(v$15.$$und2__O()))
     })
   })(this))));
-  var this$172 = this.White$1;
-  var this$167 = this.White$1;
-  var this$166 = $m_Lfastparse_noApi$();
-  var p$73 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$30$1) {
+  var this$188 = this.White$1;
+  var this$183 = this.White$1;
+  var this$182 = $m_Lfastparse_noApi$();
+  var p$86 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$31$1) {
     return (function() {
       return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("{")
     })
   })(this));
-  var name$28 = new $c_Lsourcecode_Name().init___T("compoundStatement");
-  var p0$17 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$28.value$2, p$73, this$166.implicitReprOps$1);
-  var jsx$40 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$17, this$167.WL$1);
-  var this$171 = this.White$1;
-  var this$170 = this.White$1;
-  var this$168 = this.White$1;
-  var p0$18 = this.blockItemList__Lfastparse_core_Parser();
-  var jsx$39 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$18, this$168.WL$1);
-  var this$169 = $m_Lfastparse_core_Implicits$Optioner$();
-  var p0$19 = jsx$39.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$169));
-  var p0$20 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$19, this$170.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("compoundStatement");
-  var p0$21 = jsx$40.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$20, this$171.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$31$1) {
+  var name$34 = new $c_Lsourcecode_Name().init___T("compoundStatement");
+  var p0$18 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$34.value$2, p$86, this$182.implicitReprOps$1);
+  var jsx$44 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$18, this$183.WL$1);
+  var this$187 = this.White$1;
+  var this$186 = this.White$1;
+  var this$184 = this.White$1;
+  var p0$19 = this.blockItemList__Lfastparse_core_Parser();
+  var jsx$43 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$19, this$184.WL$1);
+  var this$185 = $m_Lfastparse_core_Implicits$Optioner$();
+  var p0$20 = jsx$43.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$185));
+  var p0$21 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$20, this$186.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("compoundStatement");
+  var p0$22 = jsx$44.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$21, this$187.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$32$1) {
     return (function(v$16$2) {
       var v$16 = $as_s_Option(v$16$2);
-      var $default = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$11) {
+      var $default = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$12) {
         return (function() {
           return $m_sci_Nil$()
         })
-      })(this$31$1));
+      })(this$32$1));
       return new $c_Lparsing_CompoundStatement().init___sc_Seq($as_sc_Seq((v$16.isEmpty__Z() ? $default.apply__O() : v$16.get__O())))
     })
   })(this))), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-  var jsx$41 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$21, this$172.WL$1);
-  var this$173 = $m_Lfastparse_noApi$();
-  var p$74 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$32$1) {
+  var jsx$45 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$22, this$188.WL$1);
+  var this$189 = $m_Lfastparse_noApi$();
+  var p$87 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$33$1) {
     return (function() {
       return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("}")
     })
   })(this));
-  var name$29 = new $c_Lsourcecode_Name().init___T("compoundStatement");
-  var jsx$38 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$29.value$2, p$74, this$173.implicitReprOps$1);
-  var this$174 = $m_Lfastparse_core_Implicits$Sequencer$();
-  this.compoundStatement$1 = jsx$41.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$38, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$174));
-  var this$180 = this.White$1;
-  var this$177 = this.White$1;
-  var this$175 = this.White$1;
-  var p0$22 = this.expression__Lfastparse_core_Parser();
-  var jsx$43 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$22, this$175.WL$1);
-  var this$176 = $m_Lfastparse_core_Implicits$Optioner$();
-  var p0$23 = jsx$43.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$176));
-  var jsx$44 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$23, this$177.WL$1);
-  var this$178 = $m_Lfastparse_noApi$();
-  var p$75 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$33$1) {
+  var name$35 = new $c_Lsourcecode_Name().init___T("compoundStatement");
+  var jsx$42 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$35.value$2, p$87, this$189.implicitReprOps$1);
+  var this$190 = $m_Lfastparse_core_Implicits$Sequencer$();
+  this.compoundStatement$1 = jsx$45.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$42, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$190));
+  var this$196 = this.White$1;
+  var this$193 = this.White$1;
+  var this$191 = this.White$1;
+  var p0$23 = this.expression__Lfastparse_core_Parser();
+  var jsx$47 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$23, this$191.WL$1);
+  var this$192 = $m_Lfastparse_core_Implicits$Optioner$();
+  var p0$24 = jsx$47.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$192));
+  var jsx$48 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$24, this$193.WL$1);
+  var this$194 = $m_Lfastparse_noApi$();
+  var p$88 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$34$1) {
     return (function() {
       return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
     })
   })(this));
-  var name$30 = new $c_Lsourcecode_Name().init___T("expressionStatement");
-  var jsx$42 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$30.value$2, p$75, this$178.implicitReprOps$1);
-  var this$179 = $m_Lfastparse_core_Implicits$Sequencer$();
-  var p0$24 = jsx$44.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$42, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$179));
-  this.expressionStatement$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$24, this$180.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$34$1) {
+  var name$36 = new $c_Lsourcecode_Name().init___T("expressionStatement");
+  var jsx$46 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$36.value$2, p$88, this$194.implicitReprOps$1);
+  var this$195 = $m_Lfastparse_core_Implicits$Sequencer$();
+  var p0$25 = jsx$48.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$46, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$195));
+  this.expressionStatement$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$25, this$196.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$35$1) {
     return (function(v$17$2) {
       var v$17 = $as_s_Option(v$17$2);
       return (v$17.isDefined__Z() ? new $c_Lparsing_ExpressionStatement().init___Lparsing_Expression($as_Lparsing_Expression(v$17.get__O())) : new $c_Lparsing_ExpressionEmptyStatement().init___())
     })
   })(this)));
-  var this$209 = this.White$1;
-  var this$192 = this.White$1;
-  var this$191 = this.White$1;
-  var this$190 = $m_Lfastparse_noApi$();
-  var p$79 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$35$1) {
+  var this$225 = this.White$1;
+  var this$213 = this.White$1;
+  var this$212 = this.White$1;
+  var this$211 = $m_Lfastparse_noApi$();
+  var p$93 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$36$1) {
     return (function() {
-      var this$188 = this$35$1.White$1;
-      var this$185 = this$35$1.White$1;
-      var this$184 = this$35$1.White$1;
-      var this$182 = this$35$1.White$1;
-      var this$181 = $m_Lfastparse_noApi$();
-      var p$76 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$12) {
+      var this$209 = this$36$1.White$1;
+      var this$206 = this$36$1.White$1;
+      var this$204 = this$36$1.White$1;
+      var this$201 = this$36$1.White$1;
+      var this$200 = this$36$1.White$1;
+      var this$198 = this$36$1.White$1;
+      var this$197 = $m_Lfastparse_noApi$();
+      var p$89 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$13) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("if")
         })
-      })(this$35$1));
-      var name$31 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-      var p0$25 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$31.value$2, p$76, this$181.implicitReprOps$1);
-      var jsx$61 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$25, this$182.WL$1);
-      var this$183 = $m_Lfastparse_noApi$();
-      var p$77 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$6) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
-        })
-      })(this$35$1));
-      var name$32 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-      var p0$26 = jsx$61.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$32.value$2, p$77, this$183.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var p0$27 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$26, this$184.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$35$1.expression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var jsx$62 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$27, this$185.WL$1);
-      var this$186 = $m_Lfastparse_noApi$();
-      var p$78 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$3) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
-        })
-      })(this$35$1));
-      var name$33 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-      var jsx$60 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$33.value$2, p$78, this$186.implicitReprOps$1);
-      var this$187 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$28 = jsx$62.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$60, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$187));
-      var jsx$63 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$28, this$188.WL$1);
-      var jsx$59 = this$35$1.statement$1;
-      var this$189 = $m_Lfastparse_core_Implicits$Sequencer$();
-      return jsx$63.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$59, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$189)))
-    })
-  })(this));
-  var name$34 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-  var p0$29 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$34.value$2, p$79, this$190.implicitReprOps$1);
-  var p0$30 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$29, this$191.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$36$1) {
-    return (function(v$18$2) {
-      var v$18 = $as_T2(v$18$2);
-      return new $c_Lparsing_SelectionIf().init___Lparsing_Expression__Lparsing_Statement($as_Lparsing_Expression(v$18.$$und1__O()), $as_Lparsing_Statement(v$18.$$und2__O()))
-    })
-  })(this)));
-  var jsx$64 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$30, this$192.WL$1);
-  var this$208 = this.White$1;
-  var this$207 = $m_Lfastparse_noApi$();
-  var p$84 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$37$1) {
-    return (function() {
-      var this$205 = this$37$1.White$1;
-      var this$202 = this$37$1.White$1;
-      var this$200 = this$37$1.White$1;
-      var this$197 = this$37$1.White$1;
-      var this$196 = this$37$1.White$1;
-      var this$194 = this$37$1.White$1;
-      var this$193 = $m_Lfastparse_noApi$();
-      var p$80 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$13) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("if")
-        })
-      })(this$37$1));
-      var name$35 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-      var p0$31 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$35.value$2, p$80, this$193.implicitReprOps$1);
-      var jsx$54 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$31, this$194.WL$1);
-      var this$195 = $m_Lfastparse_noApi$();
-      var p$81 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$7) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
-        })
-      })(this$37$1));
-      var name$36 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-      var p0$32 = jsx$54.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$36.value$2, p$81, this$195.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var p0$33 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$32, this$196.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$37$1.expression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var jsx$55 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$33, this$197.WL$1);
-      var this$198 = $m_Lfastparse_noApi$();
-      var p$82 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$4) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
-        })
-      })(this$37$1));
+      })(this$36$1));
       var name$37 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-      var jsx$53 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$37.value$2, p$82, this$198.implicitReprOps$1);
-      var this$199 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$34 = jsx$55.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$53, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$199));
-      var jsx$56 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$34, this$200.WL$1);
-      var jsx$52 = this$37$1.statement$1;
-      var this$201 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$35 = jsx$56.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$52, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$201)));
-      var jsx$57 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$35, this$202.WL$1);
-      var this$203 = $m_Lfastparse_noApi$();
-      var p$83 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$3) {
+      var p0$26 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$37.value$2, p$89, this$197.implicitReprOps$1);
+      var jsx$63 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$26, this$198.WL$1);
+      var this$199 = $m_Lfastparse_noApi$();
+      var p$90 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$7) {
+        return (function() {
+          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
+        })
+      })(this$36$1));
+      var name$38 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+      var p0$27 = jsx$63.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$38.value$2, p$90, this$199.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var p0$28 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$27, this$200.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$36$1.expression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var jsx$64 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$28, this$201.WL$1);
+      var this$202 = $m_Lfastparse_noApi$();
+      var p$91 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$4) {
+        return (function() {
+          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+        })
+      })(this$36$1));
+      var name$39 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+      var jsx$62 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$39.value$2, p$91, this$202.implicitReprOps$1);
+      var this$203 = $m_Lfastparse_core_Implicits$Sequencer$();
+      var p0$29 = jsx$64.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$62, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$203));
+      var jsx$65 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$29, this$204.WL$1);
+      var jsx$61 = this$36$1.statement$1;
+      var this$205 = $m_Lfastparse_core_Implicits$Sequencer$();
+      var p0$30 = jsx$65.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$61, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$205)));
+      var jsx$66 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$30, this$206.WL$1);
+      var this$207 = $m_Lfastparse_noApi$();
+      var p$92 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$3) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("else")
         })
-      })(this$37$1));
-      var name$38 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-      var jsx$51 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$38.value$2, p$83, this$203.implicitReprOps$1);
-      var this$204 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$36 = jsx$57.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$51, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$204));
-      var jsx$58 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$36, this$205.WL$1);
-      var jsx$50 = this$37$1.statement$1;
-      var this$206 = $m_Lfastparse_core_Implicits$Sequencer$();
-      return jsx$58.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$50, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer2__O(this$206)))
+      })(this$36$1));
+      var name$40 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+      var jsx$60 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$40.value$2, p$92, this$207.implicitReprOps$1);
+      var this$208 = $m_Lfastparse_core_Implicits$Sequencer$();
+      var p0$31 = jsx$66.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$60, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$208));
+      var jsx$67 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$31, this$209.WL$1);
+      var jsx$59 = this$36$1.statement$1;
+      var this$210 = $m_Lfastparse_core_Implicits$Sequencer$();
+      return jsx$67.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$59, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer2__O(this$210)))
     })
   })(this));
-  var name$39 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-  var p0$37 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$39.value$2, p$84, this$207.implicitReprOps$1);
-  var p0$38 = jsx$64.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$37, this$208.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$38$1) {
-    return (function(v$19$2) {
-      var v$19 = $as_T3(v$19$2);
-      return new $c_Lparsing_SelectionIfElse().init___Lparsing_Expression__Lparsing_Statement__Lparsing_Statement($as_Lparsing_Expression(v$19.$$und1$1), $as_Lparsing_Statement(v$19.$$und2$1), $as_Lparsing_Statement(v$19.$$und3$1))
+  var name$41 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+  var p0$32 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$41.value$2, p$93, this$211.implicitReprOps$1);
+  var p0$33 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$32, this$212.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$37$1) {
+    return (function(v$18$2) {
+      var v$18 = $as_T3(v$18$2);
+      return new $c_Lparsing_SelectionIfElse().init___Lparsing_Expression__Lparsing_Statement__Lparsing_Statement($as_Lparsing_Expression(v$18.$$und1$1), $as_Lparsing_Statement(v$18.$$und2$1), $as_Lparsing_Statement(v$18.$$und3$1))
     })
-  })(this))));
-  var jsx$65 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$38, this$209.WL$1);
-  var this$220 = this.White$1;
-  var this$219 = $m_Lfastparse_noApi$();
-  var p$88 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$39$1) {
+  })(this)));
+  var jsx$68 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$33, this$213.WL$1);
+  var this$224 = this.White$1;
+  var this$223 = $m_Lfastparse_noApi$();
+  var p$97 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$38$1) {
     return (function() {
-      var this$217 = this$39$1.White$1;
-      var this$214 = this$39$1.White$1;
-      var this$213 = this$39$1.White$1;
-      var this$211 = this$39$1.White$1;
-      var this$210 = $m_Lfastparse_noApi$();
-      var p$85 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$14) {
+      var this$221 = this$38$1.White$1;
+      var this$218 = this$38$1.White$1;
+      var this$217 = this$38$1.White$1;
+      var this$215 = this$38$1.White$1;
+      var this$214 = $m_Lfastparse_noApi$();
+      var p$94 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$14) {
         return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("switch")
+          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("if")
         })
-      })(this$39$1));
-      var name$40 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-      var p0$39 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$40.value$2, p$85, this$210.implicitReprOps$1);
-      var jsx$47 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$39, this$211.WL$1);
-      var this$212 = $m_Lfastparse_noApi$();
-      var p$86 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$8) {
+      })(this$38$1));
+      var name$42 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+      var p0$34 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$42.value$2, p$94, this$214.implicitReprOps$1);
+      var jsx$56 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$34, this$215.WL$1);
+      var this$216 = $m_Lfastparse_noApi$();
+      var p$95 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$8) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
         })
-      })(this$39$1));
-      var name$41 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-      var p0$40 = jsx$47.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$41.value$2, p$86, this$212.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var p0$41 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$40, this$213.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$39$1.expression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var jsx$48 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$41, this$214.WL$1);
-      var this$215 = $m_Lfastparse_noApi$();
-      var p$87 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$5) {
+      })(this$38$1));
+      var name$43 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+      var p0$35 = jsx$56.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$43.value$2, p$95, this$216.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var p0$36 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$35, this$217.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$38$1.expression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var jsx$57 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$36, this$218.WL$1);
+      var this$219 = $m_Lfastparse_noApi$();
+      var p$96 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$5) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
         })
-      })(this$39$1));
-      var name$42 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-      var jsx$46 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$42.value$2, p$87, this$215.implicitReprOps$1);
-      var this$216 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$42 = jsx$48.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$46, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$216));
-      var jsx$49 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$42, this$217.WL$1);
-      var jsx$45 = this$39$1.statement$1;
-      var this$218 = $m_Lfastparse_core_Implicits$Sequencer$();
-      return jsx$49.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$45, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$218)))
+      })(this$38$1));
+      var name$44 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+      var jsx$55 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$44.value$2, p$96, this$219.implicitReprOps$1);
+      var this$220 = $m_Lfastparse_core_Implicits$Sequencer$();
+      var p0$37 = jsx$57.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$55, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$220));
+      var jsx$58 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$37, this$221.WL$1);
+      var jsx$54 = this$38$1.statement$1;
+      var this$222 = $m_Lfastparse_core_Implicits$Sequencer$();
+      return jsx$58.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$54, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$222)))
     })
   })(this));
-  var name$43 = new $c_Lsourcecode_Name().init___T("selectionStatement");
-  var p0$43 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$43.value$2, p$88, this$219.implicitReprOps$1);
-  this.selectionStatement$1 = jsx$65.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$43, this$220.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$40$1) {
+  var name$45 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+  var p0$38 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$45.value$2, p$97, this$223.implicitReprOps$1);
+  var p0$39 = jsx$68.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$38, this$224.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$39$1) {
+    return (function(v$19$2) {
+      var v$19 = $as_T2(v$19$2);
+      return new $c_Lparsing_SelectionIf().init___Lparsing_Expression__Lparsing_Statement($as_Lparsing_Expression(v$19.$$und1__O()), $as_Lparsing_Statement(v$19.$$und2__O()))
+    })
+  })(this))));
+  var jsx$69 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$39, this$225.WL$1);
+  var this$236 = this.White$1;
+  var this$235 = $m_Lfastparse_noApi$();
+  var p$101 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$40$1) {
+    return (function() {
+      var this$233 = this$40$1.White$1;
+      var this$230 = this$40$1.White$1;
+      var this$229 = this$40$1.White$1;
+      var this$227 = this$40$1.White$1;
+      var this$226 = $m_Lfastparse_noApi$();
+      var p$98 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$15) {
+        return (function() {
+          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("switch")
+        })
+      })(this$40$1));
+      var name$46 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+      var p0$40 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$46.value$2, p$98, this$226.implicitReprOps$1);
+      var jsx$51 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$40, this$227.WL$1);
+      var this$228 = $m_Lfastparse_noApi$();
+      var p$99 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$9) {
+        return (function() {
+          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
+        })
+      })(this$40$1));
+      var name$47 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+      var p0$41 = jsx$51.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$47.value$2, p$99, this$228.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var p0$42 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$41, this$229.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$40$1.expression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var jsx$52 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$42, this$230.WL$1);
+      var this$231 = $m_Lfastparse_noApi$();
+      var p$100 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$6) {
+        return (function() {
+          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+        })
+      })(this$40$1));
+      var name$48 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+      var jsx$50 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$48.value$2, p$100, this$231.implicitReprOps$1);
+      var this$232 = $m_Lfastparse_core_Implicits$Sequencer$();
+      var p0$43 = jsx$52.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$50, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$232));
+      var jsx$53 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$43, this$233.WL$1);
+      var jsx$49 = this$40$1.statement$1;
+      var this$234 = $m_Lfastparse_core_Implicits$Sequencer$();
+      return jsx$53.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$49, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$234)))
+    })
+  })(this));
+  var name$49 = new $c_Lsourcecode_Name().init___T("selectionStatement");
+  var p0$44 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$49.value$2, p$101, this$235.implicitReprOps$1);
+  this.selectionStatement$1 = jsx$69.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$44, this$236.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$41$1) {
     return (function(v$20$2) {
       var v$20 = $as_T2(v$20$2);
       return new $c_Lparsing_SelectionSwitch().init___Lparsing_Expression__Lparsing_Statement($as_Lparsing_Expression(v$20.$$und1__O()), $as_Lparsing_Statement(v$20.$$und2__O()))
     })
   })(this))));
-  var this$251 = this.White$1;
-  var this$232 = this.White$1;
-  var this$231 = this.White$1;
-  var this$230 = $m_Lfastparse_noApi$();
-  var p$92 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$41$1) {
+  var this$319 = this.White$1;
+  var this$318 = $m_Lfastparse_noApi$();
+  var p$123 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$42$1) {
     return (function() {
-      var this$228 = this$41$1.White$1;
-      var this$225 = this$41$1.White$1;
-      var this$224 = this$41$1.White$1;
-      var this$222 = this$41$1.White$1;
-      var this$221 = $m_Lfastparse_noApi$();
-      var p$89 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$15) {
+      var this$295 = this$42$1.White$1;
+      var this$267 = this$42$1.White$1;
+      var this$248 = this$42$1.White$1;
+      var this$247 = this$42$1.White$1;
+      var this$246 = $m_Lfastparse_noApi$();
+      var p$105 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$16) {
         return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("while")
+          var this$244 = $this$16.White$1;
+          var this$241 = $this$16.White$1;
+          var this$240 = $this$16.White$1;
+          var this$238 = $this$16.White$1;
+          var this$237 = $m_Lfastparse_noApi$();
+          var p$102 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$17) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("while")
+            })
+          })($this$16));
+          var name$50 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var p0$45 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$50.value$2, p$102, this$237.implicitReprOps$1);
+          var jsx$112 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$45, this$238.WL$1);
+          var this$239 = $m_Lfastparse_noApi$();
+          var p$103 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$10) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
+            })
+          })($this$16));
+          var name$51 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var p0$46 = jsx$112.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$51.value$2, p$103, this$239.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+          var p0$47 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$46, this$240.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($this$16.expression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+          var jsx$113 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$47, this$241.WL$1);
+          var this$242 = $m_Lfastparse_noApi$();
+          var p$104 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$7) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+            })
+          })($this$16));
+          var name$52 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var jsx$111 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$52.value$2, p$104, this$242.implicitReprOps$1);
+          var this$243 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$48 = jsx$113.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$111, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$243));
+          var jsx$114 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$48, this$244.WL$1);
+          var jsx$110 = $this$16.statement$1;
+          var this$245 = $m_Lfastparse_core_Implicits$Sequencer$();
+          return jsx$114.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$110, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$245)))
         })
-      })(this$41$1));
-      var name$44 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var p0$44 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$44.value$2, p$89, this$221.implicitReprOps$1);
-      var jsx$95 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$44, this$222.WL$1);
-      var this$223 = $m_Lfastparse_noApi$();
-      var p$90 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$9) {
+      })(this$42$1));
+      var name$53 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+      var p0$49 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$53.value$2, p$105, this$246.implicitReprOps$1);
+      var p0$50 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$49, this$247.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$11) {
+        return (function(v$2$1) {
+          var v$1 = $as_T2(v$2$1);
+          return new $c_Lparsing_IterationWhile().init___Lparsing_Expression__Lparsing_Statement($as_Lparsing_Expression(v$1.$$und1__O()), $as_Lparsing_Statement(v$1.$$und2__O()))
+        })
+      })(this$42$1)));
+      var jsx$115 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$50, this$248.WL$1);
+      var this$266 = this$42$1.White$1;
+      var this$265 = $m_Lfastparse_noApi$();
+      var p$111 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$8) {
         return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
+          var this$262 = this$3$8.White$1;
+          var this$259 = this$3$8.White$1;
+          var this$257 = this$3$8.White$1;
+          var this$254 = this$3$8.White$1;
+          var this$251 = this$3$8.White$1;
+          var this$250 = this$3$8.White$1;
+          var this$249 = $m_Lfastparse_noApi$();
+          var p$106 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$18) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("do")
+            })
+          })(this$3$8));
+          var name$54 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var p0$51 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$54.value$2, p$106, this$249.implicitReprOps$1);
+          var p0$52 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$51, this$250.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$3$8.statement$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+          var jsx$105 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$52, this$251.WL$1);
+          var this$252 = $m_Lfastparse_noApi$();
+          var p$107 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$12) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("while")
+            })
+          })(this$3$8));
+          var name$55 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var jsx$104 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$55.value$2, p$107, this$252.implicitReprOps$1);
+          var this$253 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$53 = jsx$105.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$104, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$253));
+          var jsx$106 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$53, this$254.WL$1);
+          var this$255 = $m_Lfastparse_noApi$();
+          var p$108 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$9) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
+            })
+          })(this$3$8));
+          var name$56 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var jsx$103 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$56.value$2, p$108, this$255.implicitReprOps$1);
+          var this$256 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$54 = jsx$106.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$103, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$256));
+          var jsx$107 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$54, this$257.WL$1);
+          var jsx$102 = this$3$8.expression__Lfastparse_core_Parser();
+          var this$258 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$55 = jsx$107.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$102, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$258)));
+          var jsx$108 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$55, this$259.WL$1);
+          var this$260 = $m_Lfastparse_noApi$();
+          var p$109 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$4) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+            })
+          })(this$3$8));
+          var name$57 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var jsx$101 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$57.value$2, p$109, this$260.implicitReprOps$1);
+          var this$261 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$56 = jsx$108.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$101, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$261));
+          var jsx$109 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$56, this$262.WL$1);
+          var this$263 = $m_Lfastparse_noApi$();
+          var p$110 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$3) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
+            })
+          })(this$3$8));
+          var name$58 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var jsx$100 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$58.value$2, p$110, this$263.implicitReprOps$1);
+          var this$264 = $m_Lfastparse_core_Implicits$Sequencer$();
+          return jsx$109.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$100, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$264))
         })
-      })(this$41$1));
-      var name$45 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var p0$45 = jsx$95.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$45.value$2, p$90, this$223.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var p0$46 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$45, this$224.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$41$1.expression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var jsx$96 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$46, this$225.WL$1);
-      var this$226 = $m_Lfastparse_noApi$();
-      var p$91 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$6) {
+      })(this$42$1));
+      var name$59 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+      var p0$57 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$59.value$2, p$111, this$265.implicitReprOps$1);
+      var p0$58 = jsx$115.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$57, this$266.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$4$5) {
+        return (function(v$3$2$1) {
+          var v$3$1 = $as_T2(v$3$2$1);
+          return new $c_Lparsing_IterationDoWhile().init___Lparsing_Expression__Lparsing_Statement($as_Lparsing_Expression(v$3$1.$$und2__O()), $as_Lparsing_Statement(v$3$1.$$und1__O()))
+        })
+      })(this$42$1))));
+      var jsx$116 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$58, this$267.WL$1);
+      var this$294 = this$42$1.White$1;
+      var this$293 = $m_Lfastparse_noApi$();
+      var p$117 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$4) {
         return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+          var this$291 = this$5$4.White$1;
+          var this$288 = this$5$4.White$1;
+          var this$284 = this$5$4.White$1;
+          var this$281 = this$5$4.White$1;
+          var this$277 = this$5$4.White$1;
+          var this$274 = this$5$4.White$1;
+          var this$271 = this$5$4.White$1;
+          var this$269 = this$5$4.White$1;
+          var this$268 = $m_Lfastparse_noApi$();
+          var p$112 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$19) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("for")
+            })
+          })(this$5$4));
+          var name$60 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var p0$59 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$60.value$2, p$112, this$268.implicitReprOps$1);
+          var jsx$92 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$59, this$269.WL$1);
+          var this$270 = $m_Lfastparse_noApi$();
+          var p$113 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$13) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
+            })
+          })(this$5$4));
+          var name$61 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var p0$60 = jsx$92.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$61.value$2, p$113, this$270.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+          var jsx$93 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$60, this$271.WL$1);
+          var this$272 = this$5$4.White$1;
+          var p0$61 = this$5$4.expression__Lfastparse_core_Parser();
+          var jsx$91 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$61, this$272.WL$1);
+          var this$273 = $m_Lfastparse_core_Implicits$Optioner$();
+          var p0$62 = jsx$93.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$91.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$273)), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+          var jsx$94 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$62, this$274.WL$1);
+          var this$275 = $m_Lfastparse_noApi$();
+          var p$114 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$10) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
+            })
+          })(this$5$4));
+          var name$62 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var jsx$90 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$62.value$2, p$114, this$275.implicitReprOps$1);
+          var this$276 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$63 = jsx$94.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$90, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$276));
+          var jsx$95 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$63, this$277.WL$1);
+          var this$278 = this$5$4.White$1;
+          var p0$64 = this$5$4.expression__Lfastparse_core_Parser();
+          var jsx$89 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$64, this$278.WL$1);
+          var this$279 = $m_Lfastparse_core_Implicits$Optioner$();
+          var jsx$88 = jsx$89.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$279));
+          var this$280 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$65 = jsx$95.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$88, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$280)));
+          var jsx$96 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$65, this$281.WL$1);
+          var this$282 = $m_Lfastparse_noApi$();
+          var p$115 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$6) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
+            })
+          })(this$5$4));
+          var name$63 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var jsx$87 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$63.value$2, p$115, this$282.implicitReprOps$1);
+          var this$283 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$66 = jsx$96.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$87, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$283));
+          var jsx$97 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$66, this$284.WL$1);
+          var this$285 = this$5$4.White$1;
+          var p0$67 = this$5$4.expression__Lfastparse_core_Parser();
+          var jsx$86 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$67, this$285.WL$1);
+          var this$286 = $m_Lfastparse_core_Implicits$Optioner$();
+          var jsx$85 = jsx$86.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$286));
+          var this$287 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$68 = jsx$97.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$85, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer2__O(this$287)));
+          var jsx$98 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$68, this$288.WL$1);
+          var this$289 = $m_Lfastparse_noApi$();
+          var p$116 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$5) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+            })
+          })(this$5$4));
+          var name$64 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var jsx$84 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$64.value$2, p$116, this$289.implicitReprOps$1);
+          var this$290 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$69 = jsx$98.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$84, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$290));
+          var jsx$99 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$69, this$291.WL$1);
+          var jsx$83 = this$5$4.statement$1;
+          var this$292 = $m_Lfastparse_core_Implicits$Sequencer$();
+          return jsx$99.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$83, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer3__O(this$292)))
         })
-      })(this$41$1));
-      var name$46 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var jsx$94 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$46.value$2, p$91, this$226.implicitReprOps$1);
-      var this$227 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$47 = jsx$96.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$94, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$227));
-      var jsx$97 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$47, this$228.WL$1);
-      var jsx$93 = this$41$1.statement$1;
-      var this$229 = $m_Lfastparse_core_Implicits$Sequencer$();
-      return jsx$97.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$93, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$229)))
+      })(this$42$1));
+      var name$65 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+      var p0$70 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$65.value$2, p$117, this$293.implicitReprOps$1);
+      var p0$71 = jsx$116.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$70, this$294.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$6$3) {
+        return (function(v$4$2$1) {
+          var v$4$1 = $as_T4(v$4$2$1);
+          return new $c_Lparsing_IterationFor1().init___s_Option__s_Option__s_Option__Lparsing_Statement($as_s_Option(v$4$1.$$und1$1), $as_s_Option(v$4$1.$$und2$1), $as_s_Option(v$4$1.$$und3$1), $as_Lparsing_Statement(v$4$1.$$und4$1))
+        })
+      })(this$42$1))));
+      var jsx$117 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$71, this$295.WL$1);
+      var this$317 = this$42$1.White$1;
+      var this$316 = $m_Lfastparse_noApi$();
+      var p$122 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$7$2) {
+        return (function() {
+          var this$314 = this$7$2.White$1;
+          var this$311 = this$7$2.White$1;
+          var this$307 = this$7$2.White$1;
+          var this$304 = this$7$2.White$1;
+          var this$300 = this$7$2.White$1;
+          var this$299 = this$7$2.White$1;
+          var this$297 = this$7$2.White$1;
+          var this$296 = $m_Lfastparse_noApi$();
+          var p$118 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$20) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("for")
+            })
+          })(this$7$2));
+          var name$66 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var p0$72 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$66.value$2, p$118, this$296.implicitReprOps$1);
+          var jsx$77 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$72, this$297.WL$1);
+          var this$298 = $m_Lfastparse_noApi$();
+          var p$119 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$14) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
+            })
+          })(this$7$2));
+          var name$67 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var p0$73 = jsx$77.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$67.value$2, p$119, this$298.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+          var p0$74 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$73, this$299.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$7$2.declaration__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+          var jsx$78 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$74, this$300.WL$1);
+          var this$301 = this$7$2.White$1;
+          var p0$75 = this$7$2.expression__Lfastparse_core_Parser();
+          var jsx$76 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$75, this$301.WL$1);
+          var this$302 = $m_Lfastparse_core_Implicits$Optioner$();
+          var jsx$75 = jsx$76.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$302));
+          var this$303 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$76 = jsx$78.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$75, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$303)));
+          var jsx$79 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$76, this$304.WL$1);
+          var this$305 = $m_Lfastparse_noApi$();
+          var p$120 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$11) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
+            })
+          })(this$7$2));
+          var name$68 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var jsx$74 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$68.value$2, p$120, this$305.implicitReprOps$1);
+          var this$306 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$77 = jsx$79.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$74, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$306));
+          var jsx$80 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$77, this$307.WL$1);
+          var this$308 = this$7$2.White$1;
+          var p0$78 = this$7$2.expression__Lfastparse_core_Parser();
+          var jsx$73 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$78, this$308.WL$1);
+          var this$309 = $m_Lfastparse_core_Implicits$Optioner$();
+          var jsx$72 = jsx$73.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$309));
+          var this$310 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$79 = jsx$80.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$72, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer2__O(this$310)));
+          var jsx$81 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$79, this$311.WL$1);
+          var this$312 = $m_Lfastparse_noApi$();
+          var p$121 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$7) {
+            return (function() {
+              return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+            })
+          })(this$7$2));
+          var name$69 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+          var jsx$71 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$69.value$2, p$121, this$312.implicitReprOps$1);
+          var this$313 = $m_Lfastparse_core_Implicits$Sequencer$();
+          var p0$80 = jsx$81.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$71, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$313));
+          var jsx$82 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$80, this$314.WL$1);
+          var jsx$70 = this$7$2.statement$1;
+          var this$315 = $m_Lfastparse_core_Implicits$Sequencer$();
+          return jsx$82.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$70, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer3__O(this$315)))
+        })
+      })(this$42$1));
+      var name$70 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+      var p0$81 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$70.value$2, p$122, this$316.implicitReprOps$1);
+      return jsx$117.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$81, this$317.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$8$2) {
+        return (function(v$5$2$1) {
+          var v$5$1 = $as_T4(v$5$2$1);
+          return new $c_Lparsing_IterationFor2().init___Lparsing_Declaration__s_Option__s_Option__Lparsing_Statement($as_Lparsing_Declaration(v$5$1.$$und1$1), $as_s_Option(v$5$1.$$und2$1), $as_s_Option(v$5$1.$$und3$1), $as_Lparsing_Statement(v$5$1.$$und4$1))
+        })
+      })(this$42$1))))
     })
   })(this));
-  var name$47 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-  var p0$48 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$47.value$2, p$92, this$230.implicitReprOps$1);
-  var p0$49 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$48, this$231.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$42$1) {
-    return (function(v$21$2) {
-      var v$21 = $as_T2(v$21$2);
-      return new $c_Lparsing_IterationWhile().init___Lparsing_Expression__Lparsing_Statement($as_Lparsing_Expression(v$21.$$und1__O()), $as_Lparsing_Statement(v$21.$$und2__O()))
-    })
-  })(this)));
-  var jsx$98 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$49, this$232.WL$1);
-  var this$250 = this.White$1;
-  var this$249 = $m_Lfastparse_noApi$();
-  var p$98 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$43$1) {
+  var name$71 = new $c_Lsourcecode_Name().init___T("iterationStatement");
+  var p0$82 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$71.value$2, p$123, this$318.implicitReprOps$1);
+  this.iterationStatement$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$82, this$319.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("iterationStatement");
+  var this$339 = this.White$1;
+  var this$333 = this.White$1;
+  var this$327 = this.White$1;
+  var this$326 = this.White$1;
+  var this$325 = $m_Lfastparse_noApi$();
+  var p$126 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$43$1) {
     return (function() {
-      var this$246 = this$43$1.White$1;
-      var this$243 = this$43$1.White$1;
-      var this$241 = this$43$1.White$1;
-      var this$238 = this$43$1.White$1;
-      var this$235 = this$43$1.White$1;
-      var this$234 = this$43$1.White$1;
-      var this$233 = $m_Lfastparse_noApi$();
-      var p$93 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$16) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("do")
-        })
-      })(this$43$1));
-      var name$48 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var p0$50 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$48.value$2, p$93, this$233.implicitReprOps$1);
-      var p0$51 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$50, this$234.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$43$1.statement$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var jsx$88 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$51, this$235.WL$1);
-      var this$236 = $m_Lfastparse_noApi$();
-      var p$94 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$10) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("while")
-        })
-      })(this$43$1));
-      var name$49 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var jsx$87 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$49.value$2, p$94, this$236.implicitReprOps$1);
-      var this$237 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$52 = jsx$88.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$87, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$237));
-      var jsx$89 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$52, this$238.WL$1);
-      var this$239 = $m_Lfastparse_noApi$();
-      var p$95 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$7) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
-        })
-      })(this$43$1));
-      var name$50 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var jsx$86 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$50.value$2, p$95, this$239.implicitReprOps$1);
-      var this$240 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$53 = jsx$89.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$86, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$240));
-      var jsx$90 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$53, this$241.WL$1);
-      var jsx$85 = this$43$1.expression__Lfastparse_core_Parser();
-      var this$242 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$54 = jsx$90.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$85, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$242)));
-      var jsx$91 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$54, this$243.WL$1);
-      var this$244 = $m_Lfastparse_noApi$();
-      var p$96 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$4) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
-        })
-      })(this$43$1));
-      var name$51 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var jsx$84 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$51.value$2, p$96, this$244.implicitReprOps$1);
-      var this$245 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$55 = jsx$91.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$84, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$245));
-      var jsx$92 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$55, this$246.WL$1);
-      var this$247 = $m_Lfastparse_noApi$();
-      var p$97 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$3) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
-        })
-      })(this$43$1));
-      var name$52 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var jsx$83 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$52.value$2, p$97, this$247.implicitReprOps$1);
-      var this$248 = $m_Lfastparse_core_Implicits$Sequencer$();
-      return jsx$92.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$83, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$248))
-    })
-  })(this));
-  var name$53 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-  var p0$56 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$53.value$2, p$98, this$249.implicitReprOps$1);
-  var p0$57 = jsx$98.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$56, this$250.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$44$1) {
-    return (function(v$22$2) {
-      var v$22 = $as_T2(v$22$2);
-      return new $c_Lparsing_IterationDoWhile().init___Lparsing_Expression__Lparsing_Statement($as_Lparsing_Expression(v$22.$$und2__O()), $as_Lparsing_Statement(v$22.$$und1__O()))
-    })
-  })(this))));
-  var jsx$99 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$57, this$251.WL$1);
-  var this$278 = this.White$1;
-  var this$277 = $m_Lfastparse_noApi$();
-  var p$104 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$45$1) {
-    return (function() {
-      var this$275 = this$45$1.White$1;
-      var this$272 = this$45$1.White$1;
-      var this$268 = this$45$1.White$1;
-      var this$265 = this$45$1.White$1;
-      var this$261 = this$45$1.White$1;
-      var this$258 = this$45$1.White$1;
-      var this$255 = this$45$1.White$1;
-      var this$253 = this$45$1.White$1;
-      var this$252 = $m_Lfastparse_noApi$();
-      var p$99 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$17) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("for")
-        })
-      })(this$45$1));
-      var name$54 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var p0$58 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$54.value$2, p$99, this$252.implicitReprOps$1);
-      var jsx$75 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$58, this$253.WL$1);
-      var this$254 = $m_Lfastparse_noApi$();
-      var p$100 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$11) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
-        })
-      })(this$45$1));
-      var name$55 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var p0$59 = jsx$75.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$55.value$2, p$100, this$254.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var jsx$76 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$59, this$255.WL$1);
-      var this$256 = this$45$1.White$1;
-      var p0$60 = this$45$1.expression__Lfastparse_core_Parser();
-      var jsx$74 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$60, this$256.WL$1);
-      var this$257 = $m_Lfastparse_core_Implicits$Optioner$();
-      var p0$61 = jsx$76.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$74.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$257)), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var jsx$77 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$61, this$258.WL$1);
-      var this$259 = $m_Lfastparse_noApi$();
-      var p$101 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$8) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
-        })
-      })(this$45$1));
-      var name$56 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var jsx$73 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$56.value$2, p$101, this$259.implicitReprOps$1);
-      var this$260 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$62 = jsx$77.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$73, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$260));
-      var jsx$78 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$62, this$261.WL$1);
-      var this$262 = this$45$1.White$1;
-      var p0$63 = this$45$1.expression__Lfastparse_core_Parser();
-      var jsx$72 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$63, this$262.WL$1);
-      var this$263 = $m_Lfastparse_core_Implicits$Optioner$();
-      var jsx$71 = jsx$72.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$263));
-      var this$264 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$64 = jsx$78.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$71, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$264)));
-      var jsx$79 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$64, this$265.WL$1);
-      var this$266 = $m_Lfastparse_noApi$();
-      var p$102 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$5) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
-        })
-      })(this$45$1));
-      var name$57 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var jsx$70 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$57.value$2, p$102, this$266.implicitReprOps$1);
-      var this$267 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$65 = jsx$79.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$70, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$267));
-      var jsx$80 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$65, this$268.WL$1);
-      var this$269 = this$45$1.White$1;
-      var p0$66 = this$45$1.expression__Lfastparse_core_Parser();
-      var jsx$69 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$66, this$269.WL$1);
-      var this$270 = $m_Lfastparse_core_Implicits$Optioner$();
-      var jsx$68 = jsx$69.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$270));
-      var this$271 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$67 = jsx$80.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$68, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer2__O(this$271)));
-      var jsx$81 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$67, this$272.WL$1);
-      var this$273 = $m_Lfastparse_noApi$();
-      var p$103 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$4) {
-        return (function() {
-          return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
-        })
-      })(this$45$1));
-      var name$58 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-      var jsx$67 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$58.value$2, p$103, this$273.implicitReprOps$1);
-      var this$274 = $m_Lfastparse_core_Implicits$Sequencer$();
-      var p0$68 = jsx$81.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$67, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$274));
-      var jsx$82 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$68, this$275.WL$1);
-      var jsx$66 = this$45$1.statement$1;
-      var this$276 = $m_Lfastparse_core_Implicits$Sequencer$();
-      return jsx$82.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$66, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer3__O(this$276)))
-    })
-  })(this));
-  var name$59 = new $c_Lsourcecode_Name().init___T("iterationStatement");
-  var p0$69 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$59.value$2, p$104, this$277.implicitReprOps$1);
-  this.iterationStatement$1 = jsx$99.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$69, this$278.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$46$1) {
-    return (function(v$23$2) {
-      var v$23 = $as_T4(v$23$2);
-      return new $c_Lparsing_IterationFor1().init___s_Option__s_Option__s_Option__Lparsing_Statement($as_s_Option(v$23.$$und1$1), $as_s_Option(v$23.$$und2$1), $as_s_Option(v$23.$$und3$1), $as_Lparsing_Statement(v$23.$$und4$1))
-    })
-  })(this))));
-  var this$298 = this.White$1;
-  var this$292 = this.White$1;
-  var this$286 = this.White$1;
-  var this$285 = this.White$1;
-  var this$284 = $m_Lfastparse_noApi$();
-  var p$107 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$47$1) {
-    return (function() {
-      var this$281 = this$47$1.White$1;
-      var this$280 = this$47$1.White$1;
-      var this$279 = $m_Lfastparse_noApi$();
-      var p$105 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$18) {
+      var this$322 = this$43$1.White$1;
+      var this$321 = this$43$1.White$1;
+      var this$320 = $m_Lfastparse_noApi$();
+      var p$124 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$21) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("goto")
         })
-      })(this$47$1));
-      var name$60 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-      var p0$70 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$60.value$2, p$105, this$279.implicitReprOps$1);
-      var p0$71 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$70, this$280.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$47$1.identifier$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var jsx$107 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$71, this$281.WL$1);
-      var this$282 = $m_Lfastparse_noApi$();
-      var p$106 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$12) {
+      })(this$43$1));
+      var name$72 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+      var p0$83 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$72.value$2, p$124, this$320.implicitReprOps$1);
+      var p0$84 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$83, this$321.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$43$1.identifier$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var jsx$125 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$84, this$322.WL$1);
+      var this$323 = $m_Lfastparse_noApi$();
+      var p$125 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$15) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
         })
-      })(this$47$1));
-      var name$61 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-      var jsx$106 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$61.value$2, p$106, this$282.implicitReprOps$1);
-      var this$283 = $m_Lfastparse_core_Implicits$Sequencer$();
-      return jsx$107.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$106, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$283))
+      })(this$43$1));
+      var name$73 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+      var jsx$124 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$73.value$2, p$125, this$323.implicitReprOps$1);
+      var this$324 = $m_Lfastparse_core_Implicits$Sequencer$();
+      return jsx$125.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$124, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$324))
     })
   })(this));
-  var name$62 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-  var p0$72 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$62.value$2, p$107, this$284.implicitReprOps$1);
-  var p0$73 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$72, this$285.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$48$1) {
-    return (function(v$24$2) {
-      var v$24 = $as_Lparsing_Identifier(v$24$2);
-      return new $c_Lparsing_Goto().init___Lparsing_Identifier(v$24)
+  var name$74 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+  var p0$85 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$74.value$2, p$126, this$325.implicitReprOps$1);
+  var p0$86 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$85, this$326.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$44$1) {
+    return (function(v$21$2) {
+      var v$21 = $as_Lparsing_Identifier(v$21$2);
+      return new $c_Lparsing_Goto().init___Lparsing_Identifier(v$21)
     })
   })(this)));
-  var jsx$108 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$73, this$286.WL$1);
-  var this$291 = this.White$1;
-  var this$290 = $m_Lfastparse_noApi$();
-  var p$110 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$49$1) {
+  var jsx$126 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$86, this$327.WL$1);
+  var this$332 = this.White$1;
+  var this$331 = $m_Lfastparse_noApi$();
+  var p$129 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$45$1) {
     return (function() {
-      var this$288 = this$49$1.White$1;
-      var this$287 = $m_Lfastparse_noApi$();
-      var p$108 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$19) {
+      var this$329 = this$45$1.White$1;
+      var this$328 = $m_Lfastparse_noApi$();
+      var p$127 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$22) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("continue")
         })
-      })(this$49$1));
-      var name$63 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-      var p0$74 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$63.value$2, p$108, this$287.implicitReprOps$1);
-      var jsx$105 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$74, this$288.WL$1);
-      var this$289 = $m_Lfastparse_noApi$();
-      var p$109 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$13) {
+      })(this$45$1));
+      var name$75 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+      var p0$87 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$75.value$2, p$127, this$328.implicitReprOps$1);
+      var jsx$123 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$87, this$329.WL$1);
+      var this$330 = $m_Lfastparse_noApi$();
+      var p$128 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$16) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
         })
-      })(this$49$1));
-      var name$64 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-      return jsx$105.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$64.value$2, p$109, this$289.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })(this$45$1));
+      var name$76 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+      return jsx$123.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$76.value$2, p$128, this$330.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
     })
   })(this));
-  var name$65 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-  var p0$75 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$65.value$2, p$110, this$290.implicitReprOps$1);
-  var p0$76 = jsx$108.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$75, this$291.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$50$1) {
-    return (function(v$25$2) {
-      $asUnit(v$25$2);
+  var name$77 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+  var p0$88 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$77.value$2, p$129, this$331.implicitReprOps$1);
+  var p0$89 = jsx$126.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$88, this$332.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$46$1) {
+    return (function(v$22$2) {
+      $asUnit(v$22$2);
       return new $c_Lparsing_Continue().init___()
     })
   })(this))));
-  var jsx$109 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$76, this$292.WL$1);
-  var this$297 = this.White$1;
-  var this$296 = $m_Lfastparse_noApi$();
-  var p$113 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$51$1) {
+  var jsx$127 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$89, this$333.WL$1);
+  var this$338 = this.White$1;
+  var this$337 = $m_Lfastparse_noApi$();
+  var p$132 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$47$1) {
     return (function() {
-      var this$294 = this$51$1.White$1;
-      var this$293 = $m_Lfastparse_noApi$();
-      var p$111 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$20) {
+      var this$335 = this$47$1.White$1;
+      var this$334 = $m_Lfastparse_noApi$();
+      var p$130 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$23) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("break")
         })
-      })(this$51$1));
-      var name$66 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-      var p0$77 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$66.value$2, p$111, this$293.implicitReprOps$1);
-      var jsx$104 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$77, this$294.WL$1);
-      var this$295 = $m_Lfastparse_noApi$();
-      var p$112 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$14) {
+      })(this$47$1));
+      var name$78 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+      var p0$90 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$78.value$2, p$130, this$334.implicitReprOps$1);
+      var jsx$122 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$90, this$335.WL$1);
+      var this$336 = $m_Lfastparse_noApi$();
+      var p$131 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$17) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
         })
-      })(this$51$1));
-      var name$67 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-      return jsx$104.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$67.value$2, p$112, this$295.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })(this$47$1));
+      var name$79 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+      return jsx$122.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$79.value$2, p$131, this$336.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
     })
   })(this));
-  var name$68 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-  var p0$78 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$68.value$2, p$113, this$296.implicitReprOps$1);
-  var p0$79 = jsx$109.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$78, this$297.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$52$1) {
-    return (function(v$26$2) {
-      $asUnit(v$26$2);
+  var name$80 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+  var p0$91 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$80.value$2, p$132, this$337.implicitReprOps$1);
+  var p0$92 = jsx$127.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$91, this$338.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$48$1) {
+    return (function(v$23$2) {
+      $asUnit(v$23$2);
       return new $c_Lparsing_Break().init___()
     })
   })(this))));
-  var jsx$110 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$79, this$298.WL$1);
-  var this$307 = this.White$1;
-  var this$306 = $m_Lfastparse_noApi$();
-  var p$116 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$53$1) {
+  var jsx$128 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$92, this$339.WL$1);
+  var this$348 = this.White$1;
+  var this$347 = $m_Lfastparse_noApi$();
+  var p$135 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$49$1) {
     return (function() {
-      var this$303 = this$53$1.White$1;
-      var this$300 = this$53$1.White$1;
-      var this$299 = $m_Lfastparse_noApi$();
-      var p$114 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$21) {
+      var this$344 = this$49$1.White$1;
+      var this$341 = this$49$1.White$1;
+      var this$340 = $m_Lfastparse_noApi$();
+      var p$133 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$24) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("return")
         })
-      })(this$53$1));
-      var name$69 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-      var p0$80 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$69.value$2, p$114, this$299.implicitReprOps$1);
-      var jsx$102 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$80, this$300.WL$1);
-      var this$301 = this$53$1.White$1;
-      var p0$81 = this$53$1.expression__Lfastparse_core_Parser();
-      var jsx$101 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$81, this$301.WL$1);
-      var this$302 = $m_Lfastparse_core_Implicits$Optioner$();
-      var p0$82 = jsx$102.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$101.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$302)), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-      var jsx$103 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$82, this$303.WL$1);
-      var this$304 = $m_Lfastparse_noApi$();
-      var p$115 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$15) {
+      })(this$49$1));
+      var name$81 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+      var p0$93 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$81.value$2, p$133, this$340.implicitReprOps$1);
+      var jsx$120 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$93, this$341.WL$1);
+      var this$342 = this$49$1.White$1;
+      var p0$94 = this$49$1.expression__Lfastparse_core_Parser();
+      var jsx$119 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$94, this$342.WL$1);
+      var this$343 = $m_Lfastparse_core_Implicits$Optioner$();
+      var p0$95 = jsx$120.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$119.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$343)), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+      var jsx$121 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$95, this$344.WL$1);
+      var this$345 = $m_Lfastparse_noApi$();
+      var p$134 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$18) {
         return (function() {
           return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(";")
         })
-      })(this$53$1));
-      var name$70 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-      var jsx$100 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$70.value$2, p$115, this$304.implicitReprOps$1);
-      var this$305 = $m_Lfastparse_core_Implicits$Sequencer$();
-      return jsx$103.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$100, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$305))
+      })(this$49$1));
+      var name$82 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+      var jsx$118 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$82.value$2, p$134, this$345.implicitReprOps$1);
+      var this$346 = $m_Lfastparse_core_Implicits$Sequencer$();
+      return jsx$121.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$118, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$346))
     })
   })(this));
-  var name$71 = new $c_Lsourcecode_Name().init___T("jumpStatement");
-  var p0$83 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$71.value$2, p$116, this$306.implicitReprOps$1);
-  this.jumpStatement$1 = jsx$110.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$83, this$307.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$54$1) {
-    return (function(v$27$2) {
-      var v$27 = $as_s_Option(v$27$2);
-      return new $c_Lparsing_Return().init___s_Option(v$27)
+  var name$83 = new $c_Lsourcecode_Name().init___T("jumpStatement");
+  var p0$96 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$83.value$2, p$135, this$347.implicitReprOps$1);
+  this.jumpStatement$1 = jsx$128.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$96, this$348.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$50$1) {
+    return (function(v$24$2) {
+      var v$24 = $as_s_Option(v$24$2);
+      return new $c_Lparsing_Return().init___s_Option(v$24)
     })
   })(this))));
-  var this$311 = this.White$1;
-  var this$310 = this.White$1;
-  var this$308 = this.White$1;
-  var p0$84 = this.declaration__Lfastparse_core_Parser();
-  var qual$14 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$84, this$308.WL$1);
-  var x$59 = $m_Lfastparse_all$().Pass$1;
-  var this$309 = $m_Lfastparse_core_Implicits$Repeater$();
-  var p0$85 = qual$14.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$59, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$309));
-  var p0$86 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$85, this$310.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$55$1) {
-    return (function(v$28$2) {
-      var v$28 = $as_sc_Seq(v$28$2);
-      return new $c_Lparsing_DeclarationList().init___sc_Seq(v$28)
+  var this$352 = this.White$1;
+  var this$351 = this.White$1;
+  var this$349 = this.White$1;
+  var p0$97 = this.declaration__Lfastparse_core_Parser();
+  var qual$20 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$97, this$349.WL$1);
+  var x$86 = $m_Lfastparse_all$().Pass$1;
+  var this$350 = $m_Lfastparse_core_Implicits$Repeater$();
+  var p0$98 = qual$20.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$86, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$350));
+  var p0$99 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$98, this$351.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$51$1) {
+    return (function(v$25$2) {
+      var v$25 = $as_sc_Seq(v$25$2);
+      return new $c_Lparsing_DeclarationList().init___sc_Seq(v$25)
     })
   })(this)));
-  this.declarationList$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$86, this$311.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("declarationList");
-  var this$321 = this.White$1;
-  var this$320 = this.White$1;
-  var this$318 = this.White$1;
-  var this$314 = this.White$1;
-  var this$312 = this.White$1;
-  var p0$87 = this.declarationSpecifiers__Lfastparse_core_Parser();
-  var jsx$115 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$87, this$312.WL$1);
-  var jsx$114 = this.declarator__Lfastparse_core_Parser();
-  var this$313 = $m_Lfastparse_core_Implicits$Sequencer$();
-  var p0$88 = jsx$115.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$114, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$313)));
-  var jsx$116 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$88, this$314.WL$1);
-  var this$315 = this.White$1;
-  var p0$89 = this.declarationList$1;
-  var jsx$113 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$89, this$315.WL$1);
-  var this$316 = $m_Lfastparse_core_Implicits$Optioner$();
-  var jsx$112 = jsx$113.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$316));
-  var this$317 = $m_Lfastparse_core_Implicits$Sequencer$();
-  var p0$90 = jsx$116.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$112, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer2__O(this$317)));
-  var jsx$117 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$90, this$318.WL$1);
-  var jsx$111 = this.compoundStatement$1;
-  var this$319 = $m_Lfastparse_core_Implicits$Sequencer$();
-  var p0$91 = jsx$117.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$111, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer3__O(this$319)));
-  var p0$92 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$91, this$320.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("functionDefinition");
-  this.functionDefinition$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$92, this$321.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$56$1) {
-    return (function(v$29$2) {
-      var v$29 = $as_T4(v$29$2);
-      return new $c_Lparsing_FunctionDefinition().init___Lparsing_DeclarationSpecifiers__Lparsing_Declarator__s_Option__Lparsing_CompoundStatement($as_Lparsing_DeclarationSpecifiers(v$29.$$und1$1), $as_Lparsing_Declarator(v$29.$$und2$1), $as_s_Option(v$29.$$und3$1), $as_Lparsing_CompoundStatement(v$29.$$und4$1))
+  this.declarationList$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$99, this$352.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("declarationList");
+  var this$363 = this.White$1;
+  var this$362 = this.White$1;
+  var this$359 = this.White$1;
+  var this$355 = this.White$1;
+  var this$353 = this.White$1;
+  var p0$100 = this.declarationSpecifiers__Lfastparse_core_Parser();
+  var jsx$133 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$100, this$353.WL$1);
+  var jsx$132 = this.declarator__Lfastparse_core_Parser();
+  var this$354 = $m_Lfastparse_core_Implicits$Sequencer$();
+  var p0$101 = jsx$133.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$132, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$354)));
+  var jsx$134 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$101, this$355.WL$1);
+  var this$356 = this.White$1;
+  var p0$102 = this.declarationList$1;
+  var jsx$131 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$102, this$356.WL$1);
+  var this$357 = $m_Lfastparse_core_Implicits$Optioner$();
+  var jsx$130 = jsx$131.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$357));
+  var this$358 = $m_Lfastparse_core_Implicits$Sequencer$();
+  var p0$103 = jsx$134.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$130, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer2__O(this$358)));
+  var jsx$135 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$103, this$359.WL$1);
+  var this$360 = this.White$1;
+  var p0$104 = this.compoundStatement$1;
+  var jsx$129 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$104, this$360.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("functionBody");
+  var this$361 = $m_Lfastparse_core_Implicits$Sequencer$();
+  var p0$105 = jsx$135.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$129, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer3__O(this$361)));
+  var p0$106 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$105, this$362.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("functionDefinition");
+  this.functionDefinition$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$106, this$363.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$52$1) {
+    return (function(v$26$2) {
+      var v$26 = $as_T4(v$26$2);
+      return new $c_Lparsing_FunctionDefinition().init___Lparsing_DeclarationSpecifiers__Lparsing_Declarator__s_Option__Lparsing_CompoundStatement($as_Lparsing_DeclarationSpecifiers(v$26.$$und1$1), $as_Lparsing_Declarator(v$26.$$und2$1), $as_s_Option(v$26.$$und3$1), $as_Lparsing_CompoundStatement(v$26.$$und4$1))
     })
   })(this)));
-  var this$322 = this.White$1;
-  var p0$93 = this.functionDefinition$1;
-  this.externalDeclaration$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$93, this$322.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this.declaration__Lfastparse_core_Parser());
-  var this$325 = this.White$1;
-  var this$323 = this.White$1;
-  var p0$94 = this.externalDeclaration$1;
-  var qual$15 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$94, this$323.WL$1);
-  var x$63 = $m_Lfastparse_all$().Pass$1;
-  var this$324 = $m_Lfastparse_core_Implicits$Repeater$();
-  var p0$95 = qual$15.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$63, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$324));
-  this.translationUnit$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$95, this$325.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$57$1) {
-    return (function(v$30$2) {
-      var v$30 = $as_sc_Seq(v$30$2);
-      return new $c_Lparsing_TranslationUnit().init___sc_Seq(v$30.toList__sci_List())
+  var this$364 = this.White$1;
+  var p0$107 = this.functionDefinition$1;
+  this.externalDeclaration$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$107, this$364.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this.declaration__Lfastparse_core_Parser());
+  var this$368 = this.White$1;
+  var this$366 = this.White$1;
+  var this$365 = this.White$1;
+  var p0$108 = this.externalDeclaration$1;
+  var p0$109 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$108, this$365.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this.preprocessingFile__Lfastparse_core_Parser());
+  var qual$21 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$109, this$366.WL$1);
+  var x$90 = $m_Lfastparse_all$().Pass$1;
+  var this$367 = $m_Lfastparse_core_Implicits$Repeater$();
+  var p0$110 = qual$21.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$90, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$367));
+  this.translationUnit$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$110, this$368.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$53$1) {
+    return (function(v$27$2) {
+      var v$27 = $as_sc_Seq(v$27$2);
+      return new $c_Lparsing_TranslationUnit().init___sc_Seq(v$27.toList__sci_List())
     })
   })(this)));
-  this.top$1 = this.translationUnit$1;
   return this
+});
+$c_Lparsing_CParser.prototype.groupPart$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  if ((groupPart$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (groupPart$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(groupPart$lzy$1.$$undvalue$1)
+  } else {
+    var this$1 = $m_Lfastparse_noApi$();
+    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1) {
+      return (function() {
+        var p0 = $this.ifSection$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1);
+        var p0$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1$1.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser($this.controlLine$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$1, preprocessingToken$1$1, controlLine$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1$1.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser($this.nonDirective$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$1, preprocessingToken$1$1, nonDirective$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1))
+      })
+    })(this, WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1));
+    var name = new $c_Lsourcecode_Name().init___T("groupPart");
+    var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+    return $as_Lfastparse_core_Parser(groupPart$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("groupPart")))
+  }
+});
+$c_Lparsing_CParser.prototype.endifLine$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, endifLine$lzy$1, newline$lzy$1) {
+  if ((endifLine$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (endifLine$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(endifLine$lzy$1.$$undvalue$1)
+  } else {
+    var this$4 = $m_Lfastparse_noApi$();
+    var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, WhitePP$1$1, newline$lzy$1$1) {
+      return (function() {
+        var this$1 = $m_Lfastparse_noApi$();
+        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+          })
+        })($this));
+        var name = new $c_Lsourcecode_Name().init___T("endifLine");
+        var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+        var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1$1.WL$1);
+        var this$3 = $m_Lfastparse_noApi$();
+        var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("endif")
+          })
+        })($this));
+        var name$1 = new $c_Lsourcecode_Name().init___T("endifLine");
+        var p0$1 = jsx$1.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1$1.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($this.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$1, newline$lzy$1$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })
+    })(this, WhitePP$1, newline$lzy$1));
+    var name$2 = new $c_Lsourcecode_Name().init___T("endifLine");
+    var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$4.implicitReprOps$1);
+    var p0$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+      return (function(v$2) {
+        $asUnit(v$2);
+        return new $c_Lparsing_EndifLine().init___()
+      })
+    })(this)));
+    return $as_Lfastparse_core_Parser(endifLine$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("endifLine")))
+  }
 });
 $c_Lparsing_CParser.prototype.initDeclaratorList__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -5611,6 +7298,15 @@ $c_Lparsing_CParser.prototype.enumerator__Lfastparse_core_Parser = (function() {
 $c_Lparsing_CParser.prototype.binary__p1__Lparsing_Expression__Lparsing_CParser$BinaryOpBuildWrap__Lparsing_Expression = (function(left, right) {
   var x1 = right.op$1;
   return ((x1 === "*") ? new $c_Lparsing_ExpressionMultiply().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "/") ? new $c_Lparsing_ExpressionDivision().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "%") ? new $c_Lparsing_ExpressionMod().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "+") ? new $c_Lparsing_ExpressionAdd().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "-") ? new $c_Lparsing_ExpressionMinus().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "<<") ? new $c_Lparsing_ExpressionLeftShift().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === ">>") ? new $c_Lparsing_ExpressionRightShift().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "<") ? new $c_Lparsing_ExpressionLessThan().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === ">") ? new $c_Lparsing_ExpressionGreaterThan().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "<=") ? new $c_Lparsing_ExpressionLessThanOrEqual().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === ">=") ? new $c_Lparsing_ExpressionGreaterThanOrEqual().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "==") ? new $c_Lparsing_ExpressionEquals().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "!=") ? new $c_Lparsing_ExpressionNotEquals().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "&") ? new $c_Lparsing_ExpressionAnd().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "^") ? new $c_Lparsing_ExpressionXOr().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "|") ? new $c_Lparsing_ExpressionInclusiveOr().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "&&") ? new $c_Lparsing_ExpressionLogicalAnd().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "||") ? new $c_Lparsing_ExpressionLogicalOr().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "=") ? new $c_Lparsing_ExpressionAssignment().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : ((x1 === "*=") ? new $c_Lparsing_ExpressionAssignment().init___Lparsing_Expression__Lparsing_Expression(left, new $c_Lparsing_ExpressionMultiply().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1)) : ((x1 === "/=") ? new $c_Lparsing_ExpressionAssignment().init___Lparsing_Expression__Lparsing_Expression(left, new $c_Lparsing_ExpressionDivision().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1)) : ((x1 === "%=") ? new $c_Lparsing_ExpressionAssignment().init___Lparsing_Expression__Lparsing_Expression(left, new $c_Lparsing_ExpressionMod().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1)) : ((x1 === "+=") ? new $c_Lparsing_ExpressionAssignment().init___Lparsing_Expression__Lparsing_Expression(left, new $c_Lparsing_ExpressionAdd().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1)) : ((x1 === "-=") ? new $c_Lparsing_ExpressionAssignment().init___Lparsing_Expression__Lparsing_Expression(left, new $c_Lparsing_ExpressionMinus().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1)) : ((x1 === "<<=") ? new $c_Lparsing_ExpressionAssignment().init___Lparsing_Expression__Lparsing_Expression(left, new $c_Lparsing_ExpressionLeftShift().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1)) : ((x1 === ">>=") ? new $c_Lparsing_ExpressionAssignment().init___Lparsing_Expression__Lparsing_Expression(left, new $c_Lparsing_ExpressionRightShift().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1)) : ((x1 === "&=") ? new $c_Lparsing_ExpressionAssignment().init___Lparsing_Expression__Lparsing_Expression(left, new $c_Lparsing_ExpressionAnd().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1)) : ((x1 === "^=") ? new $c_Lparsing_ExpressionAssignment().init___Lparsing_Expression__Lparsing_Expression(left, new $c_Lparsing_ExpressionXOr().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1)) : ((x1 === "|=") ? new $c_Lparsing_ExpressionAssignment().init___Lparsing_Expression__Lparsing_Expression(left, new $c_Lparsing_ExpressionInclusiveOr().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1)) : ((x1 === ",") ? new $c_Lparsing_ExpressionComma().init___Lparsing_Expression__Lparsing_Expression(left, right.next$1) : (((x1 === "") || (x1 === " ")) ? left : ($m_s_Predef$().assert__Z__V(false), left))))))))))))))))))))))))))))))))
+});
+$c_Lparsing_CParser.prototype.hexadecimalFractionalConstant__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var lo = (32768 & b.lo$2);
+  if ((lo === 0)) {
+    return this.hexadecimalFractionalConstant$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.hexadecimalFractionalConstant$1
+  }
 });
 $c_Lparsing_CParser.prototype.assignmentOperator$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -5731,15 +7427,6 @@ $c_Lparsing_CParser.prototype.assignmentOperator$lzycompute__p1__Lfastparse_core
   };
   return this.assignmentOperator$1
 });
-$c_Lparsing_CParser.prototype.hexadecimalFractionalConstant__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$0$1;
-  var lo = (8192 & b.lo$2);
-  if ((lo === 0)) {
-    return this.hexadecimalFractionalConstant$lzycompute__p1__Lfastparse_core_Parser()
-  } else {
-    return this.hexadecimalFractionalConstant$1
-  }
-});
 $c_Lparsing_CParser.prototype.multiplicativeExpression$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
   var hi = (1 & b.hi$2);
@@ -5773,6 +7460,9 @@ $c_Lparsing_CParser.prototype.multiplicativeExpression$lzycompute__p1__Lfastpars
   };
   return this.multiplicativeExpression$1
 });
+$c_Lparsing_CParser.prototype.elifGroups$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  return (elifGroups$lzy$1.$$undinitialized$1 ? $as_Lfastparse_parsers_Combinators$Opaque(elifGroups$lzy$1.$$undvalue$1) : this.elifGroups$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1))
+});
 $c_Lparsing_CParser.prototype.unaryOperator__Lfastparse_parsers_Intrinsics$ElemIn = (function() {
   var b = this.bitmap$0$1;
   var lo = (1073741824 & b.lo$2);
@@ -5782,28 +7472,20 @@ $c_Lparsing_CParser.prototype.unaryOperator__Lfastparse_parsers_Intrinsics$ElemI
     return this.unaryOperator$1
   }
 });
-$c_Lparsing_CParser.prototype.typeName$lzycompute__p1__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$1$1;
-  var lo = (67108864 & b.lo$2);
-  if ((lo === 0)) {
-    var this$3 = this.White$1;
-    var this$2 = this.White$1;
-    var this$1 = $m_Lfastparse_noApi$();
-    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.specifierQualifierList__Lfastparse_core_Parser()
-      })
-    })(this));
-    var name = new $c_Lsourcecode_Name().init___T("typeName");
-    var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
-    var p0$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$2.WL$1).$$bang__Lfastparse_core_Parser();
-    this.typeName$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1).map__F1__Lfastparse_core_Parser($m_Lparsing_TypeName$());
-    var b$1 = this.bitmap$1$1;
-    var lo$1 = (67108864 | b$1.lo$2);
-    var hi = b$1.hi$2;
-    this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+$c_Lparsing_CParser.prototype.replacementList$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, replacementList$lzy$1, ppTokens$lzy$1) {
+  if ((replacementList$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
   };
-  return this.typeName$1
+  if (replacementList$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(replacementList$lzy$1.$$undvalue$1)
+  } else {
+    var p0 = this.ppTokens$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, ppTokens$lzy$1);
+    var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1.WL$1);
+    var this$1 = $m_Lfastparse_core_Implicits$Optioner$();
+    var p0$1 = jsx$1.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$1));
+    var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1.WL$1).map__F1__Lfastparse_core_Parser($m_Lparsing_ReplacementList$());
+    return $as_Lfastparse_core_Parser(replacementList$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("replacementList")))
+  }
 });
 $c_Lparsing_CParser.prototype.enumerator$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
@@ -5843,6 +7525,43 @@ $c_Lparsing_CParser.prototype.enumerator$lzycompute__p1__Lfastparse_core_Parser 
     this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
   return this.enumerator$1
+});
+$c_Lparsing_CParser.prototype.typeName$lzycompute__p1__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$1$1;
+  var lo = (67108864 & b.lo$2);
+  if ((lo === 0)) {
+    var this$7 = this.White$1;
+    var this$6 = this.White$1;
+    var this$5 = $m_Lfastparse_noApi$();
+    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        var this$1 = $this.White$1;
+        var p0 = $this.specifierQualifierList__Lfastparse_core_Parser();
+        var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
+        var this$2 = $this.White$1;
+        var p0$1 = $this.abstractDeclarator__Lfastparse_core_Parser();
+        var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$2.WL$1);
+        var this$3 = $m_Lfastparse_core_Implicits$Optioner$();
+        var jsx$1 = jsx$2.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$3));
+        var this$4 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$3.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$4)))
+      })
+    })(this));
+    var name = new $c_Lsourcecode_Name().init___T("typeName");
+    var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$5.implicitReprOps$1);
+    var p0$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$6.WL$1).$$bang__Lfastparse_core_Parser();
+    this.typeName$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$7.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+      return (function(v$2) {
+        var v = $as_T(v$2);
+        return new $c_Lparsing_TypeName().init___T(v)
+      })
+    })(this)));
+    var b$1 = this.bitmap$1$1;
+    var lo$1 = (67108864 | b$1.lo$2);
+    var hi = b$1.hi$2;
+    this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+  };
+  return this.typeName$1
 });
 $c_Lparsing_CParser.prototype.castExpression$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -5935,7 +7654,7 @@ $c_Lparsing_CParser.prototype.relationalExpression$lzycompute__p1__Lfastparse_co
 });
 $c_Lparsing_CParser.prototype.hexadecimalPrefix__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (8 & b.lo$2);
+  var lo = (32 & b.lo$2);
   if ((lo === 0)) {
     return this.hexadecimalPrefix$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -5997,7 +7716,7 @@ $c_Lparsing_CParser.prototype.typeQualifier$lzycompute__p1__Lfastparse_core_Pars
 });
 $c_Lparsing_CParser.prototype.hexadecimalFloatingConstant__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (512 & b.lo$2);
+  var lo = (2048 & b.lo$2);
   if ((lo === 0)) {
     return this.hexadecimalFloatingConstant$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -6106,9 +7825,26 @@ $c_Lparsing_CParser.prototype.additiveExpressionHelper__Lfastparse_core_Parser =
     return this.additiveExpressionHelper$1
   }
 });
+$c_Lparsing_CParser.prototype.lparen$lzycompute$1__p1__sr_LazyRef__Lfastparse_core_Parser = (function(lparen$lzy$1) {
+  if ((lparen$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (lparen$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(lparen$lzy$1.$$undvalue$1)
+  } else {
+    var this$1 = $m_Lfastparse_noApi$();
+    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
+      })
+    })(this));
+    var name = new $c_Lsourcecode_Name().init___T("lparen");
+    return $as_Lfastparse_core_Parser(lparen$lzy$1.initialize__O__O(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1)))
+  }
+});
 $c_Lparsing_CParser.prototype.hexadecimalFractionalConstant$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (8192 & b.lo$2);
+  var lo = (32768 & b.lo$2);
   if ((lo === 0)) {
     var this$12 = this.White$1;
     var this$11 = $m_Lfastparse_noApi$();
@@ -6165,7 +7901,7 @@ $c_Lparsing_CParser.prototype.hexadecimalFractionalConstant$lzycompute__p1__Lfas
       })
     })(this)));
     var b$2 = this.bitmap$0$1;
-    var lo$1 = (8192 | b$2.lo$2);
+    var lo$1 = (32768 | b$2.lo$2);
     var hi = b$2.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -6173,7 +7909,7 @@ $c_Lparsing_CParser.prototype.hexadecimalFractionalConstant$lzycompute__p1__Lfas
 });
 $c_Lparsing_CParser.prototype.digitSequence$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (4096 & b.lo$2);
+  var lo = (16384 & b.lo$2);
   if ((lo === 0)) {
     var this$5 = $m_Lfastparse_noApi$();
     var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
@@ -6201,15 +7937,15 @@ $c_Lparsing_CParser.prototype.digitSequence$lzycompute__p1__Lfastparse_core_Pars
           i = ((1 + i) | 0)
         };
         var p0 = new $c_Lfastparse_parsers_Intrinsics$ElemIn().init___T__sc_Seq__Lfastparse_utils_ReprOps__Lfastparse_utils_ElemSetHelper("CharIn", b$1, this$1.implicitReprOps$1, $m_Lfastparse_utils_ElemSetHelper$CharBitSetHelper$());
-        var qual$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$4.WL$1);
-        var x$23 = $m_Lfastparse_all$().Pass$1;
-        return qual$5.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$23, 2147483647, (-1), $m_Lfastparse_core_Implicits$Repeater$UnitRepeater$())
+        var qual$8 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$4.WL$1);
+        var x$38 = $m_Lfastparse_all$().Pass$1;
+        return qual$8.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$38, 2147483647, (-1), $m_Lfastparse_core_Implicits$Repeater$UnitRepeater$())
       })
     })(this));
     var name = new $c_Lsourcecode_Name().init___T("digitSequence");
     this.digitSequence$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$5.implicitReprOps$1);
     var b$2 = this.bitmap$0$1;
-    var lo$1 = (4096 | b$2.lo$2);
+    var lo$1 = (16384 | b$2.lo$2);
     var hi = b$2.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -6217,7 +7953,7 @@ $c_Lparsing_CParser.prototype.digitSequence$lzycompute__p1__Lfastparse_core_Pars
 });
 $c_Lparsing_CParser.prototype.hexadecimalDigitSequence__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (32768 & b.lo$2);
+  var lo = (131072 & b.lo$2);
   if ((lo === 0)) {
     return this.hexadecimalDigitSequence$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -6241,6 +7977,9 @@ $c_Lparsing_CParser.prototype.typeName__Lfastparse_core_Parser = (function() {
   } else {
     return this.typeName$1
   }
+});
+$c_Lparsing_CParser.prototype.elseGroup$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  return (elseGroup$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(elseGroup$lzy$1.$$undvalue$1) : this.elseGroup$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1))
 });
 $c_Lparsing_CParser.prototype.postfixMerge__Lparsing_Expression__Lparsing_CParser$PostfixRight__Lparsing_Expression = (function(left, v) {
   if ($is_Lparsing_CParser$PostfixRightIndex(v)) {
@@ -6310,6 +8049,62 @@ $c_Lparsing_CParser.prototype.atomicTypeSpecifier$lzycompute__p1__Lfastparse_cor
   };
   return this.atomicTypeSpecifier$1
 });
+$c_Lparsing_CParser.prototype.groupPart$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  return (groupPart$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(groupPart$lzy$1.$$undvalue$1) : this.groupPart$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1))
+});
+$c_Lparsing_CParser.prototype.abstractDeclarator$lzycompute__p1__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$1$1;
+  var lo = (134217728 & b.lo$2);
+  if ((lo === 0)) {
+    var this$12 = this.White$1;
+    var this$3 = this.White$1;
+    var this$1 = this.White$1;
+    var p0 = this.pointer__Lfastparse_core_Parser();
+    var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
+    var this$2 = $m_Lfastparse_core_Implicits$Optioner$();
+    var p0$1 = jsx$4.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$2));
+    var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1);
+    var this$10 = this.White$1;
+    var this$9 = $m_Lfastparse_noApi$();
+    var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        var this$6 = $this.White$1;
+        var this$5 = $this.White$1;
+        var this$4 = $m_Lfastparse_noApi$();
+        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("(")
+          })
+        })($this));
+        var name = new $c_Lsourcecode_Name().init___T("abstractDeclarator");
+        var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$4.implicitReprOps$1);
+        var p0$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$5.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($this.abstractDeclarator__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$6.WL$1);
+        var this$7 = $m_Lfastparse_noApi$();
+        var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+          })
+        })($this));
+        var name$1 = new $c_Lsourcecode_Name().init___T("abstractDeclarator");
+        var jsx$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$7.implicitReprOps$1);
+        var this$8 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$3.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$2, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$8))
+      })
+    })(this));
+    var name$2 = new $c_Lsourcecode_Name().init___T("abstractDeclarator");
+    var p0$4 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$9.implicitReprOps$1);
+    var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$10.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this.directAbstractDeclaratorHelper__Lfastparse_core_Parser());
+    var this$11 = $m_Lfastparse_core_Implicits$Sequencer$();
+    var p0$5 = jsx$5.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$11)));
+    this.abstractDeclarator$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, this$12.WL$1).$$bang__Lfastparse_core_Parser();
+    var b$1 = this.bitmap$1$1;
+    var lo$1 = (134217728 | b$1.lo$2);
+    var hi = b$1.hi$2;
+    this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+  };
+  return this.abstractDeclarator$1
+});
 $c_Lparsing_CParser.prototype.exclusiveORExpression$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
   var hi = (4096 & b.hi$2);
@@ -6362,7 +8157,7 @@ $c_Lparsing_CParser.prototype.assignmentExpression$lzycompute__p1__Lfastparse_co
 });
 $c_Lparsing_CParser.prototype.constant$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (2 & b.lo$2);
+  var lo = (8 & b.lo$2);
   if ((lo === 0)) {
     var this$3 = this.White$1;
     var this$2 = $m_Lfastparse_noApi$();
@@ -6377,11 +8172,472 @@ $c_Lparsing_CParser.prototype.constant$lzycompute__p1__Lfastparse_core_Parser = 
     var p0$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$2.implicitReprOps$1);
     this.constant$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("constant");
     var b$1 = this.bitmap$0$1;
-    var lo$1 = (2 | b$1.lo$2);
+    var lo$1 = (8 | b$1.lo$2);
     var hi = b$1.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
   return this.constant$1
+});
+$c_Lparsing_CParser.prototype.controlLine$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, controlLine$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  if ((controlLine$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (controlLine$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(controlLine$lzy$1.$$undvalue$1)
+  } else {
+    var this$64 = $m_Lfastparse_noApi$();
+    var p$35 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, WhitePP$1$1, preprocessingToken$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1) {
+      return (function() {
+        var this$5 = $m_Lfastparse_noApi$();
+        var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1, WhitePP$1$2, preprocessingToken$1$2, ppTokens$lzy$1$2, newline$lzy$1$2) {
+          return (function() {
+            var this$1 = $m_Lfastparse_noApi$();
+            var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })($this$1));
+            var name = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+            var jsx$61 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1$2.WL$1);
+            var this$3 = $m_Lfastparse_noApi$();
+            var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("include")
+              })
+            })($this$1));
+            var name$1 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$1 = jsx$61.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1$2.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($this$1.ppTokens$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$2, preprocessingToken$1$2, ppTokens$lzy$1$2), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$62 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1$2.WL$1);
+            var jsx$60 = $this$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$2, newline$lzy$1$2);
+            var this$4 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$62.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$60, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$4))
+          })
+        })($this, WhitePP$1$1, preprocessingToken$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        var name$2 = new $c_Lsourcecode_Name().init___T("controlLine");
+        var p0$3 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$5.implicitReprOps$1);
+        var p0$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser($m_Lparsing_Include$());
+        var jsx$63 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, WhitePP$1$1.WL$1);
+        var this$10 = $m_Lfastparse_noApi$();
+        var p$5 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, WhitePP$1$3, preprocessingToken$1$3, replacementList$lzy$1$2, ppTokens$lzy$1$3, newline$lzy$1$3) {
+          return (function() {
+            var this$6 = $m_Lfastparse_noApi$();
+            var p$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$3) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })(this$2$1));
+            var name$3 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$5 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$3.value$2, p$3, this$6.implicitReprOps$1);
+            var jsx$57 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, WhitePP$1$3.WL$1);
+            var this$7 = $m_Lfastparse_noApi$();
+            var p$4 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("define")
+              })
+            })(this$2$1));
+            var name$4 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$6 = jsx$57.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$4.value$2, p$4, this$7.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var p0$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, WhitePP$1$3.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$2$1.identifier$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$58 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$7, WhitePP$1$3.WL$1);
+            var jsx$56 = this$2$1.replacementList$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$3, preprocessingToken$1$3, replacementList$lzy$1$2, ppTokens$lzy$1$3);
+            var this$8 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$8 = jsx$58.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$56, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$8)));
+            var jsx$59 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$8, WhitePP$1$3.WL$1);
+            var jsx$55 = this$2$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$3, newline$lzy$1$3);
+            var this$9 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$59.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$55, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$9))
+          })
+        })($this, WhitePP$1$1, preprocessingToken$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        var name$5 = new $c_Lsourcecode_Name().init___T("controlLine");
+        var p0$9 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$5.value$2, p$5, this$10.implicitReprOps$1);
+        var p0$10 = jsx$63.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$9, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$1) {
+          return (function(v$2) {
+            var v = $as_T2(v$2);
+            return new $c_Lparsing_Define().init___Lparsing_Identifier__Lparsing_ReplacementList($as_Lparsing_Identifier(v.$$und1__O()), $as_Lparsing_ReplacementList(v.$$und2__O()))
+          })
+        })($this))));
+        var jsx$64 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$10, WhitePP$1$1.WL$1);
+        var this$20 = $m_Lfastparse_noApi$();
+        var p$9 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1, WhitePP$1$4, preprocessingToken$1$4, lparen$lzy$1$2, replacementList$lzy$1$3, ppTokens$lzy$1$4, newline$lzy$1$4) {
+          return (function() {
+            var this$11 = $m_Lfastparse_noApi$();
+            var p$6 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$4) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })(this$4$1));
+            var name$6 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$11 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$6.value$2, p$6, this$11.implicitReprOps$1);
+            var jsx$49 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$11, WhitePP$1$4.WL$1);
+            var this$12 = $m_Lfastparse_noApi$();
+            var p$7 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$3) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("define")
+              })
+            })(this$4$1));
+            var name$7 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$12 = jsx$49.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$7.value$2, p$7, this$12.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var p0$13 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$12, WhitePP$1$4.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$4$1.identifier$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$50 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$13, WhitePP$1$4.WL$1);
+            var jsx$48 = this$4$1.lparen$1__p1__sr_LazyRef__Lfastparse_core_Parser(lparen$lzy$1$2);
+            var this$13 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$14 = jsx$50.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$48, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$13));
+            var jsx$51 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$14, WhitePP$1$4.WL$1);
+            var p0$15 = this$4$1.identifierList__Lfastparse_core_Parser();
+            var jsx$47 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$15, WhitePP$1$4.WL$1);
+            var this$14 = $m_Lfastparse_core_Implicits$Optioner$();
+            var jsx$46 = jsx$47.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$14));
+            var this$15 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$16 = jsx$51.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$46, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$15)));
+            var jsx$52 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$16, WhitePP$1$4.WL$1);
+            var this$16 = $m_Lfastparse_noApi$();
+            var p$8 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+              })
+            })(this$4$1));
+            var name$8 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var jsx$45 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$8.value$2, p$8, this$16.implicitReprOps$1);
+            var this$17 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$17 = jsx$52.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$45, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$17));
+            var jsx$53 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$17, WhitePP$1$4.WL$1);
+            var jsx$44 = this$4$1.replacementList$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$4, preprocessingToken$1$4, replacementList$lzy$1$3, ppTokens$lzy$1$4);
+            var this$18 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$18 = jsx$53.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$44, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer2__O(this$18)));
+            var jsx$54 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$18, WhitePP$1$4.WL$1);
+            var jsx$43 = this$4$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$4, newline$lzy$1$4);
+            var this$19 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$54.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$43, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$19))
+          })
+        })($this, WhitePP$1$1, preprocessingToken$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        var name$9 = new $c_Lsourcecode_Name().init___T("controlLine");
+        var p0$19 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$9.value$2, p$9, this$20.implicitReprOps$1);
+        var p0$20 = jsx$64.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$19, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$5$1) {
+          return (function(v$3$2) {
+            var v$3 = $as_T3(v$3$2);
+            return new $c_Lparsing_Define2().init___Lparsing_Identifier__s_Option__Lparsing_ReplacementList($as_Lparsing_Identifier(v$3.$$und1$1), $as_s_Option(v$3.$$und2$1), $as_Lparsing_ReplacementList(v$3.$$und3$1))
+          })
+        })($this))));
+        var jsx$65 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$20, WhitePP$1$1.WL$1);
+        var this$30 = $m_Lfastparse_noApi$();
+        var p$14 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$6$1, WhitePP$1$5, preprocessingToken$1$5, lparen$lzy$1$3, replacementList$lzy$1$4, ppTokens$lzy$1$5, newline$lzy$1$5) {
+          return (function() {
+            var this$21 = $m_Lfastparse_noApi$();
+            var p$10 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$5) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })(this$6$1));
+            var name$10 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$21 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$10.value$2, p$10, this$21.implicitReprOps$1);
+            var jsx$37 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$21, WhitePP$1$5.WL$1);
+            var this$22 = $m_Lfastparse_noApi$();
+            var p$11 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$4) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("define")
+              })
+            })(this$6$1));
+            var name$11 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$22 = jsx$37.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$11.value$2, p$11, this$22.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var p0$23 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$22, WhitePP$1$5.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$6$1.identifier$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$38 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$23, WhitePP$1$5.WL$1);
+            var jsx$36 = this$6$1.lparen$1__p1__sr_LazyRef__Lfastparse_core_Parser(lparen$lzy$1$3);
+            var this$23 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$24 = jsx$38.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$36, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$23));
+            var jsx$39 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$24, WhitePP$1$5.WL$1);
+            var this$24 = $m_Lfastparse_noApi$();
+            var p$12 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$3) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("...")
+              })
+            })(this$6$1));
+            var name$12 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var jsx$35 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$12.value$2, p$12, this$24.implicitReprOps$1);
+            var this$25 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$25 = jsx$39.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$35, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$25));
+            var jsx$40 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$25, WhitePP$1$5.WL$1);
+            var this$26 = $m_Lfastparse_noApi$();
+            var p$13 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+              })
+            })(this$6$1));
+            var name$13 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var jsx$34 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$13.value$2, p$13, this$26.implicitReprOps$1);
+            var this$27 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$26 = jsx$40.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$34, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$27));
+            var jsx$41 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$26, WhitePP$1$5.WL$1);
+            var jsx$33 = this$6$1.replacementList$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$5, preprocessingToken$1$5, replacementList$lzy$1$4, ppTokens$lzy$1$5);
+            var this$28 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$27 = jsx$41.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$33, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$28)));
+            var jsx$42 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$27, WhitePP$1$5.WL$1);
+            var jsx$32 = this$6$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$5, newline$lzy$1$5);
+            var this$29 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$42.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$32, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$29))
+          })
+        })($this, WhitePP$1$1, preprocessingToken$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        var name$14 = new $c_Lsourcecode_Name().init___T("controlLine");
+        var p0$28 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$14.value$2, p$14, this$30.implicitReprOps$1);
+        var p0$29 = jsx$65.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$28, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$7$1) {
+          return (function(v$4$2) {
+            var v$4 = $as_T2(v$4$2);
+            return new $c_Lparsing_Define3().init___Lparsing_Identifier__Lparsing_ReplacementList($as_Lparsing_Identifier(v$4.$$und1__O()), $as_Lparsing_ReplacementList(v$4.$$und2__O()))
+          })
+        })($this))));
+        var jsx$66 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$29, WhitePP$1$1.WL$1);
+        var this$43 = $m_Lfastparse_noApi$();
+        var p$20 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$8$1, WhitePP$1$6, preprocessingToken$1$6, lparen$lzy$1$4, replacementList$lzy$1$5, ppTokens$lzy$1$6, newline$lzy$1$6) {
+          return (function() {
+            var this$31 = $m_Lfastparse_noApi$();
+            var p$15 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$6) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })(this$8$1));
+            var name$15 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$30 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$15.value$2, p$15, this$31.implicitReprOps$1);
+            var jsx$24 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$30, WhitePP$1$6.WL$1);
+            var this$32 = $m_Lfastparse_noApi$();
+            var p$16 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$5) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("define")
+              })
+            })(this$8$1));
+            var name$16 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$31 = jsx$24.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$16.value$2, p$16, this$32.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var p0$32 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$31, WhitePP$1$6.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$8$1.identifier$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$25 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$32, WhitePP$1$6.WL$1);
+            var jsx$23 = this$8$1.lparen$1__p1__sr_LazyRef__Lfastparse_core_Parser(lparen$lzy$1$4);
+            var this$33 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$33 = jsx$25.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$23, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$33));
+            var jsx$26 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$33, WhitePP$1$6.WL$1);
+            var jsx$22 = this$8$1.identifierList__Lfastparse_core_Parser();
+            var this$34 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$34 = jsx$26.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$22, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$34)));
+            var jsx$27 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$34, WhitePP$1$6.WL$1);
+            var this$35 = $m_Lfastparse_noApi$();
+            var p$17 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$4) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(",")
+              })
+            })(this$8$1));
+            var name$17 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var jsx$21 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$17.value$2, p$17, this$35.implicitReprOps$1);
+            var this$36 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$35 = jsx$27.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$21, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$36));
+            var jsx$28 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$35, WhitePP$1$6.WL$1);
+            var this$37 = $m_Lfastparse_noApi$();
+            var p$18 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$3) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("...")
+              })
+            })(this$8$1));
+            var name$18 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var jsx$20 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$18.value$2, p$18, this$37.implicitReprOps$1);
+            var this$38 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$36 = jsx$28.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$20, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$38));
+            var jsx$29 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$36, WhitePP$1$6.WL$1);
+            var this$39 = $m_Lfastparse_noApi$();
+            var p$19 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(")")
+              })
+            })(this$8$1));
+            var name$19 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var jsx$19 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$19.value$2, p$19, this$39.implicitReprOps$1);
+            var this$40 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$37 = jsx$29.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$19, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$40));
+            var jsx$30 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$37, WhitePP$1$6.WL$1);
+            var jsx$18 = this$8$1.replacementList$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$6, preprocessingToken$1$6, replacementList$lzy$1$5, ppTokens$lzy$1$6);
+            var this$41 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$38 = jsx$30.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$18, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer2__O(this$41)));
+            var jsx$31 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$38, WhitePP$1$6.WL$1);
+            var jsx$17 = this$8$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$6, newline$lzy$1$6);
+            var this$42 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$31.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$17, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$42))
+          })
+        })($this, WhitePP$1$1, preprocessingToken$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        var name$20 = new $c_Lsourcecode_Name().init___T("controlLine");
+        var p0$39 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$20.value$2, p$20, this$43.implicitReprOps$1);
+        var p0$40 = jsx$66.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$39, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$9$1) {
+          return (function(v$5$2) {
+            var v$5 = $as_T3(v$5$2);
+            return new $c_Lparsing_Define4().init___Lparsing_Identifier__sc_Seq__Lparsing_ReplacementList($as_Lparsing_Identifier(v$5.$$und1$1), $as_sc_Seq(v$5.$$und2$1), $as_Lparsing_ReplacementList(v$5.$$und3$1))
+          })
+        })($this))));
+        var jsx$67 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$40, WhitePP$1$1.WL$1);
+        var this$47 = $m_Lfastparse_noApi$();
+        var p$23 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$10$1, WhitePP$1$7, newline$lzy$1$7) {
+          return (function() {
+            var this$44 = $m_Lfastparse_noApi$();
+            var p$21 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$7) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })(this$10$1));
+            var name$21 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$41 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$21.value$2, p$21, this$44.implicitReprOps$1);
+            var jsx$15 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$41, WhitePP$1$7.WL$1);
+            var this$45 = $m_Lfastparse_noApi$();
+            var p$22 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$6) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("undef")
+              })
+            })(this$10$1));
+            var name$22 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$42 = jsx$15.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$22.value$2, p$22, this$45.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var p0$43 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$42, WhitePP$1$7.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$10$1.identifier$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$16 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$43, WhitePP$1$7.WL$1);
+            var jsx$14 = this$10$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$7, newline$lzy$1$7);
+            var this$46 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$16.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$14, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$46))
+          })
+        })($this, WhitePP$1$1, newline$lzy$1$1));
+        var name$23 = new $c_Lsourcecode_Name().init___T("controlLine");
+        var p0$44 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$23.value$2, p$23, this$47.implicitReprOps$1);
+        var p0$45 = jsx$67.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$44, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser($m_Lparsing_Undef$()));
+        var jsx$68 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$45, WhitePP$1$1.WL$1);
+        var this$51 = $m_Lfastparse_noApi$();
+        var p$26 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$11$1, WhitePP$1$8, preprocessingToken$1$7, ppTokens$lzy$1$7, newline$lzy$1$8) {
+          return (function() {
+            var this$48 = $m_Lfastparse_noApi$();
+            var p$24 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$8) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })(this$11$1));
+            var name$24 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$46 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$24.value$2, p$24, this$48.implicitReprOps$1);
+            var jsx$12 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$46, WhitePP$1$8.WL$1);
+            var this$49 = $m_Lfastparse_noApi$();
+            var p$25 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$7) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("line")
+              })
+            })(this$11$1));
+            var name$25 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$47 = jsx$12.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$25.value$2, p$25, this$49.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var p0$48 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$47, WhitePP$1$8.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$11$1.ppTokens$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$8, preprocessingToken$1$7, ppTokens$lzy$1$7), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$13 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$48, WhitePP$1$8.WL$1);
+            var jsx$11 = this$11$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$8, newline$lzy$1$8);
+            var this$50 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$13.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$11, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$50))
+          })
+        })($this, WhitePP$1$1, preprocessingToken$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        var name$26 = new $c_Lsourcecode_Name().init___T("controlLine");
+        var p0$49 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$26.value$2, p$26, this$51.implicitReprOps$1);
+        var p0$50 = jsx$68.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$49, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser($m_Lparsing_Line$()));
+        var jsx$69 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$50, WhitePP$1$1.WL$1);
+        var this$56 = $m_Lfastparse_noApi$();
+        var p$29 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$12$1, WhitePP$1$9, preprocessingToken$1$8, ppTokens$lzy$1$8, newline$lzy$1$9) {
+          return (function() {
+            var this$52 = $m_Lfastparse_noApi$();
+            var p$27 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$9) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })(this$12$1));
+            var name$27 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$51 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$27.value$2, p$27, this$52.implicitReprOps$1);
+            var jsx$8 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$51, WhitePP$1$9.WL$1);
+            var this$53 = $m_Lfastparse_noApi$();
+            var p$28 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$8) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("error")
+              })
+            })(this$12$1));
+            var name$28 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$52 = jsx$8.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$28.value$2, p$28, this$53.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$9 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$52, WhitePP$1$9.WL$1);
+            var p0$53 = this$12$1.ppTokens$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$9, preprocessingToken$1$8, ppTokens$lzy$1$8);
+            var jsx$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$53, WhitePP$1$9.WL$1);
+            var this$54 = $m_Lfastparse_core_Implicits$Optioner$();
+            var p0$54 = jsx$9.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$7.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$54)), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$10 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$54, WhitePP$1$9.WL$1);
+            var jsx$6 = this$12$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$9, newline$lzy$1$9);
+            var this$55 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$10.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$6, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$55))
+          })
+        })($this, WhitePP$1$1, preprocessingToken$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        var name$29 = new $c_Lsourcecode_Name().init___T("controlLine");
+        var p0$55 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$29.value$2, p$29, this$56.implicitReprOps$1);
+        var p0$56 = jsx$69.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$55, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$13$1) {
+          return (function(v$6$2) {
+            var v$6 = $as_s_Option(v$6$2);
+            return new $c_Lparsing_Error().init___s_Option(v$6)
+          })
+        })($this))));
+        var jsx$70 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$56, WhitePP$1$1.WL$1);
+        var this$61 = $m_Lfastparse_noApi$();
+        var p$32 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$14$1, WhitePP$1$10, preprocessingToken$1$9, ppTokens$lzy$1$9, newline$lzy$1$10) {
+          return (function() {
+            var this$57 = $m_Lfastparse_noApi$();
+            var p$30 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$10) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })(this$14$1));
+            var name$30 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$57 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$30.value$2, p$30, this$57.implicitReprOps$1);
+            var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$57, WhitePP$1$10.WL$1);
+            var this$58 = $m_Lfastparse_noApi$();
+            var p$31 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$9) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("pragma")
+              })
+            })(this$14$1));
+            var name$31 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$58 = jsx$3.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$31.value$2, p$31, this$58.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$58, WhitePP$1$10.WL$1);
+            var p0$59 = this$14$1.ppTokens$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$10, preprocessingToken$1$9, ppTokens$lzy$1$9);
+            var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$59, WhitePP$1$10.WL$1);
+            var this$59 = $m_Lfastparse_core_Implicits$Optioner$();
+            var p0$60 = jsx$4.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$2.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$59)), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$60, WhitePP$1$10.WL$1);
+            var jsx$1 = this$14$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$10, newline$lzy$1$10);
+            var this$60 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$5.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$60))
+          })
+        })($this, WhitePP$1$1, preprocessingToken$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        var name$32 = new $c_Lsourcecode_Name().init___T("controlLine");
+        var p0$61 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$32.value$2, p$32, this$61.implicitReprOps$1);
+        var p0$62 = jsx$70.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$61, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$15$1) {
+          return (function(v$7$2) {
+            var v$7 = $as_s_Option(v$7$2);
+            return new $c_Lparsing_Pragma().init___s_Option(v$7)
+          })
+        })($this))));
+        var jsx$71 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$62, WhitePP$1$1.WL$1);
+        var this$63 = $m_Lfastparse_noApi$();
+        var p$34 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$16$1, WhitePP$1$11, newline$lzy$1$11) {
+          return (function() {
+            var this$62 = $m_Lfastparse_noApi$();
+            var p$33 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$11) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })(this$16$1));
+            var name$33 = new $c_Lsourcecode_Name().init___T("controlLine");
+            var p0$63 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$33.value$2, p$33, this$62.implicitReprOps$1);
+            return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$63, WhitePP$1$11.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$16$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$11, newline$lzy$1$11), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+          })
+        })($this, WhitePP$1$1, newline$lzy$1$1));
+        var name$34 = new $c_Lsourcecode_Name().init___T("controlLine");
+        var p0$64 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$34.value$2, p$34, this$63.implicitReprOps$1);
+        return jsx$71.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$64, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$17$1) {
+          return (function(v$8$2) {
+            $asUnit(v$8$2);
+            return new $c_Lparsing_ControlLineEmpty().init___()
+          })
+        })($this))))
+      })
+    })(this, WhitePP$1, preprocessingToken$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1));
+    var name$35 = new $c_Lsourcecode_Name().init___T("controlLine");
+    var p0$65 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$35.value$2, p$35, this$64.implicitReprOps$1);
+    return $as_Lfastparse_core_Parser(controlLine$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$65, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("controlLine")))
+  }
 });
 $c_Lparsing_CParser.prototype.multiplicativeExpressionHelper__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -6487,9 +8743,18 @@ $c_Lparsing_CParser.prototype.enumSpecifier$lzycompute__p1__Lfastparse_core_Pars
   };
   return this.enumSpecifier$1
 });
+$c_Lparsing_CParser.prototype.shiftExpression__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var hi = (16 & b.hi$2);
+  if ((hi === 0)) {
+    return this.shiftExpression$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.shiftExpression$1
+  }
+});
 $c_Lparsing_CParser.prototype.hexadecimalConstant$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (16 & b.lo$2);
+  var lo = (64 & b.lo$2);
   if ((lo === 0)) {
     var this$8 = this.White$1;
     var this$7 = this.White$1;
@@ -6522,9 +8787,9 @@ $c_Lparsing_CParser.prototype.hexadecimalConstant$lzycompute__p1__Lfastparse_cor
           i = ((1 + i) | 0)
         };
         var p0$1 = new $c_Lfastparse_parsers_Intrinsics$ElemIn().init___T__sc_Seq__Lfastparse_utils_ReprOps__Lfastparse_utils_ElemSetHelper("CharIn", b$1, this$2.implicitReprOps$1, $m_Lfastparse_utils_ElemSetHelper$CharBitSetHelper$());
-        var qual$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$5.WL$1);
-        var x$19 = $m_Lfastparse_all$().Pass$1;
-        return jsx$1.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(qual$4.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$19, 2147483647, (-1), $m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+        var qual$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$5.WL$1);
+        var x$34 = $m_Lfastparse_all$().Pass$1;
+        return jsx$1.$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(qual$7.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$34, 2147483647, (-1), $m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
       })
     })(this));
     var name = new $c_Lsourcecode_Name().init___T("hexadecimalConstant");
@@ -6537,20 +8802,11 @@ $c_Lparsing_CParser.prototype.hexadecimalConstant$lzycompute__p1__Lfastparse_cor
       })
     })(this)));
     var b$2 = this.bitmap$0$1;
-    var lo$1 = (16 | b$2.lo$2);
+    var lo$1 = (64 | b$2.lo$2);
     var hi = b$2.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
   return this.hexadecimalConstant$1
-});
-$c_Lparsing_CParser.prototype.shiftExpression__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$0$1;
-  var hi = (16 & b.hi$2);
-  if ((hi === 0)) {
-    return this.shiftExpression$lzycompute__p1__Lfastparse_core_Parser()
-  } else {
-    return this.shiftExpression$1
-  }
 });
 $c_Lparsing_CParser.prototype.exclusiveORExpression__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -6587,8 +8843,21 @@ $c_Lparsing_CParser.prototype.additiveExpression$lzycompute__p1__Lfastparse_core
   };
   return this.additiveExpression$1
 });
+$c_Lparsing_CParser.prototype.abstractDeclarator__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$1$1;
+  var lo = (134217728 & b.lo$2);
+  if ((lo === 0)) {
+    return this.abstractDeclarator$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.abstractDeclarator$1
+  }
+});
 $c_Lparsing_CParser.prototype.parse__T__Lparsing_CParseResult = (function($in) {
-  return $m_Lparsing_CParseResult$().wrap__Lfastparse_core_Parsed__Lparsing_CParseResult(this.top$1.parse__O__I__F3__Lfastparse_core_Parsed($in, 0, null))
+  var this$1 = this.White$1;
+  var p0 = $m_Lfastparse_noApi$().Start$1;
+  var qual$22 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this.translationUnit$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+  var raw = qual$22.parse__O__I__F3__Lfastparse_core_Parsed($in, 0, null);
+  return $m_Lparsing_CParseResult$().wrap__Lfastparse_core_Parsed__Lparsing_CParseResult(raw)
 });
 $c_Lparsing_CParser.prototype.inclusiveORExpressionHelper$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -6647,9 +8916,18 @@ $c_Lparsing_CParser.prototype.inclusiveORExpressionHelper$lzycompute__p1__Lfastp
   };
   return this.inclusiveORExpressionHelper$1
 });
+$c_Lparsing_CParser.prototype.cCharSequence__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var lo = (1048576 & b.lo$2);
+  if ((lo === 0)) {
+    return this.cCharSequence$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.cCharSequence$1
+  }
+});
 $c_Lparsing_CParser.prototype.enumerationConstant$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (131072 & b.lo$2);
+  var lo = (524288 & b.lo$2);
   if ((lo === 0)) {
     var this$1 = this.White$1;
     var p0 = this.identifier$1;
@@ -6660,11 +8938,14 @@ $c_Lparsing_CParser.prototype.enumerationConstant$lzycompute__p1__Lfastparse_cor
       })
     })(this)));
     var b$1 = this.bitmap$0$1;
-    var lo$1 = (131072 | b$1.lo$2);
+    var lo$1 = (524288 | b$1.lo$2);
     var hi = b$1.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
   return this.enumerationConstant$1
+});
+$c_Lparsing_CParser.prototype.endifLine$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, endifLine$lzy$1, newline$lzy$1) {
+  return (endifLine$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(endifLine$lzy$1.$$undvalue$1) : this.endifLine$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, endifLine$lzy$1, newline$lzy$1))
 });
 $c_Lparsing_CParser.prototype.pointer$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
@@ -6946,6 +9227,9 @@ $c_Lparsing_CParser.prototype.exclusiveORExpressionHelper$lzycompute__p1__Lfastp
   };
   return this.exclusiveORExpressionHelper$1
 });
+$c_Lparsing_CParser.prototype.elifGroup$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  return (elifGroup$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(elifGroup$lzy$1.$$undvalue$1) : this.elifGroup$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1))
+});
 $c_Lparsing_CParser.prototype.blockItem__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
   var hi = (32 & b.hi$2);
@@ -6973,6 +9257,32 @@ $c_Lparsing_CParser.prototype.functionSpecifier__Lfastparse_core_Parser = (funct
     return this.functionSpecifier$1
   }
 });
+$c_Lparsing_CParser.prototype.cCharSequence$lzycompute__p1__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var lo = (1048576 & b.lo$2);
+  if ((lo === 0)) {
+    var this$3 = $m_Lfastparse_noApi$().CharsWhile$2;
+    var pred = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function(v$2) {
+        if ((v$2 === null)) {
+          var v = 0
+        } else {
+          var this$2 = $as_jl_Character(v$2);
+          var v = this$2.value$1
+        };
+        return (((v !== 39) && (v !== 92)) && (v !== 10))
+      })
+    })(this));
+    $m_Lfastparse_noApi$();
+    var min = 1;
+    this.cCharSequence$1 = this$3.create__F1__I__Z__Lfastparse_parsers_Intrinsics$ElemsWhile(pred, min, true);
+    var b$1 = this.bitmap$0$1;
+    var lo$1 = (1048576 | b$1.lo$2);
+    var hi = b$1.hi$2;
+    this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+  };
+  return this.cCharSequence$1
+});
 $c_Lparsing_CParser.prototype.typeQualifier__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
   var lo = (16384 & b.lo$2);
@@ -6981,6 +9291,9 @@ $c_Lparsing_CParser.prototype.typeQualifier__Lfastparse_core_Parser = (function(
   } else {
     return this.typeQualifier$1
   }
+});
+$c_Lparsing_CParser.prototype.ifGroup$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  return (ifGroup$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(ifGroup$lzy$1.$$undvalue$1) : this.ifGroup$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1))
 });
 $c_Lparsing_CParser.prototype.directDeclarator$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
@@ -7078,7 +9391,7 @@ $c_Lparsing_CParser.prototype.logicalORExpression$lzycompute__p1__Lfastparse_cor
 });
 $c_Lparsing_CParser.prototype.hexadecimalFloatingConstant$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (512 & b.lo$2);
+  var lo = (2048 & b.lo$2);
   if ((lo === 0)) {
     var this$9 = this.White$1;
     var this$8 = this.White$1;
@@ -7141,7 +9454,7 @@ $c_Lparsing_CParser.prototype.hexadecimalFloatingConstant$lzycompute__p1__Lfastp
       })
     })(this))));
     var b$1 = this.bitmap$0$1;
-    var lo$1 = (512 | b$1.lo$2);
+    var lo$1 = (2048 | b$1.lo$2);
     var hi = b$1.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -7151,124 +9464,140 @@ $c_Lparsing_CParser.prototype.typeSpecifier$lzycompute__p1__Lfastparse_core_Pars
   var b = this.bitmap$1$1;
   var lo = (4 & b.lo$2);
   if ((lo === 0)) {
-    var this$26 = this.White$1;
-    var this$25 = this.White$1;
-    var this$24 = this.White$1;
-    var this$23 = this.White$1;
-    var this$22 = this.White$1;
-    var this$20 = this.White$1;
-    var this$18 = this.White$1;
-    var this$16 = this.White$1;
-    var this$14 = this.White$1;
-    var this$12 = this.White$1;
-    var this$10 = this.White$1;
-    var this$8 = this.White$1;
-    var this$6 = this.White$1;
-    var this$4 = this.White$1;
-    var this$2 = this.White$1;
-    var this$1 = $m_Lfastparse_noApi$();
-    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+    var this$29 = this.White$1;
+    var this$28 = $m_Lfastparse_noApi$();
+    var p$12 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("void")
+        var this$27 = $this.White$1;
+        var this$26 = $this.White$1;
+        var this$25 = $this.White$1;
+        var this$24 = $m_Lfastparse_noApi$();
+        var p$11 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+          return (function() {
+            var this$23 = $this$1.White$1;
+            var this$22 = $this$1.White$1;
+            var this$20 = $this$1.White$1;
+            var this$18 = $this$1.White$1;
+            var this$16 = $this$1.White$1;
+            var this$14 = $this$1.White$1;
+            var this$12 = $this$1.White$1;
+            var this$10 = $this$1.White$1;
+            var this$8 = $this$1.White$1;
+            var this$6 = $this$1.White$1;
+            var this$4 = $this$1.White$1;
+            var this$2 = $this$1.White$1;
+            var this$1 = $m_Lfastparse_noApi$();
+            var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("void")
+              })
+            })($this$1));
+            var name = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+            var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+            var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$2.WL$1);
+            var this$3 = $m_Lfastparse_noApi$();
+            var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("char")
+              })
+            })($this$1));
+            var name$1 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+            var p0$1 = jsx$1.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1));
+            var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$4.WL$1);
+            var this$5 = $m_Lfastparse_noApi$();
+            var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("short")
+              })
+            })($this$1));
+            var name$2 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+            var p0$2 = jsx$2.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$5.implicitReprOps$1));
+            var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$6.WL$1);
+            var this$7 = $m_Lfastparse_noApi$();
+            var p$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("int")
+              })
+            })($this$1));
+            var name$3 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+            var p0$3 = jsx$3.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$3.value$2, p$3, this$7.implicitReprOps$1));
+            var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$8.WL$1);
+            var this$9 = $m_Lfastparse_noApi$();
+            var p$4 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$1) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("long")
+              })
+            })($this$1));
+            var name$4 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+            var p0$4 = jsx$4.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$4.value$2, p$4, this$9.implicitReprOps$1));
+            var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$10.WL$1);
+            var this$11 = $m_Lfastparse_noApi$();
+            var p$5 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$6$1) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("float")
+              })
+            })($this$1));
+            var name$5 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+            var p0$5 = jsx$5.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$5.value$2, p$5, this$11.implicitReprOps$1));
+            var jsx$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, this$12.WL$1);
+            var this$13 = $m_Lfastparse_noApi$();
+            var p$6 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$7$1) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("double")
+              })
+            })($this$1));
+            var name$6 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+            var p0$6 = jsx$6.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$6.value$2, p$6, this$13.implicitReprOps$1));
+            var jsx$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, this$14.WL$1);
+            var this$15 = $m_Lfastparse_noApi$();
+            var p$7 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$8$1) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("signed")
+              })
+            })($this$1));
+            var name$7 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+            var p0$7 = jsx$7.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$7.value$2, p$7, this$15.implicitReprOps$1));
+            var jsx$8 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$7, this$16.WL$1);
+            var this$17 = $m_Lfastparse_noApi$();
+            var p$8 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$9$1) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("unsigned")
+              })
+            })($this$1));
+            var name$8 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+            var p0$8 = jsx$8.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$8.value$2, p$8, this$17.implicitReprOps$1));
+            var jsx$9 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$8, this$18.WL$1);
+            var this$19 = $m_Lfastparse_noApi$();
+            var p$9 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$10$1) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("_Bool")
+              })
+            })($this$1));
+            var name$9 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+            var p0$9 = jsx$9.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$9.value$2, p$9, this$19.implicitReprOps$1));
+            var jsx$10 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$9, this$20.WL$1);
+            var this$21 = $m_Lfastparse_noApi$();
+            var p$10 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$11$1) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("_Complex")
+              })
+            })($this$1));
+            var name$10 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+            var p0$10 = jsx$10.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$10.value$2, p$10, this$21.implicitReprOps$1));
+            var p0$11 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$10, this$22.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser($this$1.atomicTypeSpecifier__Lfastparse_core_Parser());
+            return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$11, this$23.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser($this$1.enumSpecifier__Lfastparse_core_Parser())
+          })
+        })($this));
+        var name$11 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+        var p0$12 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$11.value$2, p$11, this$24.implicitReprOps$1);
+        var p0$13 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$12, this$25.WL$1).$$bang__Lfastparse_core_Parser();
+        var p0$14 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$13, this$26.WL$1).map__F1__Lfastparse_core_Parser($m_Lparsing_TypeSpecifierSimple$());
+        return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$14, this$27.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser($this.structOrUnionSpecifier__Lfastparse_core_Parser())
       })
     })(this));
-    var name = new $c_Lsourcecode_Name().init___T("typeSpecifier");
-    var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
-    var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$2.WL$1);
-    var this$3 = $m_Lfastparse_noApi$();
-    var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("char")
-      })
-    })(this));
-    var name$1 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
-    var p0$1 = jsx$1.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1));
-    var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$4.WL$1);
-    var this$5 = $m_Lfastparse_noApi$();
-    var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("short")
-      })
-    })(this));
-    var name$2 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
-    var p0$2 = jsx$2.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$5.implicitReprOps$1));
-    var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$6.WL$1);
-    var this$7 = $m_Lfastparse_noApi$();
-    var p$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("int")
-      })
-    })(this));
-    var name$3 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
-    var p0$3 = jsx$3.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$3.value$2, p$3, this$7.implicitReprOps$1));
-    var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$8.WL$1);
-    var this$9 = $m_Lfastparse_noApi$();
-    var p$4 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$1) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("long")
-      })
-    })(this));
-    var name$4 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
-    var p0$4 = jsx$4.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$4.value$2, p$4, this$9.implicitReprOps$1));
-    var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$10.WL$1);
-    var this$11 = $m_Lfastparse_noApi$();
-    var p$5 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$6$1) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("float")
-      })
-    })(this));
-    var name$5 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
-    var p0$5 = jsx$5.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$5.value$2, p$5, this$11.implicitReprOps$1));
-    var jsx$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, this$12.WL$1);
-    var this$13 = $m_Lfastparse_noApi$();
-    var p$6 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$7$1) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("double")
-      })
-    })(this));
-    var name$6 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
-    var p0$6 = jsx$6.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$6.value$2, p$6, this$13.implicitReprOps$1));
-    var jsx$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, this$14.WL$1);
-    var this$15 = $m_Lfastparse_noApi$();
-    var p$7 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$8$1) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("signed")
-      })
-    })(this));
-    var name$7 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
-    var p0$7 = jsx$7.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$7.value$2, p$7, this$15.implicitReprOps$1));
-    var jsx$8 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$7, this$16.WL$1);
-    var this$17 = $m_Lfastparse_noApi$();
-    var p$8 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$9$1) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("unsigned")
-      })
-    })(this));
-    var name$8 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
-    var p0$8 = jsx$8.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$8.value$2, p$8, this$17.implicitReprOps$1));
-    var jsx$9 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$8, this$18.WL$1);
-    var this$19 = $m_Lfastparse_noApi$();
-    var p$9 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$10$1) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("_Bool")
-      })
-    })(this));
-    var name$9 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
-    var p0$9 = jsx$9.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$9.value$2, p$9, this$19.implicitReprOps$1));
-    var jsx$10 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$9, this$20.WL$1);
-    var this$21 = $m_Lfastparse_noApi$();
-    var p$10 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$11$1) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("_Complex")
-      })
-    })(this));
-    var name$10 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
-    var p0$10 = jsx$10.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$10.value$2, p$10, this$21.implicitReprOps$1));
-    var p0$11 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$10, this$22.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this.atomicTypeSpecifier__Lfastparse_core_Parser());
-    var p0$12 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$11, this$23.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this.structOrUnionSpecifier__Lfastparse_core_Parser());
-    var p0$13 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$12, this$24.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this.enumSpecifier__Lfastparse_core_Parser());
-    var p0$14 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$13, this$25.WL$1).$$bang__Lfastparse_core_Parser();
-    this.typeSpecifier$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$14, this$26.WL$1).map__F1__Lfastparse_core_Parser($m_Lparsing_TypeSpecifier$());
+    var name$12 = new $c_Lsourcecode_Name().init___T("typeSpecifier");
+    var p0$15 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$12.value$2, p$12, this$28.implicitReprOps$1);
+    this.typeSpecifier$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$15, this$29.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("typeSpecifier");
     var b$1 = this.bitmap$1$1;
     var lo$1 = (4 | b$1.lo$2);
     var hi = b$1.hi$2;
@@ -7504,6 +9833,9 @@ $c_Lparsing_CParser.prototype.argumentExpressionList__Lfastparse_core_Parser = (
     return this.argumentExpressionList$1
   }
 });
+$c_Lparsing_CParser.prototype.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque = (function(WhitePP$1, newline$lzy$1) {
+  return (newline$lzy$1.$$undinitialized$1 ? $as_Lfastparse_parsers_Combinators$Opaque(newline$lzy$1.$$undvalue$1) : this.newline$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1, newline$lzy$1))
+});
 $c_Lparsing_CParser.prototype.ANDExpression$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
   var hi = (1024 & b.hi$2);
@@ -7529,6 +9861,9 @@ $c_Lparsing_CParser.prototype.ANDExpression$lzycompute__p1__Lfastparse_core_Pars
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo, hi$1)
   };
   return this.ANDExpression$1
+});
+$c_Lparsing_CParser.prototype.ppTokens$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, ppTokens$lzy$1) {
+  return (ppTokens$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(ppTokens$lzy$1.$$undvalue$1) : this.ppTokens$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, ppTokens$lzy$1))
 });
 $c_Lparsing_CParser.prototype.logicalANDExpression$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -7581,6 +9916,39 @@ $c_Lparsing_CParser.prototype.directDeclarator__Lfastparse_core_Parser = (functi
     return this.directDeclarator$1
   }
 });
+$c_Lparsing_CParser.prototype.group$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  if ((group$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (group$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(group$lzy$1.$$undvalue$1)
+  } else {
+    var p0 = this.groupPart$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1);
+    var qual$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1.WL$1);
+    var x$10 = $m_Lfastparse_all$().Pass$1;
+    var this$1 = $m_Lfastparse_core_Implicits$Repeater$();
+    var p0$1 = qual$1.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$10, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$1));
+    var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("group");
+    return $as_Lfastparse_core_Parser(group$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function(v$2) {
+        var v = $as_sc_Seq(v$2);
+        return new $c_Lparsing_Group().init___sc_Seq(v.toList__sci_List())
+      })
+    })(this)))))
+  }
+});
+$c_Lparsing_CParser.prototype.headerName$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, headerName$lzy$1) {
+  return (headerName$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(headerName$lzy$1.$$undvalue$1) : this.headerName$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, headerName$lzy$1))
+});
+$c_Lparsing_CParser.prototype.characterConstant__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var lo = (2097152 & b.lo$2);
+  if ((lo === 0)) {
+    return this.characterConstant$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.characterConstant$1
+  }
+});
 $c_Lparsing_CParser.prototype.primaryExpression__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
   var lo = (33554432 & b.lo$2);
@@ -7590,9 +9958,12 @@ $c_Lparsing_CParser.prototype.primaryExpression__Lfastparse_core_Parser = (funct
     return this.primaryExpression$1
   }
 });
+$c_Lparsing_CParser.prototype.lparen$1__p1__sr_LazyRef__Lfastparse_core_Parser = (function(lparen$lzy$1) {
+  return (lparen$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(lparen$lzy$1.$$undvalue$1) : this.lparen$lzycompute$1__p1__sr_LazyRef__Lfastparse_core_Parser(lparen$lzy$1))
+});
 $c_Lparsing_CParser.prototype.integerConstant$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (4 & b.lo$2);
+  var lo = (16 & b.lo$2);
   if ((lo === 0)) {
     var this$14 = this.White$1;
     var this$13 = $m_Lfastparse_noApi$();
@@ -7639,7 +10010,7 @@ $c_Lparsing_CParser.prototype.integerConstant$lzycompute__p1__Lfastparse_core_Pa
     var p0$8 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$13.implicitReprOps$1);
     this.integerConstant$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$8, this$14.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("integerConstant");
     var b$1 = this.bitmap$0$1;
-    var lo$1 = (4 | b$1.lo$2);
+    var lo$1 = (16 | b$1.lo$2);
     var hi = b$1.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -8011,6 +10382,38 @@ $c_Lparsing_CParser.prototype.directDeclaratorHelper$lzycompute__p1__Lfastparse_
   };
   return this.directDeclaratorHelper$1
 });
+$c_Lparsing_CParser.prototype.nonDirective$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, nonDirective$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  if ((nonDirective$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (nonDirective$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(nonDirective$lzy$1.$$undvalue$1)
+  } else {
+    var this$1 = $m_Lfastparse_noApi$();
+    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+      })
+    })(this));
+    var name = new $c_Lsourcecode_Name().init___T("nonDirective");
+    var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+    var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1.WL$1);
+    var this$3 = $m_Lfastparse_noApi$();
+    var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2, WhitePP$1$1, preprocessingToken$1$1, ppTokens$lzy$1$1) {
+      return (function() {
+        return this$2.ppTokens$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$1, preprocessingToken$1$1, ppTokens$lzy$1$1)
+      })
+    })(this, WhitePP$1, preprocessingToken$1, ppTokens$lzy$1));
+    var name$1 = new $c_Lsourcecode_Name().init___T("nonDirective");
+    var p0$1 = jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+    var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1.WL$1);
+    var jsx$1 = this.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1, newline$lzy$1);
+    var this$4 = $m_Lfastparse_core_Implicits$Sequencer$();
+    var p0$2 = jsx$3.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$4));
+    var p0$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("nonDirective");
+    return $as_Lfastparse_core_Parser(nonDirective$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, WhitePP$1.WL$1).map__F1__Lfastparse_core_Parser($m_Lparsing_NonDirective$())))
+  }
+});
 $c_Lparsing_CParser.prototype.identifierList$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
   var lo = (33554432 & b.lo$2);
@@ -8031,20 +10434,20 @@ $c_Lparsing_CParser.prototype.identifierList$lzycompute__p1__Lfastparse_core_Par
     var name = new $c_Lsourcecode_Name().init___T("identifierList");
     var p0$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$2.implicitReprOps$1);
     var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this.identifier$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-    var qual$12 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$4.WL$1);
-    var x$51 = $m_Lfastparse_all$().Pass$1;
+    var qual$18 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$4.WL$1);
+    var x$78 = $m_Lfastparse_all$().Pass$1;
     var this$5 = $m_Lfastparse_core_Implicits$Repeater$();
-    var jsx$1 = qual$12.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$51, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$5));
+    var jsx$1 = qual$18.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$78, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$5));
     var this$6 = $m_Lfastparse_core_Implicits$Sequencer$();
     var p0$3 = jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$6)));
     var p0$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$7.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("identifierList");
     this.identifierList$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$8.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
       return (function(v$2) {
         var v = $as_T2(v$2);
-        var x$5 = $as_Lparsing_Identifier(v.$$und1__O());
+        var x$8 = $as_Lparsing_Identifier(v.$$und1__O());
         var jsx$3 = $as_sc_SeqLike(v.$$und2__O());
         var this$9 = $m_sc_Seq$();
-        return $as_sc_TraversableOnce(jsx$3.$$plus$colon__O__scg_CanBuildFrom__O(x$5, this$9.ReusableCBFInstance$2)).toList__sci_List()
+        return $as_sc_TraversableOnce(jsx$3.$$plus$colon__O__scg_CanBuildFrom__O(x$8, this$9.ReusableCBFInstance$2)).toList__sci_List()
       })
     })(this)));
     var b$1 = this.bitmap$1$1;
@@ -8053,6 +10456,15 @@ $c_Lparsing_CParser.prototype.identifierList$lzycompute__p1__Lfastparse_core_Par
     this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
   return this.identifierList$1
+});
+$c_Lparsing_CParser.prototype.specifierQualifierList__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$1$1;
+  var lo = (128 & b.lo$2);
+  if ((lo === 0)) {
+    return this.specifierQualifierList$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.specifierQualifierList$1
+  }
 });
 $c_Lparsing_CParser.prototype.parameterDeclaration$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
@@ -8085,18 +10497,12 @@ $c_Lparsing_CParser.prototype.parameterDeclaration$lzycompute__p1__Lfastparse_co
   };
   return this.parameterDeclaration$1
 });
-$c_Lparsing_CParser.prototype.specifierQualifierList__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$1$1;
-  var lo = (128 & b.lo$2);
-  if ((lo === 0)) {
-    return this.specifierQualifierList$lzycompute__p1__Lfastparse_core_Parser()
-  } else {
-    return this.specifierQualifierList$1
-  }
+$c_Lparsing_CParser.prototype.replacementList$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, replacementList$lzy$1, ppTokens$lzy$1) {
+  return (replacementList$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(replacementList$lzy$1.$$undvalue$1) : this.replacementList$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, replacementList$lzy$1, ppTokens$lzy$1))
 });
 $c_Lparsing_CParser.prototype.hexadecimalDigitSequence$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (32768 & b.lo$2);
+  var lo = (131072 & b.lo$2);
   if ((lo === 0)) {
     var this$7 = this.White$1;
     var this$6 = this.White$1;
@@ -8126,9 +10532,9 @@ $c_Lparsing_CParser.prototype.hexadecimalDigitSequence$lzycompute__p1__Lfastpars
           i = ((1 + i) | 0)
         };
         var p0 = new $c_Lfastparse_parsers_Intrinsics$ElemIn().init___T__sc_Seq__Lfastparse_utils_ReprOps__Lfastparse_utils_ElemSetHelper("CharIn", b$1, this$1.implicitReprOps$1, $m_Lfastparse_utils_ElemSetHelper$CharBitSetHelper$());
-        var qual$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$4.WL$1);
-        var x$27 = $m_Lfastparse_all$().Pass$1;
-        return qual$6.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$27, 2147483647, (-1), $m_Lfastparse_core_Implicits$Repeater$UnitRepeater$())
+        var qual$9 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$4.WL$1);
+        var x$42 = $m_Lfastparse_all$().Pass$1;
+        return qual$9.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$42, 2147483647, (-1), $m_Lfastparse_core_Implicits$Repeater$UnitRepeater$())
       })
     })(this));
     var name = new $c_Lsourcecode_Name().init___T("hexadecimalDigitSequence");
@@ -8143,7 +10549,7 @@ $c_Lparsing_CParser.prototype.hexadecimalDigitSequence$lzycompute__p1__Lfastpars
       })
     })(this)));
     var b$2 = this.bitmap$0$1;
-    var lo$1 = (32768 | b$2.lo$2);
+    var lo$1 = (131072 | b$2.lo$2);
     var hi = b$2.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -8280,7 +10686,7 @@ $c_Lparsing_CParser.prototype.conditionalExpression__Lfastparse_core_Parser = (f
 });
 $c_Lparsing_CParser.prototype.decimalFloatingConstant__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (256 & b.lo$2);
+  var lo = (1024 & b.lo$2);
   if ((lo === 0)) {
     return this.decimalFloatingConstant$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -8295,6 +10701,32 @@ $c_Lparsing_CParser.prototype.logicalANDExpressionHelper__Lfastparse_core_Parser
   } else {
     return this.logicalANDExpressionHelper$1
   }
+});
+$c_Lparsing_CParser.prototype.expression$lzycompute__p1__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var hi = (33554432 & b.hi$2);
+  if ((hi === 0)) {
+    var this$4 = this.White$1;
+    var this$3 = this.White$1;
+    var this$1 = this.White$1;
+    var p0 = this.assignmentExpression__Lfastparse_core_Parser();
+    var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
+    var jsx$1 = this.expressionHelper__Lfastparse_core_Parser();
+    var this$2 = $m_Lfastparse_core_Implicits$Sequencer$();
+    var p0$1 = jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$2)));
+    var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function(v$2) {
+        var v = $as_T2(v$2);
+        return $this.binary__p1__Lparsing_Expression__Lparsing_CParser$BinaryOpBuildWrap__Lparsing_Expression($as_Lparsing_Expression(v.$$und1__O()), $as_Lparsing_CParser$BinaryOpBuildWrap(v.$$und2__O()))
+      })
+    })(this)));
+    this.expression$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$4.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("expression");
+    var b$1 = this.bitmap$0$1;
+    var lo = b$1.lo$2;
+    var hi$1 = (33554432 | b$1.hi$2);
+    this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo, hi$1)
+  };
+  return this.expression$1
 });
 $c_Lparsing_CParser.prototype.parameterTypeList$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
@@ -8352,32 +10784,6 @@ $c_Lparsing_CParser.prototype.parameterTypeList$lzycompute__p1__Lfastparse_core_
   };
   return this.parameterTypeList$1
 });
-$c_Lparsing_CParser.prototype.expression$lzycompute__p1__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$0$1;
-  var hi = (33554432 & b.hi$2);
-  if ((hi === 0)) {
-    var this$4 = this.White$1;
-    var this$3 = this.White$1;
-    var this$1 = this.White$1;
-    var p0 = this.assignmentExpression__Lfastparse_core_Parser();
-    var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
-    var jsx$1 = this.expressionHelper__Lfastparse_core_Parser();
-    var this$2 = $m_Lfastparse_core_Implicits$Sequencer$();
-    var p0$1 = jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$2)));
-    var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-      return (function(v$2) {
-        var v = $as_T2(v$2);
-        return $this.binary__p1__Lparsing_Expression__Lparsing_CParser$BinaryOpBuildWrap__Lparsing_Expression($as_Lparsing_Expression(v.$$und1__O()), $as_Lparsing_CParser$BinaryOpBuildWrap(v.$$und2__O()))
-      })
-    })(this)));
-    this.expression$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$4.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("expression");
-    var b$1 = this.bitmap$0$1;
-    var lo = b$1.lo$2;
-    var hi$1 = (33554432 | b$1.hi$2);
-    this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo, hi$1)
-  };
-  return this.expression$1
-});
 $c_Lparsing_CParser.prototype.declarationSpecifier__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
   var hi = (536870912 & b.hi$2);
@@ -8389,21 +10795,22 @@ $c_Lparsing_CParser.prototype.declarationSpecifier__Lfastparse_core_Parser = (fu
 });
 $c_Lparsing_CParser.prototype.stringLiteral$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (1048576 & b.lo$2);
+  var lo = (2 & b.lo$2);
   if ((lo === 0)) {
-    var this$16 = this.White$1;
-    var this$15 = this.White$1;
-    var this$14 = $m_Lfastparse_noApi$();
-    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+    var encodingPrefix$lzy = new $c_sr_LazyRef().init___();
+    var this$16 = $m_Lfastparse_all$();
+    var this$15 = $m_Lfastparse_all$();
+    var this$14 = $m_Lfastparse_all$();
+    var p$4 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, encodingPrefix$lzy$1) {
       return (function() {
-        var this$10 = $this.White$1;
-        var this$6 = $this.White$1;
-        var this$2 = $this.White$1;
-        var this$1 = $this.White$1;
-        var p0 = $this.encodingPrefix__Lfastparse_core_Parser();
-        var p0$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1).$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Optioner$UnitOptioner$());
-        var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$2.WL$1);
-        var this$3 = $m_Lfastparse_noApi$();
+        var this$10 = $m_Lfastparse_all$();
+        var this$6 = $m_Lfastparse_all$();
+        var this$2 = $m_Lfastparse_all$();
+        var this$1 = $m_Lfastparse_all$();
+        var p = $this.encodingPrefix$1__p1__sr_LazyRef__Lfastparse_core_Parser(encodingPrefix$lzy$1);
+        var p$1 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p, this$1.implicitReprOps$1).$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Optioner$UnitOptioner$());
+        var jsx$1 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$1, this$2.implicitReprOps$1);
+        var this$3 = $m_Lfastparse_all$();
         var array = [$m_s_Predef$().wrapString__T__sci_WrappedString("\"")];
         $m_sc_Seq$();
         $m_sjs_js_WrappedArray$();
@@ -8424,9 +10831,9 @@ $c_Lparsing_CParser.prototype.stringLiteral$lzycompute__p1__Lfastparse_core_Pars
           b$1.array$6.push(elem);
           i = ((1 + i) | 0)
         };
-        var p0$2 = jsx$1.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Intrinsics$ElemIn().init___T__sc_Seq__Lfastparse_utils_ReprOps__Lfastparse_utils_ElemSetHelper("CharIn", b$1, this$3.implicitReprOps$1, $m_Lfastparse_utils_ElemSetHelper$CharBitSetHelper$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-        var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$6.WL$1);
-        var this$9 = $m_Lfastparse_noApi$().CharsWhile$2;
+        var p$2 = jsx$1.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Intrinsics$ElemIn().init___T__sc_Seq__Lfastparse_utils_ReprOps__Lfastparse_utils_ElemSetHelper("CharIn", b$1, this$3.implicitReprOps$1, $m_Lfastparse_utils_ElemSetHelper$CharBitSetHelper$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$2 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$2, this$6.implicitReprOps$1);
+        var this$9 = $m_Lfastparse_all$().CharsWhile$2;
         var pred = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1) {
           return (function(v$2) {
             if ((v$2 === null)) {
@@ -8435,14 +10842,14 @@ $c_Lparsing_CParser.prototype.stringLiteral$lzycompute__p1__Lfastparse_core_Pars
               var this$8 = $as_jl_Character(v$2);
               var v = this$8.value$1
             };
-            return (((v !== 34) && (v !== 92)) && (v !== 10))
+            return (v !== 34)
           })
         })($this));
-        $m_Lfastparse_noApi$();
+        $m_Lfastparse_all$();
         var min = 1;
-        var p0$3 = jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$9.create__F1__I__Z__Lfastparse_parsers_Intrinsics$ElemsWhile(pred, min, true), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-        var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$10.WL$1);
-        var this$11 = $m_Lfastparse_noApi$();
+        var p$3 = jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$9.create__F1__I__Z__Lfastparse_parsers_Intrinsics$ElemsWhile(pred, min, true), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$3 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$3, this$10.implicitReprOps$1);
+        var this$11 = $m_Lfastparse_all$();
         var array$1 = [$m_s_Predef$().wrapString__T__sci_WrappedString("\"")];
         $m_sc_Seq$();
         $m_sjs_js_WrappedArray$();
@@ -8465,11 +10872,11 @@ $c_Lparsing_CParser.prototype.stringLiteral$lzycompute__p1__Lfastparse_core_Pars
         };
         return jsx$3.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Intrinsics$ElemIn().init___T__sc_Seq__Lfastparse_utils_ReprOps__Lfastparse_utils_ElemSetHelper("CharIn", b$2, this$11.implicitReprOps$1, $m_Lfastparse_utils_ElemSetHelper$CharBitSetHelper$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
       })
-    })(this));
+    })(this, encodingPrefix$lzy));
     var name = new $c_Lsourcecode_Name().init___T("stringLiteral");
-    var p0$4 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$14.implicitReprOps$1);
-    var p0$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$15.WL$1).$$bang__Lfastparse_core_Parser();
-    this.stringLiteral$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, this$16.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+    var p$5 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p$4, this$14.implicitReprOps$1);
+    var p$6 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$5, this$15.implicitReprOps$1).$$bang__Lfastparse_core_Parser();
+    this.stringLiteral$1 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$6, this$16.implicitReprOps$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
       return (function(v$2$1) {
         var v$1 = $as_T(v$2$1);
         var this$18 = new $c_sci_StringOps().init___T(v$1);
@@ -8487,7 +10894,7 @@ $c_Lparsing_CParser.prototype.stringLiteral$lzycompute__p1__Lfastparse_core_Pars
       })
     })(this)));
     var b$3 = this.bitmap$0$1;
-    var lo$1 = (1048576 | b$3.lo$2);
+    var lo$1 = (2 | b$3.lo$2);
     var hi = b$3.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -8548,6 +10955,15 @@ $c_Lparsing_CParser.prototype.parameterDeclaration__Lfastparse_core_Parser = (fu
     return this.parameterDeclaration$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.parameterDeclaration$1
+  }
+});
+$c_Lparsing_CParser.prototype.ppNumber__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var lo = (16777216 & b.lo$2);
+  if ((lo === 0)) {
+    return this.ppNumber$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.ppNumber$1
   }
 });
 $c_Lparsing_CParser.prototype.logicalANDExpressionHelper$lzycompute__p1__Lfastparse_core_Parser = (function() {
@@ -8838,6 +11254,15 @@ $c_Lparsing_CParser.prototype.postfixExpressionR$lzycompute__p1__Lfastparse_core
   };
   return this.postfixExpressionR$1
 });
+$c_Lparsing_CParser.prototype.directAbstractDeclaratorHelper__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$1$1;
+  var lo = (268435456 & b.lo$2);
+  if ((lo === 0)) {
+    return this.directAbstractDeclaratorHelper$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.directAbstractDeclaratorHelper$1
+  }
+});
 $c_Lparsing_CParser.prototype.structDeclarator__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
   var lo = (512 & b.lo$2);
@@ -8939,6 +11364,12 @@ $c_Lparsing_CParser.prototype.structDeclaration__Lfastparse_core_Parser = (funct
   } else {
     return this.structDeclaration$1
   }
+});
+$c_Lparsing_CParser.prototype.encodingPrefix$1__p1__sr_LazyRef__Lfastparse_core_Parser = (function(encodingPrefix$lzy$1) {
+  return (encodingPrefix$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(encodingPrefix$lzy$1.$$undvalue$1) : this.encodingPrefix$lzycompute$1__p1__sr_LazyRef__Lfastparse_core_Parser(encodingPrefix$lzy$1))
+});
+$c_Lparsing_CParser.prototype.controlLine$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, controlLine$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  return (controlLine$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(controlLine$lzy$1.$$undvalue$1) : this.controlLine$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, controlLine$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1))
 });
 $c_Lparsing_CParser.prototype.declaration$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -9050,62 +11481,87 @@ $c_Lparsing_CParser.prototype.structOrUnionSpecifier$lzycompute__p1__Lfastparse_
   var b = this.bitmap$1$1;
   var lo = (8 & b.lo$2);
   if ((lo === 0)) {
-    var this$13 = this.White$1;
-    var this$12 = $m_Lfastparse_noApi$();
+    var this$16 = this.White$1;
+    var this$15 = this.White$1;
+    var this$14 = $m_Lfastparse_noApi$();
     var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
+        var this$11 = $this.White$1;
         var this$9 = $this.White$1;
-        var this$7 = $this.White$1;
-        var this$4 = $this.White$1;
+        var this$6 = $this.White$1;
+        var this$2 = $this.White$1;
         var this$1 = $this.White$1;
         var p0 = $this.structOrUnion__Lfastparse_core_Parser();
-        var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
-        var this$2 = $this.White$1;
-        var p0$1 = $this.identifier$1;
-        var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$2.WL$1);
-        var this$3 = $m_Lfastparse_core_Implicits$Optioner$();
-        var p0$2 = jsx$5.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$4.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$3)), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
-        var jsx$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$4.WL$1);
-        var this$5 = $m_Lfastparse_noApi$();
+        var p0$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1).$$bang__Lfastparse_core_Parser();
+        var jsx$8 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$2.WL$1);
+        var this$3 = $this.White$1;
+        var p0$2 = $this.identifier$1;
+        var jsx$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$3.WL$1);
+        var this$4 = $m_Lfastparse_core_Implicits$Optioner$();
+        var jsx$6 = jsx$7.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$4));
+        var this$5 = $m_Lfastparse_core_Implicits$Sequencer$();
+        var p0$3 = jsx$8.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$6, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$5)));
+        var jsx$9 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$6.WL$1);
+        var this$7 = $m_Lfastparse_noApi$();
         var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
           return (function() {
             return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("{")
           })
         })($this));
         var name = new $c_Lsourcecode_Name().init___T("structOrUnionSpecifier");
-        var jsx$3 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$5.implicitReprOps$1);
-        var this$6 = $m_Lfastparse_core_Implicits$Sequencer$();
-        var p0$3 = jsx$6.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$3, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$6));
-        var jsx$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$7.WL$1);
-        var jsx$2 = $this.structDeclarationList__Lfastparse_core_Parser();
+        var jsx$5 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$7.implicitReprOps$1);
         var this$8 = $m_Lfastparse_core_Implicits$Sequencer$();
-        var p0$4 = jsx$7.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$2, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$8)));
-        var jsx$8 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$9.WL$1);
-        var this$10 = $m_Lfastparse_noApi$();
+        var p0$4 = jsx$9.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$5, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$8));
+        var jsx$10 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$9.WL$1);
+        var jsx$4 = $this.structDeclarationList__Lfastparse_core_Parser();
+        var this$10 = $m_Lfastparse_core_Implicits$Sequencer$();
+        var p0$5 = jsx$10.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$4, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_SequencerGen__Sequencer2__O(this$10)));
+        var jsx$11 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, this$11.WL$1);
+        var this$12 = $m_Lfastparse_noApi$();
         var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1) {
           return (function() {
             return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("}")
           })
         })($this));
         var name$1 = new $c_Lsourcecode_Name().init___T("structOrUnionSpecifier");
-        var jsx$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$10.implicitReprOps$1);
-        var this$11 = $m_Lfastparse_core_Implicits$Sequencer$();
-        return jsx$8.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$11))
+        var jsx$3 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$12.implicitReprOps$1);
+        var this$13 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$11.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$3, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$13))
       })
     })(this));
     var name$2 = new $c_Lsourcecode_Name().init___T("structOrUnionSpecifier");
-    var p0$5 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$12.implicitReprOps$1);
-    var jsx$9 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, this$13.WL$1);
-    var this$15 = $m_Lfastparse_noApi$();
-    var p$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$2) {
+    var p0$6 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$14.implicitReprOps$1);
+    var p0$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, this$15.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$2) {
+      return (function(v$2) {
+        var v = $as_T3(v$2);
+        var x = v.$$und1$1;
+        return new $c_Lparsing_StructImpl().init___Z__s_Option__sc_Seq(((x !== null) && $objectEquals(x, "struct")), $as_s_Option(v.$$und2$1), $as_sc_TraversableOnce(v.$$und3$1).toList__sci_List())
+      })
+    })(this)));
+    var jsx$12 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$7, this$16.WL$1);
+    var this$21 = this.White$1;
+    var this$20 = $m_Lfastparse_noApi$();
+    var p$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
       return (function() {
-        var this$14 = this$2$2.White$1;
-        var p0$6 = this$2$2.structOrUnion__Lfastparse_core_Parser();
-        return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, this$14.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$2$2.identifier$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+        var this$18 = this$3$1.White$1;
+        var this$17 = this$3$1.White$1;
+        var p0$8 = this$3$1.structOrUnion__Lfastparse_core_Parser();
+        var p0$9 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$8, this$17.WL$1).$$bang__Lfastparse_core_Parser();
+        var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$9, this$18.WL$1);
+        var jsx$1 = this$3$1.identifier$1;
+        var this$19 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$19)))
       })
     })(this));
     var name$3 = new $c_Lsourcecode_Name().init___T("structOrUnionSpecifier");
-    this.structOrUnionSpecifier$1 = jsx$9.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$3.value$2, p$3, this$15.implicitReprOps$1));
+    var p0$10 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$3.value$2, p$3, this$20.implicitReprOps$1);
+    this.structOrUnionSpecifier$1 = jsx$12.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$10, this$21.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$4$1) {
+      return (function(v$3$2) {
+        var v$3 = $as_T2(v$3$2);
+        var x$1 = v$3.$$und1__O();
+        return new $c_Lparsing_StructUse().init___Z__Lparsing_Identifier(((x$1 !== null) && $objectEquals(x$1, "struct")), $as_Lparsing_Identifier(v$3.$$und2__O()))
+      })
+    })(this))));
     var b$1 = this.bitmap$1$1;
     var lo$1 = (8 | b$1.lo$2);
     var hi = b$1.hi$2;
@@ -9115,7 +11571,7 @@ $c_Lparsing_CParser.prototype.structOrUnionSpecifier$lzycompute__p1__Lfastparse_
 });
 $c_Lparsing_CParser.prototype.decimalFloatingConstant$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (256 & b.lo$2);
+  var lo = (1024 & b.lo$2);
   if ((lo === 0)) {
     var this$26 = $m_Lfastparse_noApi$();
     var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
@@ -9155,8 +11611,8 @@ $c_Lparsing_CParser.prototype.decimalFloatingConstant$lzycompute__p1__Lfastparse
               var this$11 = $m_s_None$()
             } else {
               var arg1 = this$10.get__O();
-              var x$1 = $as_Lparsing_Exponent(arg1);
-              var this$11 = new $c_s_Some().init___O(x$1.calc__F())
+              var x$2 = $as_Lparsing_Exponent(arg1);
+              var this$11 = new $c_s_Some().init___O(x$2.calc__F())
             };
             return new $c_Lparsing_FloatConstant().init___F($fround((jsx$10 * $uF((this$11.isEmpty__Z() ? 1.0 : this$11.get__O())))))
           })
@@ -9206,7 +11662,7 @@ $c_Lparsing_CParser.prototype.decimalFloatingConstant$lzycompute__p1__Lfastparse
     var name$2 = new $c_Lsourcecode_Name().init___T("decimalFloatingConstant");
     this.decimalFloatingConstant$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$26.implicitReprOps$1);
     var b$1 = this.bitmap$0$1;
-    var lo$1 = (256 | b$1.lo$2);
+    var lo$1 = (1024 | b$1.lo$2);
     var hi = b$1.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -9236,6 +11692,18 @@ $c_Lparsing_CParser.prototype.blockItemList__Lfastparse_core_Parser = (function(
   } else {
     return this.blockItemList$1
   }
+});
+$c_Lparsing_CParser.prototype.ppNumber$lzycompute__p1__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var lo = (16777216 & b.lo$2);
+  if ((lo === 0)) {
+    this.ppNumber$1 = this.constant__Lfastparse_core_Parser();
+    var b$1 = this.bitmap$0$1;
+    var lo$1 = (16777216 | b$1.lo$2);
+    var hi = b$1.hi$2;
+    this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+  };
+  return this.ppNumber$1
 });
 $c_Lparsing_CParser.prototype.initDeclaratorList$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -9267,10 +11735,10 @@ $c_Lparsing_CParser.prototype.initDeclaratorList$lzycompute__p1__Lfastparse_core
         })($this));
         var name$1 = new $c_Lsourcecode_Name().init___T("initDeclaratorList");
         var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$4.implicitReprOps$1);
-        var qual$9 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$5.WL$1);
-        var x$39 = $m_Lfastparse_all$().Pass$1;
+        var qual$12 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$5.WL$1);
+        var x$54 = $m_Lfastparse_all$().Pass$1;
         var this$6 = $m_Lfastparse_core_Implicits$Repeater$();
-        var jsx$1 = qual$9.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$39, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$6));
+        var jsx$1 = qual$12.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$54, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$6));
         var this$7 = $m_Lfastparse_core_Implicits$Sequencer$();
         return jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$7)))
       })
@@ -9281,10 +11749,10 @@ $c_Lparsing_CParser.prototype.initDeclaratorList$lzycompute__p1__Lfastparse_core
     this.initDeclaratorList$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$10.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
       return (function(v$2) {
         var v = $as_T2(v$2);
-        var x$3 = $as_Lparsing_InitDeclarator(v.$$und1__O());
+        var x$4 = $as_Lparsing_InitDeclarator(v.$$und1__O());
         var jsx$3 = $as_sc_SeqLike(v.$$und2__O());
         var this$11 = $m_sc_Seq$();
-        return $as_sc_TraversableOnce(jsx$3.$$plus$colon__O__scg_CanBuildFrom__O(x$3, this$11.ReusableCBFInstance$2)).toList__sci_List()
+        return $as_sc_TraversableOnce(jsx$3.$$plus$colon__O__scg_CanBuildFrom__O(x$4, this$11.ReusableCBFInstance$2)).toList__sci_List()
       })
     })(this)));
     var b$1 = this.bitmap$0$1;
@@ -9296,21 +11764,18 @@ $c_Lparsing_CParser.prototype.initDeclaratorList$lzycompute__p1__Lfastparse_core
 });
 $c_Lparsing_CParser.prototype.exponentPart__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (2048 & b.lo$2);
+  var lo = (8192 & b.lo$2);
   if ((lo === 0)) {
     return this.exponentPart$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.exponentPart$1
   }
 });
-$c_Lparsing_CParser.prototype.alignmentSpecifier__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$1$1;
-  var lo = (65536 & b.lo$2);
-  if ((lo === 0)) {
-    return this.alignmentSpecifier$lzycompute__p1__Lfastparse_core_Parser()
-  } else {
-    return this.alignmentSpecifier$1
-  }
+$c_Lparsing_CParser.prototype.group$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  return (group$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(group$lzy$1.$$undvalue$1) : this.group$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1))
+});
+$c_Lparsing_CParser.prototype.nonDirective$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, nonDirective$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  return (nonDirective$lzy$1.$$undinitialized$1 ? $as_Lfastparse_core_Parser(nonDirective$lzy$1.$$undvalue$1) : this.nonDirective$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, nonDirective$lzy$1, ppTokens$lzy$1, newline$lzy$1))
 });
 $c_Lparsing_CParser.prototype.expressionHelper$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -9378,6 +11843,15 @@ $c_Lparsing_CParser.prototype.expressionHelper$lzycompute__p1__Lfastparse_core_P
   };
   return this.expressionHelper$1
 });
+$c_Lparsing_CParser.prototype.alignmentSpecifier__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$1$1;
+  var lo = (65536 & b.lo$2);
+  if ((lo === 0)) {
+    return this.alignmentSpecifier$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.alignmentSpecifier$1
+  }
+});
 $c_Lparsing_CParser.prototype.assignmentExpressionHelper$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
   var hi = (8388608 & b.hi$2);
@@ -9430,7 +11904,7 @@ $c_Lparsing_CParser.prototype.assignmentExpressionHelper$lzycompute__p1__Lfastpa
 });
 $c_Lparsing_CParser.prototype.integerSuffix$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (64 & b.lo$2);
+  var lo = (256 & b.lo$2);
   if ((lo === 0)) {
     var this$27 = $m_Lfastparse_noApi$();
     var p$10 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
@@ -9582,7 +12056,7 @@ $c_Lparsing_CParser.prototype.integerSuffix$lzycompute__p1__Lfastparse_core_Pars
     var name$10 = new $c_Lsourcecode_Name().init___T("integerSuffix");
     this.integerSuffix$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$10.value$2, p$10, this$27.implicitReprOps$1);
     var b$3 = this.bitmap$0$1;
-    var lo$1 = (64 | b$3.lo$2);
+    var lo$1 = (256 | b$3.lo$2);
     var hi = b$3.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -9628,6 +12102,40 @@ $c_Lparsing_CParser.prototype.postfixExpressionR__Lfastparse_core_Parser = (func
     return this.postfixExpressionR$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.postfixExpressionR$1
+  }
+});
+$c_Lparsing_CParser.prototype.newline$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque = (function(WhitePP$1, newline$lzy$1) {
+  if ((newline$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (newline$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_parsers_Combinators$Opaque(newline$lzy$1.$$undvalue$1)
+  } else {
+    var this$4 = $m_Lfastparse_noApi$();
+    var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, WhitePP$1$1) {
+      return (function() {
+        var this$1 = $m_Lfastparse_noApi$();
+        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("\r\n")
+          })
+        })($this));
+        var name = new $c_Lsourcecode_Name().init___T("newline");
+        var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+        var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1$1.WL$1);
+        var this$3 = $m_Lfastparse_noApi$();
+        var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("\n")
+          })
+        })($this));
+        var name$1 = new $c_Lsourcecode_Name().init___T("newline");
+        return jsx$1.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1))
+      })
+    })(this, WhitePP$1));
+    var name$2 = new $c_Lsourcecode_Name().init___T("newline");
+    var p0$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$4.implicitReprOps$1);
+    return $as_Lfastparse_parsers_Combinators$Opaque(newline$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("newline")))
   }
 });
 $c_Lparsing_CParser.prototype.pointer__Lfastparse_core_Parser = (function() {
@@ -9700,38 +12208,56 @@ $c_Lparsing_CParser.prototype.structDeclarator$lzycompute__p1__Lfastparse_core_P
   var b = this.bitmap$1$1;
   var lo = (512 & b.lo$2);
   if ((lo === 0)) {
-    var this$1 = this.White$1;
-    var p0 = this.declarator__Lfastparse_core_Parser();
-    var jsx$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
-    var this$9 = $m_Lfastparse_noApi$();
-    var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+    var this$13 = this.White$1;
+    var this$12 = $m_Lfastparse_noApi$();
+    var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        var this$7 = $this.White$1;
-        var this$4 = $this.White$1;
         var this$2 = $this.White$1;
-        var p0$1 = $this.declarator__Lfastparse_core_Parser();
-        var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$2.WL$1);
-        var this$3 = $m_Lfastparse_core_Implicits$Optioner$();
-        var p0$2 = jsx$3.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$3));
-        var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$4.WL$1);
-        var this$5 = $m_Lfastparse_noApi$();
-        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+        var this$1 = $this.White$1;
+        var p0 = $this.declarator__Lfastparse_core_Parser();
+        var p0$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1).map__F1__Lfastparse_core_Parser($m_Lparsing_StructDeclaractor1$());
+        var jsx$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$2.WL$1);
+        var this$11 = $this.White$1;
+        var this$10 = $m_Lfastparse_noApi$();
+        var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
           return (function() {
-            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(":")
+            var this$8 = $this$1.White$1;
+            var this$5 = $this$1.White$1;
+            var this$3 = $this$1.White$1;
+            var p0$2 = $this$1.declarator__Lfastparse_core_Parser();
+            var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$3.WL$1);
+            var this$4 = $m_Lfastparse_core_Implicits$Optioner$();
+            var p0$3 = jsx$3.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$4));
+            var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$5.WL$1);
+            var this$6 = $m_Lfastparse_noApi$();
+            var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser(":")
+              })
+            })($this$1));
+            var name = new $c_Lsourcecode_Name().init___T("structDeclarator");
+            var jsx$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$6.implicitReprOps$1);
+            var this$7 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$4 = jsx$4.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$2, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$7));
+            var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$8.WL$1);
+            var jsx$1 = $this$1.constantExpression__Lfastparse_core_Parser();
+            var this$9 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$5.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$9)))
           })
         })($this));
-        var name = new $c_Lsourcecode_Name().init___T("structDeclarator");
-        var jsx$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$5.implicitReprOps$1);
-        var this$6 = $m_Lfastparse_core_Implicits$Sequencer$();
-        var p0$3 = jsx$4.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$2, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$6));
-        var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$7.WL$1);
-        var jsx$1 = $this.constantExpression__Lfastparse_core_Parser();
-        var this$8 = $m_Lfastparse_core_Implicits$Sequencer$();
-        return jsx$5.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$8)))
+        var name$1 = new $c_Lsourcecode_Name().init___T("structDeclarator");
+        var p0$5 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$10.implicitReprOps$1);
+        return jsx$6.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, this$11.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+          return (function(v$2) {
+            var v = $as_T2(v$2);
+            return new $c_Lparsing_StructDeclaractor2().init___s_Option__Lparsing_Expression($as_s_Option(v.$$und1__O()), $as_Lparsing_Expression(v.$$und2__O()))
+          })
+        })($this))))
       })
     })(this));
-    var name$1 = new $c_Lsourcecode_Name().init___T("structDeclarator");
-    this.structDeclarator$1 = jsx$6.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$9.implicitReprOps$1));
+    var name$2 = new $c_Lsourcecode_Name().init___T("structDeclarator");
+    var p0$6 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$12.implicitReprOps$1);
+    this.structDeclarator$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, this$13.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("structDeclarator");
     var b$1 = this.bitmap$1$1;
     var lo$1 = (512 | b$1.lo$2);
     var hi = b$1.hi$2;
@@ -9768,10 +12294,10 @@ $c_Lparsing_CParser.prototype.argumentExpressionList$lzycompute__p1__Lfastparse_
         })($this));
         var name$1 = new $c_Lsourcecode_Name().init___T("argumentExpressionList");
         var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$4.implicitReprOps$1);
-        var qual$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$5.WL$1);
-        var x$31 = $m_Lfastparse_all$().Pass$1;
+        var qual$10 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$5.WL$1);
+        var x$46 = $m_Lfastparse_all$().Pass$1;
         var this$6 = $m_Lfastparse_core_Implicits$Repeater$();
-        var jsx$1 = qual$7.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$31, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$6));
+        var jsx$1 = qual$10.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(0, x$46, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$6));
         var this$7 = $m_Lfastparse_core_Implicits$Sequencer$();
         return jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$7)))
       })
@@ -9781,10 +12307,10 @@ $c_Lparsing_CParser.prototype.argumentExpressionList$lzycompute__p1__Lfastparse_
     this.argumentExpressionList$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$9.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
       return (function(v$2) {
         var v = $as_T2(v$2);
-        var x$2 = $as_Lparsing_Expression(v.$$und1__O());
+        var x$3 = $as_Lparsing_Expression(v.$$und1__O());
         var jsx$3 = $as_sc_SeqLike(v.$$und2__O());
         var this$10 = $m_sc_Seq$();
-        return new $c_Lparsing_ArgumentExpressionList().init___sc_Seq($as_sc_TraversableOnce(jsx$3.$$plus$colon__O__scg_CanBuildFrom__O(x$2, this$10.ReusableCBFInstance$2)).toList__sci_List())
+        return new $c_Lparsing_ArgumentExpressionList().init___sc_Seq($as_sc_TraversableOnce(jsx$3.$$plus$colon__O__scg_CanBuildFrom__O(x$3, this$10.ReusableCBFInstance$2)).toList__sci_List())
       })
     })(this)));
     var b$1 = this.bitmap$0$1;
@@ -9794,9 +12320,49 @@ $c_Lparsing_CParser.prototype.argumentExpressionList$lzycompute__p1__Lfastparse_
   };
   return this.argumentExpressionList$1
 });
+$c_Lparsing_CParser.prototype.encodingPrefix$lzycompute$1__p1__sr_LazyRef__Lfastparse_core_Parser = (function(encodingPrefix$lzy$1) {
+  if ((encodingPrefix$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (encodingPrefix$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(encodingPrefix$lzy$1.$$undvalue$1)
+  } else {
+    var this$5 = $m_Lfastparse_all$();
+    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        var this$1 = $m_Lfastparse_all$();
+        var jsx$1 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps($m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser("u8"), this$1.implicitReprOps$1);
+        var this$2 = $m_Lfastparse_all$();
+        var array = [$m_s_Predef$().wrapString__T__sci_WrappedString("uUL")];
+        $m_sc_Seq$();
+        $m_sjs_js_WrappedArray$();
+        var b = new $c_sjs_js_WrappedArray().init___();
+        var x1 = $uI(array.length);
+        switch (x1) {
+          case (-1): {
+            break
+          }
+        };
+        var i = 0;
+        var len = $uI(array.length);
+        while ((i < len)) {
+          var index = i;
+          var arg1 = array[index];
+          var x$1 = $as_sc_Seq(arg1);
+          var elem = x$1.toIndexedSeq__sci_IndexedSeq();
+          b.array$6.push(elem);
+          i = ((1 + i) | 0)
+        };
+        return jsx$1.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Intrinsics$ElemIn().init___T__sc_Seq__Lfastparse_utils_ReprOps__Lfastparse_utils_ElemSetHelper("CharIn", b, this$2.implicitReprOps$1, $m_Lfastparse_utils_ElemSetHelper$CharBitSetHelper$()))
+      })
+    })(this));
+    var name = new $c_Lsourcecode_Name().init___T("encodingPrefix");
+    return $as_Lfastparse_core_Parser(encodingPrefix$lzy$1.initialize__O__O(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$5.implicitReprOps$1)))
+  }
+});
 $c_Lparsing_CParser.prototype.constant__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (2 & b.lo$2);
+  var lo = (8 & b.lo$2);
   if ((lo === 0)) {
     return this.constant$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -9900,7 +12466,7 @@ $c_Lparsing_CParser.prototype.typeQualifierList__Lfastparse_core_Parser = (funct
 });
 $c_Lparsing_CParser.prototype.integerConstant__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (4 & b.lo$2);
+  var lo = (16 & b.lo$2);
   if ((lo === 0)) {
     return this.integerConstant$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -9909,7 +12475,7 @@ $c_Lparsing_CParser.prototype.integerConstant__Lfastparse_core_Parser = (functio
 });
 $c_Lparsing_CParser.prototype.hexadecimalConstant__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (16 & b.lo$2);
+  var lo = (64 & b.lo$2);
   if ((lo === 0)) {
     return this.hexadecimalConstant$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -9951,7 +12517,7 @@ $c_Lparsing_CParser.prototype.functionSpecifier$lzycompute__p1__Lfastparse_core_
 });
 $c_Lparsing_CParser.prototype.hexadecimalPrefix$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (8 & b.lo$2);
+  var lo = (32 & b.lo$2);
   if ((lo === 0)) {
     var this$2 = this.White$1;
     var this$1 = $m_Lfastparse_noApi$();
@@ -9972,57 +12538,15 @@ $c_Lparsing_CParser.prototype.hexadecimalPrefix$lzycompute__p1__Lfastparse_core_
     var name$1 = new $c_Lsourcecode_Name().init___T("hexadecimalPrefix");
     this.hexadecimalPrefix$1 = jsx$1.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1));
     var b$1 = this.bitmap$0$1;
-    var lo$1 = (8 | b$1.lo$2);
+    var lo$1 = (32 | b$1.lo$2);
     var hi = b$1.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
   return this.hexadecimalPrefix$1
 });
-$c_Lparsing_CParser.prototype.encodingPrefix$lzycompute__p1__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$0$1;
-  var lo = (2097152 & b.lo$2);
-  if ((lo === 0)) {
-    var this$5 = $m_Lfastparse_noApi$();
-    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        var this$1 = $this.White$1;
-        var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser($m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("u8"), this$1.WL$1);
-        var this$2 = $m_Lfastparse_noApi$();
-        var array = [$m_s_Predef$().wrapString__T__sci_WrappedString("uUL")];
-        $m_sc_Seq$();
-        $m_sjs_js_WrappedArray$();
-        var b$1 = new $c_sjs_js_WrappedArray().init___();
-        var x1 = $uI(array.length);
-        switch (x1) {
-          case (-1): {
-            break
-          }
-        };
-        var i = 0;
-        var len = $uI(array.length);
-        while ((i < len)) {
-          var index = i;
-          var arg1 = array[index];
-          var x$1 = $as_sc_Seq(arg1);
-          var elem = x$1.toIndexedSeq__sci_IndexedSeq();
-          b$1.array$6.push(elem);
-          i = ((1 + i) | 0)
-        };
-        return jsx$1.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Intrinsics$ElemIn().init___T__sc_Seq__Lfastparse_utils_ReprOps__Lfastparse_utils_ElemSetHelper("CharIn", b$1, this$2.implicitReprOps$1, $m_Lfastparse_utils_ElemSetHelper$CharBitSetHelper$()))
-      })
-    })(this));
-    var name = new $c_Lsourcecode_Name().init___T("encodingPrefix");
-    this.encodingPrefix$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$5.implicitReprOps$1);
-    var b$2 = this.bitmap$0$1;
-    var lo$1 = (2097152 | b$2.lo$2);
-    var hi = b$2.hi$2;
-    this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
-  };
-  return this.encodingPrefix$1
-});
 $c_Lparsing_CParser.prototype.exponentPart$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (2048 & b.lo$2);
+  var lo = (8192 & b.lo$2);
   if ((lo === 0)) {
     var this$12 = this.White$1;
     var this$11 = this.White$1;
@@ -10086,7 +12610,7 @@ $c_Lparsing_CParser.prototype.exponentPart$lzycompute__p1__Lfastparse_core_Parse
       })
     })(this)));
     var b$2 = this.bitmap$0$1;
-    var lo$1 = (2048 | b$2.lo$2);
+    var lo$1 = (8192 | b$2.lo$2);
     var hi = b$2.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -10137,22 +12661,81 @@ $c_Lparsing_CParser.prototype.assignmentExpression__Lfastparse_core_Parser = (fu
     return this.assignmentExpression$1
   }
 });
+$c_Lparsing_CParser.prototype.characterConstant$lzycompute__p1__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var lo = (2097152 & b.lo$2);
+  if ((lo === 0)) {
+    var this$11 = this.White$1;
+    var this$10 = this.White$1;
+    var this$9 = $m_Lfastparse_noApi$();
+    var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        var this$8 = $this.White$1;
+        var this$7 = $this.White$1;
+        var this$5 = $this.White$1;
+        var this$4 = $this.White$1;
+        var this$1 = $m_Lfastparse_noApi$();
+        var array = [$m_s_Predef$().wrapString__T__sci_WrappedString("LuU")];
+        $m_sc_Seq$();
+        $m_sjs_js_WrappedArray$();
+        var b$1 = new $c_sjs_js_WrappedArray().init___();
+        var x1 = $uI(array.length);
+        switch (x1) {
+          case (-1): {
+            break
+          }
+        };
+        var i = 0;
+        var len = $uI(array.length);
+        while ((i < len)) {
+          var index = i;
+          var arg1 = array[index];
+          var x$1 = $as_sc_Seq(arg1);
+          var elem = x$1.toIndexedSeq__sci_IndexedSeq();
+          b$1.array$6.push(elem);
+          i = ((1 + i) | 0)
+        };
+        var p0 = new $c_Lfastparse_parsers_Intrinsics$ElemIn().init___T__sc_Seq__Lfastparse_utils_ReprOps__Lfastparse_utils_ElemSetHelper("CharIn", b$1, this$1.implicitReprOps$1, $m_Lfastparse_utils_ElemSetHelper$CharBitSetHelper$());
+        var p0$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$4.WL$1).$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Optioner$UnitOptioner$());
+        var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$5.WL$1);
+        var this$6 = $m_Lfastparse_noApi$();
+        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("'")
+          })
+        })($this));
+        var name = new $c_Lsourcecode_Name().init___T("characterConstant");
+        var p0$2 = jsx$1.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$6.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var p0$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$7.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($this.cCharSequence__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$8.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("'"), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })
+    })(this));
+    var name$1 = new $c_Lsourcecode_Name().init___T("characterConstant");
+    var p0$4 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$9.implicitReprOps$1);
+    var p0$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$10.WL$1).$$bang__Lfastparse_core_Parser();
+    this.characterConstant$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, this$11.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+      return (function(v$2) {
+        var v = $as_T(v$2);
+        var this$13 = new $c_sci_StringOps().init___T(v);
+        var x = $f_sci_StringLike__stripPrefix__T__T(this$13, "\"");
+        var this$15 = new $c_sci_StringOps().init___T(x);
+        return new $c_Lparsing_CharacterConstant().init___T($f_sci_StringLike__stripSuffix__T__T(this$15, "\""))
+      })
+    })(this)));
+    var b$2 = this.bitmap$0$1;
+    var lo$1 = (2097152 | b$2.lo$2);
+    var hi = b$2.hi$2;
+    this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+  };
+  return this.characterConstant$1
+});
 $c_Lparsing_CParser.prototype.fractionalConstant__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (1024 & b.lo$2);
+  var lo = (4096 & b.lo$2);
   if ((lo === 0)) {
     return this.fractionalConstant$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.fractionalConstant$1
-  }
-});
-$c_Lparsing_CParser.prototype.encodingPrefix__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$0$1;
-  var lo = (2097152 & b.lo$2);
-  if ((lo === 0)) {
-    return this.encodingPrefix$lzycompute__p1__Lfastparse_core_Parser()
-  } else {
-    return this.encodingPrefix$1
   }
 });
 $c_Lparsing_CParser.prototype.postfixRecurse__p1__T2__Lparsing_Expression = (function(v) {
@@ -10179,10 +12762,10 @@ $c_Lparsing_CParser.prototype.blockItemList$lzycompute__p1__Lfastparse_core_Pars
     var this$3 = this.White$1;
     var this$1 = this.White$1;
     var p0 = this.blockItem__Lfastparse_core_Parser();
-    var qual$13 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
-    var x$55 = $m_Lfastparse_all$().Pass$1;
+    var qual$19 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
+    var x$82 = $m_Lfastparse_all$().Pass$1;
     var this$2 = $m_Lfastparse_core_Implicits$Repeater$();
-    var p0$1 = qual$13.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$55, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$2));
+    var p0$1 = qual$19.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$82, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$2));
     var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("blockItemList");
     this.blockItemList$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$4.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
       return (function(v$2) {
@@ -10199,7 +12782,7 @@ $c_Lparsing_CParser.prototype.blockItemList$lzycompute__p1__Lfastparse_core_Pars
 });
 $c_Lparsing_CParser.prototype.digitSequence__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (4096 & b.lo$2);
+  var lo = (16384 & b.lo$2);
   if ((lo === 0)) {
     return this.digitSequence$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -10376,7 +12959,7 @@ $c_Lparsing_CParser.prototype.equalityExpression$lzycompute__p1__Lfastparse_core
 });
 $c_Lparsing_CParser.prototype.enumerationConstant__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (131072 & b.lo$2);
+  var lo = (524288 & b.lo$2);
   if ((lo === 0)) {
     return this.enumerationConstant$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -10391,10 +12974,10 @@ $c_Lparsing_CParser.prototype.declarationSpecifiers$lzycompute__p1__Lfastparse_c
     var this$3 = this.White$1;
     var this$1 = this.White$1;
     var p0 = this.declarationSpecifier__Lfastparse_core_Parser();
-    var qual$8 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
-    var x$35 = $m_Lfastparse_all$().Pass$1;
+    var qual$11 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
+    var x$50 = $m_Lfastparse_all$().Pass$1;
     var this$2 = $m_Lfastparse_core_Implicits$Repeater$();
-    var p0$1 = qual$8.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$35, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$2));
+    var p0$1 = qual$11.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$50, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$2));
     var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
       return (function(v$2) {
         var v = $as_sc_Seq(v$2);
@@ -10409,6 +12992,161 @@ $c_Lparsing_CParser.prototype.declarationSpecifiers$lzycompute__p1__Lfastparse_c
   };
   return this.declarationSpecifiers$1
 });
+$c_Lparsing_CParser.prototype.preprocessingFile$lzycompute__p1__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var lo = (1 & b.lo$2);
+  if ((lo === 0)) {
+    var headerName$lzy = new $c_sr_LazyRef().init___();
+    var group$lzy = new $c_sr_LazyRef().init___();
+    var groupPart$lzy = new $c_sr_LazyRef().init___();
+    var ifSection$lzy = new $c_sr_LazyRef().init___();
+    var ifGroup$lzy = new $c_sr_LazyRef().init___();
+    var elifGroups$lzy = new $c_sr_LazyRef().init___();
+    var elifGroup$lzy = new $c_sr_LazyRef().init___();
+    var elseGroup$lzy = new $c_sr_LazyRef().init___();
+    var endifLine$lzy = new $c_sr_LazyRef().init___();
+    var controlLine$lzy = new $c_sr_LazyRef().init___();
+    var nonDirective$lzy = new $c_sr_LazyRef().init___();
+    var lparen$lzy = new $c_sr_LazyRef().init___();
+    var replacementList$lzy = new $c_sr_LazyRef().init___();
+    var ppTokens$lzy = new $c_sr_LazyRef().init___();
+    var newline$lzy = new $c_sr_LazyRef().init___();
+    var this$10 = $m_Lfastparse_all$();
+    var this$9 = $m_Lfastparse_all$();
+    var p$8 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        var this$7 = $m_Lfastparse_all$();
+        var this$2 = $m_Lfastparse_all$();
+        var this$1 = $m_Lfastparse_all$();
+        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+          return (function() {
+            return $m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser("/*")
+          })
+        })($this));
+        var name = new $c_Lsourcecode_Name().init___T("multilineComment");
+        var p$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+        var jsx$1 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$1, this$2.implicitReprOps$1);
+        var this$6 = $m_Lfastparse_all$();
+        var this$5 = $m_Lfastparse_all$();
+        var this$4 = $m_Lfastparse_all$();
+        var this$3 = $m_Lfastparse_all$();
+        var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1) {
+          return (function() {
+            return $m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser("*/")
+          })
+        })($this));
+        var name$1 = new $c_Lsourcecode_Name().init___T("multilineComment");
+        var p$3 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$2, this$3.implicitReprOps$1);
+        var p$4 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$3, this$4.implicitReprOps$1).unary$und$bang__Lfastparse_core_Parser();
+        var p$5 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$4, this$5.implicitReprOps$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($m_Lfastparse_all$().AnyChar$2, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var p$6 = jsx$1.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$5, this$6.implicitReprOps$1).rep__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Repeater$UnitRepeater$()), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$2 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$6, this$7.implicitReprOps$1);
+        var this$8 = $m_Lfastparse_all$();
+        var p$7 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
+          return (function() {
+            return $m_Lfastparse_all$().LiteralStr__T__Lfastparse_core_Parser("*/")
+          })
+        })($this));
+        var name$2 = new $c_Lsourcecode_Name().init___T("multilineComment");
+        return jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$7, this$8.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })
+    })(this));
+    var name$3 = new $c_Lsourcecode_Name().init___T("multilineComment");
+    var p$9 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$3.value$2, p$8, this$9.implicitReprOps$1);
+    var this$11 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$9, this$10.implicitReprOps$1);
+    var multilineComment = this$11.opaque__T__Lfastparse_parsers_Combinators$Opaque("comment");
+    var this$18 = $m_Lfastparse_all$();
+    var this$17 = $m_Lfastparse_all$();
+    var this$16 = $m_Lfastparse_all$();
+    var p$10 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$2, multilineComment$1) {
+      return (function() {
+        var this$12 = $m_Lfastparse_all$();
+        var jsx$3 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(multilineComment$1, this$12.implicitReprOps$1);
+        var this$13 = $m_Lfastparse_all$();
+        var array = [$m_s_Predef$().wrapString__T__sci_WrappedString(" \t")];
+        $m_sc_Seq$();
+        $m_sjs_js_WrappedArray$();
+        var b$1 = new $c_sjs_js_WrappedArray().init___();
+        var x1 = $uI(array.length);
+        switch (x1) {
+          case (-1): {
+            break
+          }
+        };
+        var i = 0;
+        var len = $uI(array.length);
+        while ((i < len)) {
+          var index = i;
+          var arg1 = array[index];
+          var x$1 = $as_sc_Seq(arg1);
+          var elem = x$1.toIndexedSeq__sci_IndexedSeq();
+          b$1.array$6.push(elem);
+          i = ((1 + i) | 0)
+        };
+        return jsx$3.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Intrinsics$ElemIn().init___T__sc_Seq__Lfastparse_utils_ReprOps__Lfastparse_utils_ElemSetHelper("CharIn", b$1, this$13.implicitReprOps$1, $m_Lfastparse_utils_ElemSetHelper$CharBitSetHelper$()))
+      })
+    })(this, multilineComment));
+    var name$4 = new $c_Lsourcecode_Name().init___T("whitespace");
+    var p$11 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$4.value$2, p$10, this$16.implicitReprOps$1);
+    var p$12 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$11, this$17.implicitReprOps$1).rep__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser($m_Lfastparse_core_Implicits$Repeater$UnitRepeater$());
+    var this$19 = new $c_Lfastparse_core_ParserApiImpl().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$12, this$18.implicitReprOps$1);
+    var whitespace = this$19.opaque__T__Lfastparse_parsers_Combinators$Opaque("whitespace");
+    $m_Lfastparse_all$();
+    var repr = $m_Lfastparse_all$().implicitReprOps$1;
+    var WL = new $c_Lfastparse_parsers_Combinators$NoTrace().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(whitespace, repr);
+    var WhitePP = new $c_Lfastparse_WhitespaceApi$Wrapper().init___Lfastparse_core_Parser(WL);
+    var this$22 = $m_Lfastparse_noApi$();
+    var p$13 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$2, WhitePP$1, headerName$lzy$1) {
+      return (function() {
+        var p0 = this$3$2.headerName$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, headerName$lzy$1);
+        var p0$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this$3$2.identifier$1);
+        var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this$3$2.ppNumber__Lfastparse_core_Parser());
+        var p0$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this$3$2.characterConstant__Lfastparse_core_Parser());
+        return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, WhitePP$1.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this$3$2.stringLiteral__Lfastparse_core_Parser())
+      })
+    })(this, WhitePP, headerName$lzy));
+    var name$5 = new $c_Lsourcecode_Name().init___T("preprocessingToken");
+    var p0$4 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$5.value$2, p$13, this$22.implicitReprOps$1);
+    var preprocessingToken = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, WhitePP.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("preprocessingToken");
+    var this$25 = $m_Lfastparse_noApi$();
+    var p$16 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1) {
+      return (function() {
+        var this$24 = $m_Lfastparse_noApi$();
+        var this$23 = $m_Lfastparse_noApi$();
+        var p$14 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$2) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+          })
+        })(this$4$1));
+        var name$6 = new $c_Lsourcecode_Name().init___T("preprocessingFile");
+        var p$15 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$6.value$2, p$14, this$23.implicitReprOps$1);
+        return new $c_Lfastparse_parsers_Combinators$Lookahead().init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps(p$15, this$24.implicitReprOps$1)
+      })
+    })(this));
+    var name$7 = new $c_Lsourcecode_Name().init___T("preprocessingFile");
+    var p0$5 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$7.value$2, p$16, this$25.implicitReprOps$1);
+    var p0$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, WhitePP.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this.group$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP, preprocessingToken, group$lzy, groupPart$lzy, ifSection$lzy, ifGroup$lzy, elifGroups$lzy, elifGroup$lzy, elseGroup$lzy, endifLine$lzy, controlLine$lzy, nonDirective$lzy, lparen$lzy, replacementList$lzy, ppTokens$lzy, newline$lzy), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+    var p0$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, WhitePP.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$5$1) {
+      return (function(v$2) {
+        var v = $as_Lparsing_Group(v$2);
+        return new $c_Lparsing_PreprocessingFile().init___Lparsing_Group(v)
+      })
+    })(this)));
+    this.preprocessingFile$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$7, WhitePP.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("preprocessingFile");
+    var b$2 = this.bitmap$0$1;
+    var lo$1 = (1 | b$2.lo$2);
+    var hi = b$2.hi$2;
+    this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+  };
+  return this.preprocessingFile$1
+});
+$c_Lparsing_CParser.prototype.parseSnippet__T__Lparsing_CParseResult = (function($in) {
+  var this$1 = this.White$1;
+  var p0 = $m_Lfastparse_noApi$().Start$1;
+  var qual$23 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1).$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this.blockItemList__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+  var raw = qual$23.parse__O__I__F3__Lfastparse_core_Parsed($in, 0, null);
+  return $m_Lparsing_CParseResult$().wrap__Lfastparse_core_Parsed__Lparsing_CParseResult(raw)
+});
 $c_Lparsing_CParser.prototype.parameterTypeList__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
   var lo = (4194304 & b.lo$2);
@@ -10418,8 +13156,46 @@ $c_Lparsing_CParser.prototype.parameterTypeList__Lfastparse_core_Parser = (funct
     return this.parameterTypeList$1
   }
 });
-$c_Lparsing_CParser.prototype.parseSnippet__T__Lparsing_CParseResult = (function($in) {
-  return $m_Lparsing_CParseResult$().wrap__Lfastparse_core_Parsed__Lparsing_CParseResult(this.blockItemList__Lfastparse_core_Parser().parse__O__I__F3__Lfastparse_core_Parsed($in, (this.blockItemList__Lfastparse_core_Parser(), 0), (this.blockItemList__Lfastparse_core_Parser(), null)))
+$c_Lparsing_CParser.prototype.elseGroup$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  if ((elseGroup$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (elseGroup$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(elseGroup$lzy$1.$$undvalue$1)
+  } else {
+    var this$5 = $m_Lfastparse_noApi$();
+    var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1) {
+      return (function() {
+        var this$1 = $m_Lfastparse_noApi$();
+        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+          })
+        })($this));
+        var name = new $c_Lsourcecode_Name().init___T("elseGroup");
+        var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+        var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1$1.WL$1);
+        var this$3 = $m_Lfastparse_noApi$();
+        var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("else")
+          })
+        })($this));
+        var name$1 = new $c_Lsourcecode_Name().init___T("elseGroup");
+        var p0$1 = jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1$1.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($this.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$1, newline$lzy$1$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1$1.WL$1);
+        var p0$3 = $this.group$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1);
+        var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, WhitePP$1$1.WL$1);
+        var this$4 = $m_Lfastparse_core_Implicits$Optioner$();
+        return jsx$3.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$4)), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer())
+      })
+    })(this, WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1));
+    var name$2 = new $c_Lsourcecode_Name().init___T("elseGroup");
+    var p0$4 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$5.implicitReprOps$1);
+    var p0$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("elseGroup");
+    return $as_Lfastparse_core_Parser(elseGroup$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, WhitePP$1.WL$1).map__F1__Lfastparse_core_Parser($m_Lparsing_ElseGroup$())))
+  }
 });
 $c_Lparsing_CParser.prototype.exclusiveORExpressionHelper__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -10510,7 +13286,7 @@ $c_Lparsing_CParser.prototype.enumeratorList__Lfastparse_core_Parser = (function
 });
 $c_Lparsing_CParser.prototype.floatingSuffix__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (65536 & b.lo$2);
+  var lo = (262144 & b.lo$2);
   if ((lo === 0)) {
     return this.floatingSuffix$lzycompute__p1__Lfastparse_core_Parser()
   } else {
@@ -10523,10 +13299,10 @@ $c_Lparsing_CParser.prototype.typeQualifierList$lzycompute__p1__Lfastparse_core_
   if ((lo === 0)) {
     var this$1 = this.White$1;
     var p0 = this.typeQualifier__Lfastparse_core_Parser();
-    var qual$10 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
-    var x$43 = $m_Lfastparse_all$().Pass$1;
+    var qual$16 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
+    var x$70 = $m_Lfastparse_all$().Pass$1;
     var this$2 = $m_Lfastparse_core_Implicits$Repeater$();
-    this.typeQualifierList$1 = qual$10.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$43, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$2));
+    this.typeQualifierList$1 = qual$16.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$70, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$2));
     var b$1 = this.bitmap$1$1;
     var lo$1 = (2097152 | b$1.lo$2);
     var hi = b$1.hi$2;
@@ -10570,6 +13346,15 @@ $c_Lparsing_CParser.prototype.structDeclaratorList__Lfastparse_core_Parser = (fu
     return this.structDeclaratorList$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.structDeclaratorList$1
+  }
+});
+$c_Lparsing_CParser.prototype.preprocessingFile__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var lo = (1 & b.lo$2);
+  if ((lo === 0)) {
+    return this.preprocessingFile$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.preprocessingFile$1
   }
 });
 $c_Lparsing_CParser.prototype.multiplicativeExpressionHelper$lzycompute__p1__Lfastparse_core_Parser = (function() {
@@ -10751,6 +13536,8 @@ $c_Lparsing_CParser.prototype.directDeclaratorMerge__Lparsing_Identifier__Lparsi
   if ($is_Lparsing_CParser$DDBuildParameterTypeList(right)) {
     var x2 = $as_Lparsing_CParser$DDBuildParameterTypeList(right);
     return new $c_Lparsing_FunctionDeclaration().init___Lparsing_Identifier__Lparsing_ParameterTypeList(left, x2.v$1)
+  } else if ($is_Lparsing_CParser$DDBuildIdentifierList(right)) {
+    return new $c_Lparsing_FunctionDeclaration().init___Lparsing_Identifier__Lparsing_ParameterTypeList(left, new $c_Lparsing_ParameterTypeList().init___sc_Seq__Z($as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$())), false))
   } else if ($is_Lparsing_CParser$Empty(right)) {
     return new $c_Lparsing_DirectDeclaratorOnly().init___Lparsing_Identifier(left)
   } else {
@@ -10761,6 +13548,7 @@ $c_Lparsing_CParser.prototype.structDeclaration$lzycompute__p1__Lfastparse_core_
   var b = this.bitmap$1$1;
   var lo = (64 & b.lo$2);
   if ((lo === 0)) {
+    var this$10 = this.White$1;
     var this$9 = this.White$1;
     var this$8 = $m_Lfastparse_noApi$();
     var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
@@ -10791,7 +13579,13 @@ $c_Lparsing_CParser.prototype.structDeclaration$lzycompute__p1__Lfastparse_core_
     })(this));
     var name$1 = new $c_Lsourcecode_Name().init___T("structDeclaration");
     var p0$3 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$8.implicitReprOps$1);
-    this.structDeclaration$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$9.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(this.static$undassertDeclaration__Lfastparse_core_Parser());
+    var p0$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$9.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("structDeclaration");
+    this.structDeclaration$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$10.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+      return (function(v$2) {
+        var v = $as_T2(v$2);
+        return new $c_Lparsing_StructDeclaration().init___sc_Seq__s_Option($as_sc_TraversableOnce(v.$$und1__O()).toList__sci_List(), $as_s_Option(v.$$und2__O()))
+      })
+    })(this)));
     var b$1 = this.bitmap$1$1;
     var lo$1 = (64 | b$1.lo$2);
     var hi = b$1.hi$2;
@@ -10801,7 +13595,7 @@ $c_Lparsing_CParser.prototype.structDeclaration$lzycompute__p1__Lfastparse_core_
 });
 $c_Lparsing_CParser.prototype.floatingConstant$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (128 & b.lo$2);
+  var lo = (512 & b.lo$2);
   if ((lo === 0)) {
     var this$2 = $m_Lfastparse_noApi$();
     var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
@@ -10814,7 +13608,7 @@ $c_Lparsing_CParser.prototype.floatingConstant$lzycompute__p1__Lfastparse_core_P
     var name = new $c_Lsourcecode_Name().init___T("floatingConstant");
     this.floatingConstant$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$2.implicitReprOps$1);
     var b$1 = this.bitmap$0$1;
-    var lo$1 = (128 | b$1.lo$2);
+    var lo$1 = (512 | b$1.lo$2);
     var hi = b$1.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -10914,40 +13708,28 @@ $c_Lparsing_CParser.prototype.specifierQualifierList$lzycompute__p1__Lfastparse_
   if ((lo === 0)) {
     var this$6 = this.White$1;
     var this$5 = $m_Lfastparse_noApi$();
-    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+    var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        var this$1 = $this.White$1;
-        var p0 = $this.typeSpecifier__Lfastparse_core_Parser();
-        var jsx$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
-        var this$2 = $this.White$1;
-        var p0$1 = $this.specifierQualifierList__Lfastparse_core_Parser();
-        var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$2.WL$1);
-        var this$3 = $m_Lfastparse_core_Implicits$Optioner$();
-        var jsx$4 = jsx$5.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$3));
-        var this$4 = $m_Lfastparse_core_Implicits$Sequencer$();
-        return jsx$6.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$4, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$4)))
-      })
-    })(this));
-    var name = new $c_Lsourcecode_Name().init___T("specifierQualifierList");
-    var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$5.implicitReprOps$1);
-    var jsx$7 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$6.WL$1);
-    var this$11 = $m_Lfastparse_noApi$();
-    var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1) {
-      return (function() {
-        var this$7 = this$2$1.White$1;
-        var p0$3 = this$2$1.typeQualifier__Lfastparse_core_Parser();
-        var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, this$7.WL$1);
-        var this$8 = this$2$1.White$1;
-        var p0$4 = this$2$1.specifierQualifierList__Lfastparse_core_Parser();
-        var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, this$8.WL$1);
-        var this$9 = $m_Lfastparse_core_Implicits$Optioner$();
-        var jsx$1 = jsx$2.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$9));
-        var this$10 = $m_Lfastparse_core_Implicits$Sequencer$();
-        return jsx$3.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$10)))
+        var this$3 = $this.White$1;
+        var this$2 = $m_Lfastparse_noApi$();
+        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+          return (function() {
+            var this$1 = $this$1.White$1;
+            var p0 = $this$1.typeSpecifier__Lfastparse_core_Parser();
+            return new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1).$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser($this$1.typeQualifier__Lfastparse_core_Parser())
+          })
+        })($this));
+        var name = new $c_Lsourcecode_Name().init___T("specifierQualifierList");
+        var p0$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$2.implicitReprOps$1);
+        var qual$14 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1);
+        var x$62 = $m_Lfastparse_all$().Pass$1;
+        var this$4 = $m_Lfastparse_core_Implicits$Repeater$();
+        return qual$14.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$62, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$4))
       })
     })(this));
     var name$1 = new $c_Lsourcecode_Name().init___T("specifierQualifierList");
-    this.specifierQualifierList$1 = jsx$7.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$11.implicitReprOps$1));
+    var p0$2 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$5.implicitReprOps$1);
+    this.specifierQualifierList$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, this$6.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("specifierQualifierList");
     var b$1 = this.bitmap$1$1;
     var lo$1 = (128 | b$1.lo$2);
     var hi = b$1.hi$2;
@@ -10962,6 +13744,151 @@ $c_Lparsing_CParser.prototype.typeSpecifier__Lfastparse_core_Parser = (function(
     return this.typeSpecifier$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.typeSpecifier$1
+  }
+});
+$c_Lparsing_CParser.prototype.ifGroup$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  if ((ifGroup$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (ifGroup$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(ifGroup$lzy$1.$$undvalue$1)
+  } else {
+    var this$20 = $m_Lfastparse_noApi$();
+    var p$9 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1) {
+      return (function() {
+        var this$7 = $m_Lfastparse_noApi$();
+        var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1, WhitePP$1$2, preprocessingToken$1$2, group$lzy$1$2, groupPart$lzy$1$2, ifSection$lzy$1$2, ifGroup$lzy$1$2, elifGroups$lzy$1$2, elifGroup$lzy$1$2, elseGroup$lzy$1$2, endifLine$lzy$1$2, controlLine$lzy$1$2, nonDirective$lzy$1$2, lparen$lzy$1$2, replacementList$lzy$1$2, ppTokens$lzy$1$2, newline$lzy$1$2) {
+          return (function() {
+            var this$1 = $m_Lfastparse_noApi$();
+            var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })($this$1));
+            var name = new $c_Lsourcecode_Name().init___T("ifGroup");
+            var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+            var jsx$16 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1$2.WL$1);
+            var this$3 = $m_Lfastparse_noApi$();
+            var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("if")
+              })
+            })($this$1));
+            var name$1 = new $c_Lsourcecode_Name().init___T("ifGroup");
+            var p0$1 = jsx$16.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1$2.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($this$1.constantExpression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$17 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1$2.WL$1);
+            var jsx$15 = $this$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$2, newline$lzy$1$2);
+            var this$4 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$3 = jsx$17.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$15, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$4));
+            var jsx$18 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, WhitePP$1$2.WL$1);
+            var p0$4 = $this$1.group$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$2, preprocessingToken$1$2, group$lzy$1$2, groupPart$lzy$1$2, ifSection$lzy$1$2, ifGroup$lzy$1$2, elifGroups$lzy$1$2, elifGroup$lzy$1$2, elseGroup$lzy$1$2, endifLine$lzy$1$2, controlLine$lzy$1$2, nonDirective$lzy$1$2, lparen$lzy$1$2, replacementList$lzy$1$2, ppTokens$lzy$1$2, newline$lzy$1$2);
+            var jsx$14 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, WhitePP$1$2.WL$1);
+            var this$5 = $m_Lfastparse_core_Implicits$Optioner$();
+            var jsx$13 = jsx$14.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$5));
+            var this$6 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$18.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$13, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$6)))
+          })
+        })($this, WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        var name$2 = new $c_Lsourcecode_Name().init___T("ifGroup");
+        var p0$5 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$7.implicitReprOps$1);
+        var p0$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+          return (function(v$2) {
+            var v = $as_T2(v$2);
+            return new $c_Lparsing_If().init___Lparsing_Expression__s_Option($as_Lparsing_Expression(v.$$und1__O()), $as_s_Option(v.$$und2__O()))
+          })
+        })($this)));
+        var jsx$19 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, WhitePP$1$1.WL$1);
+        var this$13 = $m_Lfastparse_noApi$();
+        var p$5 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1, WhitePP$1$3, preprocessingToken$1$3, group$lzy$1$3, groupPart$lzy$1$3, ifSection$lzy$1$3, ifGroup$lzy$1$3, elifGroups$lzy$1$3, elifGroup$lzy$1$3, elseGroup$lzy$1$3, endifLine$lzy$1$3, controlLine$lzy$1$3, nonDirective$lzy$1$3, lparen$lzy$1$3, replacementList$lzy$1$3, ppTokens$lzy$1$3, newline$lzy$1$3) {
+          return (function() {
+            var this$8 = $m_Lfastparse_noApi$();
+            var p$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$3) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })(this$3$1));
+            var name$3 = new $c_Lsourcecode_Name().init___T("ifGroup");
+            var p0$7 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$3.value$2, p$3, this$8.implicitReprOps$1);
+            var jsx$10 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$7, WhitePP$1$3.WL$1);
+            var this$9 = $m_Lfastparse_noApi$();
+            var p$4 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$2) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("ifdef")
+              })
+            })(this$3$1));
+            var name$4 = new $c_Lsourcecode_Name().init___T("ifGroup");
+            var p0$8 = jsx$10.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$4.value$2, p$4, this$9.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var p0$9 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$8, WhitePP$1$3.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$3$1.identifier$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$11 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$9, WhitePP$1$3.WL$1);
+            var jsx$9 = this$3$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$3, newline$lzy$1$3);
+            var this$10 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$10 = jsx$11.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$9, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$10));
+            var jsx$12 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$10, WhitePP$1$3.WL$1);
+            var p0$11 = this$3$1.group$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$3, preprocessingToken$1$3, group$lzy$1$3, groupPart$lzy$1$3, ifSection$lzy$1$3, ifGroup$lzy$1$3, elifGroups$lzy$1$3, elifGroup$lzy$1$3, elseGroup$lzy$1$3, endifLine$lzy$1$3, controlLine$lzy$1$3, nonDirective$lzy$1$3, lparen$lzy$1$3, replacementList$lzy$1$3, ppTokens$lzy$1$3, newline$lzy$1$3);
+            var jsx$8 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$11, WhitePP$1$3.WL$1);
+            var this$11 = $m_Lfastparse_core_Implicits$Optioner$();
+            var jsx$7 = jsx$8.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$11));
+            var this$12 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$12.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$7, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$12)))
+          })
+        })($this, WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        var name$5 = new $c_Lsourcecode_Name().init___T("ifGroup");
+        var p0$12 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$5.value$2, p$5, this$13.implicitReprOps$1);
+        var p0$13 = jsx$19.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$12, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$4$1) {
+          return (function(v$3$2) {
+            var v$3 = $as_T2(v$3$2);
+            return new $c_Lparsing_IfDef().init___Lparsing_Identifier__s_Option($as_Lparsing_Identifier(v$3.$$und1__O()), $as_s_Option(v$3.$$und2__O()))
+          })
+        })($this))));
+        var jsx$20 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$13, WhitePP$1$1.WL$1);
+        var this$19 = $m_Lfastparse_noApi$();
+        var p$8 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$1, WhitePP$1$4, preprocessingToken$1$4, group$lzy$1$4, groupPart$lzy$1$4, ifSection$lzy$1$4, ifGroup$lzy$1$4, elifGroups$lzy$1$4, elifGroup$lzy$1$4, elseGroup$lzy$1$4, endifLine$lzy$1$4, controlLine$lzy$1$4, nonDirective$lzy$1$4, lparen$lzy$1$4, replacementList$lzy$1$4, ppTokens$lzy$1$4, newline$lzy$1$4) {
+          return (function() {
+            var this$14 = $m_Lfastparse_noApi$();
+            var p$6 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$4) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+              })
+            })(this$5$1));
+            var name$6 = new $c_Lsourcecode_Name().init___T("ifGroup");
+            var p0$14 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$6.value$2, p$6, this$14.implicitReprOps$1);
+            var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$14, WhitePP$1$4.WL$1);
+            var this$15 = $m_Lfastparse_noApi$();
+            var p$7 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$3) {
+              return (function() {
+                return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("ifndef")
+              })
+            })(this$5$1));
+            var name$7 = new $c_Lsourcecode_Name().init___T("ifGroup");
+            var p0$15 = jsx$4.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$7.value$2, p$7, this$15.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var p0$16 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$15, WhitePP$1$4.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(this$5$1.identifier$1, $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+            var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$16, WhitePP$1$4.WL$1);
+            var jsx$3 = this$5$1.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$4, newline$lzy$1$4);
+            var this$16 = $m_Lfastparse_core_Implicits$Sequencer$();
+            var p0$17 = jsx$5.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$3, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$16));
+            var jsx$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$17, WhitePP$1$4.WL$1);
+            var p0$18 = this$5$1.group$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$4, preprocessingToken$1$4, group$lzy$1$4, groupPart$lzy$1$4, ifSection$lzy$1$4, ifGroup$lzy$1$4, elifGroups$lzy$1$4, elifGroup$lzy$1$4, elseGroup$lzy$1$4, endifLine$lzy$1$4, controlLine$lzy$1$4, nonDirective$lzy$1$4, lparen$lzy$1$4, replacementList$lzy$1$4, ppTokens$lzy$1$4, newline$lzy$1$4);
+            var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$18, WhitePP$1$4.WL$1);
+            var this$17 = $m_Lfastparse_core_Implicits$Optioner$();
+            var jsx$1 = jsx$2.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$17));
+            var this$18 = $m_Lfastparse_core_Implicits$Sequencer$();
+            return jsx$6.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$18)))
+          })
+        })($this, WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1));
+        var name$8 = new $c_Lsourcecode_Name().init___T("ifGroup");
+        var p0$19 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$8.value$2, p$8, this$19.implicitReprOps$1);
+        return jsx$20.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$19, WhitePP$1$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$6$1) {
+          return (function(v$4$2) {
+            var v$4 = $as_T2(v$4$2);
+            return new $c_Lparsing_IfNDef().init___Lparsing_Identifier__s_Option($as_Lparsing_Identifier(v$4.$$und1__O()), $as_s_Option(v$4.$$und2__O()))
+          })
+        })($this))))
+      })
+    })(this, WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1));
+    var name$9 = new $c_Lsourcecode_Name().init___T("ifGroup");
+    var p0$20 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$9.value$2, p$9, this$20.implicitReprOps$1);
+    return $as_Lfastparse_core_Parser(ifGroup$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$20, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("ifGroup")))
   }
 });
 $c_Lparsing_CParser.prototype.equalityExpression__Lfastparse_core_Parser = (function() {
@@ -10981,35 +13908,6 @@ $c_Lparsing_CParser.prototype.enumSpecifier__Lfastparse_core_Parser = (function(
   } else {
     return this.enumSpecifier$1
   }
-});
-$c_Lparsing_CParser.prototype.structOrUnion$lzycompute__p1__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$1$1;
-  var lo = (16 & b.lo$2);
-  if ((lo === 0)) {
-    var this$2 = this.White$1;
-    var this$1 = $m_Lfastparse_noApi$();
-    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("struct")
-      })
-    })(this));
-    var name = new $c_Lsourcecode_Name().init___T("structOrUnion");
-    var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
-    var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$2.WL$1);
-    var this$3 = $m_Lfastparse_noApi$();
-    var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1) {
-      return (function() {
-        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("union")
-      })
-    })(this));
-    var name$1 = new $c_Lsourcecode_Name().init___T("structOrUnion");
-    this.structOrUnion$1 = jsx$1.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1));
-    var b$1 = this.bitmap$1$1;
-    var lo$1 = (16 | b$1.lo$2);
-    var hi = b$1.hi$2;
-    this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
-  };
-  return this.structOrUnion$1
 });
 $c_Lparsing_CParser.prototype.unaryOperator$lzycompute__p1__Lfastparse_parsers_Intrinsics$ElemIn = (function() {
   var b = this.bitmap$0$1;
@@ -11043,6 +13941,35 @@ $c_Lparsing_CParser.prototype.unaryOperator$lzycompute__p1__Lfastparse_parsers_I
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
   return this.unaryOperator$1
+});
+$c_Lparsing_CParser.prototype.structOrUnion$lzycompute__p1__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$1$1;
+  var lo = (16 & b.lo$2);
+  if ((lo === 0)) {
+    var this$2 = this.White$1;
+    var this$1 = $m_Lfastparse_noApi$();
+    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("struct")
+      })
+    })(this));
+    var name = new $c_Lsourcecode_Name().init___T("structOrUnion");
+    var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+    var jsx$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$2.WL$1);
+    var this$3 = $m_Lfastparse_noApi$();
+    var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1) {
+      return (function() {
+        return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("union")
+      })
+    })(this));
+    var name$1 = new $c_Lsourcecode_Name().init___T("structOrUnion");
+    this.structOrUnion$1 = jsx$1.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1));
+    var b$1 = this.bitmap$1$1;
+    var lo$1 = (16 | b$1.lo$2);
+    var hi = b$1.hi$2;
+    this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+  };
+  return this.structOrUnion$1
 });
 $c_Lparsing_CParser.prototype.postfixExpression$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -11093,15 +14020,6 @@ $c_Lparsing_CParser.prototype.static$undassertDeclaration__Lfastparse_core_Parse
     return this.static$undassertDeclaration$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.static$undassertDeclaration$1
-  }
-});
-$c_Lparsing_CParser.prototype.integerSuffix__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$0$1;
-  var lo = (64 & b.lo$2);
-  if ((lo === 0)) {
-    return this.integerSuffix$lzycompute__p1__Lfastparse_core_Parser()
-  } else {
-    return this.integerSuffix$1
   }
 });
 $c_Lparsing_CParser.prototype.equalityExpressionHelper$lzycompute__p1__Lfastparse_core_Parser = (function() {
@@ -11192,6 +14110,67 @@ $c_Lparsing_CParser.prototype.equalityExpressionHelper$lzycompute__p1__Lfastpars
   };
   return this.equalityExpressionHelper$1
 });
+$c_Lparsing_CParser.prototype.integerSuffix__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var lo = (256 & b.lo$2);
+  if ((lo === 0)) {
+    return this.integerSuffix$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.integerSuffix$1
+  }
+});
+$c_Lparsing_CParser.prototype.elifGroup$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  if ((elifGroup$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (elifGroup$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_core_Parser(elifGroup$lzy$1.$$undvalue$1)
+  } else {
+    var this$7 = $m_Lfastparse_noApi$();
+    var p$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1) {
+      return (function() {
+        var this$1 = $m_Lfastparse_noApi$();
+        var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("#")
+          })
+        })($this));
+        var name = new $c_Lsourcecode_Name().init___T("elifGroup");
+        var p0 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$1.implicitReprOps$1);
+        var jsx$4 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1$1.WL$1);
+        var this$3 = $m_Lfastparse_noApi$();
+        var p$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
+          return (function() {
+            return $m_Lfastparse_noApi$().LiteralStr__T__Lfastparse_core_Parser("elif")
+          })
+        })($this));
+        var name$1 = new $c_Lsourcecode_Name().init___T("elifGroup");
+        var p0$1 = jsx$4.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$1.value$2, p$1, this$3.implicitReprOps$1), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var p0$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1$1.WL$1).$$tilde$div__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser($this.constantExpression__Lfastparse_core_Parser(), $m_Lfastparse_core_Implicits$Sequencer$().SingleSequencer__Lfastparse_core_Implicits$Sequencer());
+        var jsx$5 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$2, WhitePP$1$1.WL$1);
+        var jsx$3 = $this.newline$1__p1__Lfastparse_WhitespaceApi$Wrapper__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque(WhitePP$1$1, newline$lzy$1$1);
+        var this$4 = $m_Lfastparse_core_Implicits$Sequencer$();
+        var p0$3 = jsx$5.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$3, $f_Lfastparse_core_Implicits$LowPriSequencer__UnitSequencer__Lfastparse_core_Implicits$Sequencer(this$4));
+        var jsx$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$3, WhitePP$1$1.WL$1);
+        var p0$4 = $this.group$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1$1, preprocessingToken$1$1, group$lzy$1$1, groupPart$lzy$1$1, ifSection$lzy$1$1, ifGroup$lzy$1$1, elifGroups$lzy$1$1, elifGroup$lzy$1$1, elseGroup$lzy$1$1, endifLine$lzy$1$1, controlLine$lzy$1$1, nonDirective$lzy$1$1, lparen$lzy$1$1, replacementList$lzy$1$1, ppTokens$lzy$1$1, newline$lzy$1$1);
+        var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$4, WhitePP$1$1.WL$1);
+        var this$5 = $m_Lfastparse_core_Implicits$Optioner$();
+        var jsx$1 = jsx$2.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser(new $c_Lfastparse_core_Implicits$LowPriOptioner$GenericOptioner().init___Lfastparse_core_Implicits$LowPriOptioner(this$5));
+        var this$6 = $m_Lfastparse_core_Implicits$Sequencer$();
+        return jsx$6.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$6)))
+      })
+    })(this, WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1));
+    var name$2 = new $c_Lsourcecode_Name().init___T("elifGroup");
+    var p0$5 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name$2.value$2, p$2, this$7.implicitReprOps$1);
+    var p0$6 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$5, WhitePP$1.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+      return (function(v$2) {
+        var v = $as_T2(v$2);
+        return new $c_Lparsing_ElifGroup().init___Lparsing_Expression__s_Option($as_Lparsing_Expression(v.$$und1__O()), $as_s_Option(v.$$und2__O()))
+      })
+    })(this)));
+    return $as_Lfastparse_core_Parser(elifGroup$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$6, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("elifGroup")))
+  }
+});
 $c_Lparsing_CParser.prototype.atomicTypeSpecifier__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$1$1;
   var lo = (8192 & b.lo$2);
@@ -11203,7 +14182,7 @@ $c_Lparsing_CParser.prototype.atomicTypeSpecifier__Lfastparse_core_Parser = (fun
 });
 $c_Lparsing_CParser.prototype.binaryExponentPart$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (16384 & b.lo$2);
+  var lo = (65536 & b.lo$2);
   if ((lo === 0)) {
     var this$12 = this.White$1;
     var this$11 = this.White$1;
@@ -11267,7 +14246,7 @@ $c_Lparsing_CParser.prototype.binaryExponentPart$lzycompute__p1__Lfastparse_core
       })
     })(this)));
     var b$2 = this.bitmap$0$1;
-    var lo$1 = (16384 | b$2.lo$2);
+    var lo$1 = (65536 | b$2.lo$2);
     var hi = b$2.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -11275,7 +14254,7 @@ $c_Lparsing_CParser.prototype.binaryExponentPart$lzycompute__p1__Lfastparse_core
 });
 $c_Lparsing_CParser.prototype.floatingSuffix$lzycompute__p1__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
-  var lo = (65536 & b.lo$2);
+  var lo = (262144 & b.lo$2);
   if ((lo === 0)) {
     var this$4 = $m_Lfastparse_noApi$();
     var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
@@ -11307,7 +14286,7 @@ $c_Lparsing_CParser.prototype.floatingSuffix$lzycompute__p1__Lfastparse_core_Par
     var name = new $c_Lsourcecode_Name().init___T("floatingSuffix");
     this.floatingSuffix$1 = new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$4.implicitReprOps$1);
     var b$2 = this.bitmap$0$1;
-    var lo$1 = (65536 | b$2.lo$2);
+    var lo$1 = (262144 | b$2.lo$2);
     var hi = b$2.hi$2;
     this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
@@ -11317,37 +14296,25 @@ $c_Lparsing_CParser.prototype.structDeclarationList$lzycompute__p1__Lfastparse_c
   var b = this.bitmap$1$1;
   var lo = (32 & b.lo$2);
   if ((lo === 0)) {
+    var this$3 = this.White$1;
     var this$1 = this.White$1;
     var p0 = this.structDeclaration__Lfastparse_core_Parser();
-    var jsx$3 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
-    var this$4 = $m_Lfastparse_noApi$();
-    var p = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        var this$2 = $this.White$1;
-        var p0$1 = $this.structDeclarationList__Lfastparse_core_Parser();
-        var jsx$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$2.WL$1);
-        var jsx$1 = $this.structDeclaration__Lfastparse_core_Parser();
-        var this$3 = $m_Lfastparse_core_Implicits$Sequencer$();
-        return jsx$2.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser(jsx$1, $as_Lfastparse_core_Implicits$Sequencer($f_Lfastparse_core_LowestPriSequencer__Sequencer1__O(this$3)))
+    var qual$13 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, this$1.WL$1);
+    var x$58 = $m_Lfastparse_all$().Pass$1;
+    var this$2 = $m_Lfastparse_core_Implicits$Repeater$();
+    var p0$1 = qual$13.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$58, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$2));
+    this.structDeclarationList$1 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, this$3.WL$1).map__F1__Lfastparse_core_Parser(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function(x$5$2) {
+        var x$5 = $as_sc_Seq(x$5$2);
+        return x$5.toList__sci_List()
       })
-    })(this));
-    var name = new $c_Lsourcecode_Name().init___T("structDeclarationList");
-    this.structDeclarationList$1 = jsx$3.$$bar__Lfastparse_core_Parser__Lfastparse_core_Parser(new $c_Lfastparse_parsers_Combinators$Rule().init___T__F0__Lfastparse_utils_ReprOps(name.value$2, p, this$4.implicitReprOps$1));
+    })(this)));
     var b$1 = this.bitmap$1$1;
     var lo$1 = (32 | b$1.lo$2);
     var hi = b$1.hi$2;
     this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
   return this.structDeclarationList$1
-});
-$c_Lparsing_CParser.prototype.shiftExpressionHelper__Lfastparse_core_Parser = (function() {
-  var b = this.bitmap$0$1;
-  var hi = (32 & b.hi$2);
-  if ((hi === 0)) {
-    return this.shiftExpressionHelper$lzycompute__p1__Lfastparse_core_Parser()
-  } else {
-    return this.shiftExpressionHelper$1
-  }
 });
 $c_Lparsing_CParser.prototype.inclusiveORExpression__Lfastparse_core_Parser = (function() {
   var b = this.bitmap$0$1;
@@ -11356,6 +14323,15 @@ $c_Lparsing_CParser.prototype.inclusiveORExpression__Lfastparse_core_Parser = (f
     return this.inclusiveORExpression$lzycompute__p1__Lfastparse_core_Parser()
   } else {
     return this.inclusiveORExpression$1
+  }
+});
+$c_Lparsing_CParser.prototype.shiftExpressionHelper__Lfastparse_core_Parser = (function() {
+  var b = this.bitmap$0$1;
+  var hi = (32 & b.hi$2);
+  if ((hi === 0)) {
+    return this.shiftExpressionHelper$lzycompute__p1__Lfastparse_core_Parser()
+  } else {
+    return this.shiftExpressionHelper$1
   }
 });
 $c_Lparsing_CParser.prototype.shiftExpression$lzycompute__p1__Lfastparse_core_Parser = (function() {
@@ -11437,6 +14413,21 @@ $c_Lparsing_CParser.prototype.logicalORExpressionHelper__Lfastparse_core_Parser 
     return this.logicalORExpressionHelper$1
   }
 });
+$c_Lparsing_CParser.prototype.elifGroups$lzycompute$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_parsers_Combinators$Opaque = (function(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1) {
+  if ((elifGroups$lzy$1 === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  if (elifGroups$lzy$1.$$undinitialized$1) {
+    return $as_Lfastparse_parsers_Combinators$Opaque(elifGroups$lzy$1.$$undvalue$1)
+  } else {
+    var p0 = this.elifGroup$1__p1__Lfastparse_WhitespaceApi$Wrapper__Lfastparse_core_Parser__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lfastparse_core_Parser(WhitePP$1, preprocessingToken$1, group$lzy$1, groupPart$lzy$1, ifSection$lzy$1, ifGroup$lzy$1, elifGroups$lzy$1, elifGroup$lzy$1, elseGroup$lzy$1, endifLine$lzy$1, controlLine$lzy$1, nonDirective$lzy$1, lparen$lzy$1, replacementList$lzy$1, ppTokens$lzy$1, newline$lzy$1);
+    var qual$2 = new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0, WhitePP$1.WL$1);
+    var x$14 = $m_Lfastparse_all$().Pass$1;
+    var this$1 = $m_Lfastparse_core_Implicits$Repeater$();
+    var p0$1 = qual$2.rep__I__Lfastparse_core_Parser__I__I__Lfastparse_core_Implicits$Repeater__Lfastparse_core_Parser(1, x$14, 2147483647, (-1), new $c_Lfastparse_core_Implicits$LowPriRepeater$GenericRepeater().init___Lfastparse_core_Implicits$LowPriRepeater(this$1));
+    return $as_Lfastparse_parsers_Combinators$Opaque(elifGroups$lzy$1.initialize__O__O(new $c_Lfastparse_WhitespaceApi().init___Lfastparse_core_Parser__Lfastparse_core_Parser(p0$1, WhitePP$1.WL$1).opaque__T__Lfastparse_parsers_Combinators$Opaque("elifGroups")))
+  }
+});
 var $d_Lparsing_CParser = new $TypeData().initClass({
   Lparsing_CParser: 0
 }, false, "parsing.CParser", {
@@ -11444,6 +14435,18 @@ var $d_Lparsing_CParser = new $TypeData().initClass({
   O: 1
 });
 $c_Lparsing_CParser.prototype.$classData = $d_Lparsing_CParser;
+function $is_Lparsing_ExternalDeclaration(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_ExternalDeclaration)))
+}
+function $as_Lparsing_ExternalDeclaration(obj) {
+  return (($is_Lparsing_ExternalDeclaration(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.ExternalDeclaration"))
+}
+function $isArrayOf_Lparsing_ExternalDeclaration(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_ExternalDeclaration)))
+}
+function $asArrayOf_Lparsing_ExternalDeclaration(obj, depth) {
+  return (($isArrayOf_Lparsing_ExternalDeclaration(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.ExternalDeclaration;", depth))
+}
 function $is_Lparsing_Statement(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Statement)))
 }
@@ -16351,11 +19354,11 @@ $c_Lfastparse_core_ParserApiImpl.prototype.init___Lfastparse_core_Parser__Lfastp
 $c_Lfastparse_core_ParserApiImpl.prototype.$$qmark__Lfastparse_core_Implicits$Optioner__Lfastparse_core_Parser = (function(ev) {
   return new $c_Lfastparse_parsers_Combinators$Optional().init___Lfastparse_core_Parser__Lfastparse_core_Implicits$Optioner__Lfastparse_utils_ReprOps(this.self$2, ev, this.repr$2)
 });
-$c_Lfastparse_core_ParserApiImpl.prototype.rep$default$3__I = (function() {
-  return 2147483647
-});
 $c_Lfastparse_core_ParserApiImpl.prototype.map__F1__Lfastparse_core_Parser = (function(f) {
   return new $c_Lfastparse_parsers_Transformers$Mapper().init___Lfastparse_core_Parser__F1__Lfastparse_utils_ReprOps(this.self$2, f, this.repr$2)
+});
+$c_Lfastparse_core_ParserApiImpl.prototype.rep$default$3__I = (function() {
+  return 2147483647
 });
 $c_Lfastparse_core_ParserApiImpl.prototype.$$tilde__Lfastparse_core_Parser__Lfastparse_core_Implicits$Sequencer__Lfastparse_core_Parser = (function(p, ev) {
   var this$1 = $m_Lfastparse_parsers_Combinators$Sequence$();
@@ -16604,18 +19607,6 @@ var $d_Lfastparse_utils_Utils$BitSet$BitsetComputeCallback = new $TypeData().ini
   O: 1
 });
 $c_Lfastparse_utils_Utils$BitSet$BitsetComputeCallback.prototype.$classData = $d_Lfastparse_utils_Utils$BitSet$BitsetComputeCallback;
-function $is_Lparsing_Declaration(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Declaration)))
-}
-function $as_Lparsing_Declaration(obj) {
-  return (($is_Lparsing_Declaration(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Declaration"))
-}
-function $isArrayOf_Lparsing_Declaration(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Declaration)))
-}
-function $asArrayOf_Lparsing_Declaration(obj, depth) {
-  return (($isArrayOf_Lparsing_Declaration(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Declaration;", depth))
-}
 /** @constructor */
 function $c_jl_Number() {
   $c_O.call(this)
@@ -18553,6 +21544,30 @@ function $m_Lfastparse_parsers_Terminals$IgnoreCase$() {
     $n_Lfastparse_parsers_Terminals$IgnoreCase$ = new $c_Lfastparse_parsers_Terminals$IgnoreCase$().init___()
   };
   return $n_Lfastparse_parsers_Terminals$IgnoreCase$
+}
+function $is_Lparsing_Constant(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Constant)))
+}
+function $as_Lparsing_Constant(obj) {
+  return (($is_Lparsing_Constant(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Constant"))
+}
+function $isArrayOf_Lparsing_Constant(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Constant)))
+}
+function $asArrayOf_Lparsing_Constant(obj, depth) {
+  return (($isArrayOf_Lparsing_Constant(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Constant;", depth))
+}
+function $is_Lparsing_Declaration(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Declaration)))
+}
+function $as_Lparsing_Declaration(obj) {
+  return (($is_Lparsing_Declaration(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Declaration"))
+}
+function $isArrayOf_Lparsing_Declaration(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Declaration)))
+}
+function $asArrayOf_Lparsing_Declaration(obj, depth) {
+  return (($isArrayOf_Lparsing_Declaration(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Declaration;", depth))
 }
 function $isArrayOf_jl_Boolean(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.jl_Boolean)))
@@ -24232,6 +27247,272 @@ var $d_Lparsing_Digit = new $TypeData().initClass({
 });
 $c_Lparsing_Digit.prototype.$classData = $d_Lparsing_Digit;
 /** @constructor */
+function $c_Lparsing_ElifGroup() {
+  $c_O.call(this);
+  this.exp$1 = null;
+  this.group$1 = null
+}
+$c_Lparsing_ElifGroup.prototype = new $h_O();
+$c_Lparsing_ElifGroup.prototype.constructor = $c_Lparsing_ElifGroup;
+/** @constructor */
+function $h_Lparsing_ElifGroup() {
+  /*<skip>*/
+}
+$h_Lparsing_ElifGroup.prototype = $c_Lparsing_ElifGroup.prototype;
+$c_Lparsing_ElifGroup.prototype.productPrefix__T = (function() {
+  return "ElifGroup"
+});
+$c_Lparsing_ElifGroup.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_ElifGroup.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_ElifGroup(x$1)) {
+    var ElifGroup$1 = $as_Lparsing_ElifGroup(x$1);
+    var x = this.exp$1;
+    var x$2 = ElifGroup$1.exp$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.group$1;
+      var x$4 = ElifGroup$1.group$1;
+      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_ElifGroup.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.exp$1;
+      break
+    }
+    case 1: {
+      return this.group$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_ElifGroup.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_ElifGroup.prototype.init___Lparsing_Expression__s_Option = (function(exp, group) {
+  this.exp$1 = exp;
+  this.group$1 = group;
+  return this
+});
+$c_Lparsing_ElifGroup.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_ElifGroup.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_ElifGroup(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_ElifGroup)))
+}
+function $as_Lparsing_ElifGroup(obj) {
+  return (($is_Lparsing_ElifGroup(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.ElifGroup"))
+}
+function $isArrayOf_Lparsing_ElifGroup(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_ElifGroup)))
+}
+function $asArrayOf_Lparsing_ElifGroup(obj, depth) {
+  return (($isArrayOf_Lparsing_ElifGroup(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.ElifGroup;", depth))
+}
+var $d_Lparsing_ElifGroup = new $TypeData().initClass({
+  Lparsing_ElifGroup: 0
+}, false, "parsing.ElifGroup", {
+  Lparsing_ElifGroup: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_ElifGroup.prototype.$classData = $d_Lparsing_ElifGroup;
+/** @constructor */
+function $c_Lparsing_ElseGroup() {
+  $c_O.call(this);
+  this.group$1 = null
+}
+$c_Lparsing_ElseGroup.prototype = new $h_O();
+$c_Lparsing_ElseGroup.prototype.constructor = $c_Lparsing_ElseGroup;
+/** @constructor */
+function $h_Lparsing_ElseGroup() {
+  /*<skip>*/
+}
+$h_Lparsing_ElseGroup.prototype = $c_Lparsing_ElseGroup.prototype;
+$c_Lparsing_ElseGroup.prototype.productPrefix__T = (function() {
+  return "ElseGroup"
+});
+$c_Lparsing_ElseGroup.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_ElseGroup.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_ElseGroup(x$1)) {
+    var ElseGroup$1 = $as_Lparsing_ElseGroup(x$1);
+    var x = this.group$1;
+    var x$2 = ElseGroup$1.group$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_ElseGroup.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.group$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_ElseGroup.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_ElseGroup.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_ElseGroup.prototype.init___s_Option = (function(group) {
+  this.group$1 = group;
+  return this
+});
+$c_Lparsing_ElseGroup.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_ElseGroup(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_ElseGroup)))
+}
+function $as_Lparsing_ElseGroup(obj) {
+  return (($is_Lparsing_ElseGroup(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.ElseGroup"))
+}
+function $isArrayOf_Lparsing_ElseGroup(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_ElseGroup)))
+}
+function $asArrayOf_Lparsing_ElseGroup(obj, depth) {
+  return (($isArrayOf_Lparsing_ElseGroup(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.ElseGroup;", depth))
+}
+var $d_Lparsing_ElseGroup = new $TypeData().initClass({
+  Lparsing_ElseGroup: 0
+}, false, "parsing.ElseGroup", {
+  Lparsing_ElseGroup: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_ElseGroup.prototype.$classData = $d_Lparsing_ElseGroup;
+/** @constructor */
+function $c_Lparsing_ElseGroup$() {
+  $c_sr_AbstractFunction1.call(this)
+}
+$c_Lparsing_ElseGroup$.prototype = new $h_sr_AbstractFunction1();
+$c_Lparsing_ElseGroup$.prototype.constructor = $c_Lparsing_ElseGroup$;
+/** @constructor */
+function $h_Lparsing_ElseGroup$() {
+  /*<skip>*/
+}
+$h_Lparsing_ElseGroup$.prototype = $c_Lparsing_ElseGroup$.prototype;
+$c_Lparsing_ElseGroup$.prototype.init___ = (function() {
+  return this
+});
+$c_Lparsing_ElseGroup$.prototype.apply__O__O = (function(v1) {
+  var group = $as_s_Option(v1);
+  return new $c_Lparsing_ElseGroup().init___s_Option(group)
+});
+$c_Lparsing_ElseGroup$.prototype.toString__T = (function() {
+  return "ElseGroup"
+});
+var $d_Lparsing_ElseGroup$ = new $TypeData().initClass({
+  Lparsing_ElseGroup$: 0
+}, false, "parsing.ElseGroup$", {
+  Lparsing_ElseGroup$: 1,
+  sr_AbstractFunction1: 1,
+  O: 1,
+  F1: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_ElseGroup$.prototype.$classData = $d_Lparsing_ElseGroup$;
+var $n_Lparsing_ElseGroup$ = (void 0);
+function $m_Lparsing_ElseGroup$() {
+  if ((!$n_Lparsing_ElseGroup$)) {
+    $n_Lparsing_ElseGroup$ = new $c_Lparsing_ElseGroup$().init___()
+  };
+  return $n_Lparsing_ElseGroup$
+}
+/** @constructor */
+function $c_Lparsing_EndifLine() {
+  $c_O.call(this)
+}
+$c_Lparsing_EndifLine.prototype = new $h_O();
+$c_Lparsing_EndifLine.prototype.constructor = $c_Lparsing_EndifLine;
+/** @constructor */
+function $h_Lparsing_EndifLine() {
+  /*<skip>*/
+}
+$h_Lparsing_EndifLine.prototype = $c_Lparsing_EndifLine.prototype;
+$c_Lparsing_EndifLine.prototype.init___ = (function() {
+  return this
+});
+$c_Lparsing_EndifLine.prototype.productPrefix__T = (function() {
+  return "EndifLine"
+});
+$c_Lparsing_EndifLine.prototype.productArity__I = (function() {
+  return 0
+});
+$c_Lparsing_EndifLine.prototype.equals__O__Z = (function(x$1) {
+  return ($is_Lparsing_EndifLine(x$1) && ($as_Lparsing_EndifLine(x$1), true))
+});
+$c_Lparsing_EndifLine.prototype.productElement__I__O = (function(x$1) {
+  throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+});
+$c_Lparsing_EndifLine.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_EndifLine.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_EndifLine.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_EndifLine(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_EndifLine)))
+}
+function $as_Lparsing_EndifLine(obj) {
+  return (($is_Lparsing_EndifLine(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.EndifLine"))
+}
+function $isArrayOf_Lparsing_EndifLine(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_EndifLine)))
+}
+function $asArrayOf_Lparsing_EndifLine(obj, depth) {
+  return (($isArrayOf_Lparsing_EndifLine(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.EndifLine;", depth))
+}
+var $d_Lparsing_EndifLine = new $TypeData().initClass({
+  Lparsing_EndifLine: 0
+}, false, "parsing.EndifLine", {
+  Lparsing_EndifLine: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_EndifLine.prototype.$classData = $d_Lparsing_EndifLine;
+/** @constructor */
 function $c_Lparsing_Exponent() {
   $c_O.call(this);
   this.v$1 = 0
@@ -24351,6 +27632,84 @@ function $m_Lparsing_FunctionSpecifier$() {
   };
   return $n_Lparsing_FunctionSpecifier$
 }
+/** @constructor */
+function $c_Lparsing_Group() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lparsing_Group.prototype = new $h_O();
+$c_Lparsing_Group.prototype.constructor = $c_Lparsing_Group;
+/** @constructor */
+function $h_Lparsing_Group() {
+  /*<skip>*/
+}
+$h_Lparsing_Group.prototype = $c_Lparsing_Group.prototype;
+$c_Lparsing_Group.prototype.productPrefix__T = (function() {
+  return "Group"
+});
+$c_Lparsing_Group.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_Group.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_Group(x$1)) {
+    var Group$1 = $as_Lparsing_Group(x$1);
+    var x = this.v$1;
+    var x$2 = Group$1.v$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_Group.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_Group.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_Group.prototype.init___sc_Seq = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_Group.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_Group.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_Group(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Group)))
+}
+function $as_Lparsing_Group(obj) {
+  return (($is_Lparsing_Group(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Group"))
+}
+function $isArrayOf_Lparsing_Group(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Group)))
+}
+function $asArrayOf_Lparsing_Group(obj, depth) {
+  return (($isArrayOf_Lparsing_Group(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Group;", depth))
+}
+var $d_Lparsing_Group = new $TypeData().initClass({
+  Lparsing_Group: 0
+}, false, "parsing.Group", {
+  Lparsing_Group: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_Group.prototype.$classData = $d_Lparsing_Group;
 /** @constructor */
 function $c_Lparsing_HexDigit() {
   $c_O.call(this);
@@ -24546,6 +27905,45 @@ var $d_Lparsing_HexQuad = new $TypeData().initClass({
 });
 $c_Lparsing_HexQuad.prototype.$classData = $d_Lparsing_HexQuad;
 /** @constructor */
+function $c_Lparsing_Include$() {
+  $c_sr_AbstractFunction1.call(this)
+}
+$c_Lparsing_Include$.prototype = new $h_sr_AbstractFunction1();
+$c_Lparsing_Include$.prototype.constructor = $c_Lparsing_Include$;
+/** @constructor */
+function $h_Lparsing_Include$() {
+  /*<skip>*/
+}
+$h_Lparsing_Include$.prototype = $c_Lparsing_Include$.prototype;
+$c_Lparsing_Include$.prototype.init___ = (function() {
+  return this
+});
+$c_Lparsing_Include$.prototype.apply__O__O = (function(v1) {
+  var v = $as_sc_Seq(v1);
+  return new $c_Lparsing_Include().init___sc_Seq(v)
+});
+$c_Lparsing_Include$.prototype.toString__T = (function() {
+  return "Include"
+});
+var $d_Lparsing_Include$ = new $TypeData().initClass({
+  Lparsing_Include$: 0
+}, false, "parsing.Include$", {
+  Lparsing_Include$: 1,
+  sr_AbstractFunction1: 1,
+  O: 1,
+  F1: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_Include$.prototype.$classData = $d_Lparsing_Include$;
+var $n_Lparsing_Include$ = (void 0);
+function $m_Lparsing_Include$() {
+  if ((!$n_Lparsing_Include$)) {
+    $n_Lparsing_Include$ = new $c_Lparsing_Include$().init___()
+  };
+  return $n_Lparsing_Include$
+}
+/** @constructor */
 function $c_Lparsing_InitializerSimple$() {
   $c_sr_AbstractFunction1.call(this)
 }
@@ -24583,6 +27981,84 @@ function $m_Lparsing_InitializerSimple$() {
     $n_Lparsing_InitializerSimple$ = new $c_Lparsing_InitializerSimple$().init___()
   };
   return $n_Lparsing_InitializerSimple$
+}
+/** @constructor */
+function $c_Lparsing_Line$() {
+  $c_sr_AbstractFunction1.call(this)
+}
+$c_Lparsing_Line$.prototype = new $h_sr_AbstractFunction1();
+$c_Lparsing_Line$.prototype.constructor = $c_Lparsing_Line$;
+/** @constructor */
+function $h_Lparsing_Line$() {
+  /*<skip>*/
+}
+$h_Lparsing_Line$.prototype = $c_Lparsing_Line$.prototype;
+$c_Lparsing_Line$.prototype.init___ = (function() {
+  return this
+});
+$c_Lparsing_Line$.prototype.apply__O__O = (function(v1) {
+  var v = $as_sc_Seq(v1);
+  return new $c_Lparsing_Line().init___sc_Seq(v)
+});
+$c_Lparsing_Line$.prototype.toString__T = (function() {
+  return "Line"
+});
+var $d_Lparsing_Line$ = new $TypeData().initClass({
+  Lparsing_Line$: 0
+}, false, "parsing.Line$", {
+  Lparsing_Line$: 1,
+  sr_AbstractFunction1: 1,
+  O: 1,
+  F1: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_Line$.prototype.$classData = $d_Lparsing_Line$;
+var $n_Lparsing_Line$ = (void 0);
+function $m_Lparsing_Line$() {
+  if ((!$n_Lparsing_Line$)) {
+    $n_Lparsing_Line$ = new $c_Lparsing_Line$().init___()
+  };
+  return $n_Lparsing_Line$
+}
+/** @constructor */
+function $c_Lparsing_NonDirective$() {
+  $c_sr_AbstractFunction1.call(this)
+}
+$c_Lparsing_NonDirective$.prototype = new $h_sr_AbstractFunction1();
+$c_Lparsing_NonDirective$.prototype.constructor = $c_Lparsing_NonDirective$;
+/** @constructor */
+function $h_Lparsing_NonDirective$() {
+  /*<skip>*/
+}
+$h_Lparsing_NonDirective$.prototype = $c_Lparsing_NonDirective$.prototype;
+$c_Lparsing_NonDirective$.prototype.init___ = (function() {
+  return this
+});
+$c_Lparsing_NonDirective$.prototype.apply__O__O = (function(v1) {
+  var pp = $as_sc_Seq(v1);
+  return new $c_Lparsing_NonDirective().init___sc_Seq(pp)
+});
+$c_Lparsing_NonDirective$.prototype.toString__T = (function() {
+  return "NonDirective"
+});
+var $d_Lparsing_NonDirective$ = new $TypeData().initClass({
+  Lparsing_NonDirective$: 0
+}, false, "parsing.NonDirective$", {
+  Lparsing_NonDirective$: 1,
+  sr_AbstractFunction1: 1,
+  O: 1,
+  F1: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_NonDirective$.prototype.$classData = $d_Lparsing_NonDirective$;
+var $n_Lparsing_NonDirective$ = (void 0);
+function $m_Lparsing_NonDirective$() {
+  if ((!$n_Lparsing_NonDirective$)) {
+    $n_Lparsing_NonDirective$ = new $c_Lparsing_NonDirective$().init___()
+  };
+  return $n_Lparsing_NonDirective$
 }
 /** @constructor */
 function $c_Lparsing_Nondigit() {
@@ -24753,6 +28229,123 @@ var $d_Lparsing_ParameterTypeList = new $TypeData().initClass({
 });
 $c_Lparsing_ParameterTypeList.prototype.$classData = $d_Lparsing_ParameterTypeList;
 /** @constructor */
+function $c_Lparsing_ReplacementList() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lparsing_ReplacementList.prototype = new $h_O();
+$c_Lparsing_ReplacementList.prototype.constructor = $c_Lparsing_ReplacementList;
+/** @constructor */
+function $h_Lparsing_ReplacementList() {
+  /*<skip>*/
+}
+$h_Lparsing_ReplacementList.prototype = $c_Lparsing_ReplacementList.prototype;
+$c_Lparsing_ReplacementList.prototype.productPrefix__T = (function() {
+  return "ReplacementList"
+});
+$c_Lparsing_ReplacementList.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_ReplacementList.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_ReplacementList(x$1)) {
+    var ReplacementList$1 = $as_Lparsing_ReplacementList(x$1);
+    var x = this.v$1;
+    var x$2 = ReplacementList$1.v$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_ReplacementList.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_ReplacementList.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_ReplacementList.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_ReplacementList.prototype.init___s_Option = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_ReplacementList.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_ReplacementList(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_ReplacementList)))
+}
+function $as_Lparsing_ReplacementList(obj) {
+  return (($is_Lparsing_ReplacementList(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.ReplacementList"))
+}
+function $isArrayOf_Lparsing_ReplacementList(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_ReplacementList)))
+}
+function $asArrayOf_Lparsing_ReplacementList(obj, depth) {
+  return (($isArrayOf_Lparsing_ReplacementList(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.ReplacementList;", depth))
+}
+var $d_Lparsing_ReplacementList = new $TypeData().initClass({
+  Lparsing_ReplacementList: 0
+}, false, "parsing.ReplacementList", {
+  Lparsing_ReplacementList: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_ReplacementList.prototype.$classData = $d_Lparsing_ReplacementList;
+/** @constructor */
+function $c_Lparsing_ReplacementList$() {
+  $c_sr_AbstractFunction1.call(this)
+}
+$c_Lparsing_ReplacementList$.prototype = new $h_sr_AbstractFunction1();
+$c_Lparsing_ReplacementList$.prototype.constructor = $c_Lparsing_ReplacementList$;
+/** @constructor */
+function $h_Lparsing_ReplacementList$() {
+  /*<skip>*/
+}
+$h_Lparsing_ReplacementList$.prototype = $c_Lparsing_ReplacementList$.prototype;
+$c_Lparsing_ReplacementList$.prototype.init___ = (function() {
+  return this
+});
+$c_Lparsing_ReplacementList$.prototype.apply__O__O = (function(v1) {
+  var v = $as_s_Option(v1);
+  return new $c_Lparsing_ReplacementList().init___s_Option(v)
+});
+$c_Lparsing_ReplacementList$.prototype.toString__T = (function() {
+  return "ReplacementList"
+});
+var $d_Lparsing_ReplacementList$ = new $TypeData().initClass({
+  Lparsing_ReplacementList$: 0
+}, false, "parsing.ReplacementList$", {
+  Lparsing_ReplacementList$: 1,
+  sr_AbstractFunction1: 1,
+  O: 1,
+  F1: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_ReplacementList$.prototype.$classData = $d_Lparsing_ReplacementList$;
+var $n_Lparsing_ReplacementList$ = (void 0);
+function $m_Lparsing_ReplacementList$() {
+  if ((!$n_Lparsing_ReplacementList$)) {
+    $n_Lparsing_ReplacementList$ = new $c_Lparsing_ReplacementList$().init___()
+  };
+  return $n_Lparsing_ReplacementList$
+}
+/** @constructor */
 function $c_Lparsing_StorageClassSpecifier$() {
   $c_sr_AbstractFunction1.call(this)
 }
@@ -24791,6 +28384,213 @@ function $m_Lparsing_StorageClassSpecifier$() {
   };
   return $n_Lparsing_StorageClassSpecifier$
 }
+/** @constructor */
+function $c_Lparsing_StructDeclaractor1$() {
+  $c_sr_AbstractFunction1.call(this)
+}
+$c_Lparsing_StructDeclaractor1$.prototype = new $h_sr_AbstractFunction1();
+$c_Lparsing_StructDeclaractor1$.prototype.constructor = $c_Lparsing_StructDeclaractor1$;
+/** @constructor */
+function $h_Lparsing_StructDeclaractor1$() {
+  /*<skip>*/
+}
+$h_Lparsing_StructDeclaractor1$.prototype = $c_Lparsing_StructDeclaractor1$.prototype;
+$c_Lparsing_StructDeclaractor1$.prototype.init___ = (function() {
+  return this
+});
+$c_Lparsing_StructDeclaractor1$.prototype.apply__O__O = (function(v1) {
+  var v = $as_Lparsing_Declarator(v1);
+  return new $c_Lparsing_StructDeclaractor1().init___Lparsing_Declarator(v)
+});
+$c_Lparsing_StructDeclaractor1$.prototype.toString__T = (function() {
+  return "StructDeclaractor1"
+});
+var $d_Lparsing_StructDeclaractor1$ = new $TypeData().initClass({
+  Lparsing_StructDeclaractor1$: 0
+}, false, "parsing.StructDeclaractor1$", {
+  Lparsing_StructDeclaractor1$: 1,
+  sr_AbstractFunction1: 1,
+  O: 1,
+  F1: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_StructDeclaractor1$.prototype.$classData = $d_Lparsing_StructDeclaractor1$;
+var $n_Lparsing_StructDeclaractor1$ = (void 0);
+function $m_Lparsing_StructDeclaractor1$() {
+  if ((!$n_Lparsing_StructDeclaractor1$)) {
+    $n_Lparsing_StructDeclaractor1$ = new $c_Lparsing_StructDeclaractor1$().init___()
+  };
+  return $n_Lparsing_StructDeclaractor1$
+}
+/** @constructor */
+function $c_Lparsing_StructDeclaration() {
+  $c_O.call(this);
+  this.v$1 = null;
+  this.v2$1 = null
+}
+$c_Lparsing_StructDeclaration.prototype = new $h_O();
+$c_Lparsing_StructDeclaration.prototype.constructor = $c_Lparsing_StructDeclaration;
+/** @constructor */
+function $h_Lparsing_StructDeclaration() {
+  /*<skip>*/
+}
+$h_Lparsing_StructDeclaration.prototype = $c_Lparsing_StructDeclaration.prototype;
+$c_Lparsing_StructDeclaration.prototype.productPrefix__T = (function() {
+  return "StructDeclaration"
+});
+$c_Lparsing_StructDeclaration.prototype.init___sc_Seq__s_Option = (function(v, v2) {
+  this.v$1 = v;
+  this.v2$1 = v2;
+  return this
+});
+$c_Lparsing_StructDeclaration.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_StructDeclaration.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_StructDeclaration(x$1)) {
+    var StructDeclaration$1 = $as_Lparsing_StructDeclaration(x$1);
+    var x = this.v$1;
+    var x$2 = StructDeclaration$1.v$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.v2$1;
+      var x$4 = StructDeclaration$1.v2$1;
+      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_StructDeclaration.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    case 1: {
+      return this.v2$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_StructDeclaration.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_StructDeclaration.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_StructDeclaration.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_StructDeclaration(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_StructDeclaration)))
+}
+function $as_Lparsing_StructDeclaration(obj) {
+  return (($is_Lparsing_StructDeclaration(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.StructDeclaration"))
+}
+function $isArrayOf_Lparsing_StructDeclaration(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_StructDeclaration)))
+}
+function $asArrayOf_Lparsing_StructDeclaration(obj, depth) {
+  return (($isArrayOf_Lparsing_StructDeclaration(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.StructDeclaration;", depth))
+}
+var $d_Lparsing_StructDeclaration = new $TypeData().initClass({
+  Lparsing_StructDeclaration: 0
+}, false, "parsing.StructDeclaration", {
+  Lparsing_StructDeclaration: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_StructDeclaration.prototype.$classData = $d_Lparsing_StructDeclaration;
+/** @constructor */
+function $c_Lparsing_StructDeclaratorList() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lparsing_StructDeclaratorList.prototype = new $h_O();
+$c_Lparsing_StructDeclaratorList.prototype.constructor = $c_Lparsing_StructDeclaratorList;
+/** @constructor */
+function $h_Lparsing_StructDeclaratorList() {
+  /*<skip>*/
+}
+$h_Lparsing_StructDeclaratorList.prototype = $c_Lparsing_StructDeclaratorList.prototype;
+$c_Lparsing_StructDeclaratorList.prototype.productPrefix__T = (function() {
+  return "StructDeclaratorList"
+});
+$c_Lparsing_StructDeclaratorList.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_StructDeclaratorList.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_StructDeclaratorList(x$1)) {
+    var StructDeclaratorList$1 = $as_Lparsing_StructDeclaratorList(x$1);
+    var x = this.v$1;
+    var x$2 = StructDeclaratorList$1.v$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_StructDeclaratorList.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_StructDeclaratorList.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_StructDeclaratorList.prototype.init___sc_Seq = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_StructDeclaratorList.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_StructDeclaratorList.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_StructDeclaratorList(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_StructDeclaratorList)))
+}
+function $as_Lparsing_StructDeclaratorList(obj) {
+  return (($is_Lparsing_StructDeclaratorList(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.StructDeclaratorList"))
+}
+function $isArrayOf_Lparsing_StructDeclaratorList(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_StructDeclaratorList)))
+}
+function $asArrayOf_Lparsing_StructDeclaratorList(obj, depth) {
+  return (($isArrayOf_Lparsing_StructDeclaratorList(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.StructDeclaratorList;", depth))
+}
+var $d_Lparsing_StructDeclaratorList = new $TypeData().initClass({
+  Lparsing_StructDeclaratorList: 0
+}, false, "parsing.StructDeclaratorList", {
+  Lparsing_StructDeclaratorList: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_StructDeclaratorList.prototype.$classData = $d_Lparsing_StructDeclaratorList;
 /** @constructor */
 function $c_Lparsing_TranslationUnit() {
   $c_O.call(this);
@@ -24946,45 +28746,6 @@ var $d_Lparsing_TypeName = new $TypeData().initClass({
 });
 $c_Lparsing_TypeName.prototype.$classData = $d_Lparsing_TypeName;
 /** @constructor */
-function $c_Lparsing_TypeName$() {
-  $c_sr_AbstractFunction1.call(this)
-}
-$c_Lparsing_TypeName$.prototype = new $h_sr_AbstractFunction1();
-$c_Lparsing_TypeName$.prototype.constructor = $c_Lparsing_TypeName$;
-/** @constructor */
-function $h_Lparsing_TypeName$() {
-  /*<skip>*/
-}
-$h_Lparsing_TypeName$.prototype = $c_Lparsing_TypeName$.prototype;
-$c_Lparsing_TypeName$.prototype.init___ = (function() {
-  return this
-});
-$c_Lparsing_TypeName$.prototype.apply__O__O = (function(v1) {
-  var v = $as_T(v1);
-  return new $c_Lparsing_TypeName().init___T(v)
-});
-$c_Lparsing_TypeName$.prototype.toString__T = (function() {
-  return "TypeName"
-});
-var $d_Lparsing_TypeName$ = new $TypeData().initClass({
-  Lparsing_TypeName$: 0
-}, false, "parsing.TypeName$", {
-  Lparsing_TypeName$: 1,
-  sr_AbstractFunction1: 1,
-  O: 1,
-  F1: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lparsing_TypeName$.prototype.$classData = $d_Lparsing_TypeName$;
-var $n_Lparsing_TypeName$ = (void 0);
-function $m_Lparsing_TypeName$() {
-  if ((!$n_Lparsing_TypeName$)) {
-    $n_Lparsing_TypeName$ = new $c_Lparsing_TypeName$().init___()
-  };
-  return $n_Lparsing_TypeName$
-}
-/** @constructor */
 function $c_Lparsing_TypeQualifier$() {
   $c_sr_AbstractFunction1.call(this)
 }
@@ -25024,43 +28785,82 @@ function $m_Lparsing_TypeQualifier$() {
   return $n_Lparsing_TypeQualifier$
 }
 /** @constructor */
-function $c_Lparsing_TypeSpecifier$() {
+function $c_Lparsing_TypeSpecifierSimple$() {
   $c_sr_AbstractFunction1.call(this)
 }
-$c_Lparsing_TypeSpecifier$.prototype = new $h_sr_AbstractFunction1();
-$c_Lparsing_TypeSpecifier$.prototype.constructor = $c_Lparsing_TypeSpecifier$;
+$c_Lparsing_TypeSpecifierSimple$.prototype = new $h_sr_AbstractFunction1();
+$c_Lparsing_TypeSpecifierSimple$.prototype.constructor = $c_Lparsing_TypeSpecifierSimple$;
 /** @constructor */
-function $h_Lparsing_TypeSpecifier$() {
+function $h_Lparsing_TypeSpecifierSimple$() {
   /*<skip>*/
 }
-$h_Lparsing_TypeSpecifier$.prototype = $c_Lparsing_TypeSpecifier$.prototype;
-$c_Lparsing_TypeSpecifier$.prototype.init___ = (function() {
+$h_Lparsing_TypeSpecifierSimple$.prototype = $c_Lparsing_TypeSpecifierSimple$.prototype;
+$c_Lparsing_TypeSpecifierSimple$.prototype.init___ = (function() {
   return this
 });
-$c_Lparsing_TypeSpecifier$.prototype.apply__O__O = (function(v1) {
+$c_Lparsing_TypeSpecifierSimple$.prototype.apply__O__O = (function(v1) {
   var v = $as_T(v1);
-  return new $c_Lparsing_TypeSpecifier().init___T(v)
+  return new $c_Lparsing_TypeSpecifierSimple().init___T(v)
 });
-$c_Lparsing_TypeSpecifier$.prototype.toString__T = (function() {
-  return "TypeSpecifier"
+$c_Lparsing_TypeSpecifierSimple$.prototype.toString__T = (function() {
+  return "TypeSpecifierSimple"
 });
-var $d_Lparsing_TypeSpecifier$ = new $TypeData().initClass({
-  Lparsing_TypeSpecifier$: 0
-}, false, "parsing.TypeSpecifier$", {
-  Lparsing_TypeSpecifier$: 1,
+var $d_Lparsing_TypeSpecifierSimple$ = new $TypeData().initClass({
+  Lparsing_TypeSpecifierSimple$: 0
+}, false, "parsing.TypeSpecifierSimple$", {
+  Lparsing_TypeSpecifierSimple$: 1,
   sr_AbstractFunction1: 1,
   O: 1,
   F1: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lparsing_TypeSpecifier$.prototype.$classData = $d_Lparsing_TypeSpecifier$;
-var $n_Lparsing_TypeSpecifier$ = (void 0);
-function $m_Lparsing_TypeSpecifier$() {
-  if ((!$n_Lparsing_TypeSpecifier$)) {
-    $n_Lparsing_TypeSpecifier$ = new $c_Lparsing_TypeSpecifier$().init___()
+$c_Lparsing_TypeSpecifierSimple$.prototype.$classData = $d_Lparsing_TypeSpecifierSimple$;
+var $n_Lparsing_TypeSpecifierSimple$ = (void 0);
+function $m_Lparsing_TypeSpecifierSimple$() {
+  if ((!$n_Lparsing_TypeSpecifierSimple$)) {
+    $n_Lparsing_TypeSpecifierSimple$ = new $c_Lparsing_TypeSpecifierSimple$().init___()
   };
-  return $n_Lparsing_TypeSpecifier$
+  return $n_Lparsing_TypeSpecifierSimple$
+}
+/** @constructor */
+function $c_Lparsing_Undef$() {
+  $c_sr_AbstractFunction1.call(this)
+}
+$c_Lparsing_Undef$.prototype = new $h_sr_AbstractFunction1();
+$c_Lparsing_Undef$.prototype.constructor = $c_Lparsing_Undef$;
+/** @constructor */
+function $h_Lparsing_Undef$() {
+  /*<skip>*/
+}
+$h_Lparsing_Undef$.prototype = $c_Lparsing_Undef$.prototype;
+$c_Lparsing_Undef$.prototype.init___ = (function() {
+  return this
+});
+$c_Lparsing_Undef$.prototype.apply__O__O = (function(v1) {
+  var ident = $as_Lparsing_Identifier(v1);
+  return new $c_Lparsing_Undef().init___Lparsing_Identifier(ident)
+});
+$c_Lparsing_Undef$.prototype.toString__T = (function() {
+  return "Undef"
+});
+var $d_Lparsing_Undef$ = new $TypeData().initClass({
+  Lparsing_Undef$: 0
+}, false, "parsing.Undef$", {
+  Lparsing_Undef$: 1,
+  sr_AbstractFunction1: 1,
+  O: 1,
+  F1: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_Undef$.prototype.$classData = $d_Lparsing_Undef$;
+var $n_Lparsing_Undef$ = (void 0);
+function $m_Lparsing_Undef$() {
+  if ((!$n_Lparsing_Undef$)) {
+    $n_Lparsing_Undef$ = new $c_Lparsing_Undef$().init___()
+  };
+  return $n_Lparsing_Undef$
 }
 /** @constructor */
 function $c_Lpprint_Tree$Ctx() {
@@ -27907,6 +31707,474 @@ var $d_Lfastparse_core_Parsed$Success = new $TypeData().initClass({
 });
 $c_Lfastparse_core_Parsed$Success.prototype.$classData = $d_Lfastparse_core_Parsed$Success;
 /** @constructor */
+function $c_Lgenerating_GenString() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lgenerating_GenString.prototype = new $h_O();
+$c_Lgenerating_GenString.prototype.constructor = $c_Lgenerating_GenString;
+/** @constructor */
+function $h_Lgenerating_GenString() {
+  /*<skip>*/
+}
+$h_Lgenerating_GenString.prototype = $c_Lgenerating_GenString.prototype;
+$c_Lgenerating_GenString.prototype.productPrefix__T = (function() {
+  return "GenString"
+});
+$c_Lgenerating_GenString.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lgenerating_GenString.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lgenerating_GenString(x$1)) {
+    var GenString$1 = $as_Lgenerating_GenString(x$1);
+    return (this.v$1 === GenString$1.v$1)
+  } else {
+    return false
+  }
+});
+$c_Lgenerating_GenString.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lgenerating_GenString.prototype.toString__T = (function() {
+  return this.v$1
+});
+$c_Lgenerating_GenString.prototype.init___T = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lgenerating_GenString.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lgenerating_GenString.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lgenerating_GenString(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lgenerating_GenString)))
+}
+function $as_Lgenerating_GenString(obj) {
+  return (($is_Lgenerating_GenString(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "generating.GenString"))
+}
+function $isArrayOf_Lgenerating_GenString(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lgenerating_GenString)))
+}
+function $asArrayOf_Lgenerating_GenString(obj, depth) {
+  return (($isArrayOf_Lgenerating_GenString(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lgenerating.GenString;", depth))
+}
+var $d_Lgenerating_GenString = new $TypeData().initClass({
+  Lgenerating_GenString: 0
+}, false, "generating.GenString", {
+  Lgenerating_GenString: 1,
+  O: 1,
+  Lgenerating_Generated: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lgenerating_GenString.prototype.$classData = $d_Lgenerating_GenString;
+/** @constructor */
+function $c_Lgenerating_GenStrings() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lgenerating_GenStrings.prototype = new $h_O();
+$c_Lgenerating_GenStrings.prototype.constructor = $c_Lgenerating_GenStrings;
+/** @constructor */
+function $h_Lgenerating_GenStrings() {
+  /*<skip>*/
+}
+$h_Lgenerating_GenStrings.prototype = $c_Lgenerating_GenStrings.prototype;
+$c_Lgenerating_GenStrings.prototype.productPrefix__T = (function() {
+  return "GenStrings"
+});
+$c_Lgenerating_GenStrings.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lgenerating_GenStrings.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lgenerating_GenStrings(x$1)) {
+    var GenStrings$1 = $as_Lgenerating_GenStrings(x$1);
+    var x = this.v$1;
+    var x$2 = GenStrings$1.v$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lgenerating_GenStrings.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lgenerating_GenStrings.prototype.toString__T = (function() {
+  return this.v$1.mkString__T__T(" ")
+});
+$c_Lgenerating_GenStrings.prototype.init___sc_Seq = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lgenerating_GenStrings.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lgenerating_GenStrings.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lgenerating_GenStrings(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lgenerating_GenStrings)))
+}
+function $as_Lgenerating_GenStrings(obj) {
+  return (($is_Lgenerating_GenStrings(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "generating.GenStrings"))
+}
+function $isArrayOf_Lgenerating_GenStrings(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lgenerating_GenStrings)))
+}
+function $asArrayOf_Lgenerating_GenStrings(obj, depth) {
+  return (($isArrayOf_Lgenerating_GenStrings(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lgenerating.GenStrings;", depth))
+}
+var $d_Lgenerating_GenStrings = new $TypeData().initClass({
+  Lgenerating_GenStrings: 0
+}, false, "generating.GenStrings", {
+  Lgenerating_GenStrings: 1,
+  O: 1,
+  Lgenerating_Generated: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lgenerating_GenStrings.prototype.$classData = $d_Lgenerating_GenStrings;
+/** @constructor */
+function $c_Lgenerating_IndentDown() {
+  $c_O.call(this)
+}
+$c_Lgenerating_IndentDown.prototype = new $h_O();
+$c_Lgenerating_IndentDown.prototype.constructor = $c_Lgenerating_IndentDown;
+/** @constructor */
+function $h_Lgenerating_IndentDown() {
+  /*<skip>*/
+}
+$h_Lgenerating_IndentDown.prototype = $c_Lgenerating_IndentDown.prototype;
+$c_Lgenerating_IndentDown.prototype.init___ = (function() {
+  return this
+});
+$c_Lgenerating_IndentDown.prototype.productPrefix__T = (function() {
+  return "IndentDown"
+});
+$c_Lgenerating_IndentDown.prototype.productArity__I = (function() {
+  return 0
+});
+$c_Lgenerating_IndentDown.prototype.equals__O__Z = (function(x$1) {
+  return ($is_Lgenerating_IndentDown(x$1) && ($as_Lgenerating_IndentDown(x$1), true))
+});
+$c_Lgenerating_IndentDown.prototype.productElement__I__O = (function(x$1) {
+  throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+});
+$c_Lgenerating_IndentDown.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lgenerating_IndentDown.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lgenerating_IndentDown.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lgenerating_IndentDown(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lgenerating_IndentDown)))
+}
+function $as_Lgenerating_IndentDown(obj) {
+  return (($is_Lgenerating_IndentDown(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "generating.IndentDown"))
+}
+function $isArrayOf_Lgenerating_IndentDown(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lgenerating_IndentDown)))
+}
+function $asArrayOf_Lgenerating_IndentDown(obj, depth) {
+  return (($isArrayOf_Lgenerating_IndentDown(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lgenerating.IndentDown;", depth))
+}
+var $d_Lgenerating_IndentDown = new $TypeData().initClass({
+  Lgenerating_IndentDown: 0
+}, false, "generating.IndentDown", {
+  Lgenerating_IndentDown: 1,
+  O: 1,
+  Lgenerating_Generated: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lgenerating_IndentDown.prototype.$classData = $d_Lgenerating_IndentDown;
+function $is_Lgenerating_IndentUp(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lgenerating_IndentUp)))
+}
+function $as_Lgenerating_IndentUp(obj) {
+  return (($is_Lgenerating_IndentUp(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "generating.IndentUp"))
+}
+function $isArrayOf_Lgenerating_IndentUp(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lgenerating_IndentUp)))
+}
+function $asArrayOf_Lgenerating_IndentUp(obj, depth) {
+  return (($isArrayOf_Lgenerating_IndentUp(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lgenerating.IndentUp;", depth))
+}
+/** @constructor */
+function $c_Lgenerating_NewlineAndIndent() {
+  $c_O.call(this)
+}
+$c_Lgenerating_NewlineAndIndent.prototype = new $h_O();
+$c_Lgenerating_NewlineAndIndent.prototype.constructor = $c_Lgenerating_NewlineAndIndent;
+/** @constructor */
+function $h_Lgenerating_NewlineAndIndent() {
+  /*<skip>*/
+}
+$h_Lgenerating_NewlineAndIndent.prototype = $c_Lgenerating_NewlineAndIndent.prototype;
+$c_Lgenerating_NewlineAndIndent.prototype.init___ = (function() {
+  return this
+});
+$c_Lgenerating_NewlineAndIndent.prototype.productPrefix__T = (function() {
+  return "NewlineAndIndent"
+});
+$c_Lgenerating_NewlineAndIndent.prototype.productArity__I = (function() {
+  return 0
+});
+$c_Lgenerating_NewlineAndIndent.prototype.equals__O__Z = (function(x$1) {
+  return ($is_Lgenerating_NewlineAndIndent(x$1) && ($as_Lgenerating_NewlineAndIndent(x$1), true))
+});
+$c_Lgenerating_NewlineAndIndent.prototype.productElement__I__O = (function(x$1) {
+  throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+});
+$c_Lgenerating_NewlineAndIndent.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lgenerating_NewlineAndIndent.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lgenerating_NewlineAndIndent.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lgenerating_NewlineAndIndent(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lgenerating_NewlineAndIndent)))
+}
+function $as_Lgenerating_NewlineAndIndent(obj) {
+  return (($is_Lgenerating_NewlineAndIndent(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "generating.NewlineAndIndent"))
+}
+function $isArrayOf_Lgenerating_NewlineAndIndent(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lgenerating_NewlineAndIndent)))
+}
+function $asArrayOf_Lgenerating_NewlineAndIndent(obj, depth) {
+  return (($isArrayOf_Lgenerating_NewlineAndIndent(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lgenerating.NewlineAndIndent;", depth))
+}
+var $d_Lgenerating_NewlineAndIndent = new $TypeData().initClass({
+  Lgenerating_NewlineAndIndent: 0
+}, false, "generating.NewlineAndIndent", {
+  Lgenerating_NewlineAndIndent: 1,
+  O: 1,
+  Lgenerating_Generated: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lgenerating_NewlineAndIndent.prototype.$classData = $d_Lgenerating_NewlineAndIndent;
+/** @constructor */
+function $c_Lgenerating_NewlineAndIndentDown() {
+  $c_O.call(this)
+}
+$c_Lgenerating_NewlineAndIndentDown.prototype = new $h_O();
+$c_Lgenerating_NewlineAndIndentDown.prototype.constructor = $c_Lgenerating_NewlineAndIndentDown;
+/** @constructor */
+function $h_Lgenerating_NewlineAndIndentDown() {
+  /*<skip>*/
+}
+$h_Lgenerating_NewlineAndIndentDown.prototype = $c_Lgenerating_NewlineAndIndentDown.prototype;
+$c_Lgenerating_NewlineAndIndentDown.prototype.init___ = (function() {
+  return this
+});
+$c_Lgenerating_NewlineAndIndentDown.prototype.productPrefix__T = (function() {
+  return "NewlineAndIndentDown"
+});
+$c_Lgenerating_NewlineAndIndentDown.prototype.productArity__I = (function() {
+  return 0
+});
+$c_Lgenerating_NewlineAndIndentDown.prototype.equals__O__Z = (function(x$1) {
+  return ($is_Lgenerating_NewlineAndIndentDown(x$1) && ($as_Lgenerating_NewlineAndIndentDown(x$1), true))
+});
+$c_Lgenerating_NewlineAndIndentDown.prototype.productElement__I__O = (function(x$1) {
+  throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+});
+$c_Lgenerating_NewlineAndIndentDown.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lgenerating_NewlineAndIndentDown.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lgenerating_NewlineAndIndentDown.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lgenerating_NewlineAndIndentDown(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lgenerating_NewlineAndIndentDown)))
+}
+function $as_Lgenerating_NewlineAndIndentDown(obj) {
+  return (($is_Lgenerating_NewlineAndIndentDown(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "generating.NewlineAndIndentDown"))
+}
+function $isArrayOf_Lgenerating_NewlineAndIndentDown(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lgenerating_NewlineAndIndentDown)))
+}
+function $asArrayOf_Lgenerating_NewlineAndIndentDown(obj, depth) {
+  return (($isArrayOf_Lgenerating_NewlineAndIndentDown(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lgenerating.NewlineAndIndentDown;", depth))
+}
+var $d_Lgenerating_NewlineAndIndentDown = new $TypeData().initClass({
+  Lgenerating_NewlineAndIndentDown: 0
+}, false, "generating.NewlineAndIndentDown", {
+  Lgenerating_NewlineAndIndentDown: 1,
+  O: 1,
+  Lgenerating_Generated: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lgenerating_NewlineAndIndentDown.prototype.$classData = $d_Lgenerating_NewlineAndIndentDown;
+/** @constructor */
+function $c_Lgenerating_NewlineAndIndentUp() {
+  $c_O.call(this)
+}
+$c_Lgenerating_NewlineAndIndentUp.prototype = new $h_O();
+$c_Lgenerating_NewlineAndIndentUp.prototype.constructor = $c_Lgenerating_NewlineAndIndentUp;
+/** @constructor */
+function $h_Lgenerating_NewlineAndIndentUp() {
+  /*<skip>*/
+}
+$h_Lgenerating_NewlineAndIndentUp.prototype = $c_Lgenerating_NewlineAndIndentUp.prototype;
+$c_Lgenerating_NewlineAndIndentUp.prototype.init___ = (function() {
+  return this
+});
+$c_Lgenerating_NewlineAndIndentUp.prototype.productPrefix__T = (function() {
+  return "NewlineAndIndentUp"
+});
+$c_Lgenerating_NewlineAndIndentUp.prototype.productArity__I = (function() {
+  return 0
+});
+$c_Lgenerating_NewlineAndIndentUp.prototype.equals__O__Z = (function(x$1) {
+  return ($is_Lgenerating_NewlineAndIndentUp(x$1) && ($as_Lgenerating_NewlineAndIndentUp(x$1), true))
+});
+$c_Lgenerating_NewlineAndIndentUp.prototype.productElement__I__O = (function(x$1) {
+  throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+});
+$c_Lgenerating_NewlineAndIndentUp.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lgenerating_NewlineAndIndentUp.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lgenerating_NewlineAndIndentUp.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lgenerating_NewlineAndIndentUp(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lgenerating_NewlineAndIndentUp)))
+}
+function $as_Lgenerating_NewlineAndIndentUp(obj) {
+  return (($is_Lgenerating_NewlineAndIndentUp(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "generating.NewlineAndIndentUp"))
+}
+function $isArrayOf_Lgenerating_NewlineAndIndentUp(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lgenerating_NewlineAndIndentUp)))
+}
+function $asArrayOf_Lgenerating_NewlineAndIndentUp(obj, depth) {
+  return (($isArrayOf_Lgenerating_NewlineAndIndentUp(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lgenerating.NewlineAndIndentUp;", depth))
+}
+var $d_Lgenerating_NewlineAndIndentUp = new $TypeData().initClass({
+  Lgenerating_NewlineAndIndentUp: 0
+}, false, "generating.NewlineAndIndentUp", {
+  Lgenerating_NewlineAndIndentUp: 1,
+  O: 1,
+  Lgenerating_Generated: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lgenerating_NewlineAndIndentUp.prototype.$classData = $d_Lgenerating_NewlineAndIndentUp;
+/** @constructor */
+function $c_Lgenerating_NewlineOnly() {
+  $c_O.call(this)
+}
+$c_Lgenerating_NewlineOnly.prototype = new $h_O();
+$c_Lgenerating_NewlineOnly.prototype.constructor = $c_Lgenerating_NewlineOnly;
+/** @constructor */
+function $h_Lgenerating_NewlineOnly() {
+  /*<skip>*/
+}
+$h_Lgenerating_NewlineOnly.prototype = $c_Lgenerating_NewlineOnly.prototype;
+$c_Lgenerating_NewlineOnly.prototype.init___ = (function() {
+  return this
+});
+$c_Lgenerating_NewlineOnly.prototype.productPrefix__T = (function() {
+  return "NewlineOnly"
+});
+$c_Lgenerating_NewlineOnly.prototype.productArity__I = (function() {
+  return 0
+});
+$c_Lgenerating_NewlineOnly.prototype.equals__O__Z = (function(x$1) {
+  return ($is_Lgenerating_NewlineOnly(x$1) && ($as_Lgenerating_NewlineOnly(x$1), true))
+});
+$c_Lgenerating_NewlineOnly.prototype.productElement__I__O = (function(x$1) {
+  throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+});
+$c_Lgenerating_NewlineOnly.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lgenerating_NewlineOnly.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lgenerating_NewlineOnly.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lgenerating_NewlineOnly(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lgenerating_NewlineOnly)))
+}
+function $as_Lgenerating_NewlineOnly(obj) {
+  return (($is_Lgenerating_NewlineOnly(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "generating.NewlineOnly"))
+}
+function $isArrayOf_Lgenerating_NewlineOnly(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lgenerating_NewlineOnly)))
+}
+function $asArrayOf_Lgenerating_NewlineOnly(obj, depth) {
+  return (($isArrayOf_Lgenerating_NewlineOnly(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lgenerating.NewlineOnly;", depth))
+}
+var $d_Lgenerating_NewlineOnly = new $TypeData().initClass({
+  Lgenerating_NewlineOnly: 0
+}, false, "generating.NewlineOnly", {
+  Lgenerating_NewlineOnly: 1,
+  O: 1,
+  Lgenerating_Generated: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lgenerating_NewlineOnly.prototype.$classData = $d_Lgenerating_NewlineOnly;
+/** @constructor */
 function $c_Lparsing_AlignmentSpecifier() {
   $c_O.call(this);
   this.v$1 = null
@@ -28116,27 +32384,36 @@ $c_Lparsing_CParseFail.prototype.init___Lfastparse_core_Parsed = (function(parse
   var z = x2.extra$1;
   var traced = z.traced__Lfastparse_core_Parsed$TracedFailure();
   var input = $as_T($as_Lfastparse_utils_IndexedParserInput(traced.input$1).data$2);
-  var last = $as_Lfastparse_core_Frame(traced.fullStack$1.last__O());
-  var jsx$1 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["At index ", " '", "' did not find expected '", "'"]));
-  var a = $uI(input.length);
-  var b = ((10 + failIndex) | 0);
-  var endIndex = ((a < b) ? a : b);
-  var err = jsx$1.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([failIndex, $as_T(input.substring(failIndex, endIndex)), last.parser$1.toString__T()]));
+  var this$1 = traced.fullStack$1;
+  if ($f_sc_TraversableOnce__nonEmpty__Z(this$1)) {
+    var last = $as_Lfastparse_core_Frame(traced.fullStack$1.last__O());
+    var jsx$1 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["At index ", " '", "'... did not find expected '", "'"]));
+    var a = $uI(input.length);
+    var b = ((10 + failIndex) | 0);
+    var endIndex = ((a < b) ? a : b);
+    var err = jsx$1.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([failIndex, $as_T(input.substring(failIndex, endIndex)), last.parser$1.toString__T()]))
+  } else {
+    var jsx$2 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["At index ", " '", "'... parse error "]));
+    var a$1 = $uI(input.length);
+    var b$1 = ((10 + failIndex) | 0);
+    var endIndex$1 = ((a$1 < b$1) ? a$1 : b$1);
+    var err = jsx$2.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([failIndex, $as_T(input.substring(failIndex, endIndex$1))]))
+  };
   var x1$2 = new $c_T2().init___O__O(err, failIndex);
   matchEnd5$2: {
-    var jsx$2;
+    var jsx$3;
     var err$2 = $as_T(x1$2.$$und1$f);
     var failIndex$2 = $uI(x1$2.$$und2$f);
     if ((err$2 !== null)) {
-      var jsx$2 = new $c_T2().init___O__O(err$2, failIndex$2);
+      var jsx$3 = new $c_T2().init___O__O(err$2, failIndex$2);
       break matchEnd5$2
     };
     throw new $c_s_MatchError().init___O(x1$2)
   };
-  this.x$1$1 = jsx$2;
+  this.x$1$1 = jsx$3;
   this.err$1 = $as_T(this.x$1$1.$$und1__O());
-  var this$5 = this.x$1$1;
-  this.failIndex$1 = $uI(this$5.$$und2__O());
+  var this$10 = this.x$1$1;
+  this.failIndex$1 = $uI(this$10.$$und2__O());
   return this
 });
 $c_Lparsing_CParseFail.prototype.toString__T = (function() {
@@ -31509,123 +35786,6 @@ var $d_Lparsing_FunctionDeclaration = new $TypeData().initClass({
 });
 $c_Lparsing_FunctionDeclaration.prototype.$classData = $d_Lparsing_FunctionDeclaration;
 /** @constructor */
-function $c_Lparsing_FunctionDefinition() {
-  $c_O.call(this);
-  this.spec$1 = null;
-  this.dec$1 = null;
-  this.decs$1 = null;
-  this.v$1 = null
-}
-$c_Lparsing_FunctionDefinition.prototype = new $h_O();
-$c_Lparsing_FunctionDefinition.prototype.constructor = $c_Lparsing_FunctionDefinition;
-/** @constructor */
-function $h_Lparsing_FunctionDefinition() {
-  /*<skip>*/
-}
-$h_Lparsing_FunctionDefinition.prototype = $c_Lparsing_FunctionDefinition.prototype;
-$c_Lparsing_FunctionDefinition.prototype.productPrefix__T = (function() {
-  return "FunctionDefinition"
-});
-$c_Lparsing_FunctionDefinition.prototype.productArity__I = (function() {
-  return 4
-});
-$c_Lparsing_FunctionDefinition.prototype.equals__O__Z = (function(x$1) {
-  if ((this === x$1)) {
-    return true
-  } else if ($is_Lparsing_FunctionDefinition(x$1)) {
-    var FunctionDefinition$1 = $as_Lparsing_FunctionDefinition(x$1);
-    var x = this.spec$1;
-    var x$2 = FunctionDefinition$1.spec$1;
-    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
-      var x$3 = this.dec$1;
-      var x$4 = FunctionDefinition$1.dec$1;
-      var jsx$2 = ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
-    } else {
-      var jsx$2 = false
-    };
-    if (jsx$2) {
-      var x$5 = this.decs$1;
-      var x$6 = FunctionDefinition$1.decs$1;
-      var jsx$1 = ((x$5 === null) ? (x$6 === null) : x$5.equals__O__Z(x$6))
-    } else {
-      var jsx$1 = false
-    };
-    if (jsx$1) {
-      var x$7 = this.v$1;
-      var x$8 = FunctionDefinition$1.v$1;
-      return ((x$7 === null) ? (x$8 === null) : x$7.equals__O__Z(x$8))
-    } else {
-      return false
-    }
-  } else {
-    return false
-  }
-});
-$c_Lparsing_FunctionDefinition.prototype.productElement__I__O = (function(x$1) {
-  switch (x$1) {
-    case 0: {
-      return this.spec$1;
-      break
-    }
-    case 1: {
-      return this.dec$1;
-      break
-    }
-    case 2: {
-      return this.decs$1;
-      break
-    }
-    case 3: {
-      return this.v$1;
-      break
-    }
-    default: {
-      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
-    }
-  }
-});
-$c_Lparsing_FunctionDefinition.prototype.toString__T = (function() {
-  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
-});
-$c_Lparsing_FunctionDefinition.prototype.init___Lparsing_DeclarationSpecifiers__Lparsing_Declarator__s_Option__Lparsing_CompoundStatement = (function(spec, dec, decs, v) {
-  this.spec$1 = spec;
-  this.dec$1 = dec;
-  this.decs$1 = decs;
-  this.v$1 = v;
-  return this
-});
-$c_Lparsing_FunctionDefinition.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
-});
-$c_Lparsing_FunctionDefinition.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
-});
-function $is_Lparsing_FunctionDefinition(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_FunctionDefinition)))
-}
-function $as_Lparsing_FunctionDefinition(obj) {
-  return (($is_Lparsing_FunctionDefinition(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.FunctionDefinition"))
-}
-function $isArrayOf_Lparsing_FunctionDefinition(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_FunctionDefinition)))
-}
-function $asArrayOf_Lparsing_FunctionDefinition(obj, depth) {
-  return (($isArrayOf_Lparsing_FunctionDefinition(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.FunctionDefinition;", depth))
-}
-var $d_Lparsing_FunctionDefinition = new $TypeData().initClass({
-  Lparsing_FunctionDefinition: 0
-}, false, "parsing.FunctionDefinition", {
-  Lparsing_FunctionDefinition: 1,
-  O: 1,
-  Lparsing_ExternalDeclaration: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lparsing_FunctionDefinition.prototype.$classData = $d_Lparsing_FunctionDefinition;
-/** @constructor */
 function $c_Lparsing_FunctionSpecifier() {
   $c_O.call(this);
   this.v$1 = null
@@ -31860,6 +36020,396 @@ var $d_Lparsing_IdentifierNondigit2 = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lparsing_IdentifierNondigit2.prototype.$classData = $d_Lparsing_IdentifierNondigit2;
+/** @constructor */
+function $c_Lparsing_If() {
+  $c_O.call(this);
+  this.exp$1 = null;
+  this.group$1 = null
+}
+$c_Lparsing_If.prototype = new $h_O();
+$c_Lparsing_If.prototype.constructor = $c_Lparsing_If;
+/** @constructor */
+function $h_Lparsing_If() {
+  /*<skip>*/
+}
+$h_Lparsing_If.prototype = $c_Lparsing_If.prototype;
+$c_Lparsing_If.prototype.productPrefix__T = (function() {
+  return "If"
+});
+$c_Lparsing_If.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_If.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_If(x$1)) {
+    var If$1 = $as_Lparsing_If(x$1);
+    var x = this.exp$1;
+    var x$2 = If$1.exp$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.group$1;
+      var x$4 = If$1.group$1;
+      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_If.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.exp$1;
+      break
+    }
+    case 1: {
+      return this.group$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_If.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_If.prototype.init___Lparsing_Expression__s_Option = (function(exp, group) {
+  this.exp$1 = exp;
+  this.group$1 = group;
+  return this
+});
+$c_Lparsing_If.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_If.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_If(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_If)))
+}
+function $as_Lparsing_If(obj) {
+  return (($is_Lparsing_If(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.If"))
+}
+function $isArrayOf_Lparsing_If(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_If)))
+}
+function $asArrayOf_Lparsing_If(obj, depth) {
+  return (($isArrayOf_Lparsing_If(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.If;", depth))
+}
+var $d_Lparsing_If = new $TypeData().initClass({
+  Lparsing_If: 0
+}, false, "parsing.If", {
+  Lparsing_If: 1,
+  O: 1,
+  Lparsing_IfGroup: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_If.prototype.$classData = $d_Lparsing_If;
+/** @constructor */
+function $c_Lparsing_IfDef() {
+  $c_O.call(this);
+  this.ident$1 = null;
+  this.group$1 = null
+}
+$c_Lparsing_IfDef.prototype = new $h_O();
+$c_Lparsing_IfDef.prototype.constructor = $c_Lparsing_IfDef;
+/** @constructor */
+function $h_Lparsing_IfDef() {
+  /*<skip>*/
+}
+$h_Lparsing_IfDef.prototype = $c_Lparsing_IfDef.prototype;
+$c_Lparsing_IfDef.prototype.productPrefix__T = (function() {
+  return "IfDef"
+});
+$c_Lparsing_IfDef.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_IfDef.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_IfDef(x$1)) {
+    var IfDef$1 = $as_Lparsing_IfDef(x$1);
+    var x = this.ident$1;
+    var x$2 = IfDef$1.ident$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.group$1;
+      var x$4 = IfDef$1.group$1;
+      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_IfDef.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.ident$1;
+      break
+    }
+    case 1: {
+      return this.group$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_IfDef.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_IfDef.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_IfDef.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Lparsing_IfDef.prototype.init___Lparsing_Identifier__s_Option = (function(ident, group) {
+  this.ident$1 = ident;
+  this.group$1 = group;
+  return this
+});
+function $is_Lparsing_IfDef(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_IfDef)))
+}
+function $as_Lparsing_IfDef(obj) {
+  return (($is_Lparsing_IfDef(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.IfDef"))
+}
+function $isArrayOf_Lparsing_IfDef(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_IfDef)))
+}
+function $asArrayOf_Lparsing_IfDef(obj, depth) {
+  return (($isArrayOf_Lparsing_IfDef(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.IfDef;", depth))
+}
+var $d_Lparsing_IfDef = new $TypeData().initClass({
+  Lparsing_IfDef: 0
+}, false, "parsing.IfDef", {
+  Lparsing_IfDef: 1,
+  O: 1,
+  Lparsing_IfGroup: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_IfDef.prototype.$classData = $d_Lparsing_IfDef;
+/** @constructor */
+function $c_Lparsing_IfNDef() {
+  $c_O.call(this);
+  this.ident$1 = null;
+  this.group$1 = null
+}
+$c_Lparsing_IfNDef.prototype = new $h_O();
+$c_Lparsing_IfNDef.prototype.constructor = $c_Lparsing_IfNDef;
+/** @constructor */
+function $h_Lparsing_IfNDef() {
+  /*<skip>*/
+}
+$h_Lparsing_IfNDef.prototype = $c_Lparsing_IfNDef.prototype;
+$c_Lparsing_IfNDef.prototype.productPrefix__T = (function() {
+  return "IfNDef"
+});
+$c_Lparsing_IfNDef.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_IfNDef.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_IfNDef(x$1)) {
+    var IfNDef$1 = $as_Lparsing_IfNDef(x$1);
+    var x = this.ident$1;
+    var x$2 = IfNDef$1.ident$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.group$1;
+      var x$4 = IfNDef$1.group$1;
+      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_IfNDef.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.ident$1;
+      break
+    }
+    case 1: {
+      return this.group$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_IfNDef.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_IfNDef.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_IfNDef.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Lparsing_IfNDef.prototype.init___Lparsing_Identifier__s_Option = (function(ident, group) {
+  this.ident$1 = ident;
+  this.group$1 = group;
+  return this
+});
+function $is_Lparsing_IfNDef(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_IfNDef)))
+}
+function $as_Lparsing_IfNDef(obj) {
+  return (($is_Lparsing_IfNDef(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.IfNDef"))
+}
+function $isArrayOf_Lparsing_IfNDef(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_IfNDef)))
+}
+function $asArrayOf_Lparsing_IfNDef(obj, depth) {
+  return (($isArrayOf_Lparsing_IfNDef(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.IfNDef;", depth))
+}
+var $d_Lparsing_IfNDef = new $TypeData().initClass({
+  Lparsing_IfNDef: 0
+}, false, "parsing.IfNDef", {
+  Lparsing_IfNDef: 1,
+  O: 1,
+  Lparsing_IfGroup: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_IfNDef.prototype.$classData = $d_Lparsing_IfNDef;
+/** @constructor */
+function $c_Lparsing_IfSection() {
+  $c_O.call(this);
+  this.ifGroup$1 = null;
+  this.elif$1 = null;
+  this.elseGroup$1 = null;
+  this.endif$1 = null
+}
+$c_Lparsing_IfSection.prototype = new $h_O();
+$c_Lparsing_IfSection.prototype.constructor = $c_Lparsing_IfSection;
+/** @constructor */
+function $h_Lparsing_IfSection() {
+  /*<skip>*/
+}
+$h_Lparsing_IfSection.prototype = $c_Lparsing_IfSection.prototype;
+$c_Lparsing_IfSection.prototype.productPrefix__T = (function() {
+  return "IfSection"
+});
+$c_Lparsing_IfSection.prototype.productArity__I = (function() {
+  return 4
+});
+$c_Lparsing_IfSection.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_IfSection(x$1)) {
+    var IfSection$1 = $as_Lparsing_IfSection(x$1);
+    var x = this.ifGroup$1;
+    var x$2 = IfSection$1.ifGroup$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.elif$1;
+      var x$4 = IfSection$1.elif$1;
+      var jsx$2 = ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      var jsx$2 = false
+    };
+    if (jsx$2) {
+      var x$5 = this.elseGroup$1;
+      var x$6 = IfSection$1.elseGroup$1;
+      var jsx$1 = ((x$5 === null) ? (x$6 === null) : x$5.equals__O__Z(x$6))
+    } else {
+      var jsx$1 = false
+    };
+    if (jsx$1) {
+      var x$7 = this.endif$1;
+      var x$8 = IfSection$1.endif$1;
+      return ((x$7 === null) ? (x$8 === null) : x$7.equals__O__Z(x$8))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_IfSection.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.ifGroup$1;
+      break
+    }
+    case 1: {
+      return this.elif$1;
+      break
+    }
+    case 2: {
+      return this.elseGroup$1;
+      break
+    }
+    case 3: {
+      return this.endif$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_IfSection.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_IfSection.prototype.init___Lparsing_IfGroup__s_Option__s_Option__Lparsing_EndifLine = (function(ifGroup, elif, elseGroup, endif) {
+  this.ifGroup$1 = ifGroup;
+  this.elif$1 = elif;
+  this.elseGroup$1 = elseGroup;
+  this.endif$1 = endif;
+  return this
+});
+$c_Lparsing_IfSection.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_IfSection.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_IfSection(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_IfSection)))
+}
+function $as_Lparsing_IfSection(obj) {
+  return (($is_Lparsing_IfSection(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.IfSection"))
+}
+function $isArrayOf_Lparsing_IfSection(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_IfSection)))
+}
+function $asArrayOf_Lparsing_IfSection(obj, depth) {
+  return (($isArrayOf_Lparsing_IfSection(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.IfSection;", depth))
+}
+var $d_Lparsing_IfSection = new $TypeData().initClass({
+  Lparsing_IfSection: 0
+}, false, "parsing.IfSection", {
+  Lparsing_IfSection: 1,
+  O: 1,
+  Lparsing_GroupPart: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_IfSection.prototype.$classData = $d_Lparsing_IfSection;
 function $is_Lparsing_InitializerList(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_InitializerList)))
 }
@@ -31951,6 +36501,85 @@ var $d_Lparsing_InitializerSimple = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lparsing_InitializerSimple.prototype.$classData = $d_Lparsing_InitializerSimple;
+/** @constructor */
+function $c_Lparsing_NonDirective() {
+  $c_O.call(this);
+  this.pp$1 = null
+}
+$c_Lparsing_NonDirective.prototype = new $h_O();
+$c_Lparsing_NonDirective.prototype.constructor = $c_Lparsing_NonDirective;
+/** @constructor */
+function $h_Lparsing_NonDirective() {
+  /*<skip>*/
+}
+$h_Lparsing_NonDirective.prototype = $c_Lparsing_NonDirective.prototype;
+$c_Lparsing_NonDirective.prototype.productPrefix__T = (function() {
+  return "NonDirective"
+});
+$c_Lparsing_NonDirective.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_NonDirective.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_NonDirective(x$1)) {
+    var NonDirective$1 = $as_Lparsing_NonDirective(x$1);
+    var x = this.pp$1;
+    var x$2 = NonDirective$1.pp$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_NonDirective.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.pp$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_NonDirective.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_NonDirective.prototype.init___sc_Seq = (function(pp) {
+  this.pp$1 = pp;
+  return this
+});
+$c_Lparsing_NonDirective.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_NonDirective.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_NonDirective(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_NonDirective)))
+}
+function $as_Lparsing_NonDirective(obj) {
+  return (($is_Lparsing_NonDirective(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.NonDirective"))
+}
+function $isArrayOf_Lparsing_NonDirective(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_NonDirective)))
+}
+function $asArrayOf_Lparsing_NonDirective(obj, depth) {
+  return (($isArrayOf_Lparsing_NonDirective(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.NonDirective;", depth))
+}
+var $d_Lparsing_NonDirective = new $TypeData().initClass({
+  Lparsing_NonDirective: 0
+}, false, "parsing.NonDirective", {
+  Lparsing_NonDirective: 1,
+  O: 1,
+  Lparsing_GroupPart: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_NonDirective.prototype.$classData = $d_Lparsing_NonDirective;
 /** @constructor */
 function $c_Lparsing_ParameterDeclarationDeclarator() {
   $c_O.call(this);
@@ -32644,6 +37273,85 @@ var $d_Lparsing_PostfixExpressionSimple = new $TypeData().initClass({
 });
 $c_Lparsing_PostfixExpressionSimple.prototype.$classData = $d_Lparsing_PostfixExpressionSimple;
 /** @constructor */
+function $c_Lparsing_PreprocessingFile() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lparsing_PreprocessingFile.prototype = new $h_O();
+$c_Lparsing_PreprocessingFile.prototype.constructor = $c_Lparsing_PreprocessingFile;
+/** @constructor */
+function $h_Lparsing_PreprocessingFile() {
+  /*<skip>*/
+}
+$h_Lparsing_PreprocessingFile.prototype = $c_Lparsing_PreprocessingFile.prototype;
+$c_Lparsing_PreprocessingFile.prototype.productPrefix__T = (function() {
+  return "PreprocessingFile"
+});
+$c_Lparsing_PreprocessingFile.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_PreprocessingFile.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_PreprocessingFile(x$1)) {
+    var PreprocessingFile$1 = $as_Lparsing_PreprocessingFile(x$1);
+    var x = this.v$1;
+    var x$2 = PreprocessingFile$1.v$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_PreprocessingFile.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_PreprocessingFile.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_PreprocessingFile.prototype.init___Lparsing_Group = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_PreprocessingFile.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_PreprocessingFile.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_PreprocessingFile(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_PreprocessingFile)))
+}
+function $as_Lparsing_PreprocessingFile(obj) {
+  return (($is_Lparsing_PreprocessingFile(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.PreprocessingFile"))
+}
+function $isArrayOf_Lparsing_PreprocessingFile(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_PreprocessingFile)))
+}
+function $asArrayOf_Lparsing_PreprocessingFile(obj, depth) {
+  return (($isArrayOf_Lparsing_PreprocessingFile(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.PreprocessingFile;", depth))
+}
+var $d_Lparsing_PreprocessingFile = new $TypeData().initClass({
+  Lparsing_PreprocessingFile: 0
+}, false, "parsing.PreprocessingFile", {
+  Lparsing_PreprocessingFile: 1,
+  O: 1,
+  Lparsing_Top: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_PreprocessingFile.prototype.$classData = $d_Lparsing_PreprocessingFile;
+/** @constructor */
 function $c_Lparsing_StorageClassSpecifier() {
   $c_O.call(this);
   this.v$1 = null
@@ -32721,6 +37429,188 @@ var $d_Lparsing_StorageClassSpecifier = new $TypeData().initClass({
 });
 $c_Lparsing_StorageClassSpecifier.prototype.$classData = $d_Lparsing_StorageClassSpecifier;
 /** @constructor */
+function $c_Lparsing_StructDeclaractor1() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lparsing_StructDeclaractor1.prototype = new $h_O();
+$c_Lparsing_StructDeclaractor1.prototype.constructor = $c_Lparsing_StructDeclaractor1;
+/** @constructor */
+function $h_Lparsing_StructDeclaractor1() {
+  /*<skip>*/
+}
+$h_Lparsing_StructDeclaractor1.prototype = $c_Lparsing_StructDeclaractor1.prototype;
+$c_Lparsing_StructDeclaractor1.prototype.productPrefix__T = (function() {
+  return "StructDeclaractor1"
+});
+$c_Lparsing_StructDeclaractor1.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_StructDeclaractor1.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_StructDeclaractor1(x$1)) {
+    var StructDeclaractor1$1 = $as_Lparsing_StructDeclaractor1(x$1);
+    var x = this.v$1;
+    var x$2 = StructDeclaractor1$1.v$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_StructDeclaractor1.prototype.init___Lparsing_Declarator = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_StructDeclaractor1.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_StructDeclaractor1.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_StructDeclaractor1.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_StructDeclaractor1.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_StructDeclaractor1(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_StructDeclaractor1)))
+}
+function $as_Lparsing_StructDeclaractor1(obj) {
+  return (($is_Lparsing_StructDeclaractor1(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.StructDeclaractor1"))
+}
+function $isArrayOf_Lparsing_StructDeclaractor1(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_StructDeclaractor1)))
+}
+function $asArrayOf_Lparsing_StructDeclaractor1(obj, depth) {
+  return (($isArrayOf_Lparsing_StructDeclaractor1(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.StructDeclaractor1;", depth))
+}
+var $d_Lparsing_StructDeclaractor1 = new $TypeData().initClass({
+  Lparsing_StructDeclaractor1: 0
+}, false, "parsing.StructDeclaractor1", {
+  Lparsing_StructDeclaractor1: 1,
+  O: 1,
+  Lparsing_StructDeclaractor: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_StructDeclaractor1.prototype.$classData = $d_Lparsing_StructDeclaractor1;
+/** @constructor */
+function $c_Lparsing_StructDeclaractor2() {
+  $c_O.call(this);
+  this.v$1 = null;
+  this.exp$1 = null
+}
+$c_Lparsing_StructDeclaractor2.prototype = new $h_O();
+$c_Lparsing_StructDeclaractor2.prototype.constructor = $c_Lparsing_StructDeclaractor2;
+/** @constructor */
+function $h_Lparsing_StructDeclaractor2() {
+  /*<skip>*/
+}
+$h_Lparsing_StructDeclaractor2.prototype = $c_Lparsing_StructDeclaractor2.prototype;
+$c_Lparsing_StructDeclaractor2.prototype.productPrefix__T = (function() {
+  return "StructDeclaractor2"
+});
+$c_Lparsing_StructDeclaractor2.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_StructDeclaractor2.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_StructDeclaractor2(x$1)) {
+    var StructDeclaractor2$1 = $as_Lparsing_StructDeclaractor2(x$1);
+    var x = this.v$1;
+    var x$2 = StructDeclaractor2$1.v$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.exp$1;
+      var x$4 = StructDeclaractor2$1.exp$1;
+      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_StructDeclaractor2.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    case 1: {
+      return this.exp$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_StructDeclaractor2.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_StructDeclaractor2.prototype.init___s_Option__Lparsing_Expression = (function(v, exp) {
+  this.v$1 = v;
+  this.exp$1 = exp;
+  return this
+});
+$c_Lparsing_StructDeclaractor2.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_StructDeclaractor2.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_StructDeclaractor2(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_StructDeclaractor2)))
+}
+function $as_Lparsing_StructDeclaractor2(obj) {
+  return (($is_Lparsing_StructDeclaractor2(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.StructDeclaractor2"))
+}
+function $isArrayOf_Lparsing_StructDeclaractor2(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_StructDeclaractor2)))
+}
+function $asArrayOf_Lparsing_StructDeclaractor2(obj, depth) {
+  return (($isArrayOf_Lparsing_StructDeclaractor2(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.StructDeclaractor2;", depth))
+}
+var $d_Lparsing_StructDeclaractor2 = new $TypeData().initClass({
+  Lparsing_StructDeclaractor2: 0
+}, false, "parsing.StructDeclaractor2", {
+  Lparsing_StructDeclaractor2: 1,
+  O: 1,
+  Lparsing_StructDeclaractor: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_StructDeclaractor2.prototype.$classData = $d_Lparsing_StructDeclaractor2;
+function $is_Lparsing_TextLine(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_TextLine)))
+}
+function $as_Lparsing_TextLine(obj) {
+  return (($is_Lparsing_TextLine(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.TextLine"))
+}
+function $isArrayOf_Lparsing_TextLine(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_TextLine)))
+}
+function $asArrayOf_Lparsing_TextLine(obj, depth) {
+  return (($isArrayOf_Lparsing_TextLine(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.TextLine;", depth))
+}
+/** @constructor */
 function $c_Lparsing_TypeQualifier() {
   $c_O.call(this);
   this.v$1 = null
@@ -32797,83 +37687,6 @@ var $d_Lparsing_TypeQualifier = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lparsing_TypeQualifier.prototype.$classData = $d_Lparsing_TypeQualifier;
-/** @constructor */
-function $c_Lparsing_TypeSpecifier() {
-  $c_O.call(this);
-  this.v$1 = null
-}
-$c_Lparsing_TypeSpecifier.prototype = new $h_O();
-$c_Lparsing_TypeSpecifier.prototype.constructor = $c_Lparsing_TypeSpecifier;
-/** @constructor */
-function $h_Lparsing_TypeSpecifier() {
-  /*<skip>*/
-}
-$h_Lparsing_TypeSpecifier.prototype = $c_Lparsing_TypeSpecifier.prototype;
-$c_Lparsing_TypeSpecifier.prototype.productPrefix__T = (function() {
-  return "TypeSpecifier"
-});
-$c_Lparsing_TypeSpecifier.prototype.productArity__I = (function() {
-  return 1
-});
-$c_Lparsing_TypeSpecifier.prototype.equals__O__Z = (function(x$1) {
-  if ((this === x$1)) {
-    return true
-  } else if ($is_Lparsing_TypeSpecifier(x$1)) {
-    var TypeSpecifier$1 = $as_Lparsing_TypeSpecifier(x$1);
-    return (this.v$1 === TypeSpecifier$1.v$1)
-  } else {
-    return false
-  }
-});
-$c_Lparsing_TypeSpecifier.prototype.productElement__I__O = (function(x$1) {
-  switch (x$1) {
-    case 0: {
-      return this.v$1;
-      break
-    }
-    default: {
-      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
-    }
-  }
-});
-$c_Lparsing_TypeSpecifier.prototype.toString__T = (function() {
-  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
-});
-$c_Lparsing_TypeSpecifier.prototype.init___T = (function(v) {
-  this.v$1 = v;
-  return this
-});
-$c_Lparsing_TypeSpecifier.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
-});
-$c_Lparsing_TypeSpecifier.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
-});
-function $is_Lparsing_TypeSpecifier(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_TypeSpecifier)))
-}
-function $as_Lparsing_TypeSpecifier(obj) {
-  return (($is_Lparsing_TypeSpecifier(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.TypeSpecifier"))
-}
-function $isArrayOf_Lparsing_TypeSpecifier(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_TypeSpecifier)))
-}
-function $asArrayOf_Lparsing_TypeSpecifier(obj, depth) {
-  return (($isArrayOf_Lparsing_TypeSpecifier(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.TypeSpecifier;", depth))
-}
-var $d_Lparsing_TypeSpecifier = new $TypeData().initClass({
-  Lparsing_TypeSpecifier: 0
-}, false, "parsing.TypeSpecifier", {
-  Lparsing_TypeSpecifier: 1,
-  O: 1,
-  Lparsing_DeclarationSpecifier: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lparsing_TypeSpecifier.prototype.$classData = $d_Lparsing_TypeSpecifier;
 /** @constructor */
 function $c_Lparsing_UnaryExpressionAlignOf() {
   $c_O.call(this);
@@ -36031,6 +40844,541 @@ var $d_Lparsing_CompoundStatement = new $TypeData().initClass({
 });
 $c_Lparsing_CompoundStatement.prototype.$classData = $d_Lparsing_CompoundStatement;
 /** @constructor */
+function $c_Lparsing_ControlLineEmpty() {
+  $c_O.call(this)
+}
+$c_Lparsing_ControlLineEmpty.prototype = new $h_O();
+$c_Lparsing_ControlLineEmpty.prototype.constructor = $c_Lparsing_ControlLineEmpty;
+/** @constructor */
+function $h_Lparsing_ControlLineEmpty() {
+  /*<skip>*/
+}
+$h_Lparsing_ControlLineEmpty.prototype = $c_Lparsing_ControlLineEmpty.prototype;
+$c_Lparsing_ControlLineEmpty.prototype.init___ = (function() {
+  return this
+});
+$c_Lparsing_ControlLineEmpty.prototype.productPrefix__T = (function() {
+  return "ControlLineEmpty"
+});
+$c_Lparsing_ControlLineEmpty.prototype.productArity__I = (function() {
+  return 0
+});
+$c_Lparsing_ControlLineEmpty.prototype.equals__O__Z = (function(x$1) {
+  return ($is_Lparsing_ControlLineEmpty(x$1) && ($as_Lparsing_ControlLineEmpty(x$1), true))
+});
+$c_Lparsing_ControlLineEmpty.prototype.productElement__I__O = (function(x$1) {
+  throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+});
+$c_Lparsing_ControlLineEmpty.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_ControlLineEmpty.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_ControlLineEmpty.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_ControlLineEmpty(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_ControlLineEmpty)))
+}
+function $as_Lparsing_ControlLineEmpty(obj) {
+  return (($is_Lparsing_ControlLineEmpty(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.ControlLineEmpty"))
+}
+function $isArrayOf_Lparsing_ControlLineEmpty(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_ControlLineEmpty)))
+}
+function $asArrayOf_Lparsing_ControlLineEmpty(obj, depth) {
+  return (($isArrayOf_Lparsing_ControlLineEmpty(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.ControlLineEmpty;", depth))
+}
+var $d_Lparsing_ControlLineEmpty = new $TypeData().initClass({
+  Lparsing_ControlLineEmpty: 0
+}, false, "parsing.ControlLineEmpty", {
+  Lparsing_ControlLineEmpty: 1,
+  O: 1,
+  Lparsing_ControlLine: 1,
+  Lparsing_GroupPart: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_ControlLineEmpty.prototype.$classData = $d_Lparsing_ControlLineEmpty;
+/** @constructor */
+function $c_Lparsing_Define() {
+  $c_O.call(this);
+  this.ident$1 = null;
+  this.v$1 = null
+}
+$c_Lparsing_Define.prototype = new $h_O();
+$c_Lparsing_Define.prototype.constructor = $c_Lparsing_Define;
+/** @constructor */
+function $h_Lparsing_Define() {
+  /*<skip>*/
+}
+$h_Lparsing_Define.prototype = $c_Lparsing_Define.prototype;
+$c_Lparsing_Define.prototype.productPrefix__T = (function() {
+  return "Define"
+});
+$c_Lparsing_Define.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_Define.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_Define(x$1)) {
+    var Define$1 = $as_Lparsing_Define(x$1);
+    var x = this.ident$1;
+    var x$2 = Define$1.ident$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.v$1;
+      var x$4 = Define$1.v$1;
+      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_Define.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.ident$1;
+      break
+    }
+    case 1: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_Define.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_Define.prototype.init___Lparsing_Identifier__Lparsing_ReplacementList = (function(ident, v) {
+  this.ident$1 = ident;
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_Define.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_Define.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_Define(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Define)))
+}
+function $as_Lparsing_Define(obj) {
+  return (($is_Lparsing_Define(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Define"))
+}
+function $isArrayOf_Lparsing_Define(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Define)))
+}
+function $asArrayOf_Lparsing_Define(obj, depth) {
+  return (($isArrayOf_Lparsing_Define(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Define;", depth))
+}
+var $d_Lparsing_Define = new $TypeData().initClass({
+  Lparsing_Define: 0
+}, false, "parsing.Define", {
+  Lparsing_Define: 1,
+  O: 1,
+  Lparsing_ControlLine: 1,
+  Lparsing_GroupPart: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_Define.prototype.$classData = $d_Lparsing_Define;
+/** @constructor */
+function $c_Lparsing_Define2() {
+  $c_O.call(this);
+  this.ident$1 = null;
+  this.v$1 = null;
+  this.v2$1 = null
+}
+$c_Lparsing_Define2.prototype = new $h_O();
+$c_Lparsing_Define2.prototype.constructor = $c_Lparsing_Define2;
+/** @constructor */
+function $h_Lparsing_Define2() {
+  /*<skip>*/
+}
+$h_Lparsing_Define2.prototype = $c_Lparsing_Define2.prototype;
+$c_Lparsing_Define2.prototype.productPrefix__T = (function() {
+  return "Define2"
+});
+$c_Lparsing_Define2.prototype.productArity__I = (function() {
+  return 3
+});
+$c_Lparsing_Define2.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_Define2(x$1)) {
+    var Define2$1 = $as_Lparsing_Define2(x$1);
+    var x = this.ident$1;
+    var x$2 = Define2$1.ident$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.v$1;
+      var x$4 = Define2$1.v$1;
+      var jsx$1 = ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      var jsx$1 = false
+    };
+    if (jsx$1) {
+      var x$5 = this.v2$1;
+      var x$6 = Define2$1.v2$1;
+      return ((x$5 === null) ? (x$6 === null) : x$5.equals__O__Z(x$6))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_Define2.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.ident$1;
+      break
+    }
+    case 1: {
+      return this.v$1;
+      break
+    }
+    case 2: {
+      return this.v2$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_Define2.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_Define2.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_Define2.prototype.init___Lparsing_Identifier__s_Option__Lparsing_ReplacementList = (function(ident, v, v2) {
+  this.ident$1 = ident;
+  this.v$1 = v;
+  this.v2$1 = v2;
+  return this
+});
+$c_Lparsing_Define2.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_Define2(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Define2)))
+}
+function $as_Lparsing_Define2(obj) {
+  return (($is_Lparsing_Define2(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Define2"))
+}
+function $isArrayOf_Lparsing_Define2(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Define2)))
+}
+function $asArrayOf_Lparsing_Define2(obj, depth) {
+  return (($isArrayOf_Lparsing_Define2(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Define2;", depth))
+}
+var $d_Lparsing_Define2 = new $TypeData().initClass({
+  Lparsing_Define2: 0
+}, false, "parsing.Define2", {
+  Lparsing_Define2: 1,
+  O: 1,
+  Lparsing_ControlLine: 1,
+  Lparsing_GroupPart: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_Define2.prototype.$classData = $d_Lparsing_Define2;
+/** @constructor */
+function $c_Lparsing_Define3() {
+  $c_O.call(this);
+  this.ident$1 = null;
+  this.v$1 = null
+}
+$c_Lparsing_Define3.prototype = new $h_O();
+$c_Lparsing_Define3.prototype.constructor = $c_Lparsing_Define3;
+/** @constructor */
+function $h_Lparsing_Define3() {
+  /*<skip>*/
+}
+$h_Lparsing_Define3.prototype = $c_Lparsing_Define3.prototype;
+$c_Lparsing_Define3.prototype.productPrefix__T = (function() {
+  return "Define3"
+});
+$c_Lparsing_Define3.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_Define3.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_Define3(x$1)) {
+    var Define3$1 = $as_Lparsing_Define3(x$1);
+    var x = this.ident$1;
+    var x$2 = Define3$1.ident$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.v$1;
+      var x$4 = Define3$1.v$1;
+      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_Define3.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.ident$1;
+      break
+    }
+    case 1: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_Define3.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_Define3.prototype.init___Lparsing_Identifier__Lparsing_ReplacementList = (function(ident, v) {
+  this.ident$1 = ident;
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_Define3.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_Define3.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_Define3(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Define3)))
+}
+function $as_Lparsing_Define3(obj) {
+  return (($is_Lparsing_Define3(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Define3"))
+}
+function $isArrayOf_Lparsing_Define3(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Define3)))
+}
+function $asArrayOf_Lparsing_Define3(obj, depth) {
+  return (($isArrayOf_Lparsing_Define3(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Define3;", depth))
+}
+var $d_Lparsing_Define3 = new $TypeData().initClass({
+  Lparsing_Define3: 0
+}, false, "parsing.Define3", {
+  Lparsing_Define3: 1,
+  O: 1,
+  Lparsing_ControlLine: 1,
+  Lparsing_GroupPart: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_Define3.prototype.$classData = $d_Lparsing_Define3;
+/** @constructor */
+function $c_Lparsing_Define4() {
+  $c_O.call(this);
+  this.ident$1 = null;
+  this.v$1 = null;
+  this.v2$1 = null
+}
+$c_Lparsing_Define4.prototype = new $h_O();
+$c_Lparsing_Define4.prototype.constructor = $c_Lparsing_Define4;
+/** @constructor */
+function $h_Lparsing_Define4() {
+  /*<skip>*/
+}
+$h_Lparsing_Define4.prototype = $c_Lparsing_Define4.prototype;
+$c_Lparsing_Define4.prototype.productPrefix__T = (function() {
+  return "Define4"
+});
+$c_Lparsing_Define4.prototype.productArity__I = (function() {
+  return 3
+});
+$c_Lparsing_Define4.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_Define4(x$1)) {
+    var Define4$1 = $as_Lparsing_Define4(x$1);
+    var x = this.ident$1;
+    var x$2 = Define4$1.ident$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.v$1;
+      var x$4 = Define4$1.v$1;
+      var jsx$1 = ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      var jsx$1 = false
+    };
+    if (jsx$1) {
+      var x$5 = this.v2$1;
+      var x$6 = Define4$1.v2$1;
+      return ((x$5 === null) ? (x$6 === null) : x$5.equals__O__Z(x$6))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_Define4.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.ident$1;
+      break
+    }
+    case 1: {
+      return this.v$1;
+      break
+    }
+    case 2: {
+      return this.v2$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_Define4.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_Define4.prototype.init___Lparsing_Identifier__sc_Seq__Lparsing_ReplacementList = (function(ident, v, v2) {
+  this.ident$1 = ident;
+  this.v$1 = v;
+  this.v2$1 = v2;
+  return this
+});
+$c_Lparsing_Define4.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_Define4.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_Define4(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Define4)))
+}
+function $as_Lparsing_Define4(obj) {
+  return (($is_Lparsing_Define4(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Define4"))
+}
+function $isArrayOf_Lparsing_Define4(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Define4)))
+}
+function $asArrayOf_Lparsing_Define4(obj, depth) {
+  return (($isArrayOf_Lparsing_Define4(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Define4;", depth))
+}
+var $d_Lparsing_Define4 = new $TypeData().initClass({
+  Lparsing_Define4: 0
+}, false, "parsing.Define4", {
+  Lparsing_Define4: 1,
+  O: 1,
+  Lparsing_ControlLine: 1,
+  Lparsing_GroupPart: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_Define4.prototype.$classData = $d_Lparsing_Define4;
+/** @constructor */
+function $c_Lparsing_Error() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lparsing_Error.prototype = new $h_O();
+$c_Lparsing_Error.prototype.constructor = $c_Lparsing_Error;
+/** @constructor */
+function $h_Lparsing_Error() {
+  /*<skip>*/
+}
+$h_Lparsing_Error.prototype = $c_Lparsing_Error.prototype;
+$c_Lparsing_Error.prototype.productPrefix__T = (function() {
+  return "Error"
+});
+$c_Lparsing_Error.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_Error.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_Error(x$1)) {
+    var Error$1 = $as_Lparsing_Error(x$1);
+    var x = this.v$1;
+    var x$2 = Error$1.v$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_Error.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_Error.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_Error.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_Error.prototype.init___s_Option = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_Error.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_Error(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Error)))
+}
+function $as_Lparsing_Error(obj) {
+  return (($is_Lparsing_Error(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Error"))
+}
+function $isArrayOf_Lparsing_Error(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Error)))
+}
+function $asArrayOf_Lparsing_Error(obj, depth) {
+  return (($isArrayOf_Lparsing_Error(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Error;", depth))
+}
+var $d_Lparsing_Error = new $TypeData().initClass({
+  Lparsing_Error: 0
+}, false, "parsing.Error", {
+  Lparsing_Error: 1,
+  O: 1,
+  Lparsing_ControlLine: 1,
+  Lparsing_GroupPart: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_Error.prototype.$classData = $d_Lparsing_Error;
+/** @constructor */
 function $c_Lparsing_ExpressionEmptyStatement() {
   $c_O.call(this)
 }
@@ -36172,34 +41520,240 @@ var $d_Lparsing_ExpressionStatement = new $TypeData().initClass({
 });
 $c_Lparsing_ExpressionStatement.prototype.$classData = $d_Lparsing_ExpressionStatement;
 /** @constructor */
-function $c_Lparsing_Identifier() {
+function $c_Lparsing_FunctionDefinition() {
   $c_O.call(this);
+  this.spec$1 = null;
+  this.dec$1 = null;
+  this.decs$1 = null;
   this.v$1 = null
 }
-$c_Lparsing_Identifier.prototype = new $h_O();
-$c_Lparsing_Identifier.prototype.constructor = $c_Lparsing_Identifier;
+$c_Lparsing_FunctionDefinition.prototype = new $h_O();
+$c_Lparsing_FunctionDefinition.prototype.constructor = $c_Lparsing_FunctionDefinition;
 /** @constructor */
-function $h_Lparsing_Identifier() {
+function $h_Lparsing_FunctionDefinition() {
   /*<skip>*/
 }
-$h_Lparsing_Identifier.prototype = $c_Lparsing_Identifier.prototype;
-$c_Lparsing_Identifier.prototype.productPrefix__T = (function() {
-  return "Identifier"
+$h_Lparsing_FunctionDefinition.prototype = $c_Lparsing_FunctionDefinition.prototype;
+$c_Lparsing_FunctionDefinition.prototype.productPrefix__T = (function() {
+  return "FunctionDefinition"
 });
-$c_Lparsing_Identifier.prototype.productArity__I = (function() {
-  return 1
+$c_Lparsing_FunctionDefinition.prototype.productArity__I = (function() {
+  return 4
 });
-$c_Lparsing_Identifier.prototype.equals__O__Z = (function(x$1) {
+$c_Lparsing_FunctionDefinition.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true
-  } else if ($is_Lparsing_Identifier(x$1)) {
-    var Identifier$1 = $as_Lparsing_Identifier(x$1);
-    return (this.v$1 === Identifier$1.v$1)
+  } else if ($is_Lparsing_FunctionDefinition(x$1)) {
+    var FunctionDefinition$1 = $as_Lparsing_FunctionDefinition(x$1);
+    var x = this.spec$1;
+    var x$2 = FunctionDefinition$1.spec$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.dec$1;
+      var x$4 = FunctionDefinition$1.dec$1;
+      var jsx$2 = ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      var jsx$2 = false
+    };
+    if (jsx$2) {
+      var x$5 = this.decs$1;
+      var x$6 = FunctionDefinition$1.decs$1;
+      var jsx$1 = ((x$5 === null) ? (x$6 === null) : x$5.equals__O__Z(x$6))
+    } else {
+      var jsx$1 = false
+    };
+    if (jsx$1) {
+      var x$7 = this.v$1;
+      var x$8 = FunctionDefinition$1.v$1;
+      return ((x$7 === null) ? (x$8 === null) : x$7.equals__O__Z(x$8))
+    } else {
+      return false
+    }
   } else {
     return false
   }
 });
-$c_Lparsing_Identifier.prototype.productElement__I__O = (function(x$1) {
+$c_Lparsing_FunctionDefinition.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.spec$1;
+      break
+    }
+    case 1: {
+      return this.dec$1;
+      break
+    }
+    case 2: {
+      return this.decs$1;
+      break
+    }
+    case 3: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_FunctionDefinition.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_FunctionDefinition.prototype.init___Lparsing_DeclarationSpecifiers__Lparsing_Declarator__s_Option__Lparsing_CompoundStatement = (function(spec, dec, decs, v) {
+  this.spec$1 = spec;
+  this.dec$1 = dec;
+  this.decs$1 = decs;
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_FunctionDefinition.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_FunctionDefinition.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_FunctionDefinition(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_FunctionDefinition)))
+}
+function $as_Lparsing_FunctionDefinition(obj) {
+  return (($is_Lparsing_FunctionDefinition(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.FunctionDefinition"))
+}
+function $isArrayOf_Lparsing_FunctionDefinition(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_FunctionDefinition)))
+}
+function $asArrayOf_Lparsing_FunctionDefinition(obj, depth) {
+  return (($isArrayOf_Lparsing_FunctionDefinition(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.FunctionDefinition;", depth))
+}
+var $d_Lparsing_FunctionDefinition = new $TypeData().initClass({
+  Lparsing_FunctionDefinition: 0
+}, false, "parsing.FunctionDefinition", {
+  Lparsing_FunctionDefinition: 1,
+  O: 1,
+  Lparsing_ExternalDeclaration: 1,
+  Lparsing_Top: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_FunctionDefinition.prototype.$classData = $d_Lparsing_FunctionDefinition;
+/** @constructor */
+function $c_Lparsing_HeaderName() {
+  $c_O.call(this);
+  this.v$1 = null;
+  this.angularBrackets$1 = false
+}
+$c_Lparsing_HeaderName.prototype = new $h_O();
+$c_Lparsing_HeaderName.prototype.constructor = $c_Lparsing_HeaderName;
+/** @constructor */
+function $h_Lparsing_HeaderName() {
+  /*<skip>*/
+}
+$h_Lparsing_HeaderName.prototype = $c_Lparsing_HeaderName.prototype;
+$c_Lparsing_HeaderName.prototype.productPrefix__T = (function() {
+  return "HeaderName"
+});
+$c_Lparsing_HeaderName.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_HeaderName.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_HeaderName(x$1)) {
+    var HeaderName$1 = $as_Lparsing_HeaderName(x$1);
+    return ((this.v$1 === HeaderName$1.v$1) && (this.angularBrackets$1 === HeaderName$1.angularBrackets$1))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_HeaderName.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    case 1: {
+      return this.angularBrackets$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_HeaderName.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_HeaderName.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().anyHash__O__I(this.v$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, (this.angularBrackets$1 ? 1231 : 1237));
+  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 2)
+});
+$c_Lparsing_HeaderName.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Lparsing_HeaderName.prototype.init___T__Z = (function(v, angularBrackets) {
+  this.v$1 = v;
+  this.angularBrackets$1 = angularBrackets;
+  return this
+});
+function $is_Lparsing_HeaderName(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_HeaderName)))
+}
+function $as_Lparsing_HeaderName(obj) {
+  return (($is_Lparsing_HeaderName(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.HeaderName"))
+}
+function $isArrayOf_Lparsing_HeaderName(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_HeaderName)))
+}
+function $asArrayOf_Lparsing_HeaderName(obj, depth) {
+  return (($isArrayOf_Lparsing_HeaderName(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.HeaderName;", depth))
+}
+var $d_Lparsing_HeaderName = new $TypeData().initClass({
+  Lparsing_HeaderName: 0
+}, false, "parsing.HeaderName", {
+  Lparsing_HeaderName: 1,
+  O: 1,
+  Lparsing_Token: 1,
+  Lparsing_PPToken: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_HeaderName.prototype.$classData = $d_Lparsing_HeaderName;
+/** @constructor */
+function $c_Lparsing_Include() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lparsing_Include.prototype = new $h_O();
+$c_Lparsing_Include.prototype.constructor = $c_Lparsing_Include;
+/** @constructor */
+function $h_Lparsing_Include() {
+  /*<skip>*/
+}
+$h_Lparsing_Include.prototype = $c_Lparsing_Include.prototype;
+$c_Lparsing_Include.prototype.productPrefix__T = (function() {
+  return "Include"
+});
+$c_Lparsing_Include.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_Include.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_Include(x$1)) {
+    var Include$1 = $as_Lparsing_Include(x$1);
+    var x = this.v$1;
+    var x$2 = Include$1.v$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_Include.prototype.productElement__I__O = (function(x$1) {
   switch (x$1) {
     case 0: {
       return this.v$1;
@@ -36210,74 +41764,76 @@ $c_Lparsing_Identifier.prototype.productElement__I__O = (function(x$1) {
     }
   }
 });
-$c_Lparsing_Identifier.prototype.toString__T = (function() {
+$c_Lparsing_Include.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
-$c_Lparsing_Identifier.prototype.init___T = (function(v) {
+$c_Lparsing_Include.prototype.init___sc_Seq = (function(v) {
   this.v$1 = v;
   return this
 });
-$c_Lparsing_Identifier.prototype.hashCode__I = (function() {
+$c_Lparsing_Include.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
   return this$2.productHash__s_Product__I__I(this, (-889275714))
 });
-$c_Lparsing_Identifier.prototype.productIterator__sc_Iterator = (function() {
+$c_Lparsing_Include.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
 });
-function $is_Lparsing_Identifier(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Identifier)))
+function $is_Lparsing_Include(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Include)))
 }
-function $as_Lparsing_Identifier(obj) {
-  return (($is_Lparsing_Identifier(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Identifier"))
+function $as_Lparsing_Include(obj) {
+  return (($is_Lparsing_Include(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Include"))
 }
-function $isArrayOf_Lparsing_Identifier(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Identifier)))
+function $isArrayOf_Lparsing_Include(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Include)))
 }
-function $asArrayOf_Lparsing_Identifier(obj, depth) {
-  return (($isArrayOf_Lparsing_Identifier(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Identifier;", depth))
+function $asArrayOf_Lparsing_Include(obj, depth) {
+  return (($isArrayOf_Lparsing_Include(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Include;", depth))
 }
-var $d_Lparsing_Identifier = new $TypeData().initClass({
-  Lparsing_Identifier: 0
-}, false, "parsing.Identifier", {
-  Lparsing_Identifier: 1,
+var $d_Lparsing_Include = new $TypeData().initClass({
+  Lparsing_Include: 0
+}, false, "parsing.Include", {
+  Lparsing_Include: 1,
   O: 1,
-  Lparsing_Token: 1,
-  Lparsing_Expression: 1,
+  Lparsing_ControlLine: 1,
+  Lparsing_GroupPart: 1,
   s_Product: 1,
   s_Equals: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lparsing_Identifier.prototype.$classData = $d_Lparsing_Identifier;
+$c_Lparsing_Include.prototype.$classData = $d_Lparsing_Include;
 /** @constructor */
-function $c_Lparsing_StringLiteral() {
+function $c_Lparsing_Line() {
   $c_O.call(this);
   this.v$1 = null
 }
-$c_Lparsing_StringLiteral.prototype = new $h_O();
-$c_Lparsing_StringLiteral.prototype.constructor = $c_Lparsing_StringLiteral;
+$c_Lparsing_Line.prototype = new $h_O();
+$c_Lparsing_Line.prototype.constructor = $c_Lparsing_Line;
 /** @constructor */
-function $h_Lparsing_StringLiteral() {
+function $h_Lparsing_Line() {
   /*<skip>*/
 }
-$h_Lparsing_StringLiteral.prototype = $c_Lparsing_StringLiteral.prototype;
-$c_Lparsing_StringLiteral.prototype.productPrefix__T = (function() {
-  return "StringLiteral"
+$h_Lparsing_Line.prototype = $c_Lparsing_Line.prototype;
+$c_Lparsing_Line.prototype.productPrefix__T = (function() {
+  return "Line"
 });
-$c_Lparsing_StringLiteral.prototype.productArity__I = (function() {
+$c_Lparsing_Line.prototype.productArity__I = (function() {
   return 1
 });
-$c_Lparsing_StringLiteral.prototype.equals__O__Z = (function(x$1) {
+$c_Lparsing_Line.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true
-  } else if ($is_Lparsing_StringLiteral(x$1)) {
-    var StringLiteral$1 = $as_Lparsing_StringLiteral(x$1);
-    return (this.v$1 === StringLiteral$1.v$1)
+  } else if ($is_Lparsing_Line(x$1)) {
+    var Line$1 = $as_Lparsing_Line(x$1);
+    var x = this.v$1;
+    var x$2 = Line$1.v$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
   } else {
     return false
   }
 });
-$c_Lparsing_StringLiteral.prototype.productElement__I__O = (function(x$1) {
+$c_Lparsing_Line.prototype.productElement__I__O = (function(x$1) {
   switch (x$1) {
     case 0: {
       return this.v$1;
@@ -36288,45 +41844,295 @@ $c_Lparsing_StringLiteral.prototype.productElement__I__O = (function(x$1) {
     }
   }
 });
-$c_Lparsing_StringLiteral.prototype.toString__T = (function() {
+$c_Lparsing_Line.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
-$c_Lparsing_StringLiteral.prototype.init___T = (function(v) {
+$c_Lparsing_Line.prototype.init___sc_Seq = (function(v) {
   this.v$1 = v;
   return this
 });
-$c_Lparsing_StringLiteral.prototype.hashCode__I = (function() {
+$c_Lparsing_Line.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
   return this$2.productHash__s_Product__I__I(this, (-889275714))
 });
-$c_Lparsing_StringLiteral.prototype.productIterator__sc_Iterator = (function() {
+$c_Lparsing_Line.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
 });
-function $is_Lparsing_StringLiteral(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_StringLiteral)))
+function $is_Lparsing_Line(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Line)))
 }
-function $as_Lparsing_StringLiteral(obj) {
-  return (($is_Lparsing_StringLiteral(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.StringLiteral"))
+function $as_Lparsing_Line(obj) {
+  return (($is_Lparsing_Line(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Line"))
 }
-function $isArrayOf_Lparsing_StringLiteral(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_StringLiteral)))
+function $isArrayOf_Lparsing_Line(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Line)))
 }
-function $asArrayOf_Lparsing_StringLiteral(obj, depth) {
-  return (($isArrayOf_Lparsing_StringLiteral(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.StringLiteral;", depth))
+function $asArrayOf_Lparsing_Line(obj, depth) {
+  return (($isArrayOf_Lparsing_Line(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Line;", depth))
 }
-var $d_Lparsing_StringLiteral = new $TypeData().initClass({
-  Lparsing_StringLiteral: 0
-}, false, "parsing.StringLiteral", {
-  Lparsing_StringLiteral: 1,
+var $d_Lparsing_Line = new $TypeData().initClass({
+  Lparsing_Line: 0
+}, false, "parsing.Line", {
+  Lparsing_Line: 1,
   O: 1,
-  Lparsing_Token: 1,
-  Lparsing_Expression: 1,
+  Lparsing_ControlLine: 1,
+  Lparsing_GroupPart: 1,
   s_Product: 1,
   s_Equals: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lparsing_StringLiteral.prototype.$classData = $d_Lparsing_StringLiteral;
+$c_Lparsing_Line.prototype.$classData = $d_Lparsing_Line;
+/** @constructor */
+function $c_Lparsing_Pragma() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lparsing_Pragma.prototype = new $h_O();
+$c_Lparsing_Pragma.prototype.constructor = $c_Lparsing_Pragma;
+/** @constructor */
+function $h_Lparsing_Pragma() {
+  /*<skip>*/
+}
+$h_Lparsing_Pragma.prototype = $c_Lparsing_Pragma.prototype;
+$c_Lparsing_Pragma.prototype.productPrefix__T = (function() {
+  return "Pragma"
+});
+$c_Lparsing_Pragma.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_Pragma.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_Pragma(x$1)) {
+    var Pragma$1 = $as_Lparsing_Pragma(x$1);
+    var x = this.v$1;
+    var x$2 = Pragma$1.v$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_Pragma.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_Pragma.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_Pragma.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_Pragma.prototype.init___s_Option = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_Pragma.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_Pragma(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Pragma)))
+}
+function $as_Lparsing_Pragma(obj) {
+  return (($is_Lparsing_Pragma(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Pragma"))
+}
+function $isArrayOf_Lparsing_Pragma(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Pragma)))
+}
+function $asArrayOf_Lparsing_Pragma(obj, depth) {
+  return (($isArrayOf_Lparsing_Pragma(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Pragma;", depth))
+}
+var $d_Lparsing_Pragma = new $TypeData().initClass({
+  Lparsing_Pragma: 0
+}, false, "parsing.Pragma", {
+  Lparsing_Pragma: 1,
+  O: 1,
+  Lparsing_ControlLine: 1,
+  Lparsing_GroupPart: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_Pragma.prototype.$classData = $d_Lparsing_Pragma;
+function $is_Lparsing_Punctuator(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Punctuator)))
+}
+function $as_Lparsing_Punctuator(obj) {
+  return (($is_Lparsing_Punctuator(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Punctuator"))
+}
+function $isArrayOf_Lparsing_Punctuator(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Punctuator)))
+}
+function $asArrayOf_Lparsing_Punctuator(obj, depth) {
+  return (($isArrayOf_Lparsing_Punctuator(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Punctuator;", depth))
+}
+/** @constructor */
+function $c_Lparsing_TypeSpecifierSimple() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lparsing_TypeSpecifierSimple.prototype = new $h_O();
+$c_Lparsing_TypeSpecifierSimple.prototype.constructor = $c_Lparsing_TypeSpecifierSimple;
+/** @constructor */
+function $h_Lparsing_TypeSpecifierSimple() {
+  /*<skip>*/
+}
+$h_Lparsing_TypeSpecifierSimple.prototype = $c_Lparsing_TypeSpecifierSimple.prototype;
+$c_Lparsing_TypeSpecifierSimple.prototype.productPrefix__T = (function() {
+  return "TypeSpecifierSimple"
+});
+$c_Lparsing_TypeSpecifierSimple.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_TypeSpecifierSimple.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_TypeSpecifierSimple(x$1)) {
+    var TypeSpecifierSimple$1 = $as_Lparsing_TypeSpecifierSimple(x$1);
+    return (this.v$1 === TypeSpecifierSimple$1.v$1)
+  } else {
+    return false
+  }
+});
+$c_Lparsing_TypeSpecifierSimple.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_TypeSpecifierSimple.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_TypeSpecifierSimple.prototype.init___T = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_TypeSpecifierSimple.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_TypeSpecifierSimple.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_TypeSpecifierSimple(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_TypeSpecifierSimple)))
+}
+function $as_Lparsing_TypeSpecifierSimple(obj) {
+  return (($is_Lparsing_TypeSpecifierSimple(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.TypeSpecifierSimple"))
+}
+function $isArrayOf_Lparsing_TypeSpecifierSimple(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_TypeSpecifierSimple)))
+}
+function $asArrayOf_Lparsing_TypeSpecifierSimple(obj, depth) {
+  return (($isArrayOf_Lparsing_TypeSpecifierSimple(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.TypeSpecifierSimple;", depth))
+}
+var $d_Lparsing_TypeSpecifierSimple = new $TypeData().initClass({
+  Lparsing_TypeSpecifierSimple: 0
+}, false, "parsing.TypeSpecifierSimple", {
+  Lparsing_TypeSpecifierSimple: 1,
+  O: 1,
+  Lparsing_TypeSpecifier: 1,
+  Lparsing_DeclarationSpecifier: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_TypeSpecifierSimple.prototype.$classData = $d_Lparsing_TypeSpecifierSimple;
+/** @constructor */
+function $c_Lparsing_Undef() {
+  $c_O.call(this);
+  this.ident$1 = null
+}
+$c_Lparsing_Undef.prototype = new $h_O();
+$c_Lparsing_Undef.prototype.constructor = $c_Lparsing_Undef;
+/** @constructor */
+function $h_Lparsing_Undef() {
+  /*<skip>*/
+}
+$h_Lparsing_Undef.prototype = $c_Lparsing_Undef.prototype;
+$c_Lparsing_Undef.prototype.productPrefix__T = (function() {
+  return "Undef"
+});
+$c_Lparsing_Undef.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_Undef.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_Undef(x$1)) {
+    var Undef$1 = $as_Lparsing_Undef(x$1);
+    var x = this.ident$1;
+    var x$2 = Undef$1.ident$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lparsing_Undef.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.ident$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_Undef.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_Undef.prototype.init___Lparsing_Identifier = (function(ident) {
+  this.ident$1 = ident;
+  return this
+});
+$c_Lparsing_Undef.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_Undef.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_Undef(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Undef)))
+}
+function $as_Lparsing_Undef(obj) {
+  return (($is_Lparsing_Undef(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Undef"))
+}
+function $isArrayOf_Lparsing_Undef(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Undef)))
+}
+function $asArrayOf_Lparsing_Undef(obj, depth) {
+  return (($isArrayOf_Lparsing_Undef(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Undef;", depth))
+}
+var $d_Lparsing_Undef = new $TypeData().initClass({
+  Lparsing_Undef: 0
+}, false, "parsing.Undef", {
+  Lparsing_Undef: 1,
+  O: 1,
+  Lparsing_ControlLine: 1,
+  Lparsing_GroupPart: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_Undef.prototype.$classData = $d_Lparsing_Undef;
 /** @constructor */
 function $c_Lpprint_PPrinter$BlackWhite$() {
   $c_Lpprint_PPrinter.call(this)
@@ -37331,6 +43137,108 @@ var $d_Lfastparse_parsers_Combinators$Either = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lfastparse_parsers_Combinators$Either.prototype.$classData = $d_Lfastparse_parsers_Combinators$Either;
+/** @constructor */
+function $c_Lfastparse_parsers_Combinators$Lookahead() {
+  $c_Lfastparse_core_Parser.call(this);
+  this.p$2 = null
+}
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype = new $h_Lfastparse_core_Parser();
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype.constructor = $c_Lfastparse_parsers_Combinators$Lookahead;
+/** @constructor */
+function $h_Lfastparse_parsers_Combinators$Lookahead() {
+  /*<skip>*/
+}
+$h_Lfastparse_parsers_Combinators$Lookahead.prototype = $c_Lfastparse_parsers_Combinators$Lookahead.prototype;
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype.productPrefix__T = (function() {
+  return "Lookahead"
+});
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lfastparse_parsers_Combinators$Lookahead(x$1)) {
+    var Lookahead$1 = $as_Lfastparse_parsers_Combinators$Lookahead(x$1);
+    var x = this.p$2;
+    var x$2 = Lookahead$1.p$2;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.p$2;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype.toString__T = (function() {
+  return new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["&(", ")"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([this.p$2]))
+});
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype.init___Lfastparse_core_Parser__Lfastparse_utils_ReprOps = (function(p, repr) {
+  this.p$2 = p;
+  $c_Lfastparse_core_Parser.prototype.init___Lfastparse_utils_ReprOps.call(this, repr);
+  return this
+});
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype.parseRec__Lfastparse_core_ParseCtx__I__Lfastparse_core_Mutable = (function(cfg, index) {
+  var oldNoCut = cfg.isNoCut$1;
+  cfg.isNoCut$1 = true;
+  var res = this.p$2.parseRec__Lfastparse_core_ParseCtx__I__Lfastparse_core_Mutable(cfg, index);
+  cfg.isNoCut$1 = oldNoCut;
+  if ($is_Lfastparse_core_Mutable$Success(res)) {
+    var x2 = $as_Lfastparse_core_Mutable$Success(res);
+    x2.cut$1 = false;
+    var s = cfg.success$1;
+    var traceParsers = x2.traceParsers$1;
+    return $f_Lfastparse_core_ParserResults__success__Lfastparse_core_Mutable$Success__O__I__sci_Set__Z__Lfastparse_core_Mutable$Success(this, s, (void 0), index, traceParsers, false)
+  } else if ($is_Lfastparse_core_Mutable$Failure(res)) {
+    var x3 = $as_Lfastparse_core_Mutable$Failure(res);
+    x3.cut$1 = false;
+    var logDepth = cfg.logDepth$1;
+    return $f_Lfastparse_core_ParserResults__failMore__Lfastparse_core_Mutable$Failure__I__I__sci_Set__Z__Lfastparse_core_Mutable$Failure(this, x3, index, logDepth, null, false)
+  } else {
+    throw new $c_s_MatchError().init___O(res)
+  }
+});
+function $is_Lfastparse_parsers_Combinators$Lookahead(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lfastparse_parsers_Combinators$Lookahead)))
+}
+function $as_Lfastparse_parsers_Combinators$Lookahead(obj) {
+  return (($is_Lfastparse_parsers_Combinators$Lookahead(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "fastparse.parsers.Combinators$Lookahead"))
+}
+function $isArrayOf_Lfastparse_parsers_Combinators$Lookahead(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lfastparse_parsers_Combinators$Lookahead)))
+}
+function $asArrayOf_Lfastparse_parsers_Combinators$Lookahead(obj, depth) {
+  return (($isArrayOf_Lfastparse_parsers_Combinators$Lookahead(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lfastparse.parsers.Combinators$Lookahead;", depth))
+}
+var $d_Lfastparse_parsers_Combinators$Lookahead = new $TypeData().initClass({
+  Lfastparse_parsers_Combinators$Lookahead: 0
+}, false, "fastparse.parsers.Combinators$Lookahead", {
+  Lfastparse_parsers_Combinators$Lookahead: 1,
+  Lfastparse_core_Parser: 1,
+  O: 1,
+  Lfastparse_core_ParserResults: 1,
+  Lfastparse_core_Precedence: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lfastparse_parsers_Combinators$Lookahead.prototype.$classData = $d_Lfastparse_parsers_Combinators$Lookahead;
 /** @constructor */
 function $c_Lfastparse_parsers_Combinators$NoCut() {
   $c_Lfastparse_core_Parser.call(this);
@@ -39599,169 +45507,6 @@ var $d_Lparsing_Continue = new $TypeData().initClass({
 });
 $c_Lparsing_Continue.prototype.$classData = $d_Lparsing_Continue;
 /** @constructor */
-function $c_Lparsing_EnumerationConstant() {
-  $c_O.call(this);
-  this.v$1 = null
-}
-$c_Lparsing_EnumerationConstant.prototype = new $h_O();
-$c_Lparsing_EnumerationConstant.prototype.constructor = $c_Lparsing_EnumerationConstant;
-/** @constructor */
-function $h_Lparsing_EnumerationConstant() {
-  /*<skip>*/
-}
-$h_Lparsing_EnumerationConstant.prototype = $c_Lparsing_EnumerationConstant.prototype;
-$c_Lparsing_EnumerationConstant.prototype.productPrefix__T = (function() {
-  return "EnumerationConstant"
-});
-$c_Lparsing_EnumerationConstant.prototype.productArity__I = (function() {
-  return 1
-});
-$c_Lparsing_EnumerationConstant.prototype.equals__O__Z = (function(x$1) {
-  if ((this === x$1)) {
-    return true
-  } else if ($is_Lparsing_EnumerationConstant(x$1)) {
-    var EnumerationConstant$1 = $as_Lparsing_EnumerationConstant(x$1);
-    return (this.v$1 === EnumerationConstant$1.v$1)
-  } else {
-    return false
-  }
-});
-$c_Lparsing_EnumerationConstant.prototype.productElement__I__O = (function(x$1) {
-  switch (x$1) {
-    case 0: {
-      return this.v$1;
-      break
-    }
-    default: {
-      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
-    }
-  }
-});
-$c_Lparsing_EnumerationConstant.prototype.toString__T = (function() {
-  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
-});
-$c_Lparsing_EnumerationConstant.prototype.init___T = (function(v) {
-  this.v$1 = v;
-  return this
-});
-$c_Lparsing_EnumerationConstant.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
-});
-$c_Lparsing_EnumerationConstant.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
-});
-function $is_Lparsing_EnumerationConstant(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_EnumerationConstant)))
-}
-function $as_Lparsing_EnumerationConstant(obj) {
-  return (($is_Lparsing_EnumerationConstant(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.EnumerationConstant"))
-}
-function $isArrayOf_Lparsing_EnumerationConstant(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_EnumerationConstant)))
-}
-function $asArrayOf_Lparsing_EnumerationConstant(obj, depth) {
-  return (($isArrayOf_Lparsing_EnumerationConstant(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.EnumerationConstant;", depth))
-}
-var $d_Lparsing_EnumerationConstant = new $TypeData().initClass({
-  Lparsing_EnumerationConstant: 0
-}, false, "parsing.EnumerationConstant", {
-  Lparsing_EnumerationConstant: 1,
-  O: 1,
-  Lparsing_Constant: 1,
-  Lparsing_Token: 1,
-  Lparsing_Expression: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lparsing_EnumerationConstant.prototype.$classData = $d_Lparsing_EnumerationConstant;
-/** @constructor */
-function $c_Lparsing_FloatConstant() {
-  $c_O.call(this);
-  this.v$1 = 0.0
-}
-$c_Lparsing_FloatConstant.prototype = new $h_O();
-$c_Lparsing_FloatConstant.prototype.constructor = $c_Lparsing_FloatConstant;
-/** @constructor */
-function $h_Lparsing_FloatConstant() {
-  /*<skip>*/
-}
-$h_Lparsing_FloatConstant.prototype = $c_Lparsing_FloatConstant.prototype;
-$c_Lparsing_FloatConstant.prototype.productPrefix__T = (function() {
-  return "FloatConstant"
-});
-$c_Lparsing_FloatConstant.prototype.productArity__I = (function() {
-  return 1
-});
-$c_Lparsing_FloatConstant.prototype.equals__O__Z = (function(x$1) {
-  if ((this === x$1)) {
-    return true
-  } else if ($is_Lparsing_FloatConstant(x$1)) {
-    var FloatConstant$1 = $as_Lparsing_FloatConstant(x$1);
-    return (this.v$1 === FloatConstant$1.v$1)
-  } else {
-    return false
-  }
-});
-$c_Lparsing_FloatConstant.prototype.productElement__I__O = (function(x$1) {
-  switch (x$1) {
-    case 0: {
-      return this.v$1;
-      break
-    }
-    default: {
-      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
-    }
-  }
-});
-$c_Lparsing_FloatConstant.prototype.toString__T = (function() {
-  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
-});
-$c_Lparsing_FloatConstant.prototype.init___F = (function(v) {
-  this.v$1 = v;
-  return this
-});
-$c_Lparsing_FloatConstant.prototype.hashCode__I = (function() {
-  var acc = (-889275714);
-  var jsx$2 = $m_sr_Statics$();
-  var jsx$1 = acc;
-  var this$1 = $m_sr_Statics$();
-  var fv = this.v$1;
-  acc = jsx$2.mix__I__I__I(jsx$1, this$1.doubleHash__D__I(fv));
-  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 1)
-});
-$c_Lparsing_FloatConstant.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
-});
-function $is_Lparsing_FloatConstant(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_FloatConstant)))
-}
-function $as_Lparsing_FloatConstant(obj) {
-  return (($is_Lparsing_FloatConstant(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.FloatConstant"))
-}
-function $isArrayOf_Lparsing_FloatConstant(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_FloatConstant)))
-}
-function $asArrayOf_Lparsing_FloatConstant(obj, depth) {
-  return (($isArrayOf_Lparsing_FloatConstant(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.FloatConstant;", depth))
-}
-var $d_Lparsing_FloatConstant = new $TypeData().initClass({
-  Lparsing_FloatConstant: 0
-}, false, "parsing.FloatConstant", {
-  Lparsing_FloatConstant: 1,
-  O: 1,
-  Lparsing_Constant: 1,
-  Lparsing_Token: 1,
-  Lparsing_Expression: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lparsing_FloatConstant.prototype.$classData = $d_Lparsing_FloatConstant;
-/** @constructor */
 function $c_Lparsing_Goto() {
   $c_O.call(this);
   this.v$1 = null
@@ -39843,34 +45588,34 @@ var $d_Lparsing_Goto = new $TypeData().initClass({
 });
 $c_Lparsing_Goto.prototype.$classData = $d_Lparsing_Goto;
 /** @constructor */
-function $c_Lparsing_IntConstant() {
+function $c_Lparsing_Identifier() {
   $c_O.call(this);
-  this.v$1 = 0
+  this.v$1 = null
 }
-$c_Lparsing_IntConstant.prototype = new $h_O();
-$c_Lparsing_IntConstant.prototype.constructor = $c_Lparsing_IntConstant;
+$c_Lparsing_Identifier.prototype = new $h_O();
+$c_Lparsing_Identifier.prototype.constructor = $c_Lparsing_Identifier;
 /** @constructor */
-function $h_Lparsing_IntConstant() {
+function $h_Lparsing_Identifier() {
   /*<skip>*/
 }
-$h_Lparsing_IntConstant.prototype = $c_Lparsing_IntConstant.prototype;
-$c_Lparsing_IntConstant.prototype.productPrefix__T = (function() {
-  return "IntConstant"
+$h_Lparsing_Identifier.prototype = $c_Lparsing_Identifier.prototype;
+$c_Lparsing_Identifier.prototype.productPrefix__T = (function() {
+  return "Identifier"
 });
-$c_Lparsing_IntConstant.prototype.productArity__I = (function() {
+$c_Lparsing_Identifier.prototype.productArity__I = (function() {
   return 1
 });
-$c_Lparsing_IntConstant.prototype.equals__O__Z = (function(x$1) {
+$c_Lparsing_Identifier.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true
-  } else if ($is_Lparsing_IntConstant(x$1)) {
-    var IntConstant$1 = $as_Lparsing_IntConstant(x$1);
-    return (this.v$1 === IntConstant$1.v$1)
+  } else if ($is_Lparsing_Identifier(x$1)) {
+    var Identifier$1 = $as_Lparsing_Identifier(x$1);
+    return (this.v$1 === Identifier$1.v$1)
   } else {
     return false
   }
 });
-$c_Lparsing_IntConstant.prototype.productElement__I__O = (function(x$1) {
+$c_Lparsing_Identifier.prototype.productElement__I__O = (function(x$1) {
   switch (x$1) {
     case 0: {
       return this.v$1;
@@ -39881,47 +45626,46 @@ $c_Lparsing_IntConstant.prototype.productElement__I__O = (function(x$1) {
     }
   }
 });
-$c_Lparsing_IntConstant.prototype.toString__T = (function() {
+$c_Lparsing_Identifier.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
-$c_Lparsing_IntConstant.prototype.init___I = (function(v) {
+$c_Lparsing_Identifier.prototype.init___T = (function(v) {
   this.v$1 = v;
   return this
 });
-$c_Lparsing_IntConstant.prototype.hashCode__I = (function() {
-  var acc = (-889275714);
-  acc = $m_sr_Statics$().mix__I__I__I(acc, this.v$1);
-  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 1)
+$c_Lparsing_Identifier.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
 });
-$c_Lparsing_IntConstant.prototype.productIterator__sc_Iterator = (function() {
+$c_Lparsing_Identifier.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
 });
-function $is_Lparsing_IntConstant(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_IntConstant)))
+function $is_Lparsing_Identifier(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_Identifier)))
 }
-function $as_Lparsing_IntConstant(obj) {
-  return (($is_Lparsing_IntConstant(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.IntConstant"))
+function $as_Lparsing_Identifier(obj) {
+  return (($is_Lparsing_Identifier(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.Identifier"))
 }
-function $isArrayOf_Lparsing_IntConstant(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_IntConstant)))
+function $isArrayOf_Lparsing_Identifier(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_Identifier)))
 }
-function $asArrayOf_Lparsing_IntConstant(obj, depth) {
-  return (($isArrayOf_Lparsing_IntConstant(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.IntConstant;", depth))
+function $asArrayOf_Lparsing_Identifier(obj, depth) {
+  return (($isArrayOf_Lparsing_Identifier(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.Identifier;", depth))
 }
-var $d_Lparsing_IntConstant = new $TypeData().initClass({
-  Lparsing_IntConstant: 0
-}, false, "parsing.IntConstant", {
-  Lparsing_IntConstant: 1,
+var $d_Lparsing_Identifier = new $TypeData().initClass({
+  Lparsing_Identifier: 0
+}, false, "parsing.Identifier", {
+  Lparsing_Identifier: 1,
   O: 1,
-  Lparsing_Constant: 1,
   Lparsing_Token: 1,
   Lparsing_Expression: 1,
+  Lparsing_PPToken: 1,
   s_Product: 1,
   s_Equals: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lparsing_IntConstant.prototype.$classData = $d_Lparsing_IntConstant;
+$c_Lparsing_Identifier.prototype.$classData = $d_Lparsing_Identifier;
 /** @constructor */
 function $c_Lparsing_IterationDoWhile() {
   $c_O.call(this);
@@ -40134,6 +45878,125 @@ var $d_Lparsing_IterationFor1 = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lparsing_IterationFor1.prototype.$classData = $d_Lparsing_IterationFor1;
+/** @constructor */
+function $c_Lparsing_IterationFor2() {
+  $c_O.call(this);
+  this.v$1 = null;
+  this.v1$1 = null;
+  this.v2$1 = null;
+  this.v3$1 = null
+}
+$c_Lparsing_IterationFor2.prototype = new $h_O();
+$c_Lparsing_IterationFor2.prototype.constructor = $c_Lparsing_IterationFor2;
+/** @constructor */
+function $h_Lparsing_IterationFor2() {
+  /*<skip>*/
+}
+$h_Lparsing_IterationFor2.prototype = $c_Lparsing_IterationFor2.prototype;
+$c_Lparsing_IterationFor2.prototype.productPrefix__T = (function() {
+  return "IterationFor2"
+});
+$c_Lparsing_IterationFor2.prototype.productArity__I = (function() {
+  return 4
+});
+$c_Lparsing_IterationFor2.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_IterationFor2(x$1)) {
+    var IterationFor2$1 = $as_Lparsing_IterationFor2(x$1);
+    var x = this.v$1;
+    var x$2 = IterationFor2$1.v$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.v1$1;
+      var x$4 = IterationFor2$1.v1$1;
+      var jsx$2 = ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      var jsx$2 = false
+    };
+    if (jsx$2) {
+      var x$5 = this.v2$1;
+      var x$6 = IterationFor2$1.v2$1;
+      var jsx$1 = ((x$5 === null) ? (x$6 === null) : x$5.equals__O__Z(x$6))
+    } else {
+      var jsx$1 = false
+    };
+    if (jsx$1) {
+      var x$7 = this.v3$1;
+      var x$8 = IterationFor2$1.v3$1;
+      return ((x$7 === null) ? (x$8 === null) : x$7.equals__O__Z(x$8))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_IterationFor2.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    case 1: {
+      return this.v1$1;
+      break
+    }
+    case 2: {
+      return this.v2$1;
+      break
+    }
+    case 3: {
+      return this.v3$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_IterationFor2.prototype.init___Lparsing_Declaration__s_Option__s_Option__Lparsing_Statement = (function(v, v1, v2, v3) {
+  this.v$1 = v;
+  this.v1$1 = v1;
+  this.v2$1 = v2;
+  this.v3$1 = v3;
+  return this
+});
+$c_Lparsing_IterationFor2.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_IterationFor2.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_IterationFor2.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_IterationFor2(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_IterationFor2)))
+}
+function $as_Lparsing_IterationFor2(obj) {
+  return (($is_Lparsing_IterationFor2(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.IterationFor2"))
+}
+function $isArrayOf_Lparsing_IterationFor2(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_IterationFor2)))
+}
+function $asArrayOf_Lparsing_IterationFor2(obj, depth) {
+  return (($isArrayOf_Lparsing_IterationFor2(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.IterationFor2;", depth))
+}
+var $d_Lparsing_IterationFor2 = new $TypeData().initClass({
+  Lparsing_IterationFor2: 0
+}, false, "parsing.IterationFor2", {
+  Lparsing_IterationFor2: 1,
+  O: 1,
+  Lparsing_IterationStatement: 1,
+  Lparsing_Statement: 1,
+  Lparsing_BlockItem: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_IterationFor2.prototype.$classData = $d_Lparsing_IterationFor2;
 /** @constructor */
 function $c_Lparsing_IterationWhile() {
   $c_O.call(this);
@@ -40868,50 +46731,37 @@ var $d_Lparsing_SelectionSwitch = new $TypeData().initClass({
 });
 $c_Lparsing_SelectionSwitch.prototype.$classData = $d_Lparsing_SelectionSwitch;
 /** @constructor */
-function $c_Lparsing_SimpleDeclaration() {
+function $c_Lparsing_StringLiteral() {
   $c_O.call(this);
-  this.spec$1 = null;
-  this.init$1 = null
+  this.v$1 = null
 }
-$c_Lparsing_SimpleDeclaration.prototype = new $h_O();
-$c_Lparsing_SimpleDeclaration.prototype.constructor = $c_Lparsing_SimpleDeclaration;
+$c_Lparsing_StringLiteral.prototype = new $h_O();
+$c_Lparsing_StringLiteral.prototype.constructor = $c_Lparsing_StringLiteral;
 /** @constructor */
-function $h_Lparsing_SimpleDeclaration() {
+function $h_Lparsing_StringLiteral() {
   /*<skip>*/
 }
-$h_Lparsing_SimpleDeclaration.prototype = $c_Lparsing_SimpleDeclaration.prototype;
-$c_Lparsing_SimpleDeclaration.prototype.productPrefix__T = (function() {
-  return "SimpleDeclaration"
+$h_Lparsing_StringLiteral.prototype = $c_Lparsing_StringLiteral.prototype;
+$c_Lparsing_StringLiteral.prototype.productPrefix__T = (function() {
+  return "StringLiteral"
 });
-$c_Lparsing_SimpleDeclaration.prototype.productArity__I = (function() {
-  return 2
+$c_Lparsing_StringLiteral.prototype.productArity__I = (function() {
+  return 1
 });
-$c_Lparsing_SimpleDeclaration.prototype.equals__O__Z = (function(x$1) {
+$c_Lparsing_StringLiteral.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true
-  } else if ($is_Lparsing_SimpleDeclaration(x$1)) {
-    var SimpleDeclaration$1 = $as_Lparsing_SimpleDeclaration(x$1);
-    var x = this.spec$1;
-    var x$2 = SimpleDeclaration$1.spec$1;
-    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
-      var x$3 = this.init$1;
-      var x$4 = SimpleDeclaration$1.init$1;
-      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
-    } else {
-      return false
-    }
+  } else if ($is_Lparsing_StringLiteral(x$1)) {
+    var StringLiteral$1 = $as_Lparsing_StringLiteral(x$1);
+    return (this.v$1 === StringLiteral$1.v$1)
   } else {
     return false
   }
 });
-$c_Lparsing_SimpleDeclaration.prototype.productElement__I__O = (function(x$1) {
+$c_Lparsing_StringLiteral.prototype.productElement__I__O = (function(x$1) {
   switch (x$1) {
     case 0: {
-      return this.spec$1;
-      break
-    }
-    case 1: {
-      return this.init$1;
+      return this.v$1;
       break
     }
     default: {
@@ -40919,76 +46769,81 @@ $c_Lparsing_SimpleDeclaration.prototype.productElement__I__O = (function(x$1) {
     }
   }
 });
-$c_Lparsing_SimpleDeclaration.prototype.toString__T = (function() {
+$c_Lparsing_StringLiteral.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
-$c_Lparsing_SimpleDeclaration.prototype.init___Lparsing_DeclarationSpecifiers__s_Option = (function(spec, init) {
-  this.spec$1 = spec;
-  this.init$1 = init;
+$c_Lparsing_StringLiteral.prototype.init___T = (function(v) {
+  this.v$1 = v;
   return this
 });
-$c_Lparsing_SimpleDeclaration.prototype.hashCode__I = (function() {
+$c_Lparsing_StringLiteral.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
   return this$2.productHash__s_Product__I__I(this, (-889275714))
 });
-$c_Lparsing_SimpleDeclaration.prototype.productIterator__sc_Iterator = (function() {
+$c_Lparsing_StringLiteral.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
 });
-function $is_Lparsing_SimpleDeclaration(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_SimpleDeclaration)))
+function $is_Lparsing_StringLiteral(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_StringLiteral)))
 }
-function $as_Lparsing_SimpleDeclaration(obj) {
-  return (($is_Lparsing_SimpleDeclaration(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.SimpleDeclaration"))
+function $as_Lparsing_StringLiteral(obj) {
+  return (($is_Lparsing_StringLiteral(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.StringLiteral"))
 }
-function $isArrayOf_Lparsing_SimpleDeclaration(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_SimpleDeclaration)))
+function $isArrayOf_Lparsing_StringLiteral(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_StringLiteral)))
 }
-function $asArrayOf_Lparsing_SimpleDeclaration(obj, depth) {
-  return (($isArrayOf_Lparsing_SimpleDeclaration(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.SimpleDeclaration;", depth))
+function $asArrayOf_Lparsing_StringLiteral(obj, depth) {
+  return (($isArrayOf_Lparsing_StringLiteral(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.StringLiteral;", depth))
 }
-var $d_Lparsing_SimpleDeclaration = new $TypeData().initClass({
-  Lparsing_SimpleDeclaration: 0
-}, false, "parsing.SimpleDeclaration", {
-  Lparsing_SimpleDeclaration: 1,
+var $d_Lparsing_StringLiteral = new $TypeData().initClass({
+  Lparsing_StringLiteral: 0
+}, false, "parsing.StringLiteral", {
+  Lparsing_StringLiteral: 1,
   O: 1,
-  Lparsing_Declaration: 1,
-  Lparsing_ExternalDeclaration: 1,
-  Lparsing_BlockItem: 1,
+  Lparsing_Token: 1,
+  Lparsing_Expression: 1,
+  Lparsing_PPToken: 1,
   s_Product: 1,
   s_Equals: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lparsing_SimpleDeclaration.prototype.$classData = $d_Lparsing_SimpleDeclaration;
+$c_Lparsing_StringLiteral.prototype.$classData = $d_Lparsing_StringLiteral;
 /** @constructor */
-function $c_Lparsing_StaticAssertDeclaration() {
+function $c_Lparsing_StructImpl() {
   $c_O.call(this);
-  this.v1$1 = null;
+  this.isStruct$1 = false;
+  this.id$1 = null;
   this.v2$1 = null
 }
-$c_Lparsing_StaticAssertDeclaration.prototype = new $h_O();
-$c_Lparsing_StaticAssertDeclaration.prototype.constructor = $c_Lparsing_StaticAssertDeclaration;
+$c_Lparsing_StructImpl.prototype = new $h_O();
+$c_Lparsing_StructImpl.prototype.constructor = $c_Lparsing_StructImpl;
 /** @constructor */
-function $h_Lparsing_StaticAssertDeclaration() {
+function $h_Lparsing_StructImpl() {
   /*<skip>*/
 }
-$h_Lparsing_StaticAssertDeclaration.prototype = $c_Lparsing_StaticAssertDeclaration.prototype;
-$c_Lparsing_StaticAssertDeclaration.prototype.productPrefix__T = (function() {
-  return "StaticAssertDeclaration"
+$h_Lparsing_StructImpl.prototype = $c_Lparsing_StructImpl.prototype;
+$c_Lparsing_StructImpl.prototype.productPrefix__T = (function() {
+  return "StructImpl"
 });
-$c_Lparsing_StaticAssertDeclaration.prototype.productArity__I = (function() {
-  return 2
+$c_Lparsing_StructImpl.prototype.productArity__I = (function() {
+  return 3
 });
-$c_Lparsing_StaticAssertDeclaration.prototype.equals__O__Z = (function(x$1) {
+$c_Lparsing_StructImpl.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true
-  } else if ($is_Lparsing_StaticAssertDeclaration(x$1)) {
-    var StaticAssertDeclaration$1 = $as_Lparsing_StaticAssertDeclaration(x$1);
-    var x = this.v1$1;
-    var x$2 = StaticAssertDeclaration$1.v1$1;
-    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+  } else if ($is_Lparsing_StructImpl(x$1)) {
+    var StructImpl$1 = $as_Lparsing_StructImpl(x$1);
+    if ((this.isStruct$1 === StructImpl$1.isStruct$1)) {
+      var x = this.id$1;
+      var x$2 = StructImpl$1.id$1;
+      var jsx$1 = ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+    } else {
+      var jsx$1 = false
+    };
+    if (jsx$1) {
       var x$3 = this.v2$1;
-      var x$4 = StaticAssertDeclaration$1.v2$1;
+      var x$4 = StructImpl$1.v2$1;
       return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
     } else {
       return false
@@ -40997,13 +46852,17 @@ $c_Lparsing_StaticAssertDeclaration.prototype.equals__O__Z = (function(x$1) {
     return false
   }
 });
-$c_Lparsing_StaticAssertDeclaration.prototype.productElement__I__O = (function(x$1) {
+$c_Lparsing_StructImpl.prototype.productElement__I__O = (function(x$1) {
   switch (x$1) {
     case 0: {
-      return this.v1$1;
+      return this.isStruct$1;
       break
     }
     case 1: {
+      return this.id$1;
+      break
+    }
+    case 2: {
       return this.v2$1;
       break
     }
@@ -41012,47 +46871,144 @@ $c_Lparsing_StaticAssertDeclaration.prototype.productElement__I__O = (function(x
     }
   }
 });
-$c_Lparsing_StaticAssertDeclaration.prototype.toString__T = (function() {
+$c_Lparsing_StructImpl.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
-$c_Lparsing_StaticAssertDeclaration.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
-});
-$c_Lparsing_StaticAssertDeclaration.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
-});
-$c_Lparsing_StaticAssertDeclaration.prototype.init___Lparsing_Expression__Lparsing_StringLiteral = (function(v1, v2) {
-  this.v1$1 = v1;
+$c_Lparsing_StructImpl.prototype.init___Z__s_Option__sc_Seq = (function(isStruct, id, v2) {
+  this.isStruct$1 = isStruct;
+  this.id$1 = id;
   this.v2$1 = v2;
   return this
 });
-function $is_Lparsing_StaticAssertDeclaration(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_StaticAssertDeclaration)))
+$c_Lparsing_StructImpl.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, (this.isStruct$1 ? 1231 : 1237));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().anyHash__O__I(this.id$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().anyHash__O__I(this.v2$1));
+  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 3)
+});
+$c_Lparsing_StructImpl.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_StructImpl(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_StructImpl)))
 }
-function $as_Lparsing_StaticAssertDeclaration(obj) {
-  return (($is_Lparsing_StaticAssertDeclaration(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.StaticAssertDeclaration"))
+function $as_Lparsing_StructImpl(obj) {
+  return (($is_Lparsing_StructImpl(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.StructImpl"))
 }
-function $isArrayOf_Lparsing_StaticAssertDeclaration(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_StaticAssertDeclaration)))
+function $isArrayOf_Lparsing_StructImpl(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_StructImpl)))
 }
-function $asArrayOf_Lparsing_StaticAssertDeclaration(obj, depth) {
-  return (($isArrayOf_Lparsing_StaticAssertDeclaration(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.StaticAssertDeclaration;", depth))
+function $asArrayOf_Lparsing_StructImpl(obj, depth) {
+  return (($isArrayOf_Lparsing_StructImpl(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.StructImpl;", depth))
 }
-var $d_Lparsing_StaticAssertDeclaration = new $TypeData().initClass({
-  Lparsing_StaticAssertDeclaration: 0
-}, false, "parsing.StaticAssertDeclaration", {
-  Lparsing_StaticAssertDeclaration: 1,
+var $d_Lparsing_StructImpl = new $TypeData().initClass({
+  Lparsing_StructImpl: 0
+}, false, "parsing.StructImpl", {
+  Lparsing_StructImpl: 1,
   O: 1,
-  Lparsing_Declaration: 1,
-  Lparsing_ExternalDeclaration: 1,
-  Lparsing_BlockItem: 1,
+  Lparsing_StructOrUnionSpecifier: 1,
+  Lparsing_TypeSpecifier: 1,
+  Lparsing_DeclarationSpecifier: 1,
   s_Product: 1,
   s_Equals: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lparsing_StaticAssertDeclaration.prototype.$classData = $d_Lparsing_StaticAssertDeclaration;
+$c_Lparsing_StructImpl.prototype.$classData = $d_Lparsing_StructImpl;
+/** @constructor */
+function $c_Lparsing_StructUse() {
+  $c_O.call(this);
+  this.isStruct$1 = false;
+  this.id$1 = null
+}
+$c_Lparsing_StructUse.prototype = new $h_O();
+$c_Lparsing_StructUse.prototype.constructor = $c_Lparsing_StructUse;
+/** @constructor */
+function $h_Lparsing_StructUse() {
+  /*<skip>*/
+}
+$h_Lparsing_StructUse.prototype = $c_Lparsing_StructUse.prototype;
+$c_Lparsing_StructUse.prototype.init___Z__Lparsing_Identifier = (function(isStruct, id) {
+  this.isStruct$1 = isStruct;
+  this.id$1 = id;
+  return this
+});
+$c_Lparsing_StructUse.prototype.productPrefix__T = (function() {
+  return "StructUse"
+});
+$c_Lparsing_StructUse.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_StructUse.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_StructUse(x$1)) {
+    var StructUse$1 = $as_Lparsing_StructUse(x$1);
+    if ((this.isStruct$1 === StructUse$1.isStruct$1)) {
+      var x = this.id$1;
+      var x$2 = StructUse$1.id$1;
+      return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_StructUse.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.isStruct$1;
+      break
+    }
+    case 1: {
+      return this.id$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_StructUse.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_StructUse.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, (this.isStruct$1 ? 1231 : 1237));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().anyHash__O__I(this.id$1));
+  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 2)
+});
+$c_Lparsing_StructUse.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_StructUse(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_StructUse)))
+}
+function $as_Lparsing_StructUse(obj) {
+  return (($is_Lparsing_StructUse(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.StructUse"))
+}
+function $isArrayOf_Lparsing_StructUse(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_StructUse)))
+}
+function $asArrayOf_Lparsing_StructUse(obj, depth) {
+  return (($isArrayOf_Lparsing_StructUse(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.StructUse;", depth))
+}
+var $d_Lparsing_StructUse = new $TypeData().initClass({
+  Lparsing_StructUse: 0
+}, false, "parsing.StructUse", {
+  Lparsing_StructUse: 1,
+  O: 1,
+  Lparsing_StructOrUnionSpecifier: 1,
+  Lparsing_TypeSpecifier: 1,
+  Lparsing_DeclarationSpecifier: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_StructUse.prototype.$classData = $d_Lparsing_StructUse;
 function $f_s_math_Numeric$ByteIsIntegral__fromInt__I__B($thiz, x) {
   return ((x << 24) >> 24)
 }
@@ -42878,6 +48834,520 @@ var $d_sjs_js_JavaScriptException = new $TypeData().initClass({
 });
 $c_sjs_js_JavaScriptException.prototype.$classData = $d_sjs_js_JavaScriptException;
 /** @constructor */
+function $c_Lparsing_CharacterConstant() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lparsing_CharacterConstant.prototype = new $h_O();
+$c_Lparsing_CharacterConstant.prototype.constructor = $c_Lparsing_CharacterConstant;
+/** @constructor */
+function $h_Lparsing_CharacterConstant() {
+  /*<skip>*/
+}
+$h_Lparsing_CharacterConstant.prototype = $c_Lparsing_CharacterConstant.prototype;
+$c_Lparsing_CharacterConstant.prototype.productPrefix__T = (function() {
+  return "CharacterConstant"
+});
+$c_Lparsing_CharacterConstant.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_CharacterConstant.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_CharacterConstant(x$1)) {
+    var CharacterConstant$1 = $as_Lparsing_CharacterConstant(x$1);
+    return (this.v$1 === CharacterConstant$1.v$1)
+  } else {
+    return false
+  }
+});
+$c_Lparsing_CharacterConstant.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_CharacterConstant.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_CharacterConstant.prototype.init___T = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_CharacterConstant.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_CharacterConstant.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_CharacterConstant(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_CharacterConstant)))
+}
+function $as_Lparsing_CharacterConstant(obj) {
+  return (($is_Lparsing_CharacterConstant(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.CharacterConstant"))
+}
+function $isArrayOf_Lparsing_CharacterConstant(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_CharacterConstant)))
+}
+function $asArrayOf_Lparsing_CharacterConstant(obj, depth) {
+  return (($isArrayOf_Lparsing_CharacterConstant(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.CharacterConstant;", depth))
+}
+var $d_Lparsing_CharacterConstant = new $TypeData().initClass({
+  Lparsing_CharacterConstant: 0
+}, false, "parsing.CharacterConstant", {
+  Lparsing_CharacterConstant: 1,
+  O: 1,
+  Lparsing_Constant: 1,
+  Lparsing_Token: 1,
+  Lparsing_Expression: 1,
+  Lparsing_PPToken: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_CharacterConstant.prototype.$classData = $d_Lparsing_CharacterConstant;
+/** @constructor */
+function $c_Lparsing_EnumerationConstant() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_Lparsing_EnumerationConstant.prototype = new $h_O();
+$c_Lparsing_EnumerationConstant.prototype.constructor = $c_Lparsing_EnumerationConstant;
+/** @constructor */
+function $h_Lparsing_EnumerationConstant() {
+  /*<skip>*/
+}
+$h_Lparsing_EnumerationConstant.prototype = $c_Lparsing_EnumerationConstant.prototype;
+$c_Lparsing_EnumerationConstant.prototype.productPrefix__T = (function() {
+  return "EnumerationConstant"
+});
+$c_Lparsing_EnumerationConstant.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_EnumerationConstant.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_EnumerationConstant(x$1)) {
+    var EnumerationConstant$1 = $as_Lparsing_EnumerationConstant(x$1);
+    return (this.v$1 === EnumerationConstant$1.v$1)
+  } else {
+    return false
+  }
+});
+$c_Lparsing_EnumerationConstant.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_EnumerationConstant.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_EnumerationConstant.prototype.init___T = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_EnumerationConstant.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_EnumerationConstant.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_EnumerationConstant(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_EnumerationConstant)))
+}
+function $as_Lparsing_EnumerationConstant(obj) {
+  return (($is_Lparsing_EnumerationConstant(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.EnumerationConstant"))
+}
+function $isArrayOf_Lparsing_EnumerationConstant(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_EnumerationConstant)))
+}
+function $asArrayOf_Lparsing_EnumerationConstant(obj, depth) {
+  return (($isArrayOf_Lparsing_EnumerationConstant(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.EnumerationConstant;", depth))
+}
+var $d_Lparsing_EnumerationConstant = new $TypeData().initClass({
+  Lparsing_EnumerationConstant: 0
+}, false, "parsing.EnumerationConstant", {
+  Lparsing_EnumerationConstant: 1,
+  O: 1,
+  Lparsing_Constant: 1,
+  Lparsing_Token: 1,
+  Lparsing_Expression: 1,
+  Lparsing_PPToken: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_EnumerationConstant.prototype.$classData = $d_Lparsing_EnumerationConstant;
+/** @constructor */
+function $c_Lparsing_FloatConstant() {
+  $c_O.call(this);
+  this.v$1 = 0.0
+}
+$c_Lparsing_FloatConstant.prototype = new $h_O();
+$c_Lparsing_FloatConstant.prototype.constructor = $c_Lparsing_FloatConstant;
+/** @constructor */
+function $h_Lparsing_FloatConstant() {
+  /*<skip>*/
+}
+$h_Lparsing_FloatConstant.prototype = $c_Lparsing_FloatConstant.prototype;
+$c_Lparsing_FloatConstant.prototype.productPrefix__T = (function() {
+  return "FloatConstant"
+});
+$c_Lparsing_FloatConstant.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_FloatConstant.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_FloatConstant(x$1)) {
+    var FloatConstant$1 = $as_Lparsing_FloatConstant(x$1);
+    return (this.v$1 === FloatConstant$1.v$1)
+  } else {
+    return false
+  }
+});
+$c_Lparsing_FloatConstant.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_FloatConstant.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_FloatConstant.prototype.init___F = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_FloatConstant.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  var jsx$2 = $m_sr_Statics$();
+  var jsx$1 = acc;
+  var this$1 = $m_sr_Statics$();
+  var fv = this.v$1;
+  acc = jsx$2.mix__I__I__I(jsx$1, this$1.doubleHash__D__I(fv));
+  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 1)
+});
+$c_Lparsing_FloatConstant.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_FloatConstant(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_FloatConstant)))
+}
+function $as_Lparsing_FloatConstant(obj) {
+  return (($is_Lparsing_FloatConstant(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.FloatConstant"))
+}
+function $isArrayOf_Lparsing_FloatConstant(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_FloatConstant)))
+}
+function $asArrayOf_Lparsing_FloatConstant(obj, depth) {
+  return (($isArrayOf_Lparsing_FloatConstant(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.FloatConstant;", depth))
+}
+var $d_Lparsing_FloatConstant = new $TypeData().initClass({
+  Lparsing_FloatConstant: 0
+}, false, "parsing.FloatConstant", {
+  Lparsing_FloatConstant: 1,
+  O: 1,
+  Lparsing_Constant: 1,
+  Lparsing_Token: 1,
+  Lparsing_Expression: 1,
+  Lparsing_PPToken: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_FloatConstant.prototype.$classData = $d_Lparsing_FloatConstant;
+/** @constructor */
+function $c_Lparsing_IntConstant() {
+  $c_O.call(this);
+  this.v$1 = 0
+}
+$c_Lparsing_IntConstant.prototype = new $h_O();
+$c_Lparsing_IntConstant.prototype.constructor = $c_Lparsing_IntConstant;
+/** @constructor */
+function $h_Lparsing_IntConstant() {
+  /*<skip>*/
+}
+$h_Lparsing_IntConstant.prototype = $c_Lparsing_IntConstant.prototype;
+$c_Lparsing_IntConstant.prototype.productPrefix__T = (function() {
+  return "IntConstant"
+});
+$c_Lparsing_IntConstant.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lparsing_IntConstant.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_IntConstant(x$1)) {
+    var IntConstant$1 = $as_Lparsing_IntConstant(x$1);
+    return (this.v$1 === IntConstant$1.v$1)
+  } else {
+    return false
+  }
+});
+$c_Lparsing_IntConstant.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_IntConstant.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_IntConstant.prototype.init___I = (function(v) {
+  this.v$1 = v;
+  return this
+});
+$c_Lparsing_IntConstant.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, this.v$1);
+  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 1)
+});
+$c_Lparsing_IntConstant.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_IntConstant(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_IntConstant)))
+}
+function $as_Lparsing_IntConstant(obj) {
+  return (($is_Lparsing_IntConstant(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.IntConstant"))
+}
+function $isArrayOf_Lparsing_IntConstant(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_IntConstant)))
+}
+function $asArrayOf_Lparsing_IntConstant(obj, depth) {
+  return (($isArrayOf_Lparsing_IntConstant(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.IntConstant;", depth))
+}
+var $d_Lparsing_IntConstant = new $TypeData().initClass({
+  Lparsing_IntConstant: 0
+}, false, "parsing.IntConstant", {
+  Lparsing_IntConstant: 1,
+  O: 1,
+  Lparsing_Constant: 1,
+  Lparsing_Token: 1,
+  Lparsing_Expression: 1,
+  Lparsing_PPToken: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_IntConstant.prototype.$classData = $d_Lparsing_IntConstant;
+/** @constructor */
+function $c_Lparsing_SimpleDeclaration() {
+  $c_O.call(this);
+  this.spec$1 = null;
+  this.init$1 = null
+}
+$c_Lparsing_SimpleDeclaration.prototype = new $h_O();
+$c_Lparsing_SimpleDeclaration.prototype.constructor = $c_Lparsing_SimpleDeclaration;
+/** @constructor */
+function $h_Lparsing_SimpleDeclaration() {
+  /*<skip>*/
+}
+$h_Lparsing_SimpleDeclaration.prototype = $c_Lparsing_SimpleDeclaration.prototype;
+$c_Lparsing_SimpleDeclaration.prototype.productPrefix__T = (function() {
+  return "SimpleDeclaration"
+});
+$c_Lparsing_SimpleDeclaration.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_SimpleDeclaration.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_SimpleDeclaration(x$1)) {
+    var SimpleDeclaration$1 = $as_Lparsing_SimpleDeclaration(x$1);
+    var x = this.spec$1;
+    var x$2 = SimpleDeclaration$1.spec$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.init$1;
+      var x$4 = SimpleDeclaration$1.init$1;
+      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_SimpleDeclaration.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.spec$1;
+      break
+    }
+    case 1: {
+      return this.init$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_SimpleDeclaration.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_SimpleDeclaration.prototype.init___Lparsing_DeclarationSpecifiers__s_Option = (function(spec, init) {
+  this.spec$1 = spec;
+  this.init$1 = init;
+  return this
+});
+$c_Lparsing_SimpleDeclaration.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_SimpleDeclaration.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lparsing_SimpleDeclaration(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_SimpleDeclaration)))
+}
+function $as_Lparsing_SimpleDeclaration(obj) {
+  return (($is_Lparsing_SimpleDeclaration(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.SimpleDeclaration"))
+}
+function $isArrayOf_Lparsing_SimpleDeclaration(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_SimpleDeclaration)))
+}
+function $asArrayOf_Lparsing_SimpleDeclaration(obj, depth) {
+  return (($isArrayOf_Lparsing_SimpleDeclaration(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.SimpleDeclaration;", depth))
+}
+var $d_Lparsing_SimpleDeclaration = new $TypeData().initClass({
+  Lparsing_SimpleDeclaration: 0
+}, false, "parsing.SimpleDeclaration", {
+  Lparsing_SimpleDeclaration: 1,
+  O: 1,
+  Lparsing_Declaration: 1,
+  Lparsing_ExternalDeclaration: 1,
+  Lparsing_Top: 1,
+  Lparsing_BlockItem: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_SimpleDeclaration.prototype.$classData = $d_Lparsing_SimpleDeclaration;
+/** @constructor */
+function $c_Lparsing_StaticAssertDeclaration() {
+  $c_O.call(this);
+  this.v1$1 = null;
+  this.v2$1 = null
+}
+$c_Lparsing_StaticAssertDeclaration.prototype = new $h_O();
+$c_Lparsing_StaticAssertDeclaration.prototype.constructor = $c_Lparsing_StaticAssertDeclaration;
+/** @constructor */
+function $h_Lparsing_StaticAssertDeclaration() {
+  /*<skip>*/
+}
+$h_Lparsing_StaticAssertDeclaration.prototype = $c_Lparsing_StaticAssertDeclaration.prototype;
+$c_Lparsing_StaticAssertDeclaration.prototype.productPrefix__T = (function() {
+  return "StaticAssertDeclaration"
+});
+$c_Lparsing_StaticAssertDeclaration.prototype.productArity__I = (function() {
+  return 2
+});
+$c_Lparsing_StaticAssertDeclaration.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lparsing_StaticAssertDeclaration(x$1)) {
+    var StaticAssertDeclaration$1 = $as_Lparsing_StaticAssertDeclaration(x$1);
+    var x = this.v1$1;
+    var x$2 = StaticAssertDeclaration$1.v1$1;
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.v2$1;
+      var x$4 = StaticAssertDeclaration$1.v2$1;
+      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_Lparsing_StaticAssertDeclaration.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.v1$1;
+      break
+    }
+    case 1: {
+      return this.v2$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lparsing_StaticAssertDeclaration.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lparsing_StaticAssertDeclaration.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lparsing_StaticAssertDeclaration.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Lparsing_StaticAssertDeclaration.prototype.init___Lparsing_Expression__Lparsing_StringLiteral = (function(v1, v2) {
+  this.v1$1 = v1;
+  this.v2$1 = v2;
+  return this
+});
+function $is_Lparsing_StaticAssertDeclaration(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lparsing_StaticAssertDeclaration)))
+}
+function $as_Lparsing_StaticAssertDeclaration(obj) {
+  return (($is_Lparsing_StaticAssertDeclaration(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "parsing.StaticAssertDeclaration"))
+}
+function $isArrayOf_Lparsing_StaticAssertDeclaration(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lparsing_StaticAssertDeclaration)))
+}
+function $asArrayOf_Lparsing_StaticAssertDeclaration(obj, depth) {
+  return (($isArrayOf_Lparsing_StaticAssertDeclaration(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lparsing.StaticAssertDeclaration;", depth))
+}
+var $d_Lparsing_StaticAssertDeclaration = new $TypeData().initClass({
+  Lparsing_StaticAssertDeclaration: 0
+}, false, "parsing.StaticAssertDeclaration", {
+  Lparsing_StaticAssertDeclaration: 1,
+  O: 1,
+  Lparsing_Declaration: 1,
+  Lparsing_ExternalDeclaration: 1,
+  Lparsing_Top: 1,
+  Lparsing_BlockItem: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lparsing_StaticAssertDeclaration.prototype.$classData = $d_Lparsing_StaticAssertDeclaration;
+/** @constructor */
 function $c_s_reflect_ManifestFactory$BooleanManifest$() {
   $c_s_reflect_AnyValManifest.call(this)
 }
@@ -44576,6 +51046,9 @@ $c_sc_AbstractTraversable.prototype.map__F1__scg_CanBuildFrom__O = (function(f, 
 $c_sc_AbstractTraversable.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$1) {
   return $f_sc_TraversableOnce__toArray__s_reflect_ClassTag__O(this, evidence$1)
 });
+$c_sc_AbstractTraversable.prototype.nonEmpty__Z = (function() {
+  return $f_sc_TraversableOnce__nonEmpty__Z(this)
+});
 $c_sc_AbstractTraversable.prototype.reduceLeft__F2__O = (function(op) {
   return $f_sc_TraversableOnce__reduceLeft__F2__O(this, op)
 });
@@ -45251,13 +51724,13 @@ $c_sci_StringOps.prototype.toIterator__sc_Iterator = (function() {
 $c_sci_StringOps.prototype.sameElements__sc_GenIterable__Z = (function(that) {
   return $f_sc_IndexedSeqOptimized__sameElements__sc_GenIterable__Z(this, that)
 });
-$c_sci_StringOps.prototype.isEmpty__Z = (function() {
-  return $f_sc_IndexedSeqOptimized__isEmpty__Z(this)
-});
 $c_sci_StringOps.prototype.toList__sci_List = (function() {
   var this$1 = $m_sci_List$();
   var cbf = this$1.ReusableCBFInstance$2;
   return $as_sci_List($f_sc_TraversableLike__to__scg_CanBuildFrom__O(this, cbf))
+});
+$c_sci_StringOps.prototype.isEmpty__Z = (function() {
+  return $f_sc_IndexedSeqOptimized__isEmpty__Z(this)
 });
 $c_sci_StringOps.prototype.thisCollection__sc_Traversable = (function() {
   var $$this = this.repr$1;
@@ -45275,9 +51748,6 @@ $c_sci_StringOps.prototype.mkString__T__T = (function(sep) {
 });
 $c_sci_StringOps.prototype.mkString__T__T__T__T = (function(start, sep, end) {
   return $f_sc_TraversableOnce__mkString__T__T__T__T(this, start, sep, end)
-});
-$c_sci_StringOps.prototype.$$colon$plus__O__scg_CanBuildFrom__O = (function(elem, bf) {
-  return $f_sc_SeqLike__$$colon$plus__O__scg_CanBuildFrom__O(this, elem, bf)
 });
 $c_sci_StringOps.prototype.toString__T = (function() {
   var $$this = this.repr$1;
@@ -45304,12 +51774,12 @@ $c_sci_StringOps.prototype.toVector__sci_Vector = (function() {
 $c_sci_StringOps.prototype.reverse__O = (function() {
   return $f_sc_IndexedSeqOptimized__reverse__O(this)
 });
-$c_sci_StringOps.prototype.toBuffer__scm_Buffer = (function() {
-  return $f_sc_IndexedSeqLike__toBuffer__scm_Buffer(this)
-});
 $c_sci_StringOps.prototype.size__I = (function() {
   var $$this = this.repr$1;
   return $uI($$this.length)
+});
+$c_sci_StringOps.prototype.toBuffer__scm_Buffer = (function() {
+  return $f_sc_IndexedSeqLike__toBuffer__scm_Buffer(this)
 });
 $c_sci_StringOps.prototype.$$plus$colon__O__scg_CanBuildFrom__O = (function(elem, bf) {
   return $f_sc_SeqLike__$$plus$colon__O__scg_CanBuildFrom__O(this, elem, bf)
@@ -45318,12 +51788,12 @@ $c_sci_StringOps.prototype.iterator__sc_Iterator = (function() {
   var $$this = this.repr$1;
   return new $c_sc_IndexedSeqLike$Elements().init___sc_IndexedSeqLike__I__I(this, 0, $uI($$this.length))
 });
+$c_sci_StringOps.prototype.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O = (function(that, bf) {
+  return $f_sc_TraversableLike__$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(this, that, bf)
+});
 $c_sci_StringOps.prototype.length__I = (function() {
   var $$this = this.repr$1;
   return $uI($$this.length)
-});
-$c_sci_StringOps.prototype.$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O = (function(that, bf) {
-  return $f_sc_TraversableLike__$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(this, that, bf)
 });
 $c_sci_StringOps.prototype.sizeHintIfCheap__I = (function() {
   var $$this = this.repr$1;
@@ -45339,12 +51809,12 @@ $c_sci_StringOps.prototype.drop__I__O = (function(n) {
   var until = $uI($$this.length);
   return $m_sci_StringOps$().slice$extension__T__I__I__T(this.repr$1, n, until)
 });
+$c_sci_StringOps.prototype.tail__O = (function() {
+  return $f_sc_IndexedSeqOptimized__tail__O(this)
+});
 $c_sci_StringOps.prototype.thisCollection__sc_Seq = (function() {
   var $$this = this.repr$1;
   return new $c_sci_WrappedString().init___T($$this)
-});
-$c_sci_StringOps.prototype.tail__O = (function() {
-  return $f_sc_IndexedSeqOptimized__tail__O(this)
 });
 $c_sci_StringOps.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_TraversableOnce__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end)
@@ -45362,12 +51832,12 @@ $c_sci_StringOps.prototype.$$div$colon__O__F2__O = (function(z, op) {
 $c_sci_StringOps.prototype.copyToArray__O__I__I__V = (function(xs, start, len) {
   $f_sc_IndexedSeqOptimized__copyToArray__O__I__I__V(this, xs, start, len)
 });
+$c_sci_StringOps.prototype.isTraversableAgain__Z = (function() {
+  return true
+});
 $c_sci_StringOps.prototype.hashCode__I = (function() {
   var $$this = this.repr$1;
   return $m_sjsr_RuntimeString$().hashCode__T__I($$this)
-});
-$c_sci_StringOps.prototype.isTraversableAgain__Z = (function() {
-  return true
 });
 $c_sci_StringOps.prototype.init___T = (function(repr) {
   this.repr$1 = repr;
@@ -45531,9 +52001,6 @@ $c_scm_ArrayOps$ofBoolean.prototype.mkString__T__T__T__T = (function(start, sep,
 });
 $c_scm_ArrayOps$ofBoolean.prototype.mkString__T__T = (function(sep) {
   return $f_sc_TraversableOnce__mkString__T__T__T__T(this, "", sep, "")
-});
-$c_scm_ArrayOps$ofBoolean.prototype.$$colon$plus__O__scg_CanBuildFrom__O = (function(elem, bf) {
-  return $f_sc_SeqLike__$$colon$plus__O__scg_CanBuildFrom__O(this, elem, bf)
 });
 $c_scm_ArrayOps$ofBoolean.prototype.toString__T = (function() {
   return $f_sc_TraversableLike__toString__T(this)
@@ -45739,9 +52206,6 @@ $c_scm_ArrayOps$ofByte.prototype.mkString__T__T__T__T = (function(start, sep, en
 $c_scm_ArrayOps$ofByte.prototype.mkString__T__T = (function(sep) {
   return $f_sc_TraversableOnce__mkString__T__T__T__T(this, "", sep, "")
 });
-$c_scm_ArrayOps$ofByte.prototype.$$colon$plus__O__scg_CanBuildFrom__O = (function(elem, bf) {
-  return $f_sc_SeqLike__$$colon$plus__O__scg_CanBuildFrom__O(this, elem, bf)
-});
 $c_scm_ArrayOps$ofByte.prototype.toString__T = (function() {
   return $f_sc_TraversableLike__toString__T(this)
 });
@@ -45946,9 +52410,6 @@ $c_scm_ArrayOps$ofChar.prototype.mkString__T__T__T__T = (function(start, sep, en
 });
 $c_scm_ArrayOps$ofChar.prototype.mkString__T__T = (function(sep) {
   return $f_sc_TraversableOnce__mkString__T__T__T__T(this, "", sep, "")
-});
-$c_scm_ArrayOps$ofChar.prototype.$$colon$plus__O__scg_CanBuildFrom__O = (function(elem, bf) {
-  return $f_sc_SeqLike__$$colon$plus__O__scg_CanBuildFrom__O(this, elem, bf)
 });
 $c_scm_ArrayOps$ofChar.prototype.toString__T = (function() {
   return $f_sc_TraversableLike__toString__T(this)
@@ -46158,9 +52619,6 @@ $c_scm_ArrayOps$ofDouble.prototype.mkString__T__T__T__T = (function(start, sep, 
 $c_scm_ArrayOps$ofDouble.prototype.mkString__T__T = (function(sep) {
   return $f_sc_TraversableOnce__mkString__T__T__T__T(this, "", sep, "")
 });
-$c_scm_ArrayOps$ofDouble.prototype.$$colon$plus__O__scg_CanBuildFrom__O = (function(elem, bf) {
-  return $f_sc_SeqLike__$$colon$plus__O__scg_CanBuildFrom__O(this, elem, bf)
-});
 $c_scm_ArrayOps$ofDouble.prototype.toString__T = (function() {
   return $f_sc_TraversableLike__toString__T(this)
 });
@@ -46360,9 +52818,6 @@ $c_scm_ArrayOps$ofFloat.prototype.mkString__T__T__T__T = (function(start, sep, e
 });
 $c_scm_ArrayOps$ofFloat.prototype.mkString__T__T = (function(sep) {
   return $f_sc_TraversableOnce__mkString__T__T__T__T(this, "", sep, "")
-});
-$c_scm_ArrayOps$ofFloat.prototype.$$colon$plus__O__scg_CanBuildFrom__O = (function(elem, bf) {
-  return $f_sc_SeqLike__$$colon$plus__O__scg_CanBuildFrom__O(this, elem, bf)
 });
 $c_scm_ArrayOps$ofFloat.prototype.toString__T = (function() {
   return $f_sc_TraversableLike__toString__T(this)
@@ -46567,9 +53022,6 @@ $c_scm_ArrayOps$ofInt.prototype.mkString__T__T__T__T = (function(start, sep, end
 });
 $c_scm_ArrayOps$ofInt.prototype.mkString__T__T = (function(sep) {
   return $f_sc_TraversableOnce__mkString__T__T__T__T(this, "", sep, "")
-});
-$c_scm_ArrayOps$ofInt.prototype.$$colon$plus__O__scg_CanBuildFrom__O = (function(elem, bf) {
-  return $f_sc_SeqLike__$$colon$plus__O__scg_CanBuildFrom__O(this, elem, bf)
 });
 $c_scm_ArrayOps$ofInt.prototype.toString__T = (function() {
   return $f_sc_TraversableLike__toString__T(this)
@@ -46779,9 +53231,6 @@ $c_scm_ArrayOps$ofLong.prototype.mkString__T__T__T__T = (function(start, sep, en
 $c_scm_ArrayOps$ofLong.prototype.mkString__T__T = (function(sep) {
   return $f_sc_TraversableOnce__mkString__T__T__T__T(this, "", sep, "")
 });
-$c_scm_ArrayOps$ofLong.prototype.$$colon$plus__O__scg_CanBuildFrom__O = (function(elem, bf) {
-  return $f_sc_SeqLike__$$colon$plus__O__scg_CanBuildFrom__O(this, elem, bf)
-});
 $c_scm_ArrayOps$ofLong.prototype.toString__T = (function() {
   return $f_sc_TraversableLike__toString__T(this)
 });
@@ -46981,9 +53430,6 @@ $c_scm_ArrayOps$ofRef.prototype.mkString__T__T__T__T = (function(start, sep, end
 });
 $c_scm_ArrayOps$ofRef.prototype.mkString__T__T = (function(sep) {
   return $f_sc_TraversableOnce__mkString__T__T__T__T(this, "", sep, "")
-});
-$c_scm_ArrayOps$ofRef.prototype.$$colon$plus__O__scg_CanBuildFrom__O = (function(elem, bf) {
-  return $f_sc_SeqLike__$$colon$plus__O__scg_CanBuildFrom__O(this, elem, bf)
 });
 $c_scm_ArrayOps$ofRef.prototype.toString__T = (function() {
   return $f_sc_TraversableLike__toString__T(this)
@@ -47194,9 +53640,6 @@ $c_scm_ArrayOps$ofShort.prototype.mkString__T__T__T__T = (function(start, sep, e
 $c_scm_ArrayOps$ofShort.prototype.mkString__T__T = (function(sep) {
   return $f_sc_TraversableOnce__mkString__T__T__T__T(this, "", sep, "")
 });
-$c_scm_ArrayOps$ofShort.prototype.$$colon$plus__O__scg_CanBuildFrom__O = (function(elem, bf) {
-  return $f_sc_SeqLike__$$colon$plus__O__scg_CanBuildFrom__O(this, elem, bf)
-});
 $c_scm_ArrayOps$ofShort.prototype.toString__T = (function() {
   return $f_sc_TraversableLike__toString__T(this)
 });
@@ -47395,9 +53838,6 @@ $c_scm_ArrayOps$ofUnit.prototype.mkString__T__T__T__T = (function(start, sep, en
 });
 $c_scm_ArrayOps$ofUnit.prototype.mkString__T__T = (function(sep) {
   return $f_sc_TraversableOnce__mkString__T__T__T__T(this, "", sep, "")
-});
-$c_scm_ArrayOps$ofUnit.prototype.$$colon$plus__O__scg_CanBuildFrom__O = (function(elem, bf) {
-  return $f_sc_SeqLike__$$colon$plus__O__scg_CanBuildFrom__O(this, elem, bf)
 });
 $c_scm_ArrayOps$ofUnit.prototype.toString__T = (function() {
   return $f_sc_TraversableLike__toString__T(this)
@@ -53754,13 +60194,6 @@ $c_scm_HashMap.prototype.apply__O__O = (function(key) {
 $c_scm_HashMap.prototype.thisCollection__sc_Traversable = (function() {
   return this
 });
-$c_scm_HashMap.prototype.addEntry0__p5__scm_DefaultEntry__I__V = (function(e, h) {
-  var x$1 = $as_scm_DefaultEntry(this.table$5.get(h));
-  e.next$1 = x$1;
-  this.table$5.set(h, e);
-  this.tableSize$5 = ((1 + this.tableSize$5) | 0);
-  $f_scm_HashTable__nnSizeMapAdd__I__V(this, h)
-});
 $c_scm_HashMap.prototype.$$plus$eq__T2__scm_HashMap = (function(kv) {
   var key = kv.$$und1__O();
   var value = kv.$$und2__O();
@@ -53769,6 +60202,13 @@ $c_scm_HashMap.prototype.$$plus$eq__T2__scm_HashMap = (function(kv) {
     e.value$1 = kv.$$und2__O()
   };
   return this
+});
+$c_scm_HashMap.prototype.addEntry0__p5__scm_DefaultEntry__I__V = (function(e, h) {
+  var x$1 = $as_scm_DefaultEntry(this.table$5.get(h));
+  e.next$1 = x$1;
+  this.table$5.set(h, e);
+  this.tableSize$5 = ((1 + this.tableSize$5) | 0);
+  $f_scm_HashTable__nnSizeMapAdd__I__V(this, h)
 });
 $c_scm_HashMap.prototype.$$plus$eq__O__scg_Growable = (function(elem) {
   return this.$$plus$eq__T2__scm_HashMap($as_T2(elem))
@@ -55334,6 +61774,9 @@ $c_scm_ListBuffer.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$
   var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
   return $f_sc_TraversableOnce__toArray__s_reflect_ClassTag__O(this$1, evidence$1)
 });
+$c_scm_ListBuffer.prototype.nonEmpty__Z = (function() {
+  return (this.len$6 > 0)
+});
 $c_scm_ListBuffer.prototype.$$plus$plus$eq__sc_TraversableOnce__scm_ListBuffer = (function(xs) {
   _$plus$plus$eq: while (true) {
     var x1 = xs;
@@ -55476,6 +61919,11 @@ $c_scm_StringBuilder.prototype.subSequence__I__I__jl_CharSequence = (function(st
 });
 $c_scm_StringBuilder.prototype.apply__I__C = (function(index) {
   return this.underlying$5.charAt__I__C(index)
+});
+$c_scm_StringBuilder.prototype.$$plus$plus$eq__T__scm_StringBuilder = (function(s) {
+  var this$1 = this.underlying$5;
+  this$1.java$lang$StringBuilder$$content$f = (("" + this$1.java$lang$StringBuilder$$content$f) + s);
+  return this
 });
 $c_scm_StringBuilder.prototype.$$plus$eq__O__scg_Growable = (function(elem) {
   if ((elem === null)) {

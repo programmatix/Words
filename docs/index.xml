@@ -12,14 +12,14 @@
     
     
     <item>
-      <title>C-to-Scala Transpiler</title>
+      <title>C Parser</title>
       <link>https://gropple.github.io/Words/projects/100-c-transpiler/</link>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://gropple.github.io/Words/projects/100-c-transpiler/</guid>
-      <description>Converts C code into Scala.
-CParser on github is my library that turns C into a clean abstract syntax tree (AST), and can be embedded in any JVM-language project.
-The code is written in Scala and transpiled to Javascript so it can be embedded directly here:</description>
+      <description>CParser on github is my library that turns valid C code into a clean abstract syntax tree (AST), and can be embedded in any JVM-language project.
+This could be useful for e.g. a JVM-based C compiler, transpiler, prettifier, or IDE plugin.
+The code is written in Scala and transpiled to Javascript with ScalaJS so it can be embedded directly here:</description>
     </item>
     
     <item>
@@ -41,7 +41,9 @@ I promise.</description>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://gropple.github.io/Words/projects/1000-personal-site/</guid>
-      <description>Coded with the Hugo static site generator.</description>
+      <description>This site is coded with the static site generator Hugo.
+Having used Wordpress for blogging duties in the past, I&amp;rsquo;m a big convert to static site generators. They&amp;rsquo;re much faster, both for adding and consuming content.
+The source is on Github and it&amp;rsquo;s hosted on Git Pages.</description>
     </item>
     
     <item>

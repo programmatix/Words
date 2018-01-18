@@ -31,9 +31,9 @@
                 </div>
 
             <!-- Tab panes -->
-            <div class="tab-content" style="min-height: 100px; max-height: 500px">
+            <div class="tab-content" style="min-height: 100px; max-height: 1000px; overflow: scroll;">
                 <div class="tab-pane fade in active" id="c-tab-output" role="tabpanel" aria-labelledby="c-tab">
-                    <div>Converting the C straight back into C again.  This is mostly to check that the AST can represent all of C.</div>
+                    <div>Converting the C straight back into C again.  Apart from whitespace changes, it should look the same as the code above.  This is mostly to check that the AST can represent all of C.</div>
                     <br>
                     <div class="card bg-faded" id="c-tab-real-output"></div>
 
@@ -60,9 +60,6 @@
         var parser = new ParseMain();
 
         var editor = ace.edit("editor");
-        // editor.setTheme("ace/theme/gruvbox");
-        // https://github.com/ajaxorg/ace/tree/master/lib/ace/theme
-        // editor.setTheme("ace/theme/tomorrow_night_eighties");
         editor.setTheme("ace/theme/tomorrow_night_eighties");
         editor.getSession().setMode("ace/mode/c_cpp");
         var transpilerEditorChangedTimeout;
@@ -80,14 +77,11 @@
         var currentTabId = '#c-tab';
 
         function transpilerTabClicked(input, tabId) {
-            console.info(input);
-            console.info(tabId);
             currentTabId = tabId;
             switch (tabId) {
                 case "#c-tab":
                     var output = parser.generate(input);
-                    console.info(output);
-                    $("#c-tab-real-output").text(output);
+                    $("#c-tab-real-output").html(output);
                     $("#c-tab-real-output").each(function(i, block) {
                         hljs.highlightBlock(block);
                     });
@@ -95,8 +89,7 @@
                     break;
                 case "#ast-tab":
                     var output = parser.parse(input);
-                    console.info(output);
-                    $("#ast-tab-output").text(output);
+                    $("#ast-tab-output").html(output);
                     break;
                 default:
                     console.error("Don't know " + this.id);

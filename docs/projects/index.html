@@ -10,15 +10,15 @@
   <meta name="twitter:title" content="Graham Pople&#39;s site" />
   <meta name="description" content="Hi!
 These are some projects I&rsquo;ve worked on recently - a mix of commercial and &lsquo;just for fun&rsquo; stuff.
-It&rsquo;s not intended to demo what a l33t coder I am. I&rsquo;m interested in so many areas of programming, and this site both gives me an outlet to explore, and encourages me to finish up personal projects and open source them.
+It&rsquo;s not intended to demo l33t hax0r skillz or anything. I&rsquo;m just interested in so many areas of programming, and this site both gives me an outlet to explore that, and encourages me to finish up personal projects and open source them.
 Enjoy :)">
   <meta property="og:description" content="Hi!
 These are some projects I&rsquo;ve worked on recently - a mix of commercial and &lsquo;just for fun&rsquo; stuff.
-It&rsquo;s not intended to demo what a l33t coder I am. I&rsquo;m interested in so many areas of programming, and this site both gives me an outlet to explore, and encourages me to finish up personal projects and open source them.
+It&rsquo;s not intended to demo l33t hax0r skillz or anything. I&rsquo;m just interested in so many areas of programming, and this site both gives me an outlet to explore that, and encourages me to finish up personal projects and open source them.
 Enjoy :)">
   <meta name="twitter:description" content="Hi!
 These are some projects I&rsquo;ve worked on recently - a mix of commercial and &lsquo;just for fun&rsquo; stuff.
-It&rsquo;s not intended to demo what a l33t coder I am. I&rsquo;m interested in so …">
+It&rsquo;s not intended to demo l33t hax0r skillz or anything. I&rsquo;m just …">
   <meta name="author" content=""/>
   <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="https://gropple.github.io/Words/projects/" />
@@ -34,10 +34,18 @@ It&rsquo;s not intended to demo what a l33t coder I am. I&rsquo;m interested in 
   <link rel="stylesheet" href="https://gropple.github.io/Words/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
   <link rel="stylesheet" href="https://gropple.github.io/Words/css/codeblock.css" /><link rel="stylesheet" href="https://gropple.github.io/Words/css/syntax.css" />
-<script type="text/javascript" src="https://gropple.github.io/Words/js/ctranspiler-opt.js"></script>
+<script type="text/javascript" src='https://gropple.github.io/Words/js/ctranspiler-opt.js'></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js" type="text/javascript" charset="utf-8"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" type="text/javascript" charset="utf-8"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/cpp.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel='stylesheet' type="text/css" />
+
 <style type="text/css" media="screen">
+
     #editor {
          
          
@@ -414,7 +422,7 @@ It&rsquo;s not intended to demo what a l33t coder I am. I&rsquo;m interested in 
 
 <p>These are some projects I&rsquo;ve worked on recently - a mix of commercial and &lsquo;just for fun&rsquo; stuff.</p>
 
-<p>It&rsquo;s not intended to demo what a l33t coder I am.  I&rsquo;m interested in so many areas of programming, and this site both gives me an outlet to explore, and encourages me to finish up personal projects and open source them.</p>
+<p>It&rsquo;s not intended to demo l33t hax0r skillz or anything.  I&rsquo;m just interested in so many areas of programming, and this site both gives me an outlet to explore that, and encourages me to finish up personal projects and open source them.</p>
 
 <p>Enjoy :)</p>
 
@@ -441,16 +449,15 @@ It&rsquo;s not intended to demo what a l33t coder I am. I&rsquo;m interested in 
 <div class="container" role="main">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h3>C-to-Scala Transpiler</h3>
-            <p>Converts C code into Scala.</p>
+            <h3>C Parser</h3>
+            <p><a href="https://github.com/gropple/CParser">CParser on github</a> is my library that turns valid C code into a clean abstract syntax tree (AST), and can be embedded in any JVM-language project.</p>
 
-<p><a href="https://github.com/gropple/CParser">CParser on github</a> is my library that turns C into a clean abstract syntax tree (AST), and can be embedded in any JVM-language project.</p>
+<p>This could be useful for e.g. a JVM-based C compiler, transpiler, prettifier, or IDE plugin.</p>
 
-<p>The code is written in Scala and transpiled to Javascript so it can be embedded directly here:</p>
+<p>The code is written in Scala and transpiled to Javascript with ScalaJS so it can be embedded directly here:</p>
 
 
             <div>
-
 
                 
                 
@@ -476,9 +483,12 @@ It&rsquo;s not intended to demo what a l33t coder I am. I&rsquo;m interested in 
                 </div>
 
             
-            <div class="tab-content" style="min-height: 100px; max-height: 500px">
+            <div class="tab-content" style="min-height: 100px; max-height: 1000px; overflow: scroll;">
                 <div class="tab-pane fade in active" id="c-tab-output" role="tabpanel" aria-labelledby="c-tab">
-                        
+                    <div>Converting the C straight back into C again.  Apart from whitespace changes, it should look the same as the code above.  This is mostly to check that the AST can represent all of C.</div>
+                    <br>
+                    <div class="card bg-faded" id="c-tab-real-output"></div>
+
                 </div>
                 <div class="tab-pane fade" id="ast-tab-output" role="tabpanel" aria-labelledby="ast-tab">AST</div>
             </div>
@@ -502,18 +512,36 @@ It&rsquo;s not intended to demo what a l33t coder I am. I&rsquo;m interested in 
         var parser = new ParseMain();
 
         var editor = ace.edit("editor");
-        editor.setTheme("ace/theme/gruvbox");
+        editor.setTheme("ace/theme/tomorrow_night_eighties");
         editor.getSession().setMode("ace/mode/c_cpp");
+        var transpilerEditorChangedTimeout;
+        editor.getSession().on('change', function() {
+            console.info("change");
+            if (transpilerEditorChangedTimeout === undefined) {
+                transpilerEditorChangedTimeout = setTimeout(function () {
+                    
+                    transpilerTabClicked(editor.getValue(), currentTabId);
+                    transpilerEditorChangedTimeout = undefined;
+                }, 1000);
+            }
+        });
 
-        function transpilerTabClicked(input, tab) {
-            switch (tab) {
-                case "c-tab":
+        var currentTabId = '#c-tab';
+
+        function transpilerTabClicked(input, tabId) {
+            currentTabId = tabId;
+            switch (tabId) {
+                case "#c-tab":
                     var output = parser.generate(input);
-                    $("#c-tab-output").text(output);
+                    $("#c-tab-real-output").html(output);
+                    $("#c-tab-real-output").each(function(i, block) {
+                        hljs.highlightBlock(block);
+                    });
+
                     break;
-                case "ast-tab":
+                case "#ast-tab":
                     var output = parser.parse(input);
-                    $("#ast-tab-output").text(output);
+                    $("#ast-tab-output").html(output);
                     break;
                 default:
                     console.error("Don't know " + this.id);
@@ -524,11 +552,11 @@ It&rsquo;s not intended to demo what a l33t coder I am. I&rsquo;m interested in 
             e.preventDefault();
             $(this).tab('show');
             var input = editor.getValue();
-            transpilerTabClicked(input, this.id)
+            transpilerTabClicked(input, '#' + this.id)
         });
 
-        $('#c-tab').tab('show');
-        transpilerTabClicked(editor.getValue(), 'c-tab');
+        $(currentTabId).tab('show');
+        transpilerTabClicked(editor.getValue(), currentTabId);
 
 
     });
@@ -549,7 +577,11 @@ It&rsquo;s not intended to demo what a l33t coder I am. I&rsquo;m interested in 
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <h3>This Personal Site</h3>
-            <p>Coded with the Hugo static site generator.</p>
+            <p>This site is coded with the static site generator Hugo.</p>
+
+<p>Having used Wordpress for blogging duties in the past, I&rsquo;m a big convert to static site generators.  They&rsquo;re much faster, both for adding and consuming content.</p>
+
+<p>The source is <a href="https://gropple.github.io/Words/projects/">on Github</a> and it&rsquo;s hosted on Git Pages.</p>
 
         </div>
     </div>
