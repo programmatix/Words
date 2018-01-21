@@ -1,5 +1,4 @@
 baseURL = "https://gropple.github.io/Words"
-#baseURL = "https://gropple.github.io/"
 languageCode = "en-us"
 title = "Graham Pople's site"
 theme = "beautifulhugo"

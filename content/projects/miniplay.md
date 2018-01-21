@@ -5,8 +5,8 @@ layout: "project.html"
 ---
 <img src="/images/miniplay.jpg">
 
-This desktop widget lets you control the web-based Google Play Music without having to hunt around for the right browser tab.
+This desktop widget lets you control the web-based Google Play Music.
 
 The widget is coded in Scala and uses ScalaFX for the UI.  There's also a Chrome extension, written in Javascript, which interacts with Google Play Music.  IPC between the two is with Websockets.
 
-GitHub hosts the [Chrome extension source](https://github.com/gropple/MiniPlayChrome) and [desktop widget source](https://github.com/gropple/MiniPlayDesktop). 
+The [Chrome extension source](https://github.com/gropple/MiniPlayChrome) and [desktop widget source](https://github.com/gropple/MiniPlayDesktop) are on Github. 
