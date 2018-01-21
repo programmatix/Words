@@ -448,14 +448,61 @@ It&rsquo;s not intended to demo l33t hax0r skillz or anything. I&rsquo;m just â€
     <div class="container" role="main">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h3>Enter the Matrix</h3>
+            <p>A simple immutable library for vector and matrix maths, written in Scala.  There&rsquo;s a surprising lack of these, with the existing Scala matrix libraries being heavyweight, rather complex, and generally part of a much large statistical package.  I wanted something lightweight for 3D maths.</p>
+
+<p>It&rsquo;s designed to be very safe, concise, and easy to use:</p>
+
+<pre><code>    val m1 = Matrix4x4.identity
+    val m2 = Matrix4x4.scale(1.0f)
+    val m3 = Matrix4x4.rotateAroundXAxis(30.0f)
+    val m4: Matrix4x4 = m3 * m2 * m1
+    
+    val v1 = Vector4(0.2f, 0.3f, 0.4f, 1.0f)
+    val v2: Vector4 = m4 * v1
+</code></pre>
+
+<p>The <a href="https://github.com/gropple/EnterTheMatrix">source is on Github</a>.</p>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div>
+    
+    <div class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <h3>MiniPlay</h3>
             <p><img src="/images/miniplay.jpg"></p>
 
-<p>This desktop widget lets you control the web-based Google Play Music without having to hunt around for the right browser tab.</p>
+<p>This desktop widget lets you control the web-based Google Play Music.</p>
 
 <p>The widget is coded in Scala and uses ScalaFX for the UI.  There&rsquo;s also a Chrome extension, written in Javascript, which interacts with Google Play Music.  IPC between the two is with Websockets.</p>
 
-<p>GitHub hosts the <a href="https://github.com/gropple/MiniPlayChrome">Chrome extension source</a> and <a href="https://github.com/gropple/MiniPlayDesktop">desktop widget source</a>.</p>
+<p>The <a href="https://github.com/gropple/MiniPlayChrome">Chrome extension source</a> and <a href="https://github.com/gropple/MiniPlayDesktop">desktop widget source</a> are on Github.</p>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div>
+    
+    <div class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h3>Split the Bill</h3>
+            <p><img src="/images/split-the-bill.png"></p>
+
+<p>An Android app, written in Scala and <a href="https://play.google.com/store/apps/details?id=com.splitthebill&amp;hl=en">published on the Google Play Store</a>.</p>
+
+<p>This app&rsquo;s not going to win any design or complexity awards, but was more of a successful hobby project to learn Android development and publish an app in a few days.</p>
+
+<p>The <a href="https://github.com/gropple/SplitTheBill">source is on Github</a>.</p>
 
         </div>
     </div>

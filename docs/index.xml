@@ -12,14 +12,36 @@
     
     
     <item>
+      <title>Enter the Matrix</title>
+      <link>https://gropple.github.io/Words/projects/enter-the-matrix/</link>
+      <pubDate>Sun, 21 Jan 2018 09:50:29 +0700</pubDate>
+      
+      <guid>https://gropple.github.io/Words/projects/enter-the-matrix/</guid>
+      <description>A simple immutable library for vector and matrix maths, written in Scala. There&amp;rsquo;s a surprising lack of these, with the existing Scala matrix libraries being heavyweight, rather complex, and generally part of a much large statistical package. I wanted something lightweight for 3D maths.
+It&amp;rsquo;s designed to be very safe, concise, and easy to use:
+ val m1 = Matrix4x4.identity val m2 = Matrix4x4.scale(1.0f) val m3 = Matrix4x4.rotateAroundXAxis(30.0f) val m4: Matrix4x4 = m3 * m2 * m1 val v1 = Vector4(0.</description>
+    </item>
+    
+    <item>
       <title>MiniPlay</title>
       <link>https://gropple.github.io/Words/projects/miniplay/</link>
       <pubDate>Sun, 21 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://gropple.github.io/Words/projects/miniplay/</guid>
-      <description>This desktop widget lets you control the web-based Google Play Music without having to hunt around for the right browser tab.
+      <description>This desktop widget lets you control the web-based Google Play Music.
 The widget is coded in Scala and uses ScalaFX for the UI. There&amp;rsquo;s also a Chrome extension, written in Javascript, which interacts with Google Play Music. IPC between the two is with Websockets.
-GitHub hosts the Chrome extension source and desktop widget source.</description>
+The Chrome extension source and desktop widget source are on Github.</description>
+    </item>
+    
+    <item>
+      <title>Split the Bill</title>
+      <link>https://gropple.github.io/Words/projects/split-the-bill/</link>
+      <pubDate>Sun, 21 Jan 2018 09:50:29 +0700</pubDate>
+      
+      <guid>https://gropple.github.io/Words/projects/split-the-bill/</guid>
+      <description>An Android app, written in Scala and published on the Google Play Store.
+This app&amp;rsquo;s not going to win any design or complexity awards, but was more of a successful hobby project to learn Android development and publish an app in a few days.
+The source is on Github.</description>
     </item>
     
     <item>
