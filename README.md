@@ -2,6 +2,11 @@ Hi!  This is my personal website, with thoughts 'n' semi-broken projects and the
 
 Visit it here [https://gropple.github.io/Words/projects/](https://gropple.github.io/Words/projects/).
 
+Developing
+==========
+hugo server -D
+http://localhost:1313/Words/
+
 Release Process
 ===============
 hugo

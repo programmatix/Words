@@ -7,4 +7,4 @@ This site is coded with the static site generator Hugo.
 
 Having used Wordpress for blogging duties in the past, I'm a big convert to static site generators.  They're much faster, both for adding and consuming content.
 
-The source is [on Github](https://gropple.github.io/Words/projects/) and it's hosted on Git Pages. 
+The source is [on Github](https://github.com/gropple/Words) and it's hosted on Git Pages. 
