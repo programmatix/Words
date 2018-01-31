@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Graham Pople&#39;s site</title>
-    <link>https://gropple.github.io/Words/</link>
-    <description>Recent content on Graham Pople&#39;s site</description>
+    <title>Graham Pople&#39;s personal site</title>
+    <link>https://turnitoffandonagain.github.io/Words/</link>
+    <description>Recent content on Graham Pople&#39;s personal site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Jan 2018 09:50:29 +0700</lastBuildDate>
     
-	<atom:link href="https://gropple.github.io/Words/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://turnitoffandonagain.github.io/Words/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Enter the Matrix</title>
-      <link>https://gropple.github.io/Words/projects/enter-the-matrix/</link>
+      <link>https://turnitoffandonagain.github.io/Words/projects/enter-the-matrix/</link>
       <pubDate>Sun, 21 Jan 2018 09:50:29 +0700</pubDate>
       
-      <guid>https://gropple.github.io/Words/projects/enter-the-matrix/</guid>
+      <guid>https://turnitoffandonagain.github.io/Words/projects/enter-the-matrix/</guid>
       <description>A simple immutable library for vector and matrix maths, written in Scala. There&amp;rsquo;s a surprising lack of these, with the existing Scala matrix libraries being heavyweight, rather complex, and generally part of a much large statistical package. I wanted something lightweight for 3D maths.
 It&amp;rsquo;s designed to be very safe, concise, and easy to use:
  val m1 = Matrix4x4.identity val m2 = Matrix4x4.scale(1.0f) val m3 = Matrix4x4.rotateAroundXAxis(30.0f) val m4: Matrix4x4 = m3 * m2 * m1 val v1 = Vector4(0.</description>
@@ -24,21 +24,20 @@ It&amp;rsquo;s designed to be very safe, concise, and easy to use:
     
     <item>
       <title>MiniPlay</title>
-      <link>https://gropple.github.io/Words/projects/miniplay/</link>
+      <link>https://turnitoffandonagain.github.io/Words/projects/100-miniplay/</link>
       <pubDate>Sun, 21 Jan 2018 09:50:29 +0700</pubDate>
       
-      <guid>https://gropple.github.io/Words/projects/miniplay/</guid>
-      <description>This desktop widget lets you control the web-based Google Play Music.
-The widget is coded in Scala and uses ScalaFX for the UI. There&amp;rsquo;s also a Chrome extension, written in Javascript, which interacts with Google Play Music. IPC between the two is with Websockets.
-The Chrome extension source and desktop widget source are on Github.</description>
+      <guid>https://turnitoffandonagain.github.io/Words/projects/100-miniplay/</guid>
+      <description>The web-based Google Play Music is great, but I was forever having to find the right browser tab just to change or like a song. So I wrote this desktop widget. It has two parts:
+ Chrome extension: Written in Javascript, this is what interfaces with the Google Play Music tab. Source on Github. App: This widget runs on the user&amp;rsquo;s desktop and is coded in Scala and uses ScalaFX for the UI, and Spring Boot to make a small Websockets server.</description>
     </item>
     
     <item>
       <title>Split the Bill</title>
-      <link>https://gropple.github.io/Words/projects/split-the-bill/</link>
+      <link>https://turnitoffandonagain.github.io/Words/projects/900-split-the-bill/</link>
       <pubDate>Sun, 21 Jan 2018 09:50:29 +0700</pubDate>
       
-      <guid>https://gropple.github.io/Words/projects/split-the-bill/</guid>
+      <guid>https://turnitoffandonagain.github.io/Words/projects/900-split-the-bill/</guid>
       <description>An Android app, written in Scala and published on the Google Play Store.
 This app&amp;rsquo;s not going to win any design or complexity awards, but was more of a successful hobby project to learn Android development and publish an app in a few days.
 The source is on Github.</description>
@@ -46,10 +45,10 @@ The source is on Github.</description>
     
     <item>
       <title>C Parser</title>
-      <link>https://gropple.github.io/Words/projects/100-c-transpiler/</link>
+      <link>https://turnitoffandonagain.github.io/Words/projects/100-c-transpiler/</link>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
-      <guid>https://gropple.github.io/Words/projects/100-c-transpiler/</guid>
+      <guid>https://turnitoffandonagain.github.io/Words/projects/100-c-transpiler/</guid>
       <description>CParser on github is my library that turns valid C code into a clean abstract syntax tree (AST), and can be embedded in any JVM-language project.
 This could be useful for e.g. a JVM-based C compiler, transpiler, prettifier, or IDE plugin.
 The code is written in Scala and transpiled to Javascript with ScalaJS so it can be embedded directly here:</description>
@@ -57,10 +56,10 @@ The code is written in Scala and transpiled to Javascript with ScalaJS so it can
     
     <item>
       <title>First!</title>
-      <link>https://gropple.github.io/Words/posts/first/</link>
+      <link>https://turnitoffandonagain.github.io/Words/posts/first/</link>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
-      <guid>https://gropple.github.io/Words/posts/first/</guid>
+      <guid>https://turnitoffandonagain.github.io/Words/posts/first/</guid>
       <description>Hey :)
 So&amp;hellip;
 Don&amp;rsquo;t really have a clue what to put here yet!
@@ -69,25 +68,14 @@ I promise.</description>
     </item>
     
     <item>
-      <title>This Personal Site</title>
-      <link>https://gropple.github.io/Words/projects/1000-personal-site/</link>
+      <title>Web</title>
+      <link>https://turnitoffandonagain.github.io/Words/projects/700-web/</link>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
-      <guid>https://gropple.github.io/Words/projects/1000-personal-site/</guid>
-      <description>This site is coded with the static site generator Hugo.
-Having used Wordpress for blogging duties in the past, I&amp;rsquo;m a big convert to static site generators. They&amp;rsquo;re much faster, both for adding and consuming content.
-The source is on Github and it&amp;rsquo;s hosted on Git Pages.</description>
-    </item>
-    
-    <item>
-      <title>Undiscovered Guide</title>
-      <link>https://gropple.github.io/Words/projects/300-undiscovered-guide/</link>
-      <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
-      
-      <guid>https://gropple.github.io/Words/projects/300-undiscovered-guide/</guid>
-      <description>Undiscovered Guide is a travel website I created with my partner while we were travelling, to help others explore our favourite parts of the world. It&amp;rsquo;s pretty popular, getting over 30,000 monthly page views.
-There&amp;rsquo;s a lot going on under the hood:
- Parts of it are a dynamically-created single page app. It&amp;rsquo;s written in Scala, transpiled to Javascript with ScalaJS. The backend CMS is custom and written from scratch in Scala.</description>
+      <guid>https://turnitoffandonagain.github.io/Words/projects/700-web/</guid>
+      <description>Undiscovered Guide Undiscovered Guide is a travel website I created with my partner while we were travelling, to help others explore our favourite parts of the world. It&amp;rsquo;s pretty popular, getting over 30,000 monthly page views.
+It&amp;rsquo;s a completely custom web platform (no Wordpress or similar) which allowed us to create more useful travel guides than traditional blogs, and there&amp;rsquo;s a lot going on under the hood:
+ The frontend is written in Scala, transpiled to Javascript with ScalaJS.</description>
     </item>
     
   </channel>
