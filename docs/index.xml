@@ -73,8 +73,7 @@ I promise.</description>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://turnitoffandonagain.github.io/Words/projects/700-web/</guid>
-      <description>Undiscovered Guide Undiscovered Guide is a travel website I created with my partner while we were travelling, to help others explore our favourite parts of the world. It&amp;rsquo;s pretty popular, getting over 30,000 monthly page views.
-It&amp;rsquo;s a completely custom web platform (no Wordpress or similar) which allowed us to create more useful travel guides than traditional blogs, and there&amp;rsquo;s a lot going on under the hood:
+      <description>Undiscovered Guide Undiscovered Guide is a travel website I created with my partner while we were travelling, to help others explore our favourite parts of the world. It&amp;rsquo;s pretty popular, getting over 30,000 monthly page views. It&amp;rsquo;s a completely custom web platform (no Wordpress or similar) which allowed us to create more useful travel guides than traditional blogs, and there&amp;rsquo;s a lot going on under the hood:
  The frontend is written in Scala, transpiled to Javascript with ScalaJS.</description>
     </item>
     

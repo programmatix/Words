@@ -8,6 +8,7 @@ http://localhost:1313/Words/
 
 ## Release Process
 hugo
+git add docs
 git commit -a -m "Commit message"
 git push
 
