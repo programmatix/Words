@@ -7,3 +7,6 @@
 [submodule "themes/beautifulhugo"]
 	path = themes/beautifulhugo
 	url = https://github.com/halogenica/beautifulhugo.git
+[submodule "vendor/assimp"]
+	path = vendor/assimp
+	url = https://github.com/kotlin-graphics/assimp

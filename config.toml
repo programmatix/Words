@@ -1,6 +1,6 @@
-baseURL = "https://gropple.github.io/Words"
+baseURL = "https://turnitoffandonagain.github.io/Words"
 languageCode = "en-us"
-title = "Graham Pople's site"
+title = "Graham Pople's personal site"
 theme = "beautifulhugo"
 publishDir = "docs"
 

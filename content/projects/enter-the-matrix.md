@@ -17,4 +17,4 @@ It's designed to be very safe, concise, and easy to use:
     val v2: Vector4 = m4 * v1
 ```
 
-The [source is on Github](https://github.com/gropple/EnterTheMatrix).
+It's [available on Github](https://github.com/gropple/EnterTheMatrix).
