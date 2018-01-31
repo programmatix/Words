@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Graham Pople&#39;s personal site</title>
+    <title>Graham Pople</title>
     <link>https://turnitoffandonagain.github.io/Words/projects/</link>
-    <description>Recent content on Graham Pople&#39;s personal site</description>
+    <description>Recent content on Graham Pople</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Jan 2018 09:50:29 +0700</lastBuildDate>
@@ -28,7 +28,7 @@ It&amp;rsquo;s designed to be very safe, concise, and easy to use:
       <pubDate>Sun, 21 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://turnitoffandonagain.github.io/Words/projects/100-miniplay/</guid>
-      <description>The web-based Google Play Music is great, but I was forever having to find the right browser tab just to change or like a song. So I wrote this desktop widget. It has two parts:
+      <description>The web-based Google Play Music is great, but I was forever having to find the right browser tab just to change or like a song. So I wrote this desktop widget to be able to control my music easily without needing to go to the browser. It has two parts:
  Chrome extension: Written in Javascript, this is what interfaces with the Google Play Music tab. Source on Github. App: This widget runs on the user&amp;rsquo;s desktop and is coded in Scala and uses ScalaFX for the UI, and Spring Boot to make a small Websockets server.</description>
     </item>
     
