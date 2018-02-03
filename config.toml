@@ -1,7 +1,6 @@
-baseURL = "https://turnitoffandonagain.github.io/Words/"
+baseURL = "https://programmatix.github.io/Words/"
 languageCode = "en-us"
 title = "Graham Pople"
-#theme = "beautifulhugo"
 theme = "hyde"
 publishDir = "docs"
 
@@ -10,4 +9,4 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 [Params]
     UseChroma = true
-    description = "Scala // Java // Web // C++ Develop"
+    description = "Scala // Java // Web // C++ Developer"
