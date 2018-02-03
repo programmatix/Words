@@ -31,7 +31,7 @@
     <div class="sidebar-about">
       <a href="https://turnitoffandonagain.github.io/Words/"><h1>Graham Pople</h1></a>
       <p class="lead">
-       Scala &amp; Java Developer 
+       Scala // Java // Web // C&#43;&#43; Develop 
       </p>
     </div>
 
@@ -80,21 +80,15 @@
     <div class="container" role="main">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h3>Enter the Matrix</h3>
-            <p>A simple immutable library for vector and matrix maths, written in Scala.  There&rsquo;s a surprising lack of these, with the existing Scala matrix libraries being heavyweight, rather complex, and generally part of a much large statistical package.  I wanted something lightweight for 3D maths.</p>
+            <h3>Android</h3>
+            <p><b>Split the Bill</b> is an Android app, written in Scala and <a href="https://play.google.com/store/apps/details?id=com.splitthebill&amp;hl=en">published on the Google Play Store</a>.</p>
 
-<p>It&rsquo;s designed to be very safe, concise, and easy to use:</p>
+<p>This app&rsquo;s not going to win any design or complexity awards, and was more of a successful hobby project to learn Android development and publish an app in a few days.</p>
 
-<pre><code>    val m1 = Matrix4x4.identity
-    val m2 = Matrix4x4.scale(1.0f)
-    val m3 = Matrix4x4.rotateAroundXAxis(30.0f)
-    val m4: Matrix4x4 = m3 * m2 * m1
-    
-    val v1 = Vector4(0.2f, 0.3f, 0.4f, 1.0f)
-    val v2: Vector4 = m4 * v1
-</code></pre>
+<p>It&rsquo;s also a useful example of a Scala Android app.  Scala adds wrinkles to the Android setup, as its standard library is so large that it breaks Android&rsquo;s method limits, and needs to be tree-shaken with Proguard before deploying.  Still, I find it a really productive language for Android development when it&rsquo;s up and running.</p>
 
-<p>It&rsquo;s <a href="https://github.com/gropple/EnterTheMatrix">available on Github</a>.</p>
+<p>The <a href="https://github.com/programmatix/SplitTheBill">source is on Github</a>.
+<img src="/Words/images/split-the-bill.png" alt="Split the Bill" /></p>
 
         </div>
     </div>
@@ -107,16 +101,19 @@
     <div class="container" role="main">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h3>MiniPlay</h3>
-            <p>The web-based Google Play Music is great, but I was forever having to find the right browser tab just to change or like a song.  So I wrote this desktop widget to be able to control my music easily without needing to go to the browser.  It has two parts:</p>
+            <h3>Desktop</h3>
+            
+
+<h2 id="miniplay">MiniPlay</h2>
+
+<p>The web-based Google Play Music is great, but I was forever having to find the right browser tab just to change or like a song.  So I wrote this desktop widget to be able to control my music easily without needing to go to the browser.  It has two parts:</p>
 
 <ul>
-<li>Chrome extension: Written in Javascript, this is what interfaces with the Google Play Music tab.  <a href="https://github.com/gropple/MiniPlayChrome">Source on Github</a>.</li>
-<li>App: This widget runs on the user&rsquo;s desktop and is coded in Scala and uses ScalaFX for the UI, and Spring Boot to make a small Websockets server.  <a href="https://github.com/gropple/MiniPlayDesktop">Source on Github</a>.<br /></li>
+<li>Chrome extension: Written in Javascript, this is what interfaces with the Google Play Music tab.  <a href="https://github.com/programmatix/MiniPlayChrome">Source on Github</a>.</li>
+<li>App: This widget runs on the user&rsquo;s desktop and is coded in Scala and uses ScalaFX for the UI, and embeds a mini Spring Boot server to handle the Websockets connection from the extension.  <a href="https://github.com/programmatix/MiniPlayDesktop">Source on Github</a>.</li>
 </ul>
 
-<p>(Note: There <em>is</em> an existing desktop widget built-in to Google Play Music, but it takes up too much screen estate to be useful.)
-<img src="/Words/images/miniplay.jpg" alt="MiniPlay" /></p>
+<p><img src="/Words/images/miniplay.jpg" alt="MiniPlay" /></p>
 
         </div>
     </div>
@@ -129,14 +126,16 @@
     <div class="container" role="main">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h3>Split the Bill</h3>
-            <p><img src="/images/split-the-bill.png"></p>
+            <h3>3D</h3>
+            <p>I&rsquo;ve always been interested in 3D, and this is the start of an attempt to write a 3D engine in Java for learning purposes, based on OpenGL and ideally in an immutable function-programming style.</p>
 
-<p>An Android app, written in Scala and <a href="https://play.google.com/store/apps/details?id=com.splitthebill&amp;hl=en">published on the Google Play Store</a>.</p>
+<p>So far I&rsquo;ve developed a basic-but-functioning 3D renderer, including support for shadows, lighting (directional &amp; point-based), textures and models.  Like any renderer, it has help: it uses JAssimp for model loading, OpenGL via the LWJGL bindings for the drawcalls, and an image library for loading textures.  Everything else, including all the vector &amp; matrix maths for model, camera and world transforms; the shaders (written in GLSL); and the lighting, colour and texture calculations, are all performed by the renderer.</p>
 
-<p>This app&rsquo;s not going to win any design or complexity awards, but was more of a successful hobby project to learn Android development and publish an app in a few days.</p>
+<p>The first finished project to drop out is a <b>3D model viewer</b>, in Java.  Check it out <a href="https://github.com/programmatix/3DViewer">on Github</a>, including the renderer source.</p>
 
-<p>The <a href="https://github.com/gropple/SplitTheBill">source is on Github</a>.</p>
+<p><img src="/Words/images/dinosaur.JPG" alt="3D Model Viewer" /></p>
+
+<p>I&rsquo;ve also written a <b>micro library for vector and matrix maths</b> in Scala, dorkily named Enter the Matrix.  There&rsquo;s a surprising lack of these, with the existing Scala matrix libraries being heavyweight, rather complex, and generally part of a much large statistical package.  I wanted something lightweight for 3D maths.  It&rsquo;s <a href="https://github.com/programmatix/EnterTheMatrix">available on Github</a>.</p>
 
         </div>
     </div>
@@ -146,129 +145,58 @@
 
 <div>
     
-    
-<div class="container" role="main">
+    <div class="container" role="main">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h3>C Parser</h3>
-            <p><a href="https://github.com/gropple/CParser">CParser on github</a> is my library that turns valid C code into a clean abstract syntax tree (AST), and can be embedded in any JVM-language project.</p>
-
-<p>This could be useful for e.g. a JVM-based C compiler, transpiler, prettifier, or IDE plugin.</p>
-
-<p>The code is written in Scala and transpiled to Javascript with ScalaJS so it can be embedded directly here:</p>
-
-
-            <div>
-
-                
-                
-                <div id="editor">int main(int argc) {
-    return 0;
-}</div>
-
-            </div>
-            <br>
+            <h3>Languages</h3>
             
 
-            
-            <div class="panel with-nav-tabs panel-info">
-                <div class="panel-heading">
-            <ul class="nav nav-tabs" id="transpilerTabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link" id="c-tab" href="#c-tab-output" role="tab" aria-controls="home" aria-selected="true">C</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="ast-tab" href="#ast-tab-output" role="tab" aria-controls="profile" aria-selected="false">AST</a>
-                </li>
-            </ul>
-                </div>
+<h1 id="jvm">JVM</h1>
 
-            
-            <div class="tab-content" style="min-height: 100px; max-height: 1000px; overflow: scroll;">
-                <div class="tab-pane fade in active" id="c-tab-output" role="tabpanel" aria-labelledby="c-tab">
-                    <div>Converting the C straight back into C again.  Apart from whitespace changes, it should look the same as the code above.  This is mostly to check that the AST can represent all of C.</div>
-                    <br>
-                    <div class="card bg-faded" id="c-tab-real-output"></div>
+<p>I&rsquo;ve written several projects to do with the low-level JVM internals, which has been a great learning experience:</p>
 
-                </div>
-                <div class="tab-pane fade" id="ast-tab-output" role="tabpanel" aria-labelledby="ast-tab">AST</div>
-            </div>
-            </div>
+<ul>
+<li><a href="https://github.com/programmatix/JOakJVM">JOak JVM</a>: a basic, but functioning, JVM written in Scala.</li>
+<li><a href="https://github.com/programmatix/JOakAnalyser">JOak Analyser</a>: a command-line tool for debugging &amp; analysing JVM .class files.</li>
+<li><a href="https://github.com/programmatix/JOakClassFiles">JOak ClassFiles</a>: a JVM micro-library for reading JVM .class files.</li>
+</ul>
 
+<h1 id="c-language">C Language</h1>
 
-            
-                
-            
+<p>C is a great language for learning, as it&rsquo;s relatively simple.</p>
 
+<ul>
+<li><a href="https://github.com/programmatix/CParser">CParser</a>: turns valid C code into a nice clean abstract syntax tree (AST) to be used in your JVM project.  Written in Scala.</li>
+<li><a href="https://github.com/programmatix/CParserWebDemo">CParserWebDemo</a>: turns CParser into a Javascript widget (it&rsquo;s in Scala, but transpiles to JS with ScalaJS) that you can embed in a website.</li>
+</ul>
+
+<p>Though these aren&rsquo;t very useful on their own (I wrote them mostly as a learning exercise for exploring parsing libraries on Scala, and to start learning compiler theory), they&rsquo;re a good starting point for e.g. a JVM-based C compiler, transpiler, prettifier, or IDE plugin.</p>
 
         </div>
     </div>
 </div>
 
+</div>
 
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function(e) {
-        var parser = new ParseMain();
-
-        var editor = ace.edit("editor");
-        editor.setTheme("ace/theme/tomorrow_night_eighties");
-        editor.getSession().setMode("ace/mode/c_cpp");
-        var transpilerEditorChangedTimeout;
-        editor.getSession().on('change', function() {
-            console.info("change");
-            if (transpilerEditorChangedTimeout === undefined) {
-                transpilerEditorChangedTimeout = setTimeout(function () {
-                    
-                    transpilerTabClicked(editor.getValue(), currentTabId);
-                    transpilerEditorChangedTimeout = undefined;
-                }, 1000);
-            }
-        });
-
-        var currentTabId = '#c-tab';
-
-        function transpilerTabClicked(input, tabId) {
-            currentTabId = tabId;
-            switch (tabId) {
-                case "#c-tab":
-                    var output = parser.generate(input);
-                    $("#c-tab-real-output").html(output);
-                    $("#c-tab-real-output").each(function(i, block) {
-                        hljs.highlightBlock(block);
-                    });
-
-                    break;
-                case "#ast-tab":
-                    var output = parser.parse(input);
-                    $("#ast-tab-output").html(output);
-                    break;
-                default:
-                    console.error("Don't know " + this.id);
-            }
-        }
-
-        $('#transpilerTabs').find('a').on('click', function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-            var input = editor.getValue();
-            transpilerTabClicked(input, '#' + this.id)
-        });
-
-        $(currentTabId).tab('show');
-        transpilerTabClicked(editor.getValue(), currentTabId);
-
-
-    });
-
+<div>
     
-    
-    
-    
-    
+    <div class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h3>Tools for Bloggers</h3>
+            
 
-</script>
+<h2 id="seo-flow">SEO Flow</h2>
+
+<p><a href="https://www.seo-flow.com">SEO Flow</a> is a plugin for the Wordpress website platform, that lets users search for common search terms put into Google, optimise their articles to rank well for those terms, and then track those rankings.</p>
+
+<p>The UI is integrated into Wordpress, and is Scala transpiled to ScalaJS, and skinned with CSS to look very close to the Wordpress admin theme.  The backend is in Scala.</p>
+
+<p>The backend is designed to handle plenty of users at scale.</p>
+
+        </div>
+    </div>
+</div>
 
 </div>
 
@@ -289,7 +217,7 @@ It&rsquo;s a completely custom web platform (no Wordpress or similar) which allo
 <ul>
 <li>The frontend is written in Scala, transpiled to Javascript with ScalaJS.  This convoluted approach let me do a lot of cool code sharing with the backend.</li>
 <li><a href="https://www.undiscoveredguide.com/hanoi-street-food">Parts of it</a> are a dynamically-created single page app.  There&rsquo;s all sorts of cool widgets such as interactive maps dotted over the site.</li>
-<li>There&rsquo;s a fairly complex backend content management system (CMS), written in Scala and with its own UI transpiled in ScalaJS, using PostgreSQL for data storage.</li>
+<li>There&rsquo;s a fairly complex backend content management system (CMS), written in Scala and with its own UI transpiled in ScalaJS, using PostgreSQL for data storage.  It has too many features to list: a full Google rank tracker, a Wikitravel parser, bots for both Pinterest and Twitter, batch processing of images, a booking.com &amp; Agoda accommodation browser (view all their hotels for a location on a map, filter by various criteria and add them to lists), and plenty more.</li>
 <li>The CMS includes a custom HTML-like language, with its own handwritten parser.</li>
 <li>It&rsquo;s all self-hosted so I&rsquo;m now all too familiar with the joys of maintaining memory-hungry JVM processes on constrained server hardware&hellip;</li>
 </ul>
@@ -298,7 +226,7 @@ It&rsquo;s a completely custom web platform (no Wordpress or similar) which allo
 
 <ul>
 <li><a href="http://www.onemorego.net/">One More Go</a> is a blog devoted to reviewing casual games, which I was briefly utterly addicted to.  It&rsquo;s on the Wordpress platform hosted on one of my servers.</li>
-<li>This site is coded with the static site generator Hugo.  Static site generators are awesome: they&rsquo;re much faster and simpler than something like Wordpress, both for adding and consuming content.  The source is <a href="https://github.com/gropple/Words">on Github</a> and it&rsquo;s hosted on Git Pages.</li>
+<li>This site is coded with the static site generator Hugo.  Static site generators are awesome: they&rsquo;re much faster and simpler than something like Wordpress, both for adding and consuming content.  The source is <a href="https://github.com/programmatix/Words">on Github</a> and it&rsquo;s hosted on Git Pages.</li>
 </ul>
 
         </div>
