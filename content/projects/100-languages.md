@@ -4,9 +4,9 @@ date: 2018-01-15T09:50:29+07:00
 layout: "project.html"
 ---
 # JVM
-I've written several projects to do with the low-level JVM internals, which has been a great learning experience:
+I've written several projects to do with the low-level JVM internals, which has been a great learning experience.  These are all written in Scala:
 
-* [JOak JVM](https://github.com/programmatix/JOakJVM): a basic, but functioning, JVM written in Scala.
+* [JOak JVM](https://github.com/programmatix/JOakJVM): a basic, but functioning, JVM.
 * [JOak Analyser](https://github.com/programmatix/JOakAnalyser): a command-line tool for debugging & analysing JVM .class files.
 * [JOak ClassFiles](https://github.com/programmatix/JOakClassFiles): a JVM micro-library for reading JVM .class files.
 

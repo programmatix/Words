@@ -1,0 +1,21 @@
+
+<div class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h3>{{.Title}}</h3>
+            {{ .Content }}
+
+            <div id="container">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(e) {
+        UIMain.main("container");
+    });
+</script>
