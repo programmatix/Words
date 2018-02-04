@@ -22,7 +22,9 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://programmatix.github.io/Words/projects/index.xml" rel="alternate" type="application/rss+xml" title="Graham Pople" />
+  <link href="https://programmatix.github.io/Words/projects/index.xml" rel="alternate" type="application/rss+xml" title="Graham Pople" /><script type="text/javascript" src='https://programmatix.github.io/Words/js/nonograms-opt.js'></script>
+<link href='https://programmatix.github.io/Words/css/nonograms.css' rel="stylesheet" type="text/css">
+
 </head>
 
   <body class=" ">
@@ -145,6 +147,41 @@
 
 <div>
     
+    
+<div class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h3>Games</h3>
+            
+
+<h2 id="nonograms">Nonograms</h2>
+
+<p>Nonograms!  I&rsquo;m absurdly addicted to these, so I created one that would provide unlimited random puzzles.</p>
+
+<p>It&rsquo;s written in Scala, compiled to JS with ScalaJS so it can be embedded here.  The engine is almost completely pure/immutable, and all components are nicely separated with no strong binding between UI and game logic.  It includes an AI capable of solving most Nonograms.</p>
+
+<p><b>How to play:</b> Left-click to mark a block, right-click to delete empty ones (and you can click-drag ranges too).  Clues are at the edges of the board.  Clues of &ldquo;3 2&rdquo; mean there&rsquo;s a set of 3 contiguous blocks somewhere on that row or column, followed by a set of 2, with at least one empty space inbetween.</p>
+
+
+            <div id="container">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(e) {
+        UIMain.main("container");
+    });
+</script>
+
+</div>
+
+<div>
+    
     <div class="container" role="main">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -153,10 +190,10 @@
 
 <h1 id="jvm">JVM</h1>
 
-<p>I&rsquo;ve written several projects to do with the low-level JVM internals, which has been a great learning experience:</p>
+<p>I&rsquo;ve written several projects to do with the low-level JVM internals, which has been a great learning experience.  These are all written in Scala:</p>
 
 <ul>
-<li><a href="https://github.com/programmatix/JOakJVM">JOak JVM</a>: a basic, but functioning, JVM written in Scala.</li>
+<li><a href="https://github.com/programmatix/JOakJVM">JOak JVM</a>: a basic, but functioning, JVM.</li>
 <li><a href="https://github.com/programmatix/JOakAnalyser">JOak Analyser</a>: a command-line tool for debugging &amp; analysing JVM .class files.</li>
 <li><a href="https://github.com/programmatix/JOakClassFiles">JOak ClassFiles</a>: a JVM micro-library for reading JVM .class files.</li>
 </ul>
