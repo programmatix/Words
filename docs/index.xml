@@ -62,7 +62,7 @@ I promise.</description>
       
       <guid>https://programmatix.github.io/Words/projects/400-games/</guid>
       <description>Nonograms Nonograms! I&amp;rsquo;m absurdly addicted to these.
-It&amp;rsquo;s written in Scala, compiled to JS with ScalaJS so it can be embedded here. The engine is almost completely pure/immutable, and all components are nicely separated with no strong binding between UI and game logic. It includes an AI capable of solving most Nonograms.
+It&amp;rsquo;s written in Scala, compiled to JS with ScalaJS so it can be embedded here. The engine is almost completely pure/immutable, and all components are nicely separated with no strong binding between UI and game logic. It includes an AI capable of solving most Nonograms. The source is on Github.
 How to play: Left-click to mark a block, right-click to delete empty ones (and you can click-drag ranges too).</description>
     </item>
     
