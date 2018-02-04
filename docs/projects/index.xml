@@ -48,7 +48,7 @@ So far I&amp;rsquo;ve developed a basic-but-functioning 3D renderer, including s
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://programmatix.github.io/Words/projects/400-games/</guid>
-      <description>Nonograms Nonograms! I&amp;rsquo;m absurdly addicted to these, so I created one that would provide unlimited random puzzles.
+      <description>Nonograms Nonograms! I&amp;rsquo;m absurdly addicted to these.
 It&amp;rsquo;s written in Scala, compiled to JS with ScalaJS so it can be embedded here. The engine is almost completely pure/immutable, and all components are nicely separated with no strong binding between UI and game logic. It includes an AI capable of solving most Nonograms.
 How to play: Left-click to mark a block, right-click to delete empty ones (and you can click-drag ranges too).</description>
     </item>
@@ -59,8 +59,9 @@ How to play: Left-click to mark a block, right-click to delete empty ones (and y
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://programmatix.github.io/Words/projects/100-languages/</guid>
-      <description>JVM I&amp;rsquo;ve written several projects to do with the low-level JVM internals, which has been a great learning experience. These are all written in Scala:
- JOak JVM: a basic, but functioning, JVM. JOak Analyser: a command-line tool for debugging &amp;amp; analysing JVM .class files. JOak ClassFiles: a JVM micro-library for reading JVM .class files.  C Language C is a great language for learning, as it&amp;rsquo;s relatively simple.</description>
+      <description>JVM I&amp;rsquo;ve written several projects related to the low-level JVM internals, which has been a great learning experience. These are all written in Scala:
+ JOak JVM: a basic, but functioning, JVM. JOak Analyser: a command-line tool for debugging &amp;amp; analysing JVM .class files. JOak ClassFiles: a JVM micro-library for reading JVM .class files.  C Language C is a great language for learning, as it&amp;rsquo;s relatively simple.
+ CParser: turns valid C code into a nice clean abstract syntax tree (AST) to be used in your JVM project.</description>
     </item>
     
     <item>

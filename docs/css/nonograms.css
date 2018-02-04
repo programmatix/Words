@@ -14,9 +14,10 @@
 .square-failure-anim,
 .square-marked,
 .square-overlay,
-.clues-clue {
-  width: 50px;
-  height: 50px;
+.clues-clue,
+.time-and-mistakes {
+  width: 40px;
+  height: 40px;
   padding: 5px !important;
   position: relative;
 }
@@ -69,20 +70,25 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 5px;
 }
-.clues-clue {
+.clues-clue,
+.time-and-mistakes {
   font-family: 'Bangers', cursive;
-  font-size: 30px;
-  color: #f8c3b9;
-  line-height: 50px;
+  font-size: 25px;
+  color: #f4bf9c;
+  line-height: 40px;
   text-align: center;
-  padding: 0 !important;
+  background: #fefaf8;
+  border-radius: 20%;
+  padding: 0px !important;
   margin: 0 !important;
 }
 .clues-block-cols {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 5px;
 }
 .board-squares-rows {
   display: -webkit-flex;
@@ -96,6 +102,7 @@
   height: 10px;
   background-color: #808080;
   opacity: 0.4;
+  pointer-events: none;
 }
 .particle-success {
   background-color: #00f;
@@ -150,4 +157,24 @@
   text-align: center;
   z-index: 500;
   position: absolute;
+}
+.time-and-mistakes {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.time-holder {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 40px;
+}
+.mistakes-holder {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.time-label,
+.mistakes-label {
+  margin-right: 20px;
 }
