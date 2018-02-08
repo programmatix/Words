@@ -60,8 +60,7 @@ How to play: Left-click to mark a block, right-click to delete empty ones (and y
       
       <guid>https://programmatix.github.io/Words/projects/100-languages/</guid>
       <description>JVM I&amp;rsquo;ve written several projects related to the low-level JVM internals, which has been a great learning experience. These are all written in Scala:
- JOak JVM: a basic, but functioning, JVM. JOak Analyser: a command-line tool for debugging &amp;amp; analysing JVM .class files. JOak ClassFiles: a JVM micro-library for reading JVM .class files.  C Language C is a great language for learning, as it&amp;rsquo;s relatively simple.
- CParser: turns valid C code into a nice clean abstract syntax tree (AST) to be used in your JVM project.</description>
+ JOak JVM: a basic, but functioning, JVM. Includes an optional debugger/visualiser UI (written with ScalaFX) for stepping through the opcodes while viewing the stack operands, local variables, and classfile constants, which makes for a great learning exercise for those wanting to know how the JVM works.</description>
     </item>
     
     <item>

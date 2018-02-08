@@ -6,7 +6,9 @@ layout: "project.html"
 # JVM
 I've written several projects related to the low-level JVM internals, which has been a great learning experience.  These are all written in Scala:
 
-* [JOak JVM](https://github.com/programmatix/JOakJVM): a basic, but functioning, JVM.
+![JOak JVM UI](/Words/images/joak_jvm.jpg)
+
+* [JOak JVM](https://github.com/programmatix/JOakJVM): a basic, but functioning, JVM.  Includes an optional debugger/visualiser UI (written with ScalaFX) for stepping through the opcodes while viewing the stack operands, local variables, and classfile constants, which makes for a great learning exercise for those wanting to know how the JVM works.
 * [JOak Analyser](https://github.com/programmatix/JOakAnalyser): a command-line tool for debugging & analysing JVM .class files.
 * [JOak ClassFiles](https://github.com/programmatix/JOakClassFiles): a JVM micro-library for reading JVM .class files.
 
