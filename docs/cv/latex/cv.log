@@ -1,0 +1,237 @@
+This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.2.9)  9 FEB 2018 12:23
+ restricted system commands enabled.
+**cv.tex
+(./cv.tex
+LaTeX2e <2017-04-15>
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using cache: C:/Users/Graham/AppData/Local/MiKTeX/2.9/luatex-cache/gen
+eric)
+luaotfload | conf : Root cache directory is C:/Users/Graham/AppData/Local/MiKTeX
+/2.9/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/luatex/l
+uaotfload/fontloader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is C:/Users/Graham/AppData/Local/MiKTeX
+/2.9/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.726 seconds
+Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
+(./yaac-another-awesome-cv.cls
+Document Class: yaac-another-awesome-cv 2017/11/17 v1.7.0 'YAAC: Another Awesome
+ CV' Class
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/Graham/AppData/Local/
+MiKTeX/2.9/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/Users/Gr
+aham/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10-regular.l
+uc))
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.sty
+"
+Package: babel 2017/11/03 3.15 The Babel package
+
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/switch.de
+f"
+File: switch.def 2017/11/03 3.15 Babel switching mechanism
+)
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/luababel.
+def"
+\l@afrikaans=\language2
+Package babel Info: Non-standard hyphenation setup on input line 112.
+\l@ancientgreek=\language3
+\l@arabic=\language4
+\l@armenian=\language5
+\l@assamese=\language6
+\l@basque=\language7
+\l@bengali=\language8
+\l@bokmal=\language9
+\l@bulgarian=\language10
+\l@catalan=\language11
+\l@classiclatin=\language12
+\l@coptic=\language13
+\l@croatian=\language14
+\l@czech=\language15
+\l@danish=\language16
+\l@dutch=\language17
+\l@esperanto=\language18
+\l@estonian=\language19
+\l@farsi=\language20
+\l@finnish=\language21
+\l@french=\language22
+\l@galician=\language23
+\l@georgian=\language24
+\l@german=\language25
+\l@german-x-2017-03-31=\language26
+\l@greek=\language27
+\l@gujarati=\language28
+\l@hindi=\language29
+\l@hungarian=\language30
+\l@icelandic=\language31
+\l@indonesian=\language32
+\l@interlingua=\language33
+\l@irish=\language34
+\l@italian=\language35
+\l@kannada=\language36
+\l@kurmanji=\language37
+\l@latin=\language38
+\l@latvian=\language39
+\l@lithuanian=\language40
+\l@malayalam=\language41
+\l@marathi=\language42
+\l@mongolian=\language43
+\l@mongolianlmc=\language44
+\l@monogreek=\language45
+\l@ngerman=\language46
+\l@ngerman-x-2017-03-31=\language47
+\l@nynorsk=\language48
+\l@oriya=\language49
+\l@panjabi=\language50
+\l@piedmontese=\language51
+\l@pinyin=\language52
+\l@polish=\language53
+\l@portuguese=\language54
+\l@romanian=\language55
+\l@romansh=\language56
+\l@russian=\language57
+\l@sanskrit=\language58
+\l@serbian=\language59
+\l@serbianc=\language60
+\l@slovak=\language61
+\l@slovenian=\language62
+\l@spanish=\language63
+\l@swedish=\language64
+\l@swissgerman=\language65
+\l@tamil=\language66
+\l@telugu=\language67
+\l@thai=\language68
+\l@turkish=\language69
+\l@turkmen=\language70
+\l@ukenglish=\language71
+\l@ukrainian=\language72
+\l@uppersorbian=\language73
+\l@usenglishmax=\language74
+\l@welsh=\language75
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/latex/arabi/bblopts.cfg
+"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of 
+babel
+)
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel-french/fr
+enchb.ldf"
+Language: frenchb 2017/10/19 v3.3d French support from the babel system
+
+
+Package babel-french Warning: Option `frenchb' for Babel is *deprecated*,
+(babel-french)                it might be removed sooner or later. Please
+(babel-french)                use `french' instead; reported on input line 35.
+
+
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel-french/fr
+ench.ldf"
+Language: french 2017/10/19 v3.3d French support from the babel system
+
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.def
+"
+File: babel.def 2017/11/03 3.15 Babel common definitions
+
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/switch.de
+f"
+File: switch.def 2017/11/03 3.15 Babel switching mechanism
+)
+\babel@savecnt=\count87
+\U@D=\dimen103
+
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/luababel.
+def"))
+\FB@nonchar=\count88
+\FBcolonsp=\toks14
+\FBthinsp=\toks15
+\FB@spacing=\attribute5
+\FB@addDPspace=\attribute6
+\FB@addGUILspace=\attribute7
+\FB@ucsNBSP=\attribute8
+Package french.ldf Info: No need for active punctuation characters
+(french.ldf)             with this version of LuaTeX!
+(french.ldf)             reported on input line 189.
+\FBguillsp=\toks16
+\FBguill@level=\count89
+\FB@everypar=\toks17
+\FB@Mht=\dimen104
+LaTeX Info: Redefining \degres on input line 681.
+\mc@charclass=\count90
+\mc@charfam=\count91
+\mc@charslot=\count92
+\std@mcc=\count93
+\dec@mcc=\count94
+\c@FBcaption@count=\count95
+\listindentFB=\skip43
+\descindentFB=\skip44
+\labelwidthFB=\skip45
+\leftmarginFB=\skip46
+\parindentFFN=\dimen105
+\FBfnindent=\skip47
+
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/hyph-utf8/loadh
+yph/loadhyph-fr.tex" UTF-8 French hyphenation patterns
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/hyph-utf8/patte
+rns/tex/hyph-fr.tex")
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/hyph-utf8/patte
+rns/quote/hyph-quote-fr.tex")))))
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/latex/carlisle/scalefnt
+.sty")
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/lualatex/luainputenc/lu
+ainputenc.sty"
+Package: luainputenc 2010/11/19 v0.973 inputenc package for LuaTeX
+
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifluat
+ex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/generic/ifxetex/ifxetex
+.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:/Users/Graham/AppData/Local/Programs/MiKTeX 2.9/tex/luatex/luatexbase/luate
+xbase.sty"

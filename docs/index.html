@@ -44,7 +44,8 @@
     </div>
 
     <ul class="sidebar-nav">
-      <li><a href="https://programmatix.github.io/Words/">Home</a> </li>
+      <li><a href="/Words/cv/odt/CV_2018.pdf">CV</a> </li>
+      
       
     </ul>
 
@@ -56,7 +57,69 @@
     <div class="posts">
 <div class="post">
   <h1 class="post-title">
-    <a href="https://programmatix.github.io/Words/projects/900-android/">Android</a>
+    <a href="https://programmatix.github.io/Words/projects/games/">Games</a>
+  </h1>
+  <span class="post-date">Mon, Jan 15, 2018</span>
+  Nonograms Nonograms! I&rsquo;m absurdly addicted to these.
+It&rsquo;s written in Scala, compiled to JS with ScalaJS so it can be embedded here. The engine is almost completely pure/immutable, and all components are nicely separated with no strong binding between UI and game logic. It includes an AI capable of solving most Nonograms. The source is on Github.
+How to play: Left-click to mark a block, right-click to delete empty ones (and you can click-drag ranges too).
+  
+  <div class="read-more-link">
+    <a href="/Words/projects/games/">Read More…</a>
+  </div>
+  
+</div><div class="post">
+  <h1 class="post-title">
+    <a href="https://programmatix.github.io/Words/projects/languages/">Languages</a>
+  </h1>
+  <span class="post-date">Mon, Jan 15, 2018</span>
+  JVM I&rsquo;ve written several projects related to the low-level JVM internals, which has been a great learning experience. These are all written in Scala:
+ JOak JVM: a basic, but functioning, JVM. Includes an optional debugger/visualiser UI (written with ScalaFX) for stepping through the opcodes while viewing the stack operands, local variables, and classfile constants, which makes for a great learning exercise for those wanting to know how the JVM works.
+  
+  <div class="read-more-link">
+    <a href="/Words/projects/languages/">Read More…</a>
+  </div>
+  
+</div><div class="post">
+  <h1 class="post-title">
+    <a href="https://programmatix.github.io/Words/projects/3d/">3D</a>
+  </h1>
+  <span class="post-date">Mon, Jan 15, 2018</span>
+  I&rsquo;ve always been interested in 3D, and this is the start of an attempt to write a 3D engine in Java for learning purposes, based on OpenGL and ideally in an immutable function-programming style.
+So far I&rsquo;ve developed a basic-but-functioning 3D renderer, including support for shadows, lighting (directional &amp; point-based), textures and models. Like any renderer, it has help: it uses JAssimp for model loading, OpenGL via the LWJGL bindings for the drawcalls, and an image library for loading textures.
+  
+  <div class="read-more-link">
+    <a href="/Words/projects/3d/">Read More…</a>
+  </div>
+  
+</div><div class="post">
+  <h1 class="post-title">
+    <a href="https://programmatix.github.io/Words/projects/desktop/">Desktop</a>
+  </h1>
+  <span class="post-date">Sun, Jan 21, 2018</span>
+  MiniPlay The web-based Google Play Music is great, but I was forever having to find the right browser tab just to change or like a song. So I wrote this desktop widget to be able to control my music easily without needing to go to the browser. It has two parts:
+ Chrome extension: Written in Javascript, this is what interfaces with the Google Play Music tab. Source on Github.
+  
+  <div class="read-more-link">
+    <a href="/Words/projects/desktop/">Read More…</a>
+  </div>
+  
+</div><div class="post">
+  <h1 class="post-title">
+    <a href="https://programmatix.github.io/Words/projects/blogging/">Tools for Bloggers</a>
+  </h1>
+  <span class="post-date">Mon, Jan 15, 2018</span>
+  SEO Flow SEO Flow is a plugin for the Wordpress website platform, that lets users search for common search terms put into Google, optimise their articles to rank well for those terms, and then track those rankings.
+The UI is integrated into Wordpress, and is Scala transpiled to ScalaJS, and skinned with CSS to look very close to the Wordpress admin theme. The backend is in Scala.
+The backend is designed to handle plenty of users at scale.
+  
+  <div class="read-more-link">
+    <a href="/Words/projects/blogging/">Read More…</a>
+  </div>
+  
+</div><div class="post">
+  <h1 class="post-title">
+    <a href="https://programmatix.github.io/Words/projects/android/">Android</a>
   </h1>
   <span class="post-date">Sun, Jan 21, 2018</span>
   Split the Bill is an Android app, written in Scala and published on the Google Play Store.
@@ -64,31 +127,19 @@ This app&rsquo;s not going to win any design or complexity awards, and was more 
 It&rsquo;s also a useful example of a Scala Android app. Scala adds wrinkles to the Android setup, as its standard library is so large that it breaks Android&rsquo;s method limits, and needs to be tree-shaken with Proguard before deploying.
   
   <div class="read-more-link">
-    <a href="/Words/projects/900-android/">Read More…</a>
+    <a href="/Words/projects/android/">Read More…</a>
   </div>
   
 </div><div class="post">
   <h1 class="post-title">
-    <a href="https://programmatix.github.io/Words/projects/200-desktop/">Desktop</a>
-  </h1>
-  <span class="post-date">Sun, Jan 21, 2018</span>
-  MiniPlay The web-based Google Play Music is great, but I was forever having to find the right browser tab just to change or like a song. So I wrote this desktop widget to be able to control my music easily without needing to go to the browser. It has two parts:
- Chrome extension: Written in Javascript, this is what interfaces with the Google Play Music tab. Source on Github.
-  
-  <div class="read-more-link">
-    <a href="/Words/projects/200-desktop/">Read More…</a>
-  </div>
-  
-</div><div class="post">
-  <h1 class="post-title">
-    <a href="https://programmatix.github.io/Words/projects/300-3d/">3D</a>
+    <a href="https://programmatix.github.io/Words/projects/web/">Web</a>
   </h1>
   <span class="post-date">Mon, Jan 15, 2018</span>
-  I&rsquo;ve always been interested in 3D, and this is the start of an attempt to write a 3D engine in Java for learning purposes, based on OpenGL and ideally in an immutable function-programming style.
-So far I&rsquo;ve developed a basic-but-functioning 3D renderer, including support for shadows, lighting (directional &amp; point-based), textures and models. Like any renderer, it has help: it uses JAssimp for model loading, OpenGL via the LWJGL bindings for the drawcalls, and an image library for loading textures.
+  Undiscovered Guide Undiscovered Guide is a travel website I created with my partner while we were travelling, to help others explore our favourite parts of the world. It&rsquo;s pretty popular, getting over 30,000 monthly page views. It&rsquo;s a completely custom web platform (no Wordpress or similar) which allowed us to create more useful travel guides than traditional blogs, and there&rsquo;s a lot going on under the hood:
+ The frontend is written in Scala, transpiled to Javascript with ScalaJS.
   
   <div class="read-more-link">
-    <a href="/Words/projects/300-3d/">Read More…</a>
+    <a href="/Words/projects/web/">Read More…</a>
   </div>
   
 </div><div class="post">
@@ -101,56 +152,6 @@ So&hellip;
 Don&rsquo;t really have a clue what to put here yet!
 Gonna fill this up&hellip;
 I promise.
-  
-</div><div class="post">
-  <h1 class="post-title">
-    <a href="https://programmatix.github.io/Words/projects/400-games/">Games</a>
-  </h1>
-  <span class="post-date">Mon, Jan 15, 2018</span>
-  Nonograms Nonograms! I&rsquo;m absurdly addicted to these.
-It&rsquo;s written in Scala, compiled to JS with ScalaJS so it can be embedded here. The engine is almost completely pure/immutable, and all components are nicely separated with no strong binding between UI and game logic. It includes an AI capable of solving most Nonograms. The source is on Github.
-How to play: Left-click to mark a block, right-click to delete empty ones (and you can click-drag ranges too).
-  
-  <div class="read-more-link">
-    <a href="/Words/projects/400-games/">Read More…</a>
-  </div>
-  
-</div><div class="post">
-  <h1 class="post-title">
-    <a href="https://programmatix.github.io/Words/projects/100-languages/">Languages</a>
-  </h1>
-  <span class="post-date">Mon, Jan 15, 2018</span>
-  JVM I&rsquo;ve written several projects related to the low-level JVM internals, which has been a great learning experience. These are all written in Scala:
- JOak JVM: a basic, but functioning, JVM. Includes an optional debugger/visualiser UI (written with ScalaFX) for stepping through the opcodes while viewing the stack operands, local variables, and classfile constants, which makes for a great learning exercise for those wanting to know how the JVM works.
-  
-  <div class="read-more-link">
-    <a href="/Words/projects/100-languages/">Read More…</a>
-  </div>
-  
-</div><div class="post">
-  <h1 class="post-title">
-    <a href="https://programmatix.github.io/Words/projects/800-blogging/">Tools for Bloggers</a>
-  </h1>
-  <span class="post-date">Mon, Jan 15, 2018</span>
-  SEO Flow SEO Flow is a plugin for the Wordpress website platform, that lets users search for common search terms put into Google, optimise their articles to rank well for those terms, and then track those rankings.
-The UI is integrated into Wordpress, and is Scala transpiled to ScalaJS, and skinned with CSS to look very close to the Wordpress admin theme. The backend is in Scala.
-The backend is designed to handle plenty of users at scale.
-  
-  <div class="read-more-link">
-    <a href="/Words/projects/800-blogging/">Read More…</a>
-  </div>
-  
-</div><div class="post">
-  <h1 class="post-title">
-    <a href="https://programmatix.github.io/Words/projects/700-web/">Web</a>
-  </h1>
-  <span class="post-date">Mon, Jan 15, 2018</span>
-  Undiscovered Guide Undiscovered Guide is a travel website I created with my partner while we were travelling, to help others explore our favourite parts of the world. It&rsquo;s pretty popular, getting over 30,000 monthly page views. It&rsquo;s a completely custom web platform (no Wordpress or similar) which allowed us to create more useful travel guides than traditional blogs, and there&rsquo;s a lot going on under the hood:
- The frontend is written in Scala, transpiled to Javascript with ScalaJS.
-  
-  <div class="read-more-link">
-    <a href="/Words/projects/700-web/">Read More…</a>
-  </div>
   
 </div>
 </div>

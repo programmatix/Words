@@ -44,7 +44,8 @@
     </div>
 
     <ul class="sidebar-nav">
-      <li><a href="https://programmatix.github.io/Words/">Home</a> </li>
+      <li><a href="/Words/cv/odt/CV_2018.pdf">CV</a> </li>
+      
       
     </ul>
 
@@ -85,74 +86,6 @@
 
 <div>
     
-    <div class="container" role="main">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h3>Android</h3>
-            <p><b>Split the Bill</b> is an Android app, written in Scala and <a href="https://play.google.com/store/apps/details?id=com.splitthebill&amp;hl=en">published on the Google Play Store</a>.</p>
-
-<p>This app&rsquo;s not going to win any design or complexity awards, and was more of a successful hobby project to learn Android development and publish an app in a few days.</p>
-
-<p>It&rsquo;s also a useful example of a Scala Android app.  Scala adds wrinkles to the Android setup, as its standard library is so large that it breaks Android&rsquo;s method limits, and needs to be tree-shaken with Proguard before deploying.  Still, I find it a really productive language for Android development when it&rsquo;s up and running.</p>
-
-<p>The <a href="https://github.com/programmatix/SplitTheBill">source is on Github</a>.
-<img src="/Words/images/split-the-bill.png" alt="Split the Bill" /></p>
-
-        </div>
-    </div>
-</div>
-
-</div>
-
-<div>
-    
-    <div class="container" role="main">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h3>Desktop</h3>
-            
-
-<h2 id="miniplay">MiniPlay</h2>
-
-<p>The web-based Google Play Music is great, but I was forever having to find the right browser tab just to change or like a song.  So I wrote this desktop widget to be able to control my music easily without needing to go to the browser.  It has two parts:</p>
-
-<ul>
-<li>Chrome extension: Written in Javascript, this is what interfaces with the Google Play Music tab.  <a href="https://github.com/programmatix/MiniPlayChrome">Source on Github</a>.</li>
-<li>App: This widget runs on the user&rsquo;s desktop and is coded in Scala and uses ScalaFX for the UI, and embeds a mini Spring Boot server to handle the Websockets connection from the extension.  <a href="https://github.com/programmatix/MiniPlayDesktop">Source on Github</a>.</li>
-</ul>
-
-<p><img src="/Words/images/miniplay.jpg" alt="MiniPlay" /></p>
-
-        </div>
-    </div>
-</div>
-
-</div>
-
-<div>
-    
-    <div class="container" role="main">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h3>3D</h3>
-            <p>I&rsquo;ve always been interested in 3D, and this is the start of an attempt to write a 3D engine in Java for learning purposes, based on OpenGL and ideally in an immutable function-programming style.</p>
-
-<p>So far I&rsquo;ve developed a basic-but-functioning 3D renderer, including support for shadows, lighting (directional &amp; point-based), textures and models.  Like any renderer, it has help: it uses JAssimp for model loading, OpenGL via the LWJGL bindings for the drawcalls, and an image library for loading textures.  Everything else, including all the vector &amp; matrix maths for model, camera and world transforms; the shaders (written in GLSL); and the lighting, colour and texture calculations, are all performed by the renderer.</p>
-
-<p>The first finished project to drop out is a <b>3D model viewer</b>, in Java.  Check it out <a href="https://github.com/programmatix/3DViewer">on Github</a>, including the renderer source.</p>
-
-<p><img src="/Words/images/dinosaur.JPG" alt="3D Model Viewer" /></p>
-
-<p>I&rsquo;ve also written a <b>micro library for vector and matrix maths</b> in Scala, dorkily named Enter the Matrix.  There&rsquo;s a surprising lack of these, with the existing Scala matrix libraries being heavyweight, rather complex, and generally part of a much large statistical package.  I wanted something lightweight for 3D maths.  It&rsquo;s <a href="https://github.com/programmatix/EnterTheMatrix">available on Github</a>.</p>
-
-        </div>
-    </div>
-</div>
-
-</div>
-
-<div>
-    
     
 <div class="container" role="main">
     <div class="row">
@@ -167,6 +100,8 @@
 <p>It&rsquo;s written in Scala, compiled to JS with ScalaJS so it can be embedded here.  The engine is almost completely pure/immutable, and all components are nicely separated with no strong binding between UI and game logic.  It includes an AI capable of solving most Nonograms.  The source is <a href="https://github.com/programmatix/Nonograms">on Github</a>.</p>
 
 <p><b>How to play:</b> Left-click to mark a block, right-click to delete empty ones (and you can click-drag ranges too).  Clues are at the edges of the board.  Clues of &ldquo;3 2&rdquo; mean there&rsquo;s a set of 3 contiguous blocks somewhere on that row or column, followed by a set of 2, with at least one empty space inbetween.</p>
+
+<p>My best time with no mistakes is 44 seconds.  Can you beat it?</p>
 
 
             <div id="container">
@@ -228,6 +163,53 @@
     <div class="container" role="main">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h3>3D</h3>
+            <p>I&rsquo;ve always been interested in 3D, and this is the start of an attempt to write a 3D engine in Java for learning purposes, based on OpenGL and ideally in an immutable function-programming style.</p>
+
+<p>So far I&rsquo;ve developed a basic-but-functioning 3D renderer, including support for shadows, lighting (directional &amp; point-based), textures and models.  Like any renderer, it has help: it uses JAssimp for model loading, OpenGL via the LWJGL bindings for the drawcalls, and an image library for loading textures.  Everything else, including all the vector &amp; matrix maths for model, camera and world transforms; the shaders (written in GLSL); and the lighting, colour and texture calculations, are all performed by the renderer.</p>
+
+<p>The first finished project to drop out is a <b>3D model viewer</b>, in Java.  Check it out <a href="https://github.com/programmatix/3DViewer">on Github</a>, including the renderer source.</p>
+
+<p><img src="/Words/images/dinosaur.JPG" alt="3D Model Viewer" /></p>
+
+<p>I&rsquo;ve also written a <b>micro library for vector and matrix maths</b> in Scala, dorkily named Enter the Matrix.  There&rsquo;s a surprising lack of these, with the existing Scala matrix libraries being heavyweight, rather complex, and generally part of a much large statistical package.  I wanted something lightweight for 3D maths.  It&rsquo;s <a href="https://github.com/programmatix/EnterTheMatrix">available on Github</a>.</p>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div>
+    
+    <div class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h3>Desktop</h3>
+            
+
+<h2 id="miniplay">MiniPlay</h2>
+
+<p>The web-based Google Play Music is great, but I was forever having to find the right browser tab just to change or like a song.  So I wrote this desktop widget to be able to control my music easily without needing to go to the browser.  It has two parts:</p>
+
+<ul>
+<li>Chrome extension: Written in Javascript, this is what interfaces with the Google Play Music tab.  <a href="https://github.com/programmatix/MiniPlayChrome">Source on Github</a>.</li>
+<li>App: This widget runs on the user&rsquo;s desktop and is coded in Scala and uses ScalaFX for the UI, and embeds a mini Spring Boot server to handle the Websockets connection from the extension.  <a href="https://github.com/programmatix/MiniPlayDesktop">Source on Github</a>.</li>
+</ul>
+
+<p><img src="/Words/images/miniplay.jpg" alt="MiniPlay" /></p>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div>
+    
+    <div class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <h3>Tools for Bloggers</h3>
             
 
@@ -250,6 +232,27 @@
     <div class="container" role="main">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h3>Android</h3>
+            <p><b>Split the Bill</b> is an Android app, written in Scala and published on the Google Play Store.</p>
+
+<p>This app&rsquo;s not going to win any design or complexity awards, and was more of a successful hobby project to learn Android development and publish an app in a few days.</p>
+
+<p>It&rsquo;s also a useful example of a Scala Android app.  Scala adds wrinkles to the Android setup, as its standard library is so large that it breaks Android&rsquo;s method limits, and needs to be tree-shaken with Proguard before deploying.  Still, I find it a really productive language for Android development when it&rsquo;s up and running.</p>
+
+<p>The <a href="https://github.com/programmatix/SplitTheBill">source is on Github</a>.
+<img src="/Words/images/split-the-bill.png" alt="Split the Bill" /></p>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div>
+    
+    <div class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <h3>Web</h3>
             
 
@@ -260,10 +263,10 @@
 It&rsquo;s a completely custom web platform (no Wordpress or similar) which allowed us to create more useful travel guides than traditional blogs, and there&rsquo;s a lot going on under the hood:</p>
 
 <ul>
-<li>The frontend is written in Scala, transpiled to Javascript with ScalaJS.  This convoluted approach let me do a lot of cool code sharing with the backend.</li>
-<li><a href="https://www.undiscoveredguide.com/hanoi-street-food">Parts of it</a> are a dynamically-created single page app.  There&rsquo;s all sorts of cool widgets such as interactive maps dotted over the site.</li>
-<li>There&rsquo;s a fairly complex backend content management system (CMS), written in Scala and with its own UI transpiled in ScalaJS, using PostgreSQL for data storage.  It has too many features to list: a full Google rank tracker, a Wikitravel parser, bots for both Pinterest and Twitter, batch processing of images, a booking.com &amp; Agoda accommodation browser (view all their hotels for a location on a map, filter by various criteria and add them to lists), and plenty more.</li>
-<li>The CMS includes a custom HTML-like language, with its own handwritten parser.</li>
+<li>The frontend is written in Scala, transpiled to Javascript with ScalaJS.  This let me do a lot of cool code sharing with the backend.</li>
+<li>Parts of it are a dynamically-created single page app.  There&rsquo;s all sorts of cool widgets such as interactive maps dotted over the site.</li>
+<li>There&rsquo;s a fairly complex backend content management system (CMS), written in Scala and with its own ScalaJS UI, using PostgreSQL for data storage.  It includes a full Google rank tracker, a Wikitravel parser, bots for Pinterest and Twitter, batch processing of images, a booking.com &amp; Agoda accommodation browser, and plenty more.</li>
+<li>The CMS includes a custom HTML-like language, with its own handwritten parser.  This let us convert all prices into the user&rsquo;s currency, amongst other features.</li>
 <li>It&rsquo;s all self-hosted so I&rsquo;m now all too familiar with the joys of maintaining memory-hungry JVM processes on constrained server hardware&hellip;</li>
 </ul>
 
