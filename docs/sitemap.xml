@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://programmatix.github.io/Words/projects/games/</loc>
+    <loc>https://programmatix.github.io/Words/projects/web/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
   </url>
   
@@ -13,18 +13,15 @@
   </url>
   
   <url>
-    <loc>https://programmatix.github.io/Words/projects/3d/</loc>
-    <lastmod>2018-01-15T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://programmatix.github.io/Words/projects/desktop/</loc>
+    <loc>https://programmatix.github.io/Words/</loc>
     <lastmod>2018-01-21T09:50:29+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://programmatix.github.io/Words/projects/blogging/</loc>
-    <lastmod>2018-01-15T09:50:29+07:00</lastmod>
+    <loc>https://programmatix.github.io/Words/projects/</loc>
+    <lastmod>2018-01-21T09:50:29+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -33,7 +30,17 @@
   </url>
   
   <url>
-    <loc>https://programmatix.github.io/Words/projects/web/</loc>
+    <loc>https://programmatix.github.io/Words/projects/desktop/</loc>
+    <lastmod>2018-01-21T09:50:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://programmatix.github.io/Words/posts/30day-typing-challenge/</loc>
+    <lastmod>2018-01-15T09:50:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://programmatix.github.io/Words/projects/3d/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
   </url>
   
@@ -43,23 +50,23 @@
   </url>
   
   <url>
-    <loc>https://programmatix.github.io/Words/</loc>
+    <loc>https://programmatix.github.io/Words/projects/games/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://programmatix.github.io/Words/projects/</loc>
-    <lastmod>2018-01-15T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://programmatix.github.io/Words/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://programmatix.github.io/Words/posts/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://programmatix.github.io/Words/projects/blogging/</loc>
+    <lastmod>2018-01-15T09:50:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://programmatix.github.io/Words/categories/</loc>
     <priority>0</priority>
   </url>
   

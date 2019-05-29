@@ -2,15 +2,28 @@ Hi!  This is my personal website, with thoughts 'n' semi-broken projects and the
 
 Visit it here [https://programmatix.github.io/Words/projects/](https://programmatix.github.io/Words/projects/).
 
+## Initial
+```
+cd themes
+git clone https://github.com/spf13/hyde.git
+cd ..
+hugo
+```
+
 ## Developing
+```
 hugo server -D
-http://localhost:1313/Words/
+```
+
+Open http://localhost:1313/Words/
 
 ## Release Process
+```
 hugo
 git add docs
 git commit -a -m "Commit message"
 git push
+```
 
 ## Dev notes
 hugo is setup to create the site in the docs directory, and Git Pages serves from this folder.

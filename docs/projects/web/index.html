@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Web &middot; Graham Pople</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://programmatix.github.io/Words/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://programmatix.github.io/Words/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://programmatix.github.io/Words/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://programmatix.github.io/Words/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://programmatix.github.io/Words/"><h1>Graham Pople</h1></a>
+      <p class="lead">
+       Scala // Java // Web // C&#43;&#43; Developer 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://programmatix.github.io/Words/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Web</h1>
+  <time datetime=2018-01-15T09:50:29&#43;0700 class="post-date">Mon, Jan 15, 2018</time>
+  
+
+<h2 id="undiscovered-guide">Undiscovered Guide</h2>
+
+<p><a href="https://www.undiscoveredguide.com">Undiscovered Guide</a> is a travel website I created with my partner while we were travelling, to help others explore our favourite parts of the world.  It&rsquo;s pretty popular, getting over 30,000 monthly page views.
+<img src="/Words/images/ug.JPG" alt="Undiscovered Guide" />
+It&rsquo;s a completely custom web platform (no Wordpress or similar) which allowed us to create more useful travel guides than traditional blogs, and there&rsquo;s a lot going on under the hood:</p>
+
+<ul>
+<li>The frontend is written in Scala, transpiled to Javascript with ScalaJS.  This convoluted approach let me do a lot of cool code sharing with the backend.</li>
+<li>Parts of it are a dynamically-created single page app.  There&rsquo;s all sorts of cool widgets such as interactive maps dotted over the site.</li>
+<li>There&rsquo;s a fairly complex backend content management system (CMS), written in Scala and with its own UI transpiled in ScalaJS, using PostgreSQL for data storage.  It has too many features to list: a full Google rank tracker, a Wikitravel parser, bots for both Pinterest and Twitter, batch processing of images, a booking.com &amp; Agoda accommodation browser (view all their hotels for a location on a map, filter by various criteria and add them to lists), and plenty more.</li>
+<li>The CMS includes a custom HTML-like language, with its own handwritten parser.  This let us convert all prices into the user&rsquo;s currency, amongst other features.</li>
+<li>It&rsquo;s all self-hosted so I&rsquo;m now all too familiar with the joys of maintaining memory-hungry JVM processes on constrained server hardware&hellip;</li>
+</ul>
+
+<h2 id="travelpouch">Travelpouch</h2>
+
+<p>My partner and I needed a way to track our daily travel expenses, along with tracking who owed who what across a variety of currencies.  So Travelpouch was born, a web-based finance tracking app that is great for personal tracking and budgeting, and has some great features for couples and friends that holiday together and need to split expenses fairly.</p>
+
+<p>The backend and frontend are both in Scala, with the frontend transpiled to Javascript with ScalaJS.  There&rsquo;s also an Android app, written in Scala.</p>
+
+<p>This was my first web project and went through several tech iterations while I explored different web tech stacks, including Grails (which is Groovy+Spring), then Angular, then its current version.  I&rsquo;m pretty happy with the current Scala+ScalaJS stack, which I&rsquo;ve used now on multiple projects and allows very productive code sharing, but I have my eye on Kotlin+KotlinJS as a successor.</p>
+
+<p>We use Travelpouch daily, but it&rsquo;s a bit rough around the edges so is presently closed source and not generally available.
+<img src="/Words/images/travelpouch.jpg" alt="Travelpouch" /></p>
+
+<h2 id="smaller-projects">Smaller projects</h2>
+
+<ul>
+<li><a href="http://www.onemorego.net/">One More Go</a> is a blog devoted to reviewing casual games, which I was briefly utterly addicted to.  It&rsquo;s on the Wordpress platform hosted on one of my servers.</li>
+<li>This site is coded with the static site generator Hugo.  Static site generators are awesome: they&rsquo;re much faster and simpler than something like Wordpress, both for adding and consuming content.  The source is <a href="https://github.com/programmatix/Words">on Github</a> and it&rsquo;s hosted on Git Pages.</li>
+</ul>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>
