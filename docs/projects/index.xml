@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graham Pople</title>
@@ -17,7 +17,7 @@
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://programmatix.github.io/Words/projects/web/</guid>
-      <description>Undiscovered Guide Undiscovered Guide is a travel website I created with my partner while we were travelling, to help others explore our favourite parts of the world. It&amp;rsquo;s pretty popular, getting over 30,000 monthly page views. It&amp;rsquo;s a completely custom web platform (no Wordpress or similar) which allowed us to create more useful travel guides than traditional blogs, and there&amp;rsquo;s a lot going on under the hood:
+      <description>Undiscovered Guide Undiscovered Guide is a travel website I created with my partner while we were travelling, to help others explore our favourite parts of the world. It&#39;s pretty popular, getting over 30,000 monthly page views. It&#39;s a completely custom web platform (no Wordpress or similar) which allowed us to create more useful travel guides than traditional blogs, and there&#39;s a lot going on under the hood:
  The frontend is written in Scala, transpiled to Javascript with ScalaJS.</description>
     </item>
     
@@ -27,7 +27,7 @@
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://programmatix.github.io/Words/projects/languages/</guid>
-      <description>JVM I&amp;rsquo;ve written several projects related to the low-level JVM internals, which has been a great learning experience. These are all written in Scala:
+      <description>JVM I&#39;ve written several projects related to the low-level JVM internals, which has been a great learning experience. These are all written in Scala:
  JOak JVM: a basic, but functioning, JVM. Includes an optional debugger/visualiser UI (written with ScalaFX) for stepping through the opcodes while viewing the stack operands, local variables, and classfile constants, which makes for a great learning exercise for those wanting to know how the JVM works.</description>
     </item>
     
@@ -37,9 +37,9 @@
       <pubDate>Sun, 21 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://programmatix.github.io/Words/projects/android/</guid>
-      <description>Split the Bill is an Android app, written in Scala and published on the Google Play Store.
-This app&amp;rsquo;s not going to win any design or complexity awards, and was more of a successful hobby project to learn Android development and publish an app in a few days.
-It&amp;rsquo;s also a useful example of a Scala Android app. Scala adds wrinkles to the Android setup, as its standard library is so large that it breaks Android&amp;rsquo;s method limits, and needs to be tree-shaken with Proguard before deploying.</description>
+      <description>Split the Billis an Android app, written in Scala and published on the Google Play Store.
+This app&#39;s not going to win any design or complexity awards, and was more of a successful hobby project to learn Android development and publish an app in a few days.
+It&#39;s also a useful example of a Scala Android app. Scala adds wrinkles to the Android setup, as its standard library is so large that it breaks Android&#39;s method limits, and needs to be tree-shaken with Proguard before deploying.</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ It&amp;rsquo;s also a useful example of a Scala Android app. Scala adds wrinkles
       
       <guid>https://programmatix.github.io/Words/projects/desktop/</guid>
       <description>MiniPlay The web-based Google Play Music is great, but I was forever having to find the right browser tab just to change or like a song. So I wrote this desktop widget to be able to control my music easily without needing to go to the browser. It has two parts:
- Chrome extension: Written in Javascript, this is what interfaces with the Google Play Music tab. Source on Github.</description>
+ Chrome extension: Written in Javascript, this is what interfaces with the Google Play Music tab. Source on Github. App: This widget runs on the user&#39;s desktop and is coded in Scala and uses ScalaFX for the UI, and embeds a mini Spring Boot server to handle the Websockets connection from the extension.</description>
     </item>
     
     <item>
@@ -58,8 +58,8 @@ It&amp;rsquo;s also a useful example of a Scala Android app. Scala adds wrinkles
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://programmatix.github.io/Words/projects/3d/</guid>
-      <description>I&amp;rsquo;ve always been interested in 3D, and this is the start of an attempt to write a 3D engine in Java for learning purposes, based on OpenGL and ideally in an immutable function-programming style.
-So far I&amp;rsquo;ve developed a basic-but-functioning 3D renderer, including support for shadows, lighting (directional &amp;amp; point-based), textures and models. Like any renderer, it has help: it uses JAssimp for model loading, OpenGL via the LWJGL bindings for the drawcalls, and an image library for loading textures.</description>
+      <description>I&#39;ve always been interested in 3D, and this is the start of an attempt to write a 3D engine in Java for learning purposes, based on OpenGL and ideally in an immutable function-programming style.
+So far I&#39;ve developed a basic-but-functioning 3D renderer, including support for shadows, lighting (directional &amp;amp; point-based), textures and models. Like any renderer, it has help: it uses JAssimp for model loading, OpenGL via the LWJGL bindings for the drawcalls, and an image library for loading textures.</description>
     </item>
     
     <item>
@@ -68,9 +68,9 @@ So far I&amp;rsquo;ve developed a basic-but-functioning 3D renderer, including s
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
       
       <guid>https://programmatix.github.io/Words/projects/games/</guid>
-      <description>Nonograms Nonograms! I&amp;rsquo;m absurdly addicted to these.
-It&amp;rsquo;s written in Scala, compiled to JS with ScalaJS so it can be embedded here. The engine is almost completely pure/immutable, and all components are nicely separated with no strong binding between UI and game logic. It includes an AI capable of solving most Nonograms. The source is on Github.
-How to play: Left-click to mark a block, right-click to delete empty ones (and you can click-drag ranges too).</description>
+      <description>Nonograms Nonograms! I&#39;m absurdly addicted to these.
+It&#39;s written in Scala, compiled to JS with ScalaJS so it can be embedded here. The engine is almost completely pure/immutable, and all components are nicely separated with no strong binding between UI and game logic. It includes an AI capable of solving most Nonograms. The source is on Github.
+How to play:Left-click to mark a block, right-click to delete empty ones (and you can click-drag ranges too).</description>
     </item>
     
     <item>
