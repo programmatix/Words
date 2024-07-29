@@ -1,8 +1,9 @@
-Hi!  This is my personal website, with thoughts 'n' semi-broken projects and the like.
+Hi!  This is my personal website, with thoughts & semi-broken projects and the like.
 
 Visit it here [https://programmatix.github.io/Words/projects/](https://programmatix.github.io/Words/projects/).
 
 ## Initial
+Install Hugo from https://gohugo.io/
 ```
 cd themes
 git clone https://github.com/spf13/hyde.git

@@ -13,8 +13,8 @@ I've written several projects related to the low-level JVM internals, which has 
 * [JOak Analyser](https://github.com/programmatix/JOakAnalyser): a command-line tool for debugging & analysing JVM .class files.
 * [JOak ClassFiles](https://github.com/programmatix/JOakClassFiles): a JVM micro-library for reading JVM .class files.
 
-# C Language
-C is a great language for learning, as it's relatively simple.
+# Scala Parsing
+To explore parsing options with Scala I put together some projects for parsing C code.
 
 * [CParser](https://github.com/programmatix/CParser): turns valid C code into a nice clean abstract syntax tree (AST) to be used in your JVM project.  Written in Scala.
 * [CParserWebDemo](https://github.com/programmatix/CParserWebDemo): turns CParser into a Javascript widget (it's in Scala, but transpiles to JS with ScalaJS) that you can embed in a website.

@@ -4,11 +4,8 @@
     <title>Tags on Graham Pople</title>
     <link>https://programmatix.github.io/Words/tags/</link>
     <description>Recent content in Tags on Graham Pople</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    
-	<atom:link href="https://programmatix.github.io/Words/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://programmatix.github.io/Words/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -24,7 +24,3 @@ This was my first web project and went through several tech iterations while I e
 
 We use Travelpouch daily, but it's a bit rough around the edges so is presently closed source and not generally available.
 ![Travelpouch](/Words/images/travelpouch.jpg)
-
-## Smaller projects
-* [One More Go](http://www.onemorego.net/) is a blog devoted to reviewing casual games, which I was briefly utterly addicted to.  It's on the Wordpress platform hosted on one of my servers.
-* This site is coded with the static site generator Hugo.  Static site generators are awesome: they're much faster and simpler than something like Wordpress, both for adding and consuming content.  The source is [on Github](https://github.com/programmatix/Words) and it's hosted on Git Pages. 

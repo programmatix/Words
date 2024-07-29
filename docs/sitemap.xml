@@ -1,75 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://programmatix.github.io/Words/projects/personalhealth/</loc>
+    <lastmod>2024-07-29T17:20:00+01:00</lastmod>
+  </url><url>
     <loc>https://programmatix.github.io/Words/projects/web/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://programmatix.github.io/Words/projects/languages/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://programmatix.github.io/Words/</loc>
-    <lastmod>2018-01-21T09:50:29+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2024-07-29T17:20:00+01:00</lastmod>
+  </url><url>
     <loc>https://programmatix.github.io/Words/projects/</loc>
-    <lastmod>2018-01-21T09:50:29+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2024-07-29T17:20:00+01:00</lastmod>
+  </url><url>
     <loc>https://programmatix.github.io/Words/projects/android/</loc>
     <lastmod>2018-01-21T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://programmatix.github.io/Words/projects/desktop/</loc>
     <lastmod>2018-01-21T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://programmatix.github.io/Words/posts/30day-typing-challenge/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://programmatix.github.io/Words/projects/3d/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://programmatix.github.io/Words/posts/first/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://programmatix.github.io/Words/projects/games/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://programmatix.github.io/Words/posts/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://programmatix.github.io/Words/projects/blogging/</loc>
     <lastmod>2018-01-15T09:50:29+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://programmatix.github.io/Words/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://programmatix.github.io/Words/tags/</loc>
+  </url><url>
+    <loc>https://programmatix.github.io/Words/posts/best-garmin-smartwatch/</loc>
   </url>
-  
 </urlset>

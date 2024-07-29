@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.129.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Personal Health Dashboard &middot; Graham Pople</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://programmatix.github.io/Words/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://programmatix.github.io/Words/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://programmatix.github.io/Words/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://programmatix.github.io/Words/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://programmatix.github.io/Words/"><h1>Graham Pople</h1></a>
+      <p class="lead">
+       Scala // Java // Web // C&#43;&#43; Developer 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://programmatix.github.io/Words/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Personal Health Dashboard</h1>
+  <time datetime=2024-07-29T17:20:00&#43;0100 class="post-date">Mon, Jul 29, 2024</time>
+  <p>At the time of writing (2024), this is my main personal project.</p>
+<p>I&rsquo;m trying to track all the data related to personal health - particularly sleep and energy - as possible, and try to find patterns and correlations between them.
+I&rsquo;d like to optimise my energy levels as much as possible, and am solving that in the most Me way possible - by throwing inordinate amounts of time and software engineering at the problem :)</p>
+<p>It&rsquo;s also been a good excuse to learn more about AI, ML data science.</p>
+<p>The most recent development is I&rsquo;m now capturing EEG (brainwave) data using an OpenBCI Cyton board:</p>
+<p><img src="/Words/images/xl/eeg1.png" alt="EEG Data"></p>
+<p>and using it to train a model with Tensorflow that will estimate my energy levels.<br>
+This has turned into a significant side-project as I build out software and visualisation for testing different model approaches - linear regression, neural nets, XGBoost, etc.</p>
+<p>I&rsquo;m using the same EEG data to plot a sleep hypnogram each night (the excellent YASA project is doing a lot of the heavy lifting):</p>
+<p><img src="/Words/images/xl/yasa.png" alt="Hypnogram"></p>
+<p>Related projects:</p>
+<ul>
+<li><a href="https://github.com/programmatix/Brainwave-Python">Brainwave</a> - captures EEG data, performs FFT and other transforms, and sends the data on to files, visualisers and databases.</li>
+<li><a href="https://github.com/programmatix/Brainwave-Python">Brainwave-Processor</a> - processes the EEG data for sleep hypnogram.</li>
+</ul>
+<p>I&rsquo;m also capturing nearly 24x7 heart rate data, from which I calculated HRV using the RMSSD method, core body temperature, oxygen levels, exercise data, sleeping positions, and respiratory data.
+This is all captured from several devices (a Polar H10, a CORE thermometer, a Viatom O2 device, a Google Pixel Watch, and an Oxa sensor) over Bluetooth Low Energy into an Android application I&rsquo;ve written in Kotlin, and stored in Influx (a timeseries database).</p>
+<p><img src="/Words/images/xl/metrics.png" alt="Metrics"></p>
+<p>I also capture a lot of data about my environment, including CO2, light, noise and temperature levels at night, and my presence in the house.  This is all fed into Home Assistant and ultimately Influx.</p>
+<p>I have a WIP project (not yet tidied up to share publically) that&rsquo;s trying to estimate fatigue based on analysis webcam images, using the Google Mediapipe model to track where my eyes are, and training a neural net model to detect whether I&rsquo;m blinking, based on labelling hundreds of such eye images as open or closed.  (There is research to suggest that blinking increases with tiredness)</p>
+<p>I take pictures of what I eat and give them to ChatGPT to estimate nutritional content - an approach that works surprisingly well.</p>
+<p>I&rsquo;m then using all this captured data in various ways, including finding useful correlations between metrics, with the hope of finding how to optimise e.g. time asleep and energy levels next day.</p>
+<p><img src="/Words/images/xl/correlations.png" alt="Correlations"></p>
+<p>Technologies used:</p>
+<ul>
+<li>Frontend: React, Firebase, Typescript</li>
+<li>Databases: Influx, Firebase</li>
+<li>Mobile app: Android, Kotlin</li>
+</ul>
+
+</div>
+
+
+    </main>
+
+    
+      
+  
+
+
+    
+  </body>
+</html>

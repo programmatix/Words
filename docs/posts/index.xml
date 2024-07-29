@@ -4,35 +4,30 @@
     <title>Posts on Graham Pople</title>
     <link>https://programmatix.github.io/Words/posts/</link>
     <description>Recent content in Posts on Graham Pople</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jan 2018 09:50:29 +0700</lastBuildDate>
-    
-	<atom:link href="https://programmatix.github.io/Words/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://programmatix.github.io/Words/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>30 Day Typing Challenge</title>
       <link>https://programmatix.github.io/Words/posts/30day-typing-challenge/</link>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
-      
       <guid>https://programmatix.github.io/Words/posts/30day-typing-challenge/</guid>
-      <description>I have a confession to make. I&#39;m a professional software developer and have been for many years, and have spent much of my life in front of a keyboard. But my typing absolutely sucks.
-From a distance it sort of looks like I touch type. My hands certainly move fast enough. But instead of my fingers remaining nicely glued to the home row, where they belong, my left hand will unexpectedly dart over to the right side of the keyboard.</description>
+      <description>I have a confession to make. I&amp;rsquo;m a professional software developer and have been for many years, and have spent much of my life in front of a keyboard. But my typing absolutely sucks.&#xA;From a distance it sort of looks like I touch type. My hands certainly move fast enough. But instead of my fingers remaining nicely glued to the home row, where they belong, my left hand will unexpectedly dart over to the right side of the keyboard.</description>
     </item>
-    
     <item>
       <title>First!</title>
       <link>https://programmatix.github.io/Words/posts/first/</link>
       <pubDate>Mon, 15 Jan 2018 09:50:29 +0700</pubDate>
-      
       <guid>https://programmatix.github.io/Words/posts/first/</guid>
-      <description>Hey :)
-So&amp;hellip;
-Don&#39;t really have a clue what to put here yet!
-Gonna fill this up&amp;hellip;
-I promise.</description>
+      <description>Hey :)&#xA;So&amp;hellip;&#xA;Don&amp;rsquo;t really have a clue what to put here yet!&#xA;Gonna fill this up&amp;hellip;&#xA;I promise.</description>
     </item>
-    
+    <item>
+      <title>The Best Garmin Fitness Watch (For Me)</title>
+      <link>https://programmatix.github.io/Words/posts/best-garmin-smartwatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://programmatix.github.io/Words/posts/best-garmin-smartwatch/</guid>
+      <description>Fitness watches are electronic watches that monitor health and fitness related metrics throughout the day.&#xA;Depending on the watch these can range from simple heartbeat measures, to semi-sophisticated sleep analysis, and even full navigational maps.&#xA;In typical Graham fashion, my feelings about them have gone from &amp;lsquo;couldn&amp;rsquo;t care less&amp;rsquo; through &amp;lsquo;I must have one immediately&amp;rsquo; to &amp;lsquo;I own one&amp;rsquo; in about 4 days. I&amp;rsquo;ve chosen the Garmin Vivoactive 4S (£230), for these reasons:</description>
+    </item>
   </channel>
 </rss>
